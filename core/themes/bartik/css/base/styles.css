@@ -1,0 +1,20 @@
+/* Specific styles for preliminary work on Prevention Solutions */
+
+.site-branding__name a {
+  color: #fcb53b;
+}
+
+#block-views-block-staff-block-1 h3 {
+  color: #660088;
+  font-size: 1.2em;
+}
+
+#block-views-block-staff-block-1 .views-row {
+  clear: both;
+  margin: 1em 0 0 0;
+}
+
+#block-views-block-staff-block-1 .views-field-field-image {
+  float: left;
+  margin: 0 0 1em 1em;
+}
