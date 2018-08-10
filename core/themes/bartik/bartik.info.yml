@@ -21,7 +21,6 @@ package: Core
 libraries:
   - bartik/global-styling
 ckeditor_stylesheets:
-  - css/base/styles.css
   - css/base/elements.css
   - css/components/captions.css
   - css/components/table.css

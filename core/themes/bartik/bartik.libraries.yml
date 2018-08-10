@@ -55,6 +55,7 @@ global-styling:
       css/components/buttons.css: {}
       css/components/image-button.css: {}
       css/components/ui-dialog.css: {}
+      css/components/styles.css: {}
     layout:
       css/layout.css: {}
     theme:

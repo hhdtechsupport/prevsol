@@ -1,0 +1,79 @@
+/* Specific styles for preliminary work on Prevention Solutions */
+
+body {
+  background-color: #dddddd !important;
+  font-family: Verdana, Helvetica, Arial, "Trebuchet MS";
+  font-size: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.site-branding__name a {
+  color: #fcb53b;
+}
+
+.site-footer {
+  font-size: 85%;
+}
+
+.region-footer-fourth {
+  float: right !important;
+}
+
+.region-primary-menu .menu a {
+  background-color: #fcb53b;
+}
+
+.search-form,
+.region-secondary-menu {
+  float: right;  
+}
+
+#block-edcaddress {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.path-frontpage .content {
+  margin: 0 5em;
+}
+
+.path-frontpage .node__links {
+  display: none;
+}
+
+.page-node-type-person .field--name-field-title,
+#block-views-block-staff-block-1 h3 {
+  color: #660088;
+  font-size: 1.2em;
+}
+
+.page-node-type-person .field--name-body {
+  margin-top: 1em;
+}
+
+#block-views-block-staff-block-1 .views-row {
+  clear: both;
+}
+
+#block-views-block-staff-block-1 .views-field-field-image {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.view-quotes p {
+  background-color: #ffffcc;
+  font-family: serif;
+  font-size: 120%;
+  font-style: italic;
+  margin: 0 2em 0 2em;
+  padding: 1.5em;
+}
+
+.view-quotes p::before {
+  content: '"';
+}
+
+.view-quotes p::after {
+  content: '"';
+}
