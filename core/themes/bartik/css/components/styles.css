@@ -61,13 +61,18 @@ body {
   margin: 0 1em 1em 0;
 }
 
-.view-quotes p {
+.view-quotes .views-row {
   background-color: #ffffcc;
   font-family: serif;
-  font-size: 120%;
-  font-style: italic;
   margin: 0 2em 0 2em;
   padding: 1.5em;
+}
+
+.view-quotes p {
+  display: inline;
+  font-size: 120%;
+  font-style: italic;
+  margin: 0;
 }
 
 .view-quotes p::before {
@@ -76,4 +81,16 @@ body {
 
 .view-quotes p::after {
   content: '"';
+}
+
+.view-quotes .views-field-field-source {
+  display: inline;
+  font-family: sans-serif;
+  font-size: 90%;
+}
+
+.view-id-trainings .view-footer {
+  font-family: serif;
+  font-size: 90%;
+  margin-top: 1em;
 }
