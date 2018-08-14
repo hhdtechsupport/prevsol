@@ -9672,88 +9672,106 @@ body {
   }
 }
 
+/* line 108, ../scss/_overrides.scss */
+#block-prevsol-mainnavigation.block-superfish {
+  width: auto;
+}
 @media screen and (min-width: 768px) {
-  /* line 109, ../scss/_overrides.scss */
-  #block-prevsol-main-menu .navbar-nav > li {
+  /* line 112, ../scss/_overrides.scss */
+  #block-prevsol-mainnavigation .sf-menu > li {
     padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 }
-/* line 115, ../scss/_overrides.scss */
-#block-prevsol-main-menu .navbar-nav > li > a {
+/* line 118, ../scss/_overrides.scss */
+#block-prevsol-mainnavigation .sf-menu > li > a {
   text-transform: uppercase;
   color: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
-  /* line 115, ../scss/_overrides.scss */
-  #block-prevsol-main-menu .navbar-nav > li > a {
+  /* line 118, ../scss/_overrides.scss */
+  #block-prevsol-mainnavigation .sf-menu > li > a {
     font-weight: bold;
     padding: 0;
   }
-  /* line 121, ../scss/_overrides.scss */
-  #block-prevsol-main-menu .navbar-nav > li > a:hover {
+  /* line 124, ../scss/_overrides.scss */
+  #block-prevsol-mainnavigation .sf-menu > li > a:hover {
     color: #FFB500;
+    text-decoration: none;
   }
-  /* line 125, ../scss/_overrides.scss */
-  #block-prevsol-main-menu .navbar-nav > li > a.is-active {
+  /* line 129, ../scss/_overrides.scss */
+  #block-prevsol-mainnavigation .sf-menu > li > a.is-active {
     border-bottom: 2px solid #FFB500;
+  }
+  /* line 132, ../scss/_overrides.scss */
+  #block-prevsol-mainnavigation .sf-menu > li > a.sf-with-ul + ul {
+    background-color: #1D4767;
+  }
+  /* line 135, ../scss/_overrides.scss */
+  #block-prevsol-mainnavigation .sf-menu > li > a.sf-with-ul + ul > li > a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  /* line 138, ../scss/_overrides.scss */
+  #block-prevsol-mainnavigation .sf-menu > li > a.sf-with-ul + ul > li > a:hover {
+    color: #FFB500;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 136, ../scss/_overrides.scss */
+  /* line 152, ../scss/_overrides.scss */
   #block-prevsol-account-menu .navbar-nav,
-  #block-prevsol-main-menu .navbar-nav {
+  #block-prevsol-mainnavigation .navbar-nav {
     margin: 0;
   }
 }
 
-/* line 145, ../scss/_overrides.scss */
+/* line 161, ../scss/_overrides.scss */
 .lower-section {
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 152, ../scss/_overrides.scss */
+/* line 168, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
 }
 
-/* line 159, ../scss/_overrides.scss */
+/* line 175, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 167, ../scss/_overrides.scss */
+/* line 183, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 172, ../scss/_overrides.scss */
+/* line 188, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 178, ../scss/_overrides.scss */
+/* line 194, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 183, ../scss/_overrides.scss */
+/* line 199, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
 
-/* line 188, ../scss/_overrides.scss */
+/* line 204, ../scss/_overrides.scss */
 .container {
   max-width: 1170px;
 }

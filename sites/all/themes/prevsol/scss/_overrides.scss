@@ -104,8 +104,11 @@ body {
   }
 }
 
-#block-prevsol-main-menu {
-  .navbar-nav {
+#block-prevsol-mainnavigation {
+  &.block-superfish {
+    width: auto;
+  }
+  .sf-menu {
     &>li {
       @media #{$tablet} { 
         padding-left: 30px;
@@ -120,10 +123,23 @@ body {
           padding: 0;
           &:hover {
             color: $yellow;
+            text-decoration: none;
           }
 
           &.is-active {
             border-bottom: 2px solid $yellow;
+          }
+          &.sf-with-ul + ul {
+            background-color: $darker-blue;
+            & > li {
+              & > a {
+                color: $white;
+                text-decoration: none;
+                &:hover {
+                  color: $yellow;
+                }
+              }
+            }
           }
         }
       }
@@ -132,7 +148,7 @@ body {
 }
 
 #block-prevsol-account-menu,
-#block-prevsol-main-menu {
+#block-prevsol-mainnavigation {
   .navbar-nav {
     @media #{$mobile} {
       margin: 0;
