@@ -9,7 +9,27 @@ body {
 }
 
 .site-branding__name a {
-  color: #fcb53b;
+  color: #fcb53b !important;
+}
+
+.region-secondary-menu {
+  background-color: #1d4767;
+}
+
+ul.sf-menu  li.sf-depth-2 {
+  background-color: #1d4767;
+}
+
+.superfish-main li.sf-depth-2 a:hover {
+  color: #27628e;
+}
+
+#block-mainnavigation {
+  margin: 0;
+}
+
+#block-mainnavigation .content {
+  float: right;
 }
 
 .site-footer {
@@ -26,7 +46,7 @@ body {
 
 .search-form,
 .region-secondary-menu {
-  float: right;  
+  float: right;
 }
 
 #block-edcaddress {
@@ -62,15 +82,16 @@ body {
 }
 
 .view-quotes .views-row {
-  background-color: #ffffcc;
-  font-family: serif;
+  /*background-color: #ffffcc;
+  font-family: serif;*/
   margin: 0 2em 0 2em;
   padding: 1.5em;
 }
 
 .view-quotes p {
+  color: #27628e;
   display: inline;
-  font-size: 120%;
+  font-size: 90%;
   font-style: italic;
   margin: 0;
 }
@@ -86,11 +107,32 @@ body {
 .view-quotes .views-field-field-source {
   display: inline;
   font-family: sans-serif;
-  font-size: 90%;
+  font-size: 80%;
 }
 
 .view-id-trainings .view-footer {
   font-family: serif;
   font-size: 90%;
   margin-top: 1em;
+}
+
+.view-id-trainings p {
+  margin: 0;
+}
+
+.view-id-trainings.ui-accordion .ui-accordion-content {
+  padding: .5em 2em;
+}
+
+.view-id-trainings.ui-accordion .ui-state-default {
+  background: #fcb53b;
+}
+
+.block-views-blocktrainings-block-1 h2 {
+  display: none;
+}
+
+.view-id-resources th,
+.view-id-resources td {
+  vertical-align: top;
 }
