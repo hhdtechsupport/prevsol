@@ -42,6 +42,10 @@ body {
   background-color: $white;
 }
 
+.lower-section-wrapper {
+  background-color: $light-gray;
+}
+
 .footer-wrapper {
   background-color: $edc-blue;
 }
@@ -136,12 +140,19 @@ body {
   }
 }
 
+// Lower Section.
+
+.lower-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 // Footer.
 .footer {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
 }
 
 // Paragraphs.

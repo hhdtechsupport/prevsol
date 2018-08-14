@@ -9594,39 +9594,44 @@ body {
 }
 
 /* line 45, ../scss/_overrides.scss */
+.lower-section-wrapper {
+  background-color: #F2F2F2;
+}
+
+/* line 49, ../scss/_overrides.scss */
 .footer-wrapper {
   background-color: #27628E;
 }
 
-/* line 50, ../scss/_overrides.scss */
+/* line 54, ../scss/_overrides.scss */
 .page-header {
   margin-top: 0;
 }
 
-/* line 54, ../scss/_overrides.scss */
+/* line 58, ../scss/_overrides.scss */
 .navbar.container {
   max-width: 1170px;
 }
 
-/* line 57, ../scss/_overrides.scss */
+/* line 61, ../scss/_overrides.scss */
 .navbar.container.navbar-default {
   background-color: transparent;
   padding: 0;
   border: 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 57, ../scss/_overrides.scss */
+  /* line 61, ../scss/_overrides.scss */
   .navbar.container.navbar-default {
     min-height: 110px;
   }
 }
-/* line 64, ../scss/_overrides.scss */
+/* line 68, ../scss/_overrides.scss */
 .navbar.container.navbar-default .navbar-collapse, .navbar.container.navbar-default .navbar-header {
   padding: 0;
   border: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 64, ../scss/_overrides.scss */
+  /* line 68, ../scss/_overrides.scss */
   .navbar.container.navbar-default .navbar-collapse, .navbar.container.navbar-default .navbar-header {
     margin-right: 0;
     margin-left: 0;
@@ -9634,7 +9639,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 74, ../scss/_overrides.scss */
+  /* line 78, ../scss/_overrides.scss */
   .region-navigation-collapsible {
     display: flex;
     flex-direction: column-reverse;
@@ -9644,23 +9649,23 @@ body {
   }
 }
 
-/* line 84, ../scss/_overrides.scss */
+/* line 88, ../scss/_overrides.scss */
 #block-prevsol-account-menu {
   background-color: #1D4767;
 }
 @media screen and (min-width: 768px) {
-  /* line 86, ../scss/_overrides.scss */
+  /* line 90, ../scss/_overrides.scss */
   #block-prevsol-account-menu .navbar-right {
     margin-right: 0;
   }
 }
-/* line 91, ../scss/_overrides.scss */
+/* line 95, ../scss/_overrides.scss */
 #block-prevsol-account-menu .navbar-right > li > a {
   color: #FFFFFF;
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
-  /* line 91, ../scss/_overrides.scss */
+  /* line 95, ../scss/_overrides.scss */
   #block-prevsol-account-menu .navbar-right > li > a {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -9668,81 +9673,87 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 105, ../scss/_overrides.scss */
+  /* line 109, ../scss/_overrides.scss */
   #block-prevsol-main-menu .navbar-nav > li {
     padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 }
-/* line 111, ../scss/_overrides.scss */
+/* line 115, ../scss/_overrides.scss */
 #block-prevsol-main-menu .navbar-nav > li > a {
   text-transform: uppercase;
   color: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
-  /* line 111, ../scss/_overrides.scss */
+  /* line 115, ../scss/_overrides.scss */
   #block-prevsol-main-menu .navbar-nav > li > a {
     font-weight: bold;
     padding: 0;
   }
-  /* line 117, ../scss/_overrides.scss */
+  /* line 121, ../scss/_overrides.scss */
   #block-prevsol-main-menu .navbar-nav > li > a:hover {
     color: #FFB500;
   }
-  /* line 121, ../scss/_overrides.scss */
+  /* line 125, ../scss/_overrides.scss */
   #block-prevsol-main-menu .navbar-nav > li > a.is-active {
     border-bottom: 2px solid #FFB500;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 132, ../scss/_overrides.scss */
+  /* line 136, ../scss/_overrides.scss */
   #block-prevsol-account-menu .navbar-nav,
   #block-prevsol-main-menu .navbar-nav {
     margin: 0;
   }
 }
 
-/* line 140, ../scss/_overrides.scss */
+/* line 145, ../scss/_overrides.scss */
+.lower-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 152, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
 }
 
-/* line 148, ../scss/_overrides.scss */
+/* line 159, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 156, ../scss/_overrides.scss */
+/* line 167, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 161, ../scss/_overrides.scss */
+/* line 172, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 167, ../scss/_overrides.scss */
+/* line 178, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 172, ../scss/_overrides.scss */
+/* line 183, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
 
-/* line 177, ../scss/_overrides.scss */
+/* line 188, ../scss/_overrides.scss */
 .container {
   max-width: 1170px;
 }

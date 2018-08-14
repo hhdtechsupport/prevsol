@@ -163,6 +163,16 @@
   </div>
 {% endblock %}
 
+{% if page.lower_section %}
+  {% block lower_section %}
+    <div class="lower-section-wrapper">
+      <footer class="lower-section {{ container }}" role="contentinfo">
+        {{ page.lower_section }}
+      </footer>
+    </div>
+  {% endblock %}
+{% endif %}
+
 {% if page.footer %}
   {% block footer %}
     <div class="footer-wrapper">
