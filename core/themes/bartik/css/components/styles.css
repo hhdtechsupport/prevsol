@@ -55,10 +55,6 @@ ul.sf-menu  li.sf-depth-2 {
   padding: 0 !important;
 }
 
-.path-frontpage .content {
-  margin: 0 5em;
-}
-
 .path-frontpage .node__links {
   display: none;
 }
