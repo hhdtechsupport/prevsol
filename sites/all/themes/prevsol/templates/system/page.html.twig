@@ -94,6 +94,16 @@
   {% endblock %}
 {% endif %}
 
+{% if page.highlighted_top %}
+  {% block highlighted_top %}
+    <div class="highlighted-top-wrapper">
+      <div class="highlighted-top {{ container }}" role="contentinfo">
+        {{ page.highlighted_top }}
+      </div>
+    </div>
+  {% endblock %}
+{% endif %}
+
 {# Main #}
 {% block main %}
   <div class="main-wrapper">
@@ -105,6 +115,15 @@
           {% block header %}
             <div class="col-sm-12" role="heading">
               {{ page.header }}
+            </div>
+          {% endblock %}
+        {% endif %}
+
+        {# Breadcrumb #}
+        {% if page.breadcrumb %}
+          {% block breadcrumb %}
+            <div class="col-sm-12" role="breadcrumb">
+              {{ page.breadcrumb }}
             </div>
           {% endblock %}
         {% endif %}
@@ -163,22 +182,79 @@
   </div>
 {% endblock %}
 
+<div class="featured-bottom-three-sections-wrapper">
+  <div class="featured-bottom-three-sections container">
+    {% if page.featured_bottom_first %}
+      {% block featured_bottom_first %}
+          <div class="featured-bottom-first col-md-4" role="contentinfo">
+            {{ page.featured_bottom_first }}
+          </div>
+      {% endblock %}
+    {% endif %}
+    {% if page.featured_bottom_second %}
+      {% block featured_bottom_second %}
+          <div class="featured-bottom-second col-md-4" role="contentinfo">
+            {{ page.featured_bottom_second }}
+          </div>
+      {% endblock %}
+    {% endif %}
+    {% if page.featured_bottom_third %}
+      {% block featured_bottom_third %}
+          <div class="featured-bottom-third col-md-4" role="contentinfo">
+            {{ page.featured_bottom_third }}
+          </div>
+      {% endblock %}
+    {% endif %}
+  </div>
+</div>
+
 {% if page.lower_section %}
   {% block lower_section %}
     <div class="lower-section-wrapper">
-      <footer class="lower-section {{ container }}" role="contentinfo">
+      <div class="lower-section {{ container }}" role="contentinfo">
         {{ page.lower_section }}
-      </footer>
+      </div>
     </div>
   {% endblock %}
 {% endif %}
 
-{% if page.footer %}
-  {% block footer %}
-    <div class="footer-wrapper">
-      <footer class="footer {{ container }}" role="contentinfo">
-        {{ page.footer }}
-      </footer>
-    </div>
-  {% endblock %}
-{% endif %}
+<div class="footer-wrapper">
+  <div class="footer-four-sections-wrapper container">
+    {% if page.footer_first %}
+      {% block footer_first %}
+          <div class="footer-first col-md-3" role="contentinfo">
+            {{ page.footer_first }}
+          </div>
+      {% endblock %}
+    {% endif %}
+    {% if page.footer_second %}
+      {% block footer_second %}
+          <div class="footer-second col-md-3" role="contentinfo">
+            {{ page.footer_second }}
+          </div>
+      {% endblock %}
+    {% endif %}
+    {% if page.footer_third %}
+      {% block footer_third %}
+          <div class="footer-thirdfooter_fourth col-md-3" role="contentinfo">
+            {{ page.footer_third }}
+          </div>
+      {% endblock %}
+    {% endif %}
+    {% if page.footer_fourth %}
+      {% block footer_fourth %}
+          <div class="footer-fourth col-md-3" role="contentinfo">
+            {{ page.footer_fourth }}
+          </div>
+      {% endblock %}
+    {% endif %}
+  </div>
+
+  {% if page.footer %}
+    {% block footer %}
+        <footer class="footer {{ container }}" role="contentinfo">
+          {{ page.footer }}
+        </footer>
+    {% endblock %}
+  {% endif %}
+</div>
