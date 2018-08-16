@@ -114,15 +114,18 @@ body {
     width: auto;
   }
   .sf-menu {
-    &>li {
+    & > li {
       @media #{$tablet} { 
         padding-left: 30px;
         padding-top: 15px;
         padding-bottom: 15px;
       }
-      &>a {
+      & > a {
         text-transform: uppercase;
         color: $white;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        font-family: $soleil;
         @media #{$tablet} {
           font-weight: bold;
           padding: 0;
@@ -140,6 +143,9 @@ body {
               & > a {
                 color: $white;
                 text-decoration: none;
+                font-size: 1.4rem;
+                line-height: 1.4rem;
+                font-family: $soleil;
                 &:hover {
                   color: $yellow;
                 }
@@ -185,8 +191,8 @@ body {
 #block-followusfooter {
   h2.block-title {
     color: $white;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
     font-family: $soleil;
     margin: 0;
   }
@@ -219,8 +225,8 @@ body {
       padding-bottom: 1.5rem;
       a {
         color: $white;
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
         font-family: $soleil;
         padding: 0;
         margin: 0;
@@ -298,4 +304,8 @@ p:last-child,
       padding-bottom: 6rem;
     }
   }
+}
+
+ul.sf-menu .sf-sub-indicator {
+  display: none;
 }
