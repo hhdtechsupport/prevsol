@@ -13,6 +13,115 @@
 // Set the proper directory for the Bootstrap Glyphicon font.
 $icon-font-path: '../bootstrap/assets/fonts/bootstrap/';
 
+// Typography
+// -------------------------
+
+@font-face {
+  font-family: 'soleilbold_italic';
+  src: url('../fonts/soleil/soleil-bolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleil-bolditalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleilbook_italic';
+  src: url('../fonts/soleil/soleilbk-italic-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleilbk-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleillight_italic';
+  src: url('../fonts/soleil/soleillt-italic-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleillt-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleillight';
+  src: url('../fonts/soleil/soleillt-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleillt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleilsemibold_italic';
+  src: url('../fonts/soleil/soleilsb-italic-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleilsb-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleilsemibold';
+  src: url('../fonts/soleil/soleilsb-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleilsb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleilextrabold_italic';
+  src: url('../fonts/soleil/soleilxb-italic-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleilxb-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleilextrabold';
+  src: url('../fonts/soleil/soleilxb-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleilxb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleilregular';
+  src: url('../fonts/soleil/soleil-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleil-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleilbold';
+  src: url('../fonts/soleil/soleil-bold-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleil-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleilitalic';
+  src: url('../fonts/soleil/soleil-italic-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleil-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soleilbook';
+  src: url('../fonts/soleil/soleilbk-webfont.woff2') format('woff2'),
+  url('../fonts/soleil/soleilbk-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+$font-family-sans-serif:  "Soleil", sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
+$soleil: 'soleilregular';
+$soleil-light: 'soleillight';
+$soleil-bold: 'soleilbold';
+
 // Colors
 $white: #FFFFFF;
 $edc-blue: #27628E;

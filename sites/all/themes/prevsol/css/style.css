@@ -10,6 +10,78 @@
  * You can copy existing variables directly from the following file:
  * ./THEMENAME/bootstrap/assets/stylesheets/bootstrap/_variables.scss
  */
+@font-face {
+  font-family: 'soleilbold_italic';
+  src: url("../fonts/soleil/soleil-bolditalic-webfont.woff2") format("woff2"), url("../fonts/soleil/soleil-bolditalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleilbook_italic';
+  src: url("../fonts/soleil/soleilbk-italic-webfont.woff2") format("woff2"), url("../fonts/soleil/soleilbk-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleillight_italic';
+  src: url("../fonts/soleil/soleillt-italic-webfont.woff2") format("woff2"), url("../fonts/soleil/soleillt-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleillight';
+  src: url("../fonts/soleil/soleillt-webfont.woff2") format("woff2"), url("../fonts/soleil/soleillt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleilsemibold_italic';
+  src: url("../fonts/soleil/soleilsb-italic-webfont.woff2") format("woff2"), url("../fonts/soleil/soleilsb-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleilsemibold';
+  src: url("../fonts/soleil/soleilsb-webfont.woff2") format("woff2"), url("../fonts/soleil/soleilsb-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleilextrabold_italic';
+  src: url("../fonts/soleil/soleilxb-italic-webfont.woff2") format("woff2"), url("../fonts/soleil/soleilxb-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleilextrabold';
+  src: url("../fonts/soleil/soleilxb-webfont.woff2") format("woff2"), url("../fonts/soleil/soleilxb-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleilregular';
+  src: url("../fonts/soleil/soleil-webfont.woff2") format("woff2"), url("../fonts/soleil/soleil-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleilbold';
+  src: url("../fonts/soleil/soleil-bold-webfont.woff2") format("woff2"), url("../fonts/soleil/soleil-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleilitalic';
+  src: url("../fonts/soleil/soleil-italic-webfont.woff2") format("woff2"), url("../fonts/soleil/soleil-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soleilbook';
+  src: url("../fonts/soleil/soleilbk-webfont.woff2") format("woff2"), url("../fonts/soleil/soleilbk-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1728,7 +1800,7 @@ html {
 
 /* line 27, ../bootstrap/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Soleil", sans-serif;
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -2297,7 +2369,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 
 /* line 15, ../bootstrap/assets/stylesheets/bootstrap/_code.scss */
@@ -7888,7 +7960,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Soleil", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -8026,7 +8098,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Soleil", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -9529,7 +9601,7 @@ body.toolbar-loading.toolbar {
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   color: inherit;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Soleil", sans-serif;
   font-size: 14px;
   list-style: none;
   min-width: 160px;
@@ -9576,62 +9648,63 @@ ol, ul {
 /* line 28, ../scss/_overrides.scss */
 body {
   margin: 0;
+  font-family: "Soleil", sans-serif;
 }
 
-/* line 33, ../scss/_overrides.scss */
+/* line 34, ../scss/_overrides.scss */
 .main-wrapper {
   margin: 0 auto;
 }
 
-/* line 37, ../scss/_overrides.scss */
+/* line 38, ../scss/_overrides.scss */
 .header-wrapper {
   background-color: #27628E;
 }
 
-/* line 41, ../scss/_overrides.scss */
+/* line 42, ../scss/_overrides.scss */
 .main-wrapper {
   background-color: #FFFFFF;
 }
 
-/* line 45, ../scss/_overrides.scss */
+/* line 46, ../scss/_overrides.scss */
 .lower-section-wrapper {
   background-color: #F2F2F2;
 }
 
-/* line 49, ../scss/_overrides.scss */
+/* line 50, ../scss/_overrides.scss */
 .footer-wrapper {
   background-color: #27628E;
 }
 
-/* line 54, ../scss/_overrides.scss */
+/* line 55, ../scss/_overrides.scss */
 .page-header {
   margin-top: 0;
 }
 
-/* line 58, ../scss/_overrides.scss */
+/* line 59, ../scss/_overrides.scss */
 .navbar.container {
   max-width: 1170px;
 }
 
-/* line 61, ../scss/_overrides.scss */
+/* line 62, ../scss/_overrides.scss */
 .navbar.container.navbar-default {
   background-color: transparent;
   padding: 0;
   border: 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 61, ../scss/_overrides.scss */
+  /* line 62, ../scss/_overrides.scss */
   .navbar.container.navbar-default {
     min-height: 110px;
   }
 }
-/* line 68, ../scss/_overrides.scss */
+/* line 69, ../scss/_overrides.scss */
 .navbar.container.navbar-default .navbar-collapse, .navbar.container.navbar-default .navbar-header {
   padding: 0;
   border: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 68, ../scss/_overrides.scss */
+  /* line 69, ../scss/_overrides.scss */
   .navbar.container.navbar-default .navbar-collapse, .navbar.container.navbar-default .navbar-header {
     margin-right: 0;
     margin-left: 0;
@@ -9639,7 +9712,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 78, ../scss/_overrides.scss */
+  /* line 79, ../scss/_overrides.scss */
   .region-navigation-collapsible {
     display: flex;
     flex-direction: column-reverse;
@@ -9649,129 +9722,227 @@ body {
   }
 }
 
-/* line 88, ../scss/_overrides.scss */
+/* line 89, ../scss/_overrides.scss */
 #block-prevsol-account-menu {
   background-color: #1D4767;
 }
 @media screen and (min-width: 768px) {
-  /* line 90, ../scss/_overrides.scss */
+  /* line 91, ../scss/_overrides.scss */
   #block-prevsol-account-menu .navbar-right {
     margin-right: 0;
   }
 }
-/* line 95, ../scss/_overrides.scss */
+/* line 96, ../scss/_overrides.scss */
 #block-prevsol-account-menu .navbar-right > li > a {
   color: #FFFFFF;
   text-transform: uppercase;
+  font-family: "soleillight";
+  font-weight: normal;
+  font-size: 1.2rem;
+  font-height: 1.2rem;
 }
 @media screen and (min-width: 768px) {
-  /* line 95, ../scss/_overrides.scss */
+  /* line 96, ../scss/_overrides.scss */
   #block-prevsol-account-menu .navbar-right > li > a {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
 
-/* line 108, ../scss/_overrides.scss */
+/* line 113, ../scss/_overrides.scss */
 #block-prevsol-mainnavigation.block-superfish {
   width: auto;
 }
 @media screen and (min-width: 768px) {
-  /* line 112, ../scss/_overrides.scss */
+  /* line 117, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li {
     padding-left: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 }
-/* line 118, ../scss/_overrides.scss */
+/* line 123, ../scss/_overrides.scss */
 #block-prevsol-mainnavigation .sf-menu > li > a {
   text-transform: uppercase;
   color: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
-  /* line 118, ../scss/_overrides.scss */
+  /* line 123, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a {
     font-weight: bold;
     padding: 0;
   }
-  /* line 124, ../scss/_overrides.scss */
+  /* line 129, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a:hover {
     color: #FFB500;
     text-decoration: none;
   }
-  /* line 129, ../scss/_overrides.scss */
+  /* line 134, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a.is-active {
     border-bottom: 2px solid #FFB500;
   }
-  /* line 132, ../scss/_overrides.scss */
+  /* line 137, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a.sf-with-ul + ul {
     background-color: #1D4767;
   }
-  /* line 135, ../scss/_overrides.scss */
+  /* line 140, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a.sf-with-ul + ul > li > a {
     color: #FFFFFF;
     text-decoration: none;
   }
-  /* line 138, ../scss/_overrides.scss */
+  /* line 143, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a.sf-with-ul + ul > li > a:hover {
     color: #FFB500;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 152, ../scss/_overrides.scss */
+  /* line 157, ../scss/_overrides.scss */
   #block-prevsol-account-menu .navbar-nav,
   #block-prevsol-mainnavigation .navbar-nav {
     margin: 0;
   }
 }
 
-/* line 161, ../scss/_overrides.scss */
+/* line 166, ../scss/_overrides.scss */
 .lower-section {
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 168, ../scss/_overrides.scss */
+/* line 173, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
 }
 
-/* line 175, ../scss/_overrides.scss */
+/* line 180, ../scss/_overrides.scss */
+.block.block-block-content span.ext {
+  display: none;
+}
+
+/* line 186, ../scss/_overrides.scss */
+#block-followusfooter h2.block-title {
+  color: #FFFFFF;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: "soleilregular";
+  margin: 0;
+}
+/* line 193, ../scss/_overrides.scss */
+#block-followusfooter .field--name-body {
+  padding-top: 2rem;
+}
+/* line 196, ../scss/_overrides.scss */
+#block-followusfooter i.fab {
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+/* line 203, ../scss/_overrides.scss */
+.footer-four-sections-wrapper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* line 208, ../scss/_overrides.scss */
+#block-prevsol-footer {
+  margin: 0;
+  padding: 0;
+}
+/* line 211, ../scss/_overrides.scss */
+#block-prevsol-footer .menu--footer.nav {
+  margin: 0;
+  padding: 0;
+}
+/* line 214, ../scss/_overrides.scss */
+#block-prevsol-footer .menu--footer.nav li {
+  background-color: transparent;
+  padding-bottom: 1.5rem;
+}
+/* line 216, ../scss/_overrides.scss */
+#block-prevsol-footer .menu--footer.nav li:hover {
+  background-color: transparent;
+}
+/* line 220, ../scss/_overrides.scss */
+#block-prevsol-footer .menu--footer.nav li a {
+  color: #FFFFFF;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: "soleilregular";
+  padding: 0;
+  margin: 0;
+}
+/* line 227, ../scss/_overrides.scss */
+#block-prevsol-footer .menu--footer.nav li a:hover {
+  background-color: transparent;
+}
+
+/* line 237, ../scss/_overrides.scss */
+#block-prevsol-copyright .field--name-body p {
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  font-family: "soleillight";
+}
+
+/* line 246, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 183, ../scss/_overrides.scss */
+/* line 254, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 188, ../scss/_overrides.scss */
+/* line 259, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 194, ../scss/_overrides.scss */
+/* line 265, ../scss/_overrides.scss */
 .help-block, .control-group .help-inline {
   color: #777777;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 199, ../scss/_overrides.scss */
+/* line 270, ../scss/_overrides.scss */
 .help-block:first-child, .control-group .help-inline:first-child {
   margin-top: 0;
 }
 
-/* line 204, ../scss/_overrides.scss */
+/* line 275, ../scss/_overrides.scss */
 .container {
   max-width: 1170px;
+}
+
+/* line 279, ../scss/_overrides.scss */
+.featured-bottom-three-sections-wrapper {
+  background-color: #F2F2F2;
+  margin-bottom: 8rem;
+}
+/* line 282, ../scss/_overrides.scss */
+.featured-bottom-three-sections-wrapper .featured-bottom-three-sections {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* line 288, ../scss/_overrides.scss */
+.well.region-sidebar-second {
+  background-color: #FFFFFF;
+  border: 0;
+  border-left: 1px solid #F2F2F2;
+}
+
+/* line 296, ../scss/_overrides.scss */
+.main-container > .row > section.col-sm-9 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }

@@ -27,6 +27,7 @@ ol, ul {
 
 body {
   margin: 0;
+  font-family: $font-family-base;
 }
 
 // Wrappers
@@ -95,9 +96,13 @@ body {
       & > a {
         color: $white;
         text-transform: uppercase;
+        font-family: $soleil-light;
+        font-weight: normal;
+        font-size: 1.2rem;
+        font-height: 1.2rem;
         @media #{$tablet} {
-          padding-top: 5px;
-          padding-bottom: 5px;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
         }
       }
     }
@@ -171,6 +176,72 @@ body {
   padding-bottom: 36px;
 }
 
+.block.block-block-content {
+  span.ext {
+    display: none;
+  }
+}
+
+#block-followusfooter {
+  h2.block-title {
+    color: $white;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: $soleil;
+    margin: 0;
+  }
+  .field--name-body {
+    padding-top: 2rem;
+  }
+  i.fab {
+    color: $white;
+    font-size: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+.footer-four-sections-wrapper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#block-prevsol-footer {
+  margin: 0;
+  padding: 0;
+  .menu--footer.nav {
+    margin: 0;
+    padding: 0;
+    li {
+      background-color: transparent;
+      &:hover {
+        background-color: transparent;
+      }
+      padding-bottom: 1.5rem;
+      a {
+        color: $white;
+        font-size: 2rem;
+        line-height: 2rem;
+        font-family: $soleil;
+        padding: 0;
+        margin: 0;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+#block-prevsol-copyright {
+  .field--name-body {
+    p {
+      font-size: 1.2rem;
+      color: $white;
+      font-family: $soleil-light;
+    }
+  }
+}
+
 // Paragraphs.
 p:last-child,
 .form-group:last-child,
@@ -203,4 +274,28 @@ p:last-child,
 
 .container {
   max-width: 1170px;
+}
+
+.featured-bottom-three-sections-wrapper {
+  background-color: $light-gray;
+  margin-bottom: 8rem;
+  .featured-bottom-three-sections {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.well.region-sidebar-second {
+  background-color: $white;
+  border: 0;
+  border-left: 1px solid $light-gray;
+}
+
+.main-container {
+  & > .row {
+    & > section.col-sm-9 {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
 }
