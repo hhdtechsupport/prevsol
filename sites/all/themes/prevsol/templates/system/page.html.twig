@@ -108,12 +108,12 @@
 {% block main %}
   <div class="main-wrapper">
     <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-      <div class="row">
 
+      <div class="row row-first">
         {# Header #}
         {% if page.header %}
           {% block header %}
-            <div class="col-sm-12" role="heading">
+            <div class="page-heading-section col-sm-12" role="heading">
               {{ page.header }}
             </div>
           {% endblock %}
@@ -122,16 +122,19 @@
         {# Breadcrumb #}
         {% if page.breadcrumb %}
           {% block breadcrumb %}
-            <div class="col-sm-12" role="breadcrumb">
+            <div class="page-breadcrumb-section col-sm-12" role="breadcrumb">
               {{ page.breadcrumb }}
             </div>
           {% endblock %}
         {% endif %}
+      </div>
+
+      <div class="row row-second">
 
         {# Sidebar First #}
         {% if page.sidebar_first %}
           {% block sidebar_first %}
-            <aside class="col-sm-3" role="complementary">
+            <aside class="page-first-sidebar-section col-sm-4" role="complementary">
               {{ page.sidebar_first }}
             </aside>
           {% endblock %}
@@ -140,9 +143,10 @@
         {# Content #}
         {%
           set content_classes = [
-            page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-            page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-            page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+            'section-content',
+            page.sidebar_first and page.sidebar_second ? 'col-sm-4',
+            page.sidebar_first and page.sidebar_second is empty ? 'col-sm-8 has-first-sidebar',
+            page.sidebar_second and page.sidebar_first is empty ? 'col-sm-8 has-second-sidebar',
             page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
           ]
         %}
@@ -172,7 +176,7 @@
         {# Sidebar Second #}
         {% if page.sidebar_second %}
           {% block sidebar_second %}
-            <aside class="col-sm-3" role="complementary">
+            <aside class="page-second-sidebar-section col-sm-4" role="complementary">
               {{ page.sidebar_second }}
             </aside>
           {% endblock %}
@@ -182,31 +186,33 @@
   </div>
 {% endblock %}
 
-<div class="featured-bottom-three-sections-wrapper">
-  <div class="featured-bottom-three-sections container">
-    {% if page.featured_bottom_first %}
-      {% block featured_bottom_first %}
-          <div class="featured-bottom-first col-md-4" role="contentinfo">
-            {{ page.featured_bottom_first }}
-          </div>
-      {% endblock %}
-    {% endif %}
-    {% if page.featured_bottom_second %}
-      {% block featured_bottom_second %}
-          <div class="featured-bottom-second col-md-4" role="contentinfo">
-            {{ page.featured_bottom_second }}
-          </div>
-      {% endblock %}
-    {% endif %}
-    {% if page.featured_bottom_third %}
-      {% block featured_bottom_third %}
-          <div class="featured-bottom-third col-md-4" role="contentinfo">
-            {{ page.featured_bottom_third }}
-          </div>
-      {% endblock %}
-    {% endif %}
+{% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third   %}
+  <div class="featured-bottom-three-sections-wrapper">
+    <div class="featured-bottom-three-sections container">
+      {% if page.featured_bottom_first %}
+        {% block featured_bottom_first %}
+            <div class="featured-bottom-first" role="contentinfo">
+              {{ page.featured_bottom_first }}
+            </div>
+        {% endblock %}
+      {% endif %}
+      {% if page.featured_bottom_second %}
+        {% block featured_bottom_second %}
+            <div class="featured-bottom-second" role="contentinfo">
+              {{ page.featured_bottom_second }}
+            </div>
+        {% endblock %}
+      {% endif %}
+      {% if page.featured_bottom_third %}
+        {% block featured_bottom_third %}
+            <div class="featured-bottom-third" role="contentinfo">
+              {{ page.featured_bottom_third }}
+            </div>
+        {% endblock %}
+      {% endif %}
+    </div>
   </div>
-</div>
+{% endif %}
 
 {% if page.lower_section %}
   {% block lower_section %}
@@ -222,28 +228,28 @@
   <div class="footer-four-sections-wrapper container">
     {% if page.footer_first %}
       {% block footer_first %}
-          <div class="footer-first col-md-3" role="contentinfo">
+          <div class="footer-first col-md-3 col-sm-12" role="contentinfo">
             {{ page.footer_first }}
           </div>
       {% endblock %}
     {% endif %}
     {% if page.footer_second %}
       {% block footer_second %}
-          <div class="footer-second col-md-3" role="contentinfo">
+          <div class="footer-second col-md-3 col-sm-12" role="contentinfo">
             {{ page.footer_second }}
           </div>
       {% endblock %}
     {% endif %}
     {% if page.footer_third %}
       {% block footer_third %}
-          <div class="footer-thirdfooter_fourth col-md-3" role="contentinfo">
+          <div class="footer-thirdfooter_fourth col-md-3 col-sm-12" role="contentinfo">
             {{ page.footer_third }}
           </div>
       {% endblock %}
     {% endif %}
     {% if page.footer_fourth %}
       {% block footer_fourth %}
-          <div class="footer-fourth col-md-3" role="contentinfo">
+          <div class="footer-fourth col-md-3 col-sm-12" role="contentinfo">
             {{ page.footer_fourth }}
           </div>
       {% endblock %}

@@ -18,6 +18,34 @@
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
 
+// Footer always on the bottom
+html,
+body,
+.site-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.dialog-off-canvas-main-canvas {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.main-wrapper {
+  flex-grow: 1;
+}
+
+.header-wrapper,
+.main-wrapper,
+.featured-bottom-three-sections-wrapper,
+.footer-wrapper {
+  flex-shrink: 0;
+}
+
+// Other styles
+
 ol, ul {
   padding-left: 1.5em;
   .popover &:last-child {
@@ -64,7 +92,13 @@ body {
   padding: 0;
   border: 0;
   @media #{$tablet} {
-    min-height: 110px;
+    min-height: 160px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    &::after, &::before {
+      display: none;
+    }
   }
   .navbar-collapse, .navbar-header {
     padding: 0;
@@ -73,6 +107,15 @@ body {
       margin-right: 0;
       margin-left: 0;
     }
+    @media #{$tablet} {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .navbar-header {
+    align-self: center;
   }
 }
 
@@ -82,7 +125,11 @@ body {
     flex-direction: column-reverse;
     align-items: flex-end;
     justify-content: space-between;
-    min-height: 110px;
+    height: 100%;
+    &::after,
+    &::before {
+      display: none;
+    }
   }
 }
 
@@ -93,6 +140,11 @@ body {
       margin-right: 0;
     }
     & > li {
+      &.active {
+        a {
+          background-color: transparent;
+        }
+      }
       & > a {
         color: $white;
         text-transform: uppercase;
@@ -103,6 +155,9 @@ body {
         @media #{$tablet} {
           padding-top: 1rem;
           padding-bottom: 1rem;
+        }
+        &:hover {
+          color: $yellow;
         }
       }
     }
@@ -116,15 +171,15 @@ body {
   .sf-menu {
     & > li {
       @media #{$tablet} { 
-        padding-left: 30px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-left: 3rem;
+        padding-top: 0;
+        padding-bottom: 3rem;
       }
       & > a {
         text-transform: uppercase;
         color: $white;
-        font-size: 1.6rem;
-        line-height: 1.6rem;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
         font-family: $soleil;
         @media #{$tablet} {
           font-weight: bold;
@@ -168,7 +223,6 @@ body {
 }
 
 // Lower Section.
-
 .lower-section {
   margin-top: 20px;
   padding-top: 20px;
@@ -209,6 +263,21 @@ body {
 .footer-four-sections-wrapper {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  @media #{$tablet} {
+    &.container {
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      flex-wrap: wrap;
+      .col-md-3 {
+        padding: 0;
+        flex: 1 0 205px;
+      }
+    }
+  }
+  .col-sm-12 {
+    margin-bottom: 3rem;
+  }
 }
 
 #block-prevsol-footer {
@@ -286,24 +355,176 @@ p:last-child,
   background-color: $light-gray;
   margin-bottom: 8rem;
   .featured-bottom-three-sections {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding: 6rem 0;
+    @media #{$tablet} {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+    .featured-bottom-first,
+    .featured-bottom-second,
+    .featured-bottom-third {
+      @media #{$tablet} {
+        max-width: 365px;
+        flex: 1 0 250px;
+      }
+      @media #{$mobile} {
+        padding: 0 15px 2rem 15px;
+      }
+      figure.align-center {
+        position: relative;
+        margin-bottom: 2rem;
+        &:hover::after {
+          background-color: $darker-blue;
+          opacity: 0.7;
+          content: "";
+          display: flex;
+          z-index: 999;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+        }
+        img {
+          width: 100%;
+        }
+        figcaption {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-color: $edc-blue;
+          opacity: 0.8;
+          padding: 1rem 1rem;
+          width: 100%;
+          font-family: $soleil;
+          font-size: 2.4rem;
+          color: $white;
+          text-transform: uppercase;
+        }
+      }
+      p {
+        font-family: $soleil;
+        font-size: 1.8rem;
+      }
+    }
   }
 }
 
 .well.region-sidebar-second {
   background-color: $white;
   border: 0;
-  border-left: 1px solid $light-gray;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  h2.block-title {
+    margin: 0;
+    padding: 0;
+    font-size: 3.6rem;
+    color: $edc-blue;
+    font-family: $soleil;
+    margin-bottom: 2rem;
+  }
+  .view-what-s-new {
+    .views-row {
+      font-family: $soleil;
+      color: $dark-gray;
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      .views-field-type, .views-field-created {
+        text-transform: uppercase;
+      }
+      .views-field-title {
+        font-size: 2rem;
+        a {
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+}
+
+.row-second {
+  @media #{$tablet} {
+    display: flex;
+    .section-content.col-sm-8 {
+      &.has-second-sidebar {
+        padding-right: 3rem;
+      }
+    }
+  }
+  @media #{$mobile} {
+    .section-content.col-sm-8 {
+      &.has-second-sidebar {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 3rem;
+      }
+    }
+  }
 }
 
 .main-container {
-  & > .row {
-    & > section.col-sm-9 {
-      padding-top: 6rem;
-      padding-bottom: 6rem;
+  @media #{$tablet} {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .section-content {
+    margin: 0;
+    padding: 0;
+  }
+  h1.page-header {
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left: 6px solid $yellow;
+    border-bottom: 0;
+    span {
+      font-family: $soleil-bold;
+      font-size: 5.4rem;
+      text-transform: uppercase;
+      color: $edc-blue;
     }
   }
+  article.page {
+    .field--name-body {
+      p {
+        font-family: $soleil-light;
+        font-size: 2.8rem;
+        color: $dark-gray;
+      }
+    }
+  }
+  .block-views-blockquotes-block-2 {
+    margin-top: 3rem;
+    .views-field-body {
+      p {
+        span {
+          font-family: $soleil-semibold-italic;
+          font-size: 2.2rem;
+          color: $edc-blue;
+        }
+      }
+    }
+    .views-field-field-source {
+      font-family: $soleil;
+      font-size: 1.8rem;
+      color: $dark-gray;
+    }
+  }
+}
+
+.page-second-sidebar-section {
+  @media #{$tablet} {
+    border-left: 1px solid $light-gray;
+    padding: 0 3rem;
+  }
+
 }
 
 ul.sf-menu .sf-sub-indicator {
