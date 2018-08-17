@@ -10123,19 +10123,25 @@ p:last-child,
   }
 }
 
+/* line 463, ../scss/_overrides.scss */
+body.path-front .main-container h1.page-header span {
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+}
+
 @media screen and (min-width: 768px) {
-  /* line 460, ../scss/_overrides.scss */
+  /* line 471, ../scss/_overrides.scss */
   .main-container {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
-/* line 465, ../scss/_overrides.scss */
+/* line 476, ../scss/_overrides.scss */
 .main-container .section-content {
   margin: 0;
   padding: 0;
 }
-/* line 469, ../scss/_overrides.scss */
+/* line 480, ../scss/_overrides.scss */
 .main-container h1.page-header {
   padding-left: 1rem;
   padding-top: 0;
@@ -10143,30 +10149,32 @@ p:last-child,
   border-left: 6px solid #FFB500;
   border-bottom: 0;
 }
-/* line 475, ../scss/_overrides.scss */
+/* line 486, ../scss/_overrides.scss */
 .main-container h1.page-header span {
   font-family: "soleilbold";
-  font-size: 3.6rem;
+  font-size: 5.4rem;
+  line-height: 5.8rem;
   text-transform: uppercase;
   color: #27628E;
 }
-/* line 484, ../scss/_overrides.scss */
+/* line 496, ../scss/_overrides.scss */
 .main-container article.page .field--name-body p {
   font-family: "soleillight";
   font-size: 2.8rem;
+  line-height: 4.5rem;
   color: #333333;
 }
-/* line 491, ../scss/_overrides.scss */
+/* line 504, ../scss/_overrides.scss */
 .main-container .block-views-blockquotes-block-2 {
   margin-top: 3rem;
 }
-/* line 495, ../scss/_overrides.scss */
+/* line 508, ../scss/_overrides.scss */
 .main-container .block-views-blockquotes-block-2 .views-field-body p span {
   font-family: "soleilsemibold_italic";
   font-size: 2.2rem;
   color: #27628E;
 }
-/* line 502, ../scss/_overrides.scss */
+/* line 515, ../scss/_overrides.scss */
 .main-container .block-views-blockquotes-block-2 .views-field-field-source {
   font-family: "soleilregular";
   font-size: 1.8rem;
@@ -10174,30 +10182,30 @@ p:last-child,
 }
 
 @media screen and (min-width: 768px) {
-  /* line 511, ../scss/_overrides.scss */
+  /* line 524, ../scss/_overrides.scss */
   body.path-frontpage .page-second-sidebar-section {
     border-left: 1px solid #F2F2F2;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 518, ../scss/_overrides.scss */
+  /* line 531, ../scss/_overrides.scss */
   .page-second-sidebar-section {
     padding: 0 0 0 3rem;
   }
 }
 
-/* line 524, ../scss/_overrides.scss */
+/* line 537, ../scss/_overrides.scss */
 ul.sf-menu .sf-sub-indicator {
   display: none;
 }
 
-/* line 528, ../scss/_overrides.scss */
+/* line 541, ../scss/_overrides.scss */
 figure.align-center {
   position: relative;
   margin-bottom: 2rem;
 }
-/* line 531, ../scss/_overrides.scss */
+/* line 544, ../scss/_overrides.scss */
 figure.align-center:hover::after {
   background-color: #1D4767;
   opacity: 0.7;
@@ -10211,11 +10219,11 @@ figure.align-center:hover::after {
   height: 100%;
   pointer-events: none;
 }
-/* line 544, ../scss/_overrides.scss */
+/* line 557, ../scss/_overrides.scss */
 figure.align-center img {
   width: 100%;
 }
-/* line 547, ../scss/_overrides.scss */
+/* line 560, ../scss/_overrides.scss */
 figure.align-center figcaption {
   position: absolute;
   bottom: 0;
@@ -10229,7 +10237,7 @@ figure.align-center figcaption {
   color: #FFFFFF;
   text-transform: uppercase;
 }
-/* line 559, ../scss/_overrides.scss */
+/* line 572, ../scss/_overrides.scss */
 figure.align-center figcaption::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10240,11 +10248,11 @@ figure.align-center figcaption::after {
   text-decoration: none;
 }
 
-/* line 575, ../scss/_overrides.scss */
+/* line 588, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row > .views-row:first-of-type {
   border-top: 2px solid #E5E5E5;
 }
-/* line 580, ../scss/_overrides.scss */
+/* line 593, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header {
   border: 0;
   padding: 1rem 0;
@@ -10252,22 +10260,22 @@ figure.align-center figcaption::after {
   outline: none;
   border-bottom: 2px solid #E5E5E5;
 }
-/* line 586, ../scss/_overrides.scss */
+/* line 599, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed {
   background: transparent;
 }
-/* line 588, ../scss/_overrides.scss */
+/* line 601, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed .ui-accordion-header-icon.ui-icon {
   display: none;
 }
-/* line 591, ../scss/_overrides.scss */
+/* line 604, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed .field-content a {
   font-family: "soleilbold";
   font-weight: bold;
   font-size: 3.6rem;
   color: #333333;
 }
-/* line 596, ../scss/_overrides.scss */
+/* line 609, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed .field-content a::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10277,23 +10285,23 @@ figure.align-center figcaption::after {
   margin: 0px 10px 0px 0;
   text-decoration: none;
 }
-/* line 607, ../scss/_overrides.scss */
+/* line 620, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active {
   background: transparent;
   outline: none;
 }
-/* line 610, ../scss/_overrides.scss */
+/* line 623, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active .ui-accordion-header-icon.ui-icon {
   display: none;
 }
-/* line 613, ../scss/_overrides.scss */
+/* line 626, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active .field-content a {
   color: #333333;
   font-family: "soleilbold";
   font-weight: bold;
   font-size: 3.6rem;
 }
-/* line 618, ../scss/_overrides.scss */
+/* line 631, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active .field-content a::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10303,13 +10311,13 @@ figure.align-center figcaption::after {
   margin: 0px 10px 0px 0;
   text-decoration: none;
 }
-/* line 629, ../scss/_overrides.scss */
+/* line 642, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header .field-content {
   color: #333333;
   font-size: 2rem;
   font-family: "soleilregular";
 }
-/* line 636, ../scss/_overrides.scss */
+/* line 649, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active {
   background-color: transparent;
   border: 0;
@@ -10317,13 +10325,13 @@ figure.align-center figcaption::after {
   font-size: 2.4rem;
   font-family: "soleilregular";
 }
-/* line 642, ../scss/_overrides.scss */
+/* line 655, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active p {
   font-size: 2.4rem;
   font-family: "soleilregular";
 }
 @media screen and (min-width: 768px) {
-  /* line 636, ../scss/_overrides.scss */
+  /* line 649, ../scss/_overrides.scss */
   #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active {
     padding: 1.4rem 0;
   }
