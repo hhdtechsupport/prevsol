@@ -80,6 +80,23 @@ body {
 }
 
 // Page header.
+
+.path-frontpage {
+  .header-wrapper {
+    &::after {
+      background-image: url("../images/homepage-header.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: "";
+      width: 100vw;
+      height: 40vw;
+      position: relative;
+      bottom: 0;
+      display: block;
+    }
+  }
+}
+
 .page-header {
   margin-top: 0;
 }
