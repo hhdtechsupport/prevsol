@@ -3892,7 +3892,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555;
+  color: #E5E5E5;
 }
 
 /* line 114, ../bootstrap/assets/stylesheets/bootstrap/_forms.scss */
@@ -3903,7 +3903,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555;
+  color: #E5E5E5;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -5403,7 +5403,7 @@ tbody.collapse.in {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #E5E5E5;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #ccc;
@@ -5576,7 +5576,7 @@ tbody.collapse.in {
 }
 /* line 96, ../bootstrap/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #E5E5E5;
   background-color: #fff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
@@ -10061,16 +10061,139 @@ p:last-child,
   }
 }
 /* line 396, ../scss/_overrides.scss */
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first figure.align-center,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second figure.align-center,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third figure.align-center {
+.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first p,
+.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second p,
+.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third p {
+  font-family: "soleilregular";
+  font-size: 1.8rem;
+}
+
+/* line 404, ../scss/_overrides.scss */
+.well.region-sidebar-second {
+  background-color: #FFFFFF;
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 410, ../scss/_overrides.scss */
+.well.region-sidebar-second h2.block-title {
+  margin: 0;
+  padding: 0;
+  font-size: 3.6rem;
+  color: #27628E;
+  font-family: "soleilregular";
+  margin-bottom: 2rem;
+}
+/* line 419, ../scss/_overrides.scss */
+.well.region-sidebar-second .view-what-s-new .views-row {
+  font-family: "soleilregular";
+  color: #333333;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+/* line 424, ../scss/_overrides.scss */
+.well.region-sidebar-second .view-what-s-new .views-row .views-field-type, .well.region-sidebar-second .view-what-s-new .views-row .views-field-created {
+  text-transform: uppercase;
+}
+/* line 427, ../scss/_overrides.scss */
+.well.region-sidebar-second .view-what-s-new .views-row .views-field-title {
+  font-size: 2rem;
+}
+/* line 429, ../scss/_overrides.scss */
+.well.region-sidebar-second .view-what-s-new .views-row .views-field-title a {
+  color: #333333;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 437, ../scss/_overrides.scss */
+  .row-second {
+    display: flex;
+  }
+  /* line 441, ../scss/_overrides.scss */
+  .row-second .section-content.col-sm-8.has-second-sidebar {
+    padding-right: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 448, ../scss/_overrides.scss */
+  .row-second .section-content.col-sm-8.has-second-sidebar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* line 457, ../scss/_overrides.scss */
+  .main-container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+/* line 462, ../scss/_overrides.scss */
+.main-container .section-content {
+  margin: 0;
+  padding: 0;
+}
+/* line 466, ../scss/_overrides.scss */
+.main-container h1.page-header {
+  padding-left: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-left: 6px solid #FFB500;
+  border-bottom: 0;
+}
+/* line 472, ../scss/_overrides.scss */
+.main-container h1.page-header span {
+  font-family: "soleilbold";
+  font-size: 5.4rem;
+  text-transform: uppercase;
+  color: #27628E;
+}
+/* line 481, ../scss/_overrides.scss */
+.main-container article.page .field--name-body p {
+  font-family: "soleillight";
+  font-size: 2.8rem;
+  color: #333333;
+}
+/* line 488, ../scss/_overrides.scss */
+.main-container .block-views-blockquotes-block-2 {
+  margin-top: 3rem;
+}
+/* line 492, ../scss/_overrides.scss */
+.main-container .block-views-blockquotes-block-2 .views-field-body p span {
+  font-family: "soleilsemibold_italic";
+  font-size: 2.2rem;
+  color: #27628E;
+}
+/* line 499, ../scss/_overrides.scss */
+.main-container .block-views-blockquotes-block-2 .views-field-field-source {
+  font-family: "soleilregular";
+  font-size: 1.8rem;
+  color: #333333;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 507, ../scss/_overrides.scss */
+  .page-second-sidebar-section {
+    border-left: 1px solid #F2F2F2;
+    padding: 0 3rem;
+  }
+}
+
+/* line 515, ../scss/_overrides.scss */
+ul.sf-menu .sf-sub-indicator {
+  display: none;
+}
+
+/* line 519, ../scss/_overrides.scss */
+figure.align-center {
   position: relative;
   margin-bottom: 2rem;
 }
-/* line 399, ../scss/_overrides.scss */
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first figure.align-center:hover::after,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second figure.align-center:hover::after,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third figure.align-center:hover::after {
+/* line 522, ../scss/_overrides.scss */
+figure.align-center:hover::after {
   background-color: #1D4767;
   opacity: 0.7;
   content: "";
@@ -10083,16 +10206,12 @@ p:last-child,
   height: 100%;
   pointer-events: none;
 }
-/* line 412, ../scss/_overrides.scss */
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first figure.align-center img,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second figure.align-center img,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third figure.align-center img {
+/* line 535, ../scss/_overrides.scss */
+figure.align-center img {
   width: 100%;
 }
-/* line 415, ../scss/_overrides.scss */
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first figure.align-center figcaption,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second figure.align-center figcaption,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third figure.align-center figcaption {
+/* line 538, ../scss/_overrides.scss */
+figure.align-center figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -10105,10 +10224,8 @@ p:last-child,
   color: #FFFFFF;
   text-transform: uppercase;
 }
-/* line 427, ../scss/_overrides.scss */
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first figure.align-center figcaption::after,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second figure.align-center figcaption::after,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third figure.align-center figcaption::after {
+/* line 550, ../scss/_overrides.scss */
+figure.align-center figcaption::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f0a9";
@@ -10117,129 +10234,74 @@ p:last-child,
   margin: 0px 0px 0px 10px;
   text-decoration: none;
 }
-/* line 438, ../scss/_overrides.scss */
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first p,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second p,
-.featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third p {
-  font-family: "soleilregular";
-  font-size: 1.8rem;
-}
 
-/* line 446, ../scss/_overrides.scss */
-.well.region-sidebar-second {
-  background-color: #FFFFFF;
+/* line 565, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row > .views-row {
+  overflow: hidden;
+}
+/* line 566, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row > .views-row:first-of-type {
+  border-top: 2px solid #E5E5E5;
+}
+/* line 572, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header {
   border: 0;
-  box-shadow: none;
+  padding: 1rem 0;
   margin: 0;
-  padding: 0;
+  outline: none;
+  border-bottom: 2px solid #E5E5E5;
 }
-/* line 452, ../scss/_overrides.scss */
-.well.region-sidebar-second h2.block-title {
-  margin: 0;
-  padding: 0;
-  font-size: 3.6rem;
-  color: #27628E;
-  font-family: "soleilregular";
-  margin-bottom: 2rem;
+/* line 578, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed {
+  background: transparent;
 }
-/* line 461, ../scss/_overrides.scss */
-.well.region-sidebar-second .view-what-s-new .views-row {
-  font-family: "soleilregular";
-  color: #333333;
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-}
-/* line 466, ../scss/_overrides.scss */
-.well.region-sidebar-second .view-what-s-new .views-row .views-field-type, .well.region-sidebar-second .view-what-s-new .views-row .views-field-created {
-  text-transform: uppercase;
-}
-/* line 469, ../scss/_overrides.scss */
-.well.region-sidebar-second .view-what-s-new .views-row .views-field-title {
-  font-size: 2rem;
-}
-/* line 471, ../scss/_overrides.scss */
-.well.region-sidebar-second .view-what-s-new .views-row .views-field-title a {
-  color: #333333;
-}
-
-@media screen and (min-width: 768px) {
-  /* line 479, ../scss/_overrides.scss */
-  .row-second {
-    display: flex;
-  }
-  /* line 483, ../scss/_overrides.scss */
-  .row-second .section-content.col-sm-8.has-second-sidebar {
-    padding-right: 3rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  /* line 490, ../scss/_overrides.scss */
-  .row-second .section-content.col-sm-8.has-second-sidebar {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 3rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  /* line 499, ../scss/_overrides.scss */
-  .main-container {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-}
-/* line 504, ../scss/_overrides.scss */
-.main-container .section-content {
-  margin: 0;
-  padding: 0;
-}
-/* line 508, ../scss/_overrides.scss */
-.main-container h1.page-header {
-  padding-left: 1rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  border-left: 6px solid #FFB500;
-  border-bottom: 0;
-}
-/* line 514, ../scss/_overrides.scss */
-.main-container h1.page-header span {
-  font-family: "soleilbold";
-  font-size: 5.4rem;
-  text-transform: uppercase;
-  color: #27628E;
-}
-/* line 523, ../scss/_overrides.scss */
-.main-container article.page .field--name-body p {
-  font-family: "soleillight";
-  font-size: 2.8rem;
-  color: #333333;
-}
-/* line 530, ../scss/_overrides.scss */
-.main-container .block-views-blockquotes-block-2 {
-  margin-top: 3rem;
-}
-/* line 534, ../scss/_overrides.scss */
-.main-container .block-views-blockquotes-block-2 .views-field-body p span {
-  font-family: "soleilsemibold_italic";
-  font-size: 2.2rem;
-  color: #27628E;
-}
-/* line 541, ../scss/_overrides.scss */
-.main-container .block-views-blockquotes-block-2 .views-field-field-source {
-  font-family: "soleilregular";
-  font-size: 1.8rem;
-  color: #333333;
-}
-
-@media screen and (min-width: 768px) {
-  /* line 549, ../scss/_overrides.scss */
-  .page-second-sidebar-section {
-    border-left: 1px solid #F2F2F2;
-    padding: 0 3rem;
-  }
-}
-
-/* line 557, ../scss/_overrides.scss */
-ul.sf-menu .sf-sub-indicator {
+/* line 580, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed .ui-accordion-header-icon.ui-icon {
   display: none;
+}
+/* line 584, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed .field-content a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0fe";
+  color: #FFB500;
+  font-style: normal;
+  margin: 0px 10px 0px 0;
+  text-decoration: none;
+}
+/* line 595, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active {
+  background: transparent;
+  outline: none;
+}
+/* line 598, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active .ui-accordion-header-icon.ui-icon {
+  display: none;
+}
+/* line 601, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active .field-content a {
+  color: #333333;
+}
+/* line 603, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active .field-content a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f146";
+  color: #FFB500;
+  font-style: normal;
+  margin: 0px 10px 0px 0;
+  text-decoration: none;
+}
+/* line 614, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header .field-content {
+  color: #333333;
+  font-size: 2rem;
+  font-family: "soleilregular";
+}
+/* line 621, ../scss/_overrides.scss */
+#block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #E5E5E5;
+  overflow: hidden;
 }

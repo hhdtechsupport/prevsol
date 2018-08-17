@@ -393,48 +393,6 @@ p:last-child,
       @media #{$mobile} {
         padding: 0 15px 2rem 15px;
       }
-      figure.align-center {
-        position: relative;
-        margin-bottom: 2rem;
-        &:hover::after {
-          background-color: $darker-blue;
-          opacity: 0.7;
-          content: "";
-          display: flex;
-          z-index: 999;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          pointer-events: none;
-        }
-        img {
-          width: 100%;
-        }
-        figcaption {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          background-color: $edc-blue;
-          opacity: 0.8;
-          padding: 1rem 1rem;
-          width: 100%;
-          font-family: $soleil;
-          font-size: 2.4rem;
-          color: $white;
-          text-transform: uppercase;
-          &::after {
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f0a9";
-            color: $yellow;
-            font-style: normal;
-            margin: 0px 0px 0px 10px;
-            text-decoration: none;
-          }
-        }
-      }
       p {
         font-family: $soleil;
         font-size: 1.8rem;
@@ -556,4 +514,117 @@ p:last-child,
 
 ul.sf-menu .sf-sub-indicator {
   display: none;
+}
+
+figure.align-center {
+  position: relative;
+  margin-bottom: 2rem;
+  &:hover::after {
+    background-color: $darker-blue;
+    opacity: 0.7;
+    content: "";
+    display: flex;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  img {
+    width: 100%;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $edc-blue;
+    opacity: 0.8;
+    padding: 1rem 1rem;
+    width: 100%;
+    font-family: $soleil;
+    font-size: 2.4rem;
+    color: $white;
+    text-transform: uppercase;
+    &::after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      content: "\f0a9";
+      color: $yellow;
+      font-style: normal;
+      margin: 0px 0px 0px 10px;
+      text-decoration: none;
+    }
+  }
+}
+
+#block-prevsol-views-block-areas-of-expertise-block-1 {
+  .view-areas-of-expertise.ui-accordion {
+    .views-row {
+      & > .views-row {
+        &:first-of-type {
+          border-top: 2px solid $gray;
+        }
+        overflow: hidden;
+      }
+
+      .views-field-title.views-accordion-header {
+        border: 0;
+        padding: 1rem 0;
+        margin: 0;
+        outline: none;
+        border-bottom: 2px solid $gray;
+        &.ui-accordion-header-collapsed {
+          background: transparent;
+          .ui-accordion-header-icon.ui-icon {
+            display: none;
+          }
+          .field-content a {
+            &::before {
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              content: "\f0fe";
+              color: $yellow;
+              font-style: normal;
+              margin: 0px 10px 0px 0;
+              text-decoration: none;
+            }
+          }
+        }
+        &.ui-state-active {
+          background: transparent;
+          outline: none;
+          .ui-accordion-header-icon.ui-icon {
+            display: none;
+          }
+          .field-content a {
+            color: $dark-gray;
+            &::before {
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              content: "\f146";
+              color: $yellow;
+              font-style: normal;
+              margin: 0px 10px 0px 0;
+              text-decoration: none;
+            }
+          }
+        }
+        .field-content {
+          color: $dark-gray;
+          font-size: 2rem;
+          font-family: $soleil;
+        }
+      }
+      .ui-accordion-content {
+        &.ui-accordion-content-active {
+          background-color: transparent;
+          border: 0;
+          border-bottom: 2px solid $gray;
+          overflow: hidden;
+        }
+      } 
+    }
+  }
 }
