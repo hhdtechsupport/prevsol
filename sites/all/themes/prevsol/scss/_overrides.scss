@@ -59,23 +59,13 @@ body {
 }
 
 // Wrappers
+
 .main-wrapper {
   margin: 0 auto;
-}
-
-.header-wrapper {
-  background-color: $edc-blue;
-}
-
-.main-wrapper {
   background-color: $white;
 }
 
-.lower-section-wrapper {
-  background-color: $light-gray;
-}
-
-.footer-wrapper {
+.header-wrapper {
   background-color: $edc-blue;
 }
 
@@ -241,13 +231,20 @@ body {
 }
 
 // Lower Section.
-.lower-section {
-  margin-top: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.lower-section-wrapper {
+  background-color: $light-gray;
+  margin-bottom: 8rem;
+  .lower-section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
 }
 
 // Footer.
+.footer-wrapper {
+  background-color: $edc-blue;
+}
+
 .footer {
   margin-top: 45px;
   padding-top: 35px;
@@ -504,12 +501,18 @@ p:last-child,
   }
 }
 
+body.path-frontpage {
+  .page-second-sidebar-section {
+    @media #{$tablet} {
+      border-left: 1px solid $light-gray;
+    }
+  }
+}
+
 .page-second-sidebar-section {
   @media #{$tablet} {
-    border-left: 1px solid $light-gray;
-    padding: 0 3rem;
+    padding: 0 0 0 3rem;
   }
-
 }
 
 ul.sf-menu .sf-sub-indicator {
@@ -622,7 +625,9 @@ figure.align-center {
           background-color: transparent;
           border: 0;
           border-bottom: 2px solid $gray;
-          overflow: hidden;
+          @media #{$tablet} {
+            overflow: hidden;
+          }
         }
       } 
     }
