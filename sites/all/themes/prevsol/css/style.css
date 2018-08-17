@@ -10309,5 +10309,6 @@ figure.align-center figcaption::after {
   /* line 624, ../scss/_overrides.scss */
   #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active {
     overflow: hidden;
+    padding: 1.4rem 0;
   }
 }

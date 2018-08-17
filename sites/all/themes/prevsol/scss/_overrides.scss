@@ -627,6 +627,7 @@ figure.align-center {
           border-bottom: 2px solid $gray;
           @media #{$tablet} {
             overflow: hidden;
+            padding: 1.4rem 0;
           }
         }
       } 
