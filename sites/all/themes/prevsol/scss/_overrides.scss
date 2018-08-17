@@ -575,7 +575,6 @@ figure.align-center {
         &:first-of-type {
           border-top: 2px solid $gray;
         }
-        overflow: hidden;
       }
 
       .views-field-title.views-accordion-header {
@@ -590,6 +589,10 @@ figure.align-center {
             display: none;
           }
           .field-content a {
+            font-family: $soleil-bold;
+            font-weight: bold;
+            font-size: 3.6rem;
+            color: $dark-gray;
             &::before {
               font-family: "Font Awesome 5 Free";
               font-weight: 900;
@@ -609,6 +612,9 @@ figure.align-center {
           }
           .field-content a {
             color: $dark-gray;
+            font-family: $soleil-bold;
+            font-weight: bold;
+            font-size: 3.6rem;
             &::before {
               font-family: "Font Awesome 5 Free";
               font-weight: 900;
@@ -631,8 +637,13 @@ figure.align-center {
           background-color: transparent;
           border: 0;
           border-bottom: 2px solid $gray;
+          font-size: 2.4rem;
+          font-family: $soleil;
+          p {
+            font-size: 2.4rem;
+            font-family: $soleil
+          }
           @media #{$tablet} {
-            overflow: hidden;
             padding: 1.4rem 0;
           }
         }
