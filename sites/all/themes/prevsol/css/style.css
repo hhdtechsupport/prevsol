@@ -10124,7 +10124,7 @@ p:last-child,
 }
 
 /* line 463, ../scss/_overrides.scss */
-body.path-front .main-container h1.page-header span {
+body.path-frontpage .main-container h1.page-header span {
   font-size: 3.6rem;
   line-height: 4.2rem;
 }
