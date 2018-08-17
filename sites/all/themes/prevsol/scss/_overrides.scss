@@ -71,7 +71,7 @@ body {
 
 // Page header.
 
-.path-frontpage {
+/* .path-frontpage {
   .header-wrapper {
     overflow: hidden;
     &::after {
@@ -85,6 +85,12 @@ body {
       bottom: 0;
       display: block;
     }
+  }
+} */
+
+.homepage-header-image-wrapper {
+  img {
+    width: 100%;
   }
 }
 
