@@ -94,6 +94,17 @@
   {% endblock %}
 {% endif %}
 
+{# Breadcrumb #}
+{% if page.breadcrumb %}
+  {% block breadcrumb %}
+    <div class="breadcrumb-wrapper container">
+      <div class="page-breadcrumb-section col-sm-12" role="breadcrumb">
+        {{ page.breadcrumb }}
+      </div>
+    </div>
+  {% endblock %}
+{% endif %}
+
 {% if page.highlighted_top %}
   {% block highlighted_top %}
     <div class="highlighted-top-wrapper">
@@ -119,14 +130,6 @@
           {% endblock %}
         {% endif %}
 
-        {# Breadcrumb #}
-        {% if page.breadcrumb %}
-          {% block breadcrumb %}
-            <div class="page-breadcrumb-section col-sm-12" role="breadcrumb">
-              {{ page.breadcrumb }}
-            </div>
-          {% endblock %}
-        {% endif %}
       </div>
 
       <div class="row row-second">

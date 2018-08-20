@@ -129,6 +129,27 @@ h5 {
     background-color: $edc-blue;
 }
 
+.breadcrumb-wrapper.container {
+  margin: 2rem auto 0;
+  padding: 0;
+  .page-breadcrumb-section {
+    padding: 0;
+    margin: 0;
+    ol.breadcrumb {
+      background-color: $white;
+      padding: 0;
+      li {
+        color: $edc-blue;
+        text-transform: uppercase;
+        a {
+          color: $dark-gray;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
 // Page header.
 /* .path-frontpage {
   .header-wrapper {
