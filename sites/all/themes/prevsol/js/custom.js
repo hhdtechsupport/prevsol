@@ -15,8 +15,6 @@
           }
         });
       }
-
-      console.log('this works... 5');
     }
   };
 })(window.jQuery, window.Drupal);
