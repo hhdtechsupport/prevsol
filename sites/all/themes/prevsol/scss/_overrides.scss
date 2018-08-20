@@ -331,6 +331,8 @@ h5 {
                     font-family: $soleil-bold;
                     color: $dark-gray;
                     text-decoration: none;
+                    font-size: 1.8rem;
+                    line-height: 3rem;
                     a {
                       font-family: $soleil-bold;
                       color: $dark-gray;
@@ -340,10 +342,15 @@ h5 {
                       }
                     }
                   }
+                  .member-title {
+                    font-size: 1.8rem;
+                    line-height: 3rem;
+                    font-family: $soleil;
+                  }
                   .read-bio-toggle {
                     font-family: $soleil-bold;
                     font-weight: bold;
-                    font-size: 1.4rem;
+                    font-size: 1.8rem;
                     color: $yellow;
                     cursor: pointer;
                     &::before {
@@ -355,12 +362,20 @@ h5 {
                       margin: 0px 10px 0px 0;
                       text-decoration: none;
                     }
+                    &.active {
+                      &::before {
+                        content: "\f146";
+                      }
+                    }
                   }
                 }
               }
               .bio-body {
                 padding-top: 2rem;
                 display: none;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                font-family: $soleil;
               }
             }
           }
