@@ -327,10 +327,20 @@ h5 {
                   display: flex;
                   flex-direction: column;
                   justify-content: space-between;
+                  .member-name {
+                    a {
+                      font-family: $soleil-bold;
+                      color: $dark-gray;
+                      text-decoration: none;
+                      &:hover {
+                        text-decoration: none;
+                      }
+                    }
+                  }
                   .read-bio-toggle {
                     font-family: $soleil-bold;
                     font-weight: bold;
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     color: $yellow;
                     &::before {
                       font-family: "Font Awesome 5 Free";
