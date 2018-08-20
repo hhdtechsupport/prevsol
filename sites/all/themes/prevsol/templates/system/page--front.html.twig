@@ -120,6 +120,16 @@
           {% endblock %}
         {% endif %}
 
+        {# Breadcrumb #}
+        {% if page.breadcrumb %}
+          {% block breadcrumb %}
+            <div class="page-breadcrumb-section col-sm-12" role="breadcrumb">
+              {{ page.breadcrumb }}
+            </div>
+          {% endblock %}
+        {% endif %}
+      </div>
+
       <div class="row row-second">
 
         {# Sidebar First #}
