@@ -10605,3 +10605,41 @@ figure.align-center figcaption::after {
   font-size: 1.8rem;
   color: #333333;
 }
+
+/* line 921, ../scss/_overrides.scss */
+.page-node-12 .field--name-body p span {
+  font-family: "soleillight";
+  font-size: 2.8rem;
+  line-height: 4.5rem;
+  color: #333333;
+}
+/* line 928, ../scss/_overrides.scss */
+.page-node-12 .field--name-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 932, ../scss/_overrides.scss */
+.page-node-12 .field--name-body ul li {
+  list-style-type: none;
+  padding: 0.5rem 0;
+}
+/* line 935, ../scss/_overrides.scss */
+.page-node-12 .field--name-body ul li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2.4rem;
+  content: "\f058";
+  color: #FFB500;
+  font-style: normal;
+  margin: 0 3rem 0 0;
+  text-decoration: none;
+}
+/* line 945, ../scss/_overrides.scss */
+.page-node-12 .field--name-body ul li span {
+  font-family: "soleilbold";
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 4.5rem;
+  color: #333333;
+}
