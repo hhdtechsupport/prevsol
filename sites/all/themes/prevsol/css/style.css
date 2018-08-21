@@ -10650,11 +10650,7 @@ figure.align-center figcaption::after {
   }
 }
 
-/* line 975, ../scss/_overrides.scss */
-.page-node-28 .lower-section-wrapper .view-trainings .view-header .table-header {
-  display: flex;
-}
-/* line 980, ../scss/_overrides.scss */
-.page-node-28 .lower-section-wrapper .view-trainings .view-content .table-row {
-  display: flex;
+/* line 970, ../scss/_overrides.scss */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: transparent;
 }

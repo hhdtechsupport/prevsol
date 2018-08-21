@@ -967,20 +967,6 @@ figure.align-center {
   }
 }
 
-// Online Courses
-.page-node-28 {
-  .lower-section-wrapper {
-    .view-trainings {
-      .view-header {
-        .table-header {
-          display: flex;
-        }
-      }
-      .view-content {
-        .table-row {
-          display: flex;
-        }
-      }
-    }
-  }
+.table-striped > tbody > tr:nth-of-type(odd) { 
+  background-color: transparent;
 }
