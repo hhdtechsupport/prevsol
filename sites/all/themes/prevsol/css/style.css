@@ -9914,15 +9914,28 @@ h5 {
 #block-prevsol-mainnavigation.block-superfish {
   width: auto;
 }
+/* line 269, ../scss/_overrides.scss */
+#block-prevsol-mainnavigation ul.sf-menu ul::before {
+  content: '';
+  position: absolute;
+  left: 42%;
+  top: -1rem;
+  width: 0;
+  height: 0;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  border-bottom: 1rem solid #1D4767;
+  clear: both;
+}
 @media screen and (min-width: 768px) {
-  /* line 269, ../scss/_overrides.scss */
+  /* line 283, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li {
-    padding-left: 3rem;
+    padding-left: 6rem;
     padding-top: 0;
     padding-bottom: 3rem;
   }
 }
-/* line 275, ../scss/_overrides.scss */
+/* line 289, ../scss/_overrides.scss */
 #block-prevsol-mainnavigation .sf-menu > li > a {
   text-transform: uppercase;
   color: #FFFFFF;
@@ -9931,25 +9944,27 @@ h5 {
   font-family: "soleilregular";
 }
 @media screen and (min-width: 768px) {
-  /* line 275, ../scss/_overrides.scss */
+  /* line 289, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a {
     font-weight: bold;
     padding: 0;
   }
-  /* line 284, ../scss/_overrides.scss */
+  /* line 298, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a:hover {
     color: #FFB500;
     text-decoration: none;
   }
-  /* line 288, ../scss/_overrides.scss */
+  /* line 302, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a.is-active {
-    border-bottom: 2px solid #FFB500;
+    border-bottom: 4px solid #FFB500;
+    padding-bottom: 3px;
+    text-decoration: none;
   }
-  /* line 291, ../scss/_overrides.scss */
+  /* line 307, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a.sf-with-ul + ul {
     background-color: #1D4767;
   }
-  /* line 294, ../scss/_overrides.scss */
+  /* line 310, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a.sf-with-ul + ul > li > a {
     color: #FFFFFF;
     text-decoration: none;
@@ -9957,59 +9972,59 @@ h5 {
     line-height: 1.4rem;
     font-family: "soleilregular";
   }
-  /* line 300, ../scss/_overrides.scss */
+  /* line 316, ../scss/_overrides.scss */
   #block-prevsol-mainnavigation .sf-menu > li > a.sf-with-ul + ul > li > a:hover {
     color: #FFB500;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 314, ../scss/_overrides.scss */
+  /* line 330, ../scss/_overrides.scss */
   #block-prevsol-account-menu .navbar-nav,
   #block-prevsol-mainnavigation .navbar-nav {
     margin: 0;
   }
 }
 
-/* line 322, ../scss/_overrides.scss */
+/* line 338, ../scss/_overrides.scss */
 .lower-section-wrapper {
   background-color: #F2F2F2;
   margin-bottom: 8rem;
 }
-/* line 325, ../scss/_overrides.scss */
+/* line 341, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section {
   margin-top: 6rem;
   margin-bottom: 6rem;
 }
-/* line 329, ../scss/_overrides.scss */
+/* line 345, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section #block-prevsol-views-block-staff-block-1 > h2 {
   margin-bottom: 4rem;
 }
-/* line 334, ../scss/_overrides.scss */
+/* line 350, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row {
   border-top: 2px solid #E5E5E5;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-/* line 338, ../scss/_overrides.scss */
+/* line 354, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row:last-of-type {
   border-bottom: 2px solid #E5E5E5;
 }
-/* line 342, ../scss/_overrides.scss */
+/* line 358, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header {
   display: flex;
 }
-/* line 344, ../scss/_overrides.scss */
+/* line 360, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header .bio-picture {
   padding-right: 1rem;
 }
-/* line 347, ../scss/_overrides.scss */
+/* line 363, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header .bio-info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* line 351, ../scss/_overrides.scss */
+/* line 367, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header .bio-info .member-name {
   font-family: "soleilbold";
   color: #333333;
@@ -10017,23 +10032,23 @@ h5 {
   font-size: 1.8rem;
   line-height: 3rem;
 }
-/* line 357, ../scss/_overrides.scss */
+/* line 373, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header .bio-info .member-name a {
   font-family: "soleilbold";
   color: #333333;
   text-decoration: none;
 }
-/* line 361, ../scss/_overrides.scss */
+/* line 377, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header .bio-info .member-name a:hover {
   text-decoration: none;
 }
-/* line 366, ../scss/_overrides.scss */
+/* line 382, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header .bio-info .member-title {
   font-size: 1.8rem;
   line-height: 3rem;
   font-family: "soleilregular";
 }
-/* line 371, ../scss/_overrides.scss */
+/* line 387, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header .bio-info .read-bio-toggle {
   font-family: "soleilbold";
   font-weight: bold;
@@ -10041,7 +10056,7 @@ h5 {
   color: #FFB500;
   cursor: pointer;
 }
-/* line 377, ../scss/_overrides.scss */
+/* line 393, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header .bio-info .read-bio-toggle::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10051,11 +10066,11 @@ h5 {
   margin: 0px 10px 0px 0;
   text-decoration: none;
 }
-/* line 387, ../scss/_overrides.scss */
+/* line 403, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-header .bio-info .read-bio-toggle.active::before {
   content: "\f146";
 }
-/* line 394, ../scss/_overrides.scss */
+/* line 410, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row .bio-item .bio-body {
   padding-top: 2rem;
   display: none;
@@ -10064,24 +10079,24 @@ h5 {
   font-family: "soleilregular";
 }
 
-/* line 408, ../scss/_overrides.scss */
+/* line 424, ../scss/_overrides.scss */
 .footer-wrapper {
   background-color: #27628E;
 }
 
-/* line 412, ../scss/_overrides.scss */
+/* line 428, ../scss/_overrides.scss */
 .footer {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
 }
 
-/* line 419, ../scss/_overrides.scss */
+/* line 435, ../scss/_overrides.scss */
 .block.block-block-content span.ext {
   display: none;
 }
 
-/* line 425, ../scss/_overrides.scss */
+/* line 441, ../scss/_overrides.scss */
 #block-followusfooter h2.block-title {
   color: #FFFFFF;
   font-size: 1.8rem;
@@ -10091,61 +10106,61 @@ h5 {
   padding: 0;
   border: 0;
 }
-/* line 434, ../scss/_overrides.scss */
+/* line 450, ../scss/_overrides.scss */
 #block-followusfooter .field--name-body {
   padding-top: 2rem;
 }
-/* line 437, ../scss/_overrides.scss */
+/* line 453, ../scss/_overrides.scss */
 #block-followusfooter i.fab {
   color: #FFFFFF;
   font-size: 2rem;
   margin-right: 2rem;
 }
 
-/* line 444, ../scss/_overrides.scss */
+/* line 460, ../scss/_overrides.scss */
 .footer-four-sections-wrapper {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
 @media screen and (min-width: 768px) {
-  /* line 448, ../scss/_overrides.scss */
+  /* line 464, ../scss/_overrides.scss */
   .footer-four-sections-wrapper.container {
     padding-left: 0;
     padding-right: 0;
     display: flex;
     flex-wrap: wrap;
   }
-  /* line 453, ../scss/_overrides.scss */
+  /* line 469, ../scss/_overrides.scss */
   .footer-four-sections-wrapper.container .col-md-3 {
     padding: 0;
     flex: 1 0 205px;
   }
 }
-/* line 459, ../scss/_overrides.scss */
+/* line 475, ../scss/_overrides.scss */
 .footer-four-sections-wrapper .col-sm-12 {
   margin-bottom: 3rem;
 }
 
-/* line 464, ../scss/_overrides.scss */
+/* line 480, ../scss/_overrides.scss */
 #block-prevsol-footer {
   margin: 0;
   padding: 0;
 }
-/* line 467, ../scss/_overrides.scss */
+/* line 483, ../scss/_overrides.scss */
 #block-prevsol-footer .menu--footer.nav {
   margin: 0;
   padding: 0;
 }
-/* line 470, ../scss/_overrides.scss */
+/* line 486, ../scss/_overrides.scss */
 #block-prevsol-footer .menu--footer.nav li {
   background-color: transparent;
   padding-bottom: 1.5rem;
 }
-/* line 472, ../scss/_overrides.scss */
+/* line 488, ../scss/_overrides.scss */
 #block-prevsol-footer .menu--footer.nav li:hover {
   background-color: transparent;
 }
-/* line 476, ../scss/_overrides.scss */
+/* line 492, ../scss/_overrides.scss */
 #block-prevsol-footer .menu--footer.nav li a {
   color: #FFFFFF;
   font-size: 1.8rem;
@@ -10155,37 +10170,37 @@ h5 {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 484, ../scss/_overrides.scss */
+/* line 500, ../scss/_overrides.scss */
 #block-prevsol-footer .menu--footer.nav li a:hover {
   background-color: transparent;
 }
 
-/* line 494, ../scss/_overrides.scss */
+/* line 510, ../scss/_overrides.scss */
 #block-prevsol-copyright .field--name-body p {
   font-size: 1.2rem;
   color: #FFFFFF;
   font-family: "soleillight";
 }
 
-/* line 503, ../scss/_overrides.scss */
+/* line 519, ../scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
 .panel:last-child {
   margin-bottom: 0;
 }
 
-/* line 511, ../scss/_overrides.scss */
+/* line 527, ../scss/_overrides.scss */
 .region-help > .glyphicon {
   font-size: 18px;
   float: left;
   margin: -0.05em 0.5em 0 0;
 }
-/* line 516, ../scss/_overrides.scss */
+/* line 532, ../scss/_overrides.scss */
 .region-help .block {
   overflow: hidden;
 }
 
-/* line 521, ../scss/_overrides.scss */
+/* line 537, ../scss/_overrides.scss */
 .help-block,
 .control-group .help-inline {
   color: #777777;
@@ -10193,40 +10208,40 @@ p:last-child,
   margin: 5px 0 10px;
   padding: 0;
 }
-/* line 527, ../scss/_overrides.scss */
+/* line 543, ../scss/_overrides.scss */
 .help-block:first-child,
 .control-group .help-inline:first-child {
   margin-top: 0;
 }
 
-/* line 532, ../scss/_overrides.scss */
+/* line 548, ../scss/_overrides.scss */
 .container {
   max-width: 1170px;
 }
 
-/* line 536, ../scss/_overrides.scss */
+/* line 552, ../scss/_overrides.scss */
 .featured-bottom-three-sections-wrapper {
   background-color: #F2F2F2;
   margin-bottom: 8rem;
 }
-/* line 539, ../scss/_overrides.scss */
+/* line 555, ../scss/_overrides.scss */
 .featured-bottom-three-sections-wrapper .featured-bottom-three-sections {
   padding: 6rem 0;
 }
 @media screen and (min-width: 768px) {
-  /* line 539, ../scss/_overrides.scss */
+  /* line 555, ../scss/_overrides.scss */
   .featured-bottom-three-sections-wrapper .featured-bottom-three-sections {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  /* line 545, ../scss/_overrides.scss */
+  /* line 561, ../scss/_overrides.scss */
   .featured-bottom-three-sections-wrapper .featured-bottom-three-sections::after, .featured-bottom-three-sections-wrapper .featured-bottom-three-sections::before {
     display: none;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 550, ../scss/_overrides.scss */
+  /* line 566, ../scss/_overrides.scss */
   .featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first,
   .featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second,
   .featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third {
@@ -10235,14 +10250,14 @@ p:last-child,
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 550, ../scss/_overrides.scss */
+  /* line 566, ../scss/_overrides.scss */
   .featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first,
   .featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second,
   .featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third {
     padding: 0 15px 2rem 15px;
   }
 }
-/* line 560, ../scss/_overrides.scss */
+/* line 576, ../scss/_overrides.scss */
 .featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-first p,
 .featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-second p,
 .featured-bottom-three-sections-wrapper .featured-bottom-three-sections .featured-bottom-third p {
@@ -10250,7 +10265,7 @@ p:last-child,
   font-size: 1.8rem;
 }
 
-/* line 568, ../scss/_overrides.scss */
+/* line 584, ../scss/_overrides.scss */
 .region.region-sidebar-second {
   background-color: #FFFFFF;
   border: 0;
@@ -10258,7 +10273,7 @@ p:last-child,
   margin: 0;
   padding: 0;
 }
-/* line 574, ../scss/_overrides.scss */
+/* line 590, ../scss/_overrides.scss */
 .region.region-sidebar-second h2.block-title {
   margin: 0;
   padding: 0;
@@ -10270,39 +10285,39 @@ p:last-child,
   font-weight: normal;
   text-transform: none;
 }
-/* line 586, ../scss/_overrides.scss */
+/* line 602, ../scss/_overrides.scss */
 .region.region-sidebar-second .view-what-s-new .views-row {
   font-family: "soleilregular";
   color: #333333;
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-/* line 591, ../scss/_overrides.scss */
+/* line 607, ../scss/_overrides.scss */
 .region.region-sidebar-second .view-what-s-new .views-row .views-field-type,
 .region.region-sidebar-second .view-what-s-new .views-row .views-field-created {
   text-transform: uppercase;
 }
-/* line 595, ../scss/_overrides.scss */
+/* line 611, ../scss/_overrides.scss */
 .region.region-sidebar-second .view-what-s-new .views-row .views-field-title {
   font-size: 2rem;
 }
-/* line 597, ../scss/_overrides.scss */
+/* line 613, ../scss/_overrides.scss */
 .region.region-sidebar-second .view-what-s-new .views-row .views-field-title a {
   color: #333333;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 605, ../scss/_overrides.scss */
+  /* line 621, ../scss/_overrides.scss */
   .row-second {
     display: flex;
   }
-  /* line 609, ../scss/_overrides.scss */
+  /* line 625, ../scss/_overrides.scss */
   .row-second .section-content.col-sm-8.has-second-sidebar {
     padding-right: 3rem;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 616, ../scss/_overrides.scss */
+  /* line 632, ../scss/_overrides.scss */
   .row-second .section-content.col-sm-8.has-second-sidebar {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -10310,25 +10325,25 @@ p:last-child,
   }
 }
 
-/* line 628, ../scss/_overrides.scss */
+/* line 644, ../scss/_overrides.scss */
 body.path-frontpage .main-container h1.page-header span {
   font-size: 3.6rem;
   line-height: 4.2rem;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 636, ../scss/_overrides.scss */
+  /* line 652, ../scss/_overrides.scss */
   .main-container {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
-/* line 641, ../scss/_overrides.scss */
+/* line 657, ../scss/_overrides.scss */
 .main-container .section-content {
   margin: 0;
   padding: 0;
 }
-/* line 645, ../scss/_overrides.scss */
+/* line 661, ../scss/_overrides.scss */
 .main-container h1.page-header {
   padding-left: 1rem;
   padding-top: 0;
@@ -10336,7 +10351,7 @@ body.path-frontpage .main-container h1.page-header span {
   border-left: 6px solid #FFB500;
   border-bottom: 0;
 }
-/* line 651, ../scss/_overrides.scss */
+/* line 667, ../scss/_overrides.scss */
 .main-container h1.page-header span {
   font-family: "soleilbold";
   font-size: 5.4rem;
@@ -10344,24 +10359,24 @@ body.path-frontpage .main-container h1.page-header span {
   text-transform: uppercase;
   color: #27628E;
 }
-/* line 661, ../scss/_overrides.scss */
+/* line 677, ../scss/_overrides.scss */
 .main-container article.page .field--name-body p {
   font-family: "soleillight";
   font-size: 2.8rem;
   line-height: 4.5rem;
   color: #333333;
 }
-/* line 669, ../scss/_overrides.scss */
+/* line 685, ../scss/_overrides.scss */
 .main-container .block-views-blockquotes-block-2 {
   margin-top: 3rem;
 }
-/* line 673, ../scss/_overrides.scss */
+/* line 689, ../scss/_overrides.scss */
 .main-container .block-views-blockquotes-block-2 .views-field-body p span {
   font-family: "soleilsemibold_italic";
   font-size: 2.2rem;
   color: #27628E;
 }
-/* line 680, ../scss/_overrides.scss */
+/* line 696, ../scss/_overrides.scss */
 .main-container .block-views-blockquotes-block-2 .views-field-field-source {
   font-family: "soleilregular";
   font-size: 1.8rem;
@@ -10369,30 +10384,30 @@ body.path-frontpage .main-container h1.page-header span {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 689, ../scss/_overrides.scss */
+  /* line 705, ../scss/_overrides.scss */
   body.path-frontpage .page-second-sidebar-section {
     border-left: 1px solid #F2F2F2;
   }
 }
 
 @media screen and (min-width: 768px) {
-  /* line 696, ../scss/_overrides.scss */
+  /* line 712, ../scss/_overrides.scss */
   .page-second-sidebar-section {
     padding: 0 0 0 3rem;
   }
 }
 
-/* line 702, ../scss/_overrides.scss */
+/* line 718, ../scss/_overrides.scss */
 ul.sf-menu .sf-sub-indicator {
   display: none;
 }
 
-/* line 706, ../scss/_overrides.scss */
+/* line 722, ../scss/_overrides.scss */
 figure.align-center {
   position: relative;
   margin-bottom: 2rem;
 }
-/* line 709, ../scss/_overrides.scss */
+/* line 725, ../scss/_overrides.scss */
 figure.align-center:hover::after {
   background-color: #1D4767;
   opacity: 0.7;
@@ -10406,11 +10421,11 @@ figure.align-center:hover::after {
   height: 100%;
   pointer-events: none;
 }
-/* line 722, ../scss/_overrides.scss */
+/* line 738, ../scss/_overrides.scss */
 figure.align-center img {
   width: 100%;
 }
-/* line 725, ../scss/_overrides.scss */
+/* line 741, ../scss/_overrides.scss */
 figure.align-center figcaption {
   position: absolute;
   bottom: 0;
@@ -10425,7 +10440,7 @@ figure.align-center figcaption {
   text-transform: uppercase;
   pointer-events: none;
 }
-/* line 738, ../scss/_overrides.scss */
+/* line 754, ../scss/_overrides.scss */
 figure.align-center figcaption::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10437,11 +10452,11 @@ figure.align-center figcaption::after {
   pointer-events: none;
 }
 
-/* line 755, ../scss/_overrides.scss */
+/* line 771, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row > .views-row:first-of-type {
   border-top: 2px solid #E5E5E5;
 }
-/* line 759, ../scss/_overrides.scss */
+/* line 775, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header {
   border: 0;
   padding: 1rem 0;
@@ -10449,22 +10464,22 @@ figure.align-center figcaption::after {
   outline: none;
   border-bottom: 2px solid #E5E5E5;
 }
-/* line 765, ../scss/_overrides.scss */
+/* line 781, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed {
   background: transparent;
 }
-/* line 767, ../scss/_overrides.scss */
+/* line 783, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed .ui-accordion-header-icon.ui-icon {
   display: none;
 }
-/* line 770, ../scss/_overrides.scss */
+/* line 786, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed .field-content a {
   font-family: "soleilbold";
   font-weight: bold;
   font-size: 3.6rem;
   color: #333333;
 }
-/* line 775, ../scss/_overrides.scss */
+/* line 791, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-accordion-header-collapsed .field-content a::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10474,23 +10489,23 @@ figure.align-center figcaption::after {
   margin: 0px 10px 0px 0;
   text-decoration: none;
 }
-/* line 786, ../scss/_overrides.scss */
+/* line 802, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active {
   background: transparent;
   outline: none;
 }
-/* line 789, ../scss/_overrides.scss */
+/* line 805, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active .ui-accordion-header-icon.ui-icon {
   display: none;
 }
-/* line 792, ../scss/_overrides.scss */
+/* line 808, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active .field-content a {
   color: #333333;
   font-family: "soleilbold";
   font-weight: bold;
   font-size: 3.6rem;
 }
-/* line 797, ../scss/_overrides.scss */
+/* line 813, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header.ui-state-active .field-content a::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10500,13 +10515,13 @@ figure.align-center figcaption::after {
   margin: 0px 10px 0px 0;
   text-decoration: none;
 }
-/* line 808, ../scss/_overrides.scss */
+/* line 824, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .views-field-title.views-accordion-header .field-content {
   color: #333333;
   font-size: 2rem;
   font-family: "soleilregular";
 }
-/* line 815, ../scss/_overrides.scss */
+/* line 831, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active {
   background-color: transparent;
   border: 0;
@@ -10514,19 +10529,19 @@ figure.align-center figcaption::after {
   font-size: 2.4rem;
   font-family: "soleilregular";
 }
-/* line 821, ../scss/_overrides.scss */
+/* line 837, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active p {
   font-size: 2.4rem;
   font-family: "soleilregular";
 }
 @media screen and (min-width: 768px) {
-  /* line 815, ../scss/_overrides.scss */
+  /* line 831, ../scss/_overrides.scss */
   #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active {
     padding: 1.4rem 0;
   }
 }
 
-/* line 837, ../scss/_overrides.scss */
+/* line 853, ../scss/_overrides.scss */
 #block-moreservices .field--name-body > h2 {
   padding-left: 1rem;
   padding-top: 0;
@@ -10540,16 +10555,16 @@ figure.align-center figcaption::after {
   color: #27628E;
   margin-bottom: 3rem;
 }
-/* line 850, ../scss/_overrides.scss */
+/* line 866, ../scss/_overrides.scss */
 #block-moreservices .field--name-body > .training, #block-moreservices .field--name-body > .consultation, #block-moreservices .field--name-body > .online {
   margin-bottom: 4rem;
   display: flex;
 }
-/* line 855, ../scss/_overrides.scss */
+/* line 871, ../scss/_overrides.scss */
 #block-moreservices .field--name-body > .training img.align-left, #block-moreservices .field--name-body > .consultation img.align-left, #block-moreservices .field--name-body > .online img.align-left {
   margin-right: 2rem;
 }
-/* line 858, ../scss/_overrides.scss */
+/* line 874, ../scss/_overrides.scss */
 #block-moreservices .field--name-body > .training h4, #block-moreservices .field--name-body > .consultation h4, #block-moreservices .field--name-body > .online h4 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -10559,13 +10574,13 @@ figure.align-center figcaption::after {
   color: #333333;
   text-transform: uppercase;
 }
-/* line 867, ../scss/_overrides.scss */
+/* line 883, ../scss/_overrides.scss */
 #block-moreservices .field--name-body > .training p, #block-moreservices .field--name-body > .consultation p, #block-moreservices .field--name-body > .online p {
   font-family: "soleilregular";
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
-/* line 872, ../scss/_overrides.scss */
+/* line 888, ../scss/_overrides.scss */
 #block-moreservices .field--name-body > .training a.icon-text-link, #block-moreservices .field--name-body > .consultation a.icon-text-link, #block-moreservices .field--name-body > .online a.icon-text-link {
   color: #FFB500;
   font-size: 2.4rem;
@@ -10574,11 +10589,11 @@ figure.align-center figcaption::after {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 879, ../scss/_overrides.scss */
+/* line 895, ../scss/_overrides.scss */
 #block-moreservices .field--name-body > .training a.icon-text-link:hover, #block-moreservices .field--name-body > .consultation a.icon-text-link:hover, #block-moreservices .field--name-body > .online a.icon-text-link:hover {
   text-decoration: none;
 }
-/* line 882, ../scss/_overrides.scss */
+/* line 898, ../scss/_overrides.scss */
 #block-moreservices .field--name-body > .training a.icon-text-link::before, #block-moreservices .field--name-body > .consultation a.icon-text-link::before, #block-moreservices .field--name-body > .online a.icon-text-link::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10589,42 +10604,42 @@ figure.align-center figcaption::after {
   text-decoration: none;
 }
 
-/* line 896, ../scss/_overrides.scss */
+/* line 912, ../scss/_overrides.scss */
 .view-quotes {
   margin-top: 7rem;
 }
-/* line 900, ../scss/_overrides.scss */
+/* line 916, ../scss/_overrides.scss */
 .view-quotes .views-field-body p span {
   font-family: "soleilsemibold_italic";
   font-size: 2.2rem;
   color: #27628E;
 }
-/* line 908, ../scss/_overrides.scss */
+/* line 924, ../scss/_overrides.scss */
 .view-quotes .views-field-field-source .field-content {
   font-family: "soleilregular";
   font-size: 1.8rem;
   color: #333333;
 }
 
-/* line 921, ../scss/_overrides.scss */
+/* line 937, ../scss/_overrides.scss */
 .page-node-12 .field--name-body p span {
   font-family: "soleillight";
   font-size: 2.8rem;
   line-height: 4.5rem;
   color: #333333;
 }
-/* line 928, ../scss/_overrides.scss */
+/* line 944, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 932, ../scss/_overrides.scss */
+/* line 948, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li {
   list-style-type: none;
   padding: 0.5rem 0;
 }
-/* line 935, ../scss/_overrides.scss */
+/* line 951, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10635,7 +10650,7 @@ figure.align-center figcaption::after {
   margin: 0 3rem 0 0;
   text-decoration: none;
 }
-/* line 945, ../scss/_overrides.scss */
+/* line 961, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li span {
   font-family: "soleilbold";
   font-size: 2.8rem;
@@ -10644,13 +10659,13 @@ figure.align-center figcaption::after {
   color: #333333;
 }
 @media screen and (min-width: 768px) {
-  /* line 959, ../scss/_overrides.scss */
+  /* line 975, ../scss/_overrides.scss */
   .page-node-12 .view-resources .table-responsive thead > tr > th {
     min-width: 15rem;
   }
 }
 
-/* line 970, ../scss/_overrides.scss */
+/* line 986, ../scss/_overrides.scss */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }

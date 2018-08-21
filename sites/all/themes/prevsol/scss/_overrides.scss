@@ -265,14 +265,28 @@ h5 {
     &.block-superfish {
         width: auto;
     }
+    ul.sf-menu ul {
+      &::before {
+        content: '';
+        position: absolute;
+        left: 42%;
+        top: -1rem;
+        width: 0;
+        height: 0;
+        border-left: 1.5rem solid transparent;
+        border-right: 1.5rem solid transparent;
+        border-bottom: 1rem solid $darker-blue;
+        clear: both;
+      }
+    }
     .sf-menu {
-        &>li {
+        & > li {
             @media #{$tablet} {
-                padding-left: 3rem;
+                padding-left: 6rem;
                 padding-top: 0;
                 padding-bottom: 3rem;
             }
-            &>a {
+            & > a {
                 text-transform: uppercase;
                 color: $white;
                 font-size: 1.8rem;
@@ -286,7 +300,9 @@ h5 {
                         text-decoration: none;
                     }
                     &.is-active {
-                        border-bottom: 2px solid $yellow;
+                        border-bottom: 4px solid $yellow;
+                        padding-bottom: 3px;
+                        text-decoration: none;
                     }
                     &.sf-with-ul+ul {
                         background-color: $darker-blue;
