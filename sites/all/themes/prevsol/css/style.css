@@ -10643,3 +10643,18 @@ figure.align-center figcaption::after {
   line-height: 4.5rem;
   color: #333333;
 }
+@media screen and (min-width: 768px) {
+  /* line 959, ../scss/_overrides.scss */
+  .page-node-12 .view-resources .table-responsive thead > tr > th {
+    min-width: 15rem;
+  }
+}
+
+/* line 975, ../scss/_overrides.scss */
+.page-node-28 .lower-section-wrapper .view-trainings .view-header .table-header {
+  display: flex;
+}
+/* line 980, ../scss/_overrides.scss */
+.page-node-28 .lower-section-wrapper .view-trainings .view-content .table-row {
+  display: flex;
+}

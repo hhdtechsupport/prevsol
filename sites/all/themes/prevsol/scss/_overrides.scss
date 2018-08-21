@@ -952,4 +952,35 @@ figure.align-center {
       }
     }
   }
+  .view-resources {
+    .table-responsive {
+      & thead {
+        & > tr {
+          & > th {
+            @media #{$tablet} {
+              min-width: 15rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Online Courses
+.page-node-28 {
+  .lower-section-wrapper {
+    .view-trainings {
+      .view-header {
+        .table-header {
+          display: flex;
+        }
+      }
+      .view-content {
+        .table-row {
+          display: flex;
+        }
+      }
+    }
+  }
 }
