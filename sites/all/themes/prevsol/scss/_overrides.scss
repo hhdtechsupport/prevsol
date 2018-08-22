@@ -56,19 +56,6 @@ body {
     font-family: $font-family-base;
 }
 
-h1 {
-    color: $edc-blue;
-    font-size: 5.4rem;
-    line-height: 5.8rem;
-    font-family: $soleil-bold;
-    padding-left: 2.5rem;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-bottom: 3rem;
-    border-left: 0.6rem solid $yellow;
-    text-transform: uppercase;
-}
-
 h2 {
     color: $edc-blue;
     font-size: 3.6rem;
@@ -703,36 +690,43 @@ body.path-frontpage {
 
 .main-container {
     @media #{$tablet} {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
     }
     .section-content {
-        margin: 0;
-        padding: 0;
+      margin: 0;
+      padding: 0;
     }
     h1.page-header {
-        padding-left: 1rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        border-left: 6px solid $yellow;
-        border-bottom: 0;
-        span {
-            font-family: $soleil-bold;
-            font-size: 5.4rem;
-            line-height: 5.8rem;
-            text-transform: uppercase;
-            color: $edc-blue;
-        }
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+      border-left: 6px solid $yellow;
+      padding: 0 0 0 2.5rem;
+      span {
+        margin: 0;
+        font-family: $soleil-bold;
+        font-size: 5.4rem;
+        line-height: 5.4rem;
+        text-transform: uppercase;
+        color: $edc-blue;
+      }
     }
     article.page {
-        .field--name-body {
-            p {
-                font-family: $soleil-light;
-                font-size: 2.8rem;
-                line-height: 4.5rem;
-                color: $dark-gray;
-            }
+      .field--name-body {
+        p {
+          font-family: $soleil-light;
+          font-size: 2.8rem;
+          line-height: 4.5rem;
+          color: $dark-gray;
         }
+      }
+      .field--name-field-image {
+        img {
+          margin-top: 2rem;
+          margin-bottom: 4rem;
+        }
+      }
     }
     .block-views-blockquotes-block-2 {
         margin-top: 3rem;
@@ -1117,3 +1111,26 @@ figure.align-center {
   background-color: transparent;
 }
 
+.view-trainings {
+  .table-responsive {
+    & thead {
+      & > tr {
+        & > th {
+          @media #{$tablet} {
+            min-width: 10rem;
+            border-bottom: 1px solid $gray;
+          }
+        }
+      }
+    }
+    & tbody {
+      & > tr {
+        & > td {
+          @media #{$tablet} {
+            border-bottom: 1px solid $gray;
+          }
+        }
+      }
+    }
+  }
+}
