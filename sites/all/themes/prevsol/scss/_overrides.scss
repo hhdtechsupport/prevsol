@@ -1048,11 +1048,11 @@ figure.align-center {
                 }
                 select {
                   min-width: 40rem;
-                  padding: 2.3rem;
+                  padding: 1rem;
                 }
                 input {
                   min-width: 40rem;
-                  padding: 2.3rem;
+                  padding: 1rem;
                 }
               }
               .form-group.form-actions {
@@ -1097,6 +1097,8 @@ figure.align-center {
                     border: 0;
                     border-radius: 0;
                     background-color: transparent;
+                    padding-left: 0;
+                    padding-right: 0.75rem;
                   }
                 }
               }
@@ -1133,4 +1135,15 @@ figure.align-center {
       }
     }
   }
+}
+
+form .form-control {
+  color: $dark-gray;
+}
+
+select option[selected="selected"] {
+  font-style: italic;
+  font-weight: bold;
+  background-color: red;
+  color: green !important;
 }

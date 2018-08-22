@@ -10722,12 +10722,12 @@ figure.align-center figcaption::after {
 /* line 1049, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item select {
   min-width: 40rem;
-  padding: 2.3rem;
+  padding: 1rem;
 }
 /* line 1053, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item input {
   min-width: 40rem;
-  padding: 2.3rem;
+  padding: 1rem;
 }
 /* line 1058, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions {
@@ -10778,23 +10778,38 @@ figure.align-center figcaption::after {
   border: 0;
   border-radius: 0;
   background-color: transparent;
+  padding-left: 0;
+  padding-right: 0.75rem;
 }
 
-/* line 1110, ../scss/_overrides.scss */
+/* line 1112, ../scss/_overrides.scss */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1118, ../scss/_overrides.scss */
+  /* line 1120, ../scss/_overrides.scss */
   .view-trainings .table-responsive thead > tr > th {
     min-width: 10rem;
     border-bottom: 1px solid #E5E5E5;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 1128, ../scss/_overrides.scss */
+  /* line 1130, ../scss/_overrides.scss */
   .view-trainings .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
+}
+
+/* line 1140, ../scss/_overrides.scss */
+form .form-control {
+  color: #333333;
+}
+
+/* line 1144, ../scss/_overrides.scss */
+select option[selected="selected"] {
+  font-style: italic;
+  font-weight: bold;
+  background-color: red;
+  color: green !important;
 }
