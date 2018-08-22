@@ -13,6 +13,11 @@
           }
         });
       }
+      $('.navbar-toggle', context).once('myBehavior').click(function (event) {
+        if (!$('#superfish-main-toggle').hasClass('sf-expanded')) {
+          $('#superfish-main-toggle').trigger('click');
+        }
+      });
     }
   };
 })(window.jQuery, window.Drupal);

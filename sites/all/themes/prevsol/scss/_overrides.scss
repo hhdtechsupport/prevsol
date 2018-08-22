@@ -236,29 +236,72 @@ h5 {
         @media #{$tablet} {
             margin-right: 0;
         }
-        &>li {
+        & > li {
             &.active {
                 a {
                     background-color: transparent;
                 }
             }
-            &>a {
-                color: $white;
-                text-transform: uppercase;
-                font-family: $soleil-light;
-                font-weight: normal;
-                font-size: 1.2rem;
-                font-height: 1.2rem;
+            & > a {
                 @media #{$tablet} {
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
+                  color: $white;
+                  text-transform: uppercase;
+                  font-family: $soleil-light;
+                  font-weight: normal;
+                  font-size: 1.2rem;
+                  line-height: 1.2rem;
+                  padding-top: 1rem;
+                  padding-bottom: 1rem;
+                  &::before {
+                    content: "|";
+                    position: relative;
+                    top: 0;
+                    left: -1.5rem;
+                    color: $white;
+                    width: 1rem;
+                    height: 1rem;
+                  }
                 }
                 &:hover {
                     color: $yellow;
                 }
             }
+            &:first-of-type {
+              a {
+                &::before {
+                  display: none;
+                }
+              }
+            }
+            &:last-of-type {
+              display: none;
+            }
         }
     }
+    .menu--account {
+      @media #{$mobile} {
+        li {
+          a {
+            text-transform: uppercase;
+            color: $white;
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            font-family: $soleil;
+            padding: 1em 1.5em;
+          }
+        }
+      }
+    }
+}
+
+.user-logged-in {
+  #block-prevsol-account-menu {
+    .navbar-right {
+      li:last-of-type {
+        display: block;
+      }
+    }
+  }
 }
 
 #block-prevsol-mainnavigation {
@@ -280,6 +323,8 @@ h5 {
       }
     }
     .sf-menu {
+      @media #{$tablet} {
+      }
         & > li {
             @media #{$tablet} {
                 padding-left: 6rem;
@@ -295,6 +340,8 @@ h5 {
                 @media #{$tablet} {
                     font-weight: bold;
                     padding: 0;
+                    border-bottom: 4px solid transparent;
+                    padding-bottom: 3px;
                     &:hover {
                         color: $yellow;
                         text-decoration: none;
@@ -322,6 +369,11 @@ h5 {
                 }
             }
         }
+    }
+    .superfish-main-accordion {}
+
+    .sf-accordion-toggle {
+      display: none;
     }
 }
 
