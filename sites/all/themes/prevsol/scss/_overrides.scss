@@ -1033,6 +1033,84 @@ figure.align-center {
       }
     }
   }
+  .lower-section-wrapper {
+    background-color: $white;
+    padding: 0;
+    .lower-section.container {
+      margin: 0 auto;
+      padding: 0;
+      .region-lower-section {
+          .view-resources {
+            .views-exposed-form .form-inline {
+              display: flex;
+              flex-direction: column;
+              .form-item {
+                margin-bottom: 2rem;
+                label {
+                  min-width: 12rem;
+                  width: 100%;
+                  text-transform: uppercase;
+                  margin-bottom: 1rem;
+                }
+                select {
+                  min-width: 40rem;
+                  padding: 2.3rem;
+                }
+                input {
+                  min-width: 40rem;
+                  padding: 2.3rem;
+                }
+              }
+              .form-group.form-actions {
+                border-top: 1px solid $gray;
+                padding-top: 2rem;
+                button {
+                  padding: 1.5rem 3.5rem;
+                  background-color: $yellow;
+                  border: 0;
+                  border-radius: 0;
+                  text-transform: uppercase;
+                }
+              }
+            }
+            .view-filters, .view-content {
+              background-color: $light-gray;
+              padding-left: 7rem;
+              padding-right: 7rem;
+              margin: 0;
+            }
+            .view-filters {
+              padding-top: 7rem;
+            }
+            .view-content {
+              padding-top: 7rem;
+              padding-bottom: 7rem;
+            }
+            .pager-nav.text-center {
+              text-align: left;
+              .pagination {
+                border-radius: 0;
+                border: 0;
+                li {
+                  &.active {
+                    a {
+                      color: $yellow;
+                      background-color: 0;
+                    }
+                  }
+                  a {
+                    color: $dark-gray;
+                    border: 0;
+                    border-radius: 0;
+                    background-color: transparent;
+                  }
+                }
+              }
+            }
+        }
+      }
+    }
+  }
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) { 

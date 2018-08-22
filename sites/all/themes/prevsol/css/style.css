@@ -10701,8 +10701,94 @@ figure.align-center figcaption::after {
     min-width: 15rem;
   }
 }
+/* line 1036, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper {
+  background-color: #FFFFFF;
+  padding: 0;
+}
+/* line 1039, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container {
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 1044, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline {
+  display: flex;
+  flex-direction: column;
+}
+/* line 1047, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item {
+  margin-bottom: 2rem;
+}
+/* line 1049, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item label {
+  min-width: 12rem;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+/* line 1055, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item select {
+  min-width: 40rem;
+  padding: 2.3rem;
+}
+/* line 1059, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item input {
+  min-width: 40rem;
+  padding: 2.3rem;
+}
+/* line 1064, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions {
+  border-top: 1px solid #E5E5E5;
+  padding-top: 2rem;
+}
+/* line 1067, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions button {
+  padding: 1.5rem 3.5rem;
+  background-color: #FFB500;
+  border: 0;
+  border-radius: 0;
+  text-transform: uppercase;
+}
+/* line 1076, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters, .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
+  background-color: #F2F2F2;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  margin: 0;
+}
+/* line 1082, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters {
+  padding-top: 7rem;
+}
+/* line 1085, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+/* line 1089, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center {
+  text-align: left;
+}
+/* line 1091, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination {
+  border-radius: 0;
+  border: 0;
+}
+/* line 1096, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li.active a {
+  color: #FFB500;
+  background-color: 0;
+}
+/* line 1101, ../scss/_overrides.scss */
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li a {
+  color: #333333;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
 
-/* line 1038, ../scss/_overrides.scss */
+/* line 1116, ../scss/_overrides.scss */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }
