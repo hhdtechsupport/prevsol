@@ -1063,6 +1063,26 @@ figure.align-center {
           & > th {
             @media #{$tablet} {
               min-width: 15rem;
+              &#view-title-table-column {
+                min-width: 35rem;
+              }
+            }
+          }
+        }
+      }
+      & tbody {
+        & > tr {
+          & td {
+            &.views-field-title {
+              a {
+                font-size: 2.4rem;
+                line-height: 3rem;
+                font-family: $soleil-bold;
+                color: $edc-blue;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
             }
           }
         }

@@ -10736,49 +10736,64 @@ figure.align-center figcaption::after {
   .page-node-12 .view-resources .table-responsive thead > tr > th {
     min-width: 15rem;
   }
+  /* line 1066, ../scss/_overrides.scss */
+  .page-node-12 .view-resources .table-responsive thead > tr > th#view-title-table-column {
+    min-width: 35rem;
+  }
 }
-/* line 1072, ../scss/_overrides.scss */
+/* line 1077, ../scss/_overrides.scss */
+.page-node-12 .view-resources .table-responsive tbody > tr td.views-field-title a {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-family: "soleilbold";
+  color: #27628E;
+}
+/* line 1082, ../scss/_overrides.scss */
+.page-node-12 .view-resources .table-responsive tbody > tr td.views-field-title a:hover {
+  text-decoration: underline;
+}
+/* line 1092, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper {
   background-color: #FFFFFF;
   padding: 0;
 }
-/* line 1075, ../scss/_overrides.scss */
+/* line 1095, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container {
   margin: 0 auto;
   padding: 0;
 }
-/* line 1080, ../scss/_overrides.scss */
+/* line 1100, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline {
   display: flex;
   flex-direction: column;
 }
-/* line 1083, ../scss/_overrides.scss */
+/* line 1103, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item {
   margin-bottom: 2rem;
 }
-/* line 1085, ../scss/_overrides.scss */
+/* line 1105, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item label {
   min-width: 12rem;
   width: 100%;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-/* line 1091, ../scss/_overrides.scss */
+/* line 1111, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item select {
   min-width: 40rem;
   padding: 1rem;
 }
-/* line 1095, ../scss/_overrides.scss */
+/* line 1115, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item input {
   min-width: 40rem;
   padding: 1rem;
 }
-/* line 1100, ../scss/_overrides.scss */
+/* line 1120, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions {
   border-top: 1px solid #E5E5E5;
   padding-top: 2rem;
 }
-/* line 1103, ../scss/_overrides.scss */
+/* line 1123, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions button {
   padding: 1.5rem 3.5rem;
   background-color: #FFB500;
@@ -10786,37 +10801,37 @@ figure.align-center figcaption::after {
   border-radius: 0;
   text-transform: uppercase;
 }
-/* line 1112, ../scss/_overrides.scss */
+/* line 1132, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters, .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
   background-color: #F2F2F2;
   padding-left: 7rem;
   padding-right: 7rem;
   margin: 0;
 }
-/* line 1118, ../scss/_overrides.scss */
+/* line 1138, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters {
   padding-top: 7rem;
 }
-/* line 1121, ../scss/_overrides.scss */
+/* line 1141, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
-/* line 1125, ../scss/_overrides.scss */
+/* line 1145, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center {
   text-align: left;
 }
-/* line 1127, ../scss/_overrides.scss */
+/* line 1147, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination {
   border-radius: 0;
   border: 0;
 }
-/* line 1132, ../scss/_overrides.scss */
+/* line 1152, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li.active a {
   color: #FFB500;
   background-color: 0;
 }
-/* line 1137, ../scss/_overrides.scss */
+/* line 1157, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li a {
   color: #333333;
   border: 0;
@@ -10826,42 +10841,42 @@ figure.align-center figcaption::after {
   padding-right: 0.75rem;
 }
 
-/* line 1154, ../scss/_overrides.scss */
+/* line 1174, ../scss/_overrides.scss */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1162, ../scss/_overrides.scss */
+  /* line 1182, ../scss/_overrides.scss */
   .view-trainings .table-responsive thead > tr > th {
     min-width: 15rem;
     border-bottom: 1px solid #E5E5E5;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 1172, ../scss/_overrides.scss */
+  /* line 1192, ../scss/_overrides.scss */
   .view-trainings .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 1177, ../scss/_overrides.scss */
+/* line 1197, ../scss/_overrides.scss */
 .view-trainings .table-responsive tbody > tr > td.views-field-title a {
   font-size: 2.4rem;
   line-height: 3rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 1182, ../scss/_overrides.scss */
+/* line 1202, ../scss/_overrides.scss */
 .view-trainings .table-responsive tbody > tr > td.views-field-title a:hover {
   text-decoration: underline;
 }
 
-/* line 1193, ../scss/_overrides.scss */
+/* line 1213, ../scss/_overrides.scss */
 form .form-control {
   color: #333333;
 }
 
-/* line 1197, ../scss/_overrides.scss */
+/* line 1217, ../scss/_overrides.scss */
 select option[selected="selected"] {
   font-style: italic;
   font-weight: bold;
@@ -10870,22 +10885,22 @@ select option[selected="selected"] {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1205, ../scss/_overrides.scss */
+  /* line 1225, ../scss/_overrides.scss */
   .ui-accordion .ui-accordion-content {
     padding: 2rem 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1214, ../scss/_overrides.scss */
+  /* line 1234, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks {
     display: block;
   }
-  /* line 1217, ../scss/_overrides.scss */
+  /* line 1237, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .image-section {
     width: 100%;
   }
-  /* line 1221, ../scss/_overrides.scss */
+  /* line 1241, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .serivces-block-content h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -10893,39 +10908,39 @@ select option[selected="selected"] {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1235, ../scss/_overrides.scss */
+  /* line 1255, ../scss/_overrides.scss */
   .page-node-27 .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 1240, ../scss/_overrides.scss */
+/* line 1260, ../scss/_overrides.scss */
 .page-node-27 .table-responsive tbody > tr > td.views-field-title a {
   font-size: 2.4rem;
   line-height: 3rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 1245, ../scss/_overrides.scss */
+/* line 1265, ../scss/_overrides.scss */
 .page-node-27 .table-responsive tbody > tr > td.views-field-title a:hover {
   text-decoration: underline;
 }
 
-/* line 1258, ../scss/_overrides.scss */
+/* line 1278, ../scss/_overrides.scss */
 .table-responsive .table.table-hover > tbody > tr:hover {
   background: transparent;
 }
-/* line 1263, ../scss/_overrides.scss */
+/* line 1283, ../scss/_overrides.scss */
 .table-responsive .table.table-striped .table-row:hover {
   background: transparent;
 }
-/* line 1269, ../scss/_overrides.scss */
+/* line 1289, ../scss/_overrides.scss */
 .table-responsive .table > thead th {
   font-size: 1.8rem;
   line-height: 3rem;
   font-family: "soleilbold";
   color: #333333;
 }
-/* line 1278, ../scss/_overrides.scss */
+/* line 1298, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td {
   font-family: "soleilregular";
   font-size: 1.6rem;
@@ -10933,19 +10948,19 @@ select option[selected="selected"] {
   color: #333333;
 }
 @media screen and (min-width: 768px) {
-  /* line 1278, ../scss/_overrides.scss */
+  /* line 1298, ../scss/_overrides.scss */
   .table-responsive .table > tbody tr td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 1286, ../scss/_overrides.scss */
+/* line 1306, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td p {
   font-family: "soleilregular";
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #333333;
 }
-/* line 1292, ../scss/_overrides.scss */
+/* line 1312, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td.views-field-title {
   font-family: "soleilbold";
   font-size: 1.8rem;
