@@ -1161,7 +1161,7 @@ figure.align-center {
       & > tr {
         & > th {
           @media #{$tablet} {
-            min-width: 10rem;
+            min-width: 15rem;
             border-bottom: 1px solid $gray;
           }
         }
@@ -1172,6 +1172,17 @@ figure.align-center {
         & > td {
           @media #{$tablet} {
             border-bottom: 1px solid $gray;
+          }
+          &.views-field-title {
+            a {
+              font-size: 2.4rem;
+              line-height: 3rem;
+              font-family: $soleil-bold;
+              color: $edc-blue;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
@@ -1210,6 +1221,42 @@ select option[selected="selected"] {
           h4 {
             margin-top: 2rem;
             margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-responsive {
+  .table {
+    &.table-striped {
+      .table-row {
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+    & > thead {
+      th {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        font-family: $soleil-bold;
+        color: $dark-gray;
+      }
+    }
+    & > tbody {
+      tr {
+        td {
+          font-family: $soleil;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          color: $dark-gray;
+          p {
+            font-family: $soleil;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $dark-gray;
           }
         }
       }

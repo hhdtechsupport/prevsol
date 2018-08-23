@@ -10834,7 +10834,7 @@ figure.align-center figcaption::after {
 @media screen and (min-width: 768px) {
   /* line 1162, ../scss/_overrides.scss */
   .view-trainings .table-responsive thead > tr > th {
-    min-width: 10rem;
+    min-width: 15rem;
     border-bottom: 1px solid #E5E5E5;
   }
 }
@@ -10844,13 +10844,24 @@ figure.align-center figcaption::after {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-
+/* line 1177, ../scss/_overrides.scss */
+.view-trainings .table-responsive tbody > tr > td.views-field-title a {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-family: "soleilbold";
+  color: #27628E;
+}
 /* line 1182, ../scss/_overrides.scss */
+.view-trainings .table-responsive tbody > tr > td.views-field-title a:hover {
+  text-decoration: underline;
+}
+
+/* line 1193, ../scss/_overrides.scss */
 form .form-control {
   color: #333333;
 }
 
-/* line 1186, ../scss/_overrides.scss */
+/* line 1197, ../scss/_overrides.scss */
 select option[selected="selected"] {
   font-style: italic;
   font-weight: bold;
@@ -10859,24 +10870,50 @@ select option[selected="selected"] {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1194, ../scss/_overrides.scss */
+  /* line 1205, ../scss/_overrides.scss */
   .ui-accordion .ui-accordion-content {
     padding: 2rem 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1203, ../scss/_overrides.scss */
+  /* line 1214, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks {
     display: block;
   }
-  /* line 1206, ../scss/_overrides.scss */
+  /* line 1217, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .image-section {
     width: 100%;
   }
-  /* line 1210, ../scss/_overrides.scss */
+  /* line 1221, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .serivces-block-content h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
+}
+
+/* line 1235, ../scss/_overrides.scss */
+.table-responsive .table.table-striped .table-row:hover {
+  background: transparent;
+}
+/* line 1241, ../scss/_overrides.scss */
+.table-responsive .table > thead th {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-family: "soleilbold";
+  color: #333333;
+}
+/* line 1250, ../scss/_overrides.scss */
+.table-responsive .table > tbody tr td {
+  font-family: "soleilregular";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #333333;
+}
+/* line 1255, ../scss/_overrides.scss */
+.table-responsive .table > tbody tr td p {
+  font-family: "soleilregular";
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #333333;
 }
