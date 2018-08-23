@@ -1228,8 +1228,36 @@ select option[selected="selected"] {
   }
 }
 
+.page-node-27 {
+  .table-responsive {
+    & tbody {
+      &>tr {
+        &>td {
+          @media #{$tablet} {
+            border-bottom: 1px solid $gray;
+          }
+          &.views-field-title {
+            a {
+              font-size: 2.4rem;
+              line-height: 3rem;
+              font-family: $soleil-bold;
+              color: $edc-blue;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .table-responsive {
   .table {
+    &.table-hover > tbody > tr:hover {
+      background: transparent;
+    }
     &.table-striped {
       .table-row {
         &:hover {
@@ -1248,6 +1276,9 @@ select option[selected="selected"] {
     & > tbody {
       tr {
         td {
+          @media #{$tablet} {
+            border-bottom: 1px solid $gray;
+          }
           font-family: $soleil;
           font-size: 1.6rem;
           line-height: 2.4rem;
@@ -1256,6 +1287,12 @@ select option[selected="selected"] {
             font-family: $soleil;
             font-size: 1.6rem;
             line-height: 2.4rem;
+            color: $dark-gray;
+          }
+          &.views-field-title {
+            font-family: $soleil-bold;
+            font-size: 1.8rem;
+            line-height: 3rem;
             color: $dark-gray;
           }
         }

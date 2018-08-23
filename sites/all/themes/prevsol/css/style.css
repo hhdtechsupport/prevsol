@@ -10892,28 +10892,63 @@ select option[selected="selected"] {
   }
 }
 
-/* line 1235, ../scss/_overrides.scss */
+@media screen and (min-width: 768px) {
+  /* line 1235, ../scss/_overrides.scss */
+  .page-node-27 .table-responsive tbody > tr > td {
+    border-bottom: 1px solid #E5E5E5;
+  }
+}
+/* line 1240, ../scss/_overrides.scss */
+.page-node-27 .table-responsive tbody > tr > td.views-field-title a {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-family: "soleilbold";
+  color: #27628E;
+}
+/* line 1245, ../scss/_overrides.scss */
+.page-node-27 .table-responsive tbody > tr > td.views-field-title a:hover {
+  text-decoration: underline;
+}
+
+/* line 1258, ../scss/_overrides.scss */
+.table-responsive .table.table-hover > tbody > tr:hover {
+  background: transparent;
+}
+/* line 1263, ../scss/_overrides.scss */
 .table-responsive .table.table-striped .table-row:hover {
   background: transparent;
 }
-/* line 1241, ../scss/_overrides.scss */
+/* line 1269, ../scss/_overrides.scss */
 .table-responsive .table > thead th {
   font-size: 1.8rem;
   line-height: 3rem;
   font-family: "soleilbold";
   color: #333333;
 }
-/* line 1250, ../scss/_overrides.scss */
+/* line 1278, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td {
   font-family: "soleilregular";
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #333333;
 }
-/* line 1255, ../scss/_overrides.scss */
+@media screen and (min-width: 768px) {
+  /* line 1278, ../scss/_overrides.scss */
+  .table-responsive .table > tbody tr td {
+    border-bottom: 1px solid #E5E5E5;
+  }
+}
+/* line 1286, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td p {
   font-family: "soleilregular";
   font-size: 1.6rem;
   line-height: 2.4rem;
+  color: #333333;
+}
+/* line 1292, ../scss/_overrides.scss */
+.table-responsive .table > tbody tr td.views-field-title {
+  font-family: "soleilbold";
+  font-size: 1.8rem;
+  line-height: 3rem;
   color: #333333;
 }
