@@ -785,7 +785,7 @@ body.path-frontpage {
 body.path-frontpage {
   .page-second-sidebar-section {
       @media #{$tablet} {
-          border-left: 1px solid $light-gray;
+          border-left: 1px solid $gray-divider;
       }
   }
 }
@@ -1345,4 +1345,9 @@ select option[selected="selected"] {
       margin-bottom: 5rem;
     }
   }
+}
+
+.separator-pipe {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

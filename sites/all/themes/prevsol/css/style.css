@@ -10451,7 +10451,7 @@ body.path-frontpage .main-container h1.page-header span {
 @media screen and (min-width: 768px) {
   /* line 786, ../scss/_overrides.scss */
   body.path-frontpage .page-second-sidebar-section {
-    border-left: 1px solid #F2F2F2;
+    border-left: 1px solid #E1E1E1;
   }
 }
 
@@ -10993,4 +10993,10 @@ select option[selected="selected"] {
   text-transform: uppercase;
   color: #27628E;
   margin-bottom: 5rem;
+}
+
+/* line 1350, ../scss/_overrides.scss */
+.separator-pipe {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
