@@ -858,19 +858,20 @@ figure.align-center {
                         display: none;
                     }
                     .field-content a {
-                        font-family: $soleil-bold;
-                        font-weight: bold;
-                        font-size: 3.6rem;
-                        color: $dark-gray;
-                        &::before {
-                            font-family: "Font Awesome 5 Free";
-                            font-weight: 900;
-                            content: "\f0fe";
-                            color: $yellow;
-                            font-style: normal;
-                            margin: 0px 10px 0px 0;
-                            text-decoration: none;
-                        }
+                      font-family: $soleil-bold;
+                      font-weight: bold;
+                      font-size: 3.6rem;
+                      color: $dark-gray;
+                      &::before {
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f0fe";
+                        color: $yellow;
+                        font-style: normal;
+                        margin: 0px 2rem 0px 0;
+                        text-decoration: none;
+                        font-size: 3.2rem;
+                      }
                     }
                 }
                 &.ui-state-active {
@@ -880,19 +881,20 @@ figure.align-center {
                         display: none;
                     }
                     .field-content a {
-                        color: $dark-gray;
-                        font-family: $soleil-bold;
-                        font-weight: bold;
-                        font-size: 3.6rem;
-                        &::before {
-                            font-family: "Font Awesome 5 Free";
-                            font-weight: 900;
-                            content: "\f146";
-                            color: $yellow;
-                            font-style: normal;
-                            margin: 0px 10px 0px 0;
-                            text-decoration: none;
-                        }
+                      color: $dark-gray;
+                      font-family: $soleil-bold;
+                      font-weight: bold;
+                      font-size: 3.6rem;
+                      &::before {
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        content: "\f146";
+                        color: $yellow;
+                        font-style: normal;
+                        margin: 0px 2rem 0px 0;
+                        text-decoration: none;
+                        font-size: 3.2rem;
+                      }
                     }
                 }
                 .field-content {
@@ -911,6 +913,11 @@ figure.align-center {
                     p {
                         font-size: 2.4rem;
                         font-family: $soleil
+                    }
+                    ul {
+                      li {
+                        margin: 2rem 0 2rem 4rem;
+                      }
                     }
                     @media #{$tablet} {
                         padding: 1.4rem 0;
