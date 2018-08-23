@@ -133,9 +133,11 @@ h5 {
       li {
         color: $edc-blue;
         text-transform: uppercase;
+        font-family: $soleil-light;
         a {
           color: $dark-gray;
           text-transform: uppercase;
+          font-family: $soleil-light;
         }
       }
     }
