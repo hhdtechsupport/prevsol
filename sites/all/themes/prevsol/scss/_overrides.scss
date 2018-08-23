@@ -64,7 +64,8 @@ h2 {
     padding-left: 2.5rem;
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
     border-left: 0.6rem solid $yellow;
     text-transform: uppercase;
 }
@@ -382,7 +383,7 @@ h5 {
         margin-bottom: 6rem;
         #block-prevsol-views-block-staff-block-1 {
           & > h2 {
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
           }
         }
         .view-staff {
