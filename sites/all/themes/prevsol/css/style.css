@@ -10665,38 +10665,38 @@ figure.align-center figcaption::after {
 .view-quotes {
   margin-top: 2rem;
 }
-/* line 990, ../scss/_overrides.scss */
-.view-quotes .views-field-body p span {
+/* line 989, ../scss/_overrides.scss */
+.view-quotes .views-field-body p {
   font-family: "soleilsemibold_italic";
   font-size: 2.2rem;
   color: #27628E;
 }
-/* line 998, ../scss/_overrides.scss */
+/* line 996, ../scss/_overrides.scss */
 .view-quotes .views-field-field-source .field-content {
   font-family: "soleilregular";
   font-size: 1.8rem;
   color: #333333;
 }
 
-/* line 1011, ../scss/_overrides.scss */
+/* line 1009, ../scss/_overrides.scss */
 .page-node-12 .field--name-body p span {
   font-family: "soleillight";
   font-size: 2.8rem;
   line-height: 4.5rem;
   color: #333333;
 }
-/* line 1018, ../scss/_overrides.scss */
+/* line 1016, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 1022, ../scss/_overrides.scss */
+/* line 1020, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li {
   list-style-type: none;
   padding: 0.5rem 0;
 }
-/* line 1025, ../scss/_overrides.scss */
+/* line 1023, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10707,7 +10707,7 @@ figure.align-center figcaption::after {
   margin: 0 3rem 0 0;
   text-decoration: none;
 }
-/* line 1035, ../scss/_overrides.scss */
+/* line 1033, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li span {
   font-family: "soleilbold";
   font-size: 2.8rem;
@@ -10716,53 +10716,53 @@ figure.align-center figcaption::after {
   color: #333333;
 }
 @media screen and (min-width: 768px) {
-  /* line 1049, ../scss/_overrides.scss */
+  /* line 1047, ../scss/_overrides.scss */
   .page-node-12 .view-resources .table-responsive thead > tr > th {
     min-width: 15rem;
   }
 }
-/* line 1058, ../scss/_overrides.scss */
+/* line 1056, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper {
   background-color: #FFFFFF;
   padding: 0;
 }
-/* line 1061, ../scss/_overrides.scss */
+/* line 1059, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container {
   margin: 0 auto;
   padding: 0;
 }
-/* line 1066, ../scss/_overrides.scss */
+/* line 1064, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline {
   display: flex;
   flex-direction: column;
 }
-/* line 1069, ../scss/_overrides.scss */
+/* line 1067, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item {
   margin-bottom: 2rem;
 }
-/* line 1071, ../scss/_overrides.scss */
+/* line 1069, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item label {
   min-width: 12rem;
   width: 100%;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-/* line 1077, ../scss/_overrides.scss */
+/* line 1075, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item select {
   min-width: 40rem;
   padding: 1rem;
 }
-/* line 1081, ../scss/_overrides.scss */
+/* line 1079, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item input {
   min-width: 40rem;
   padding: 1rem;
 }
-/* line 1086, ../scss/_overrides.scss */
+/* line 1084, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions {
   border-top: 1px solid #E5E5E5;
   padding-top: 2rem;
 }
-/* line 1089, ../scss/_overrides.scss */
+/* line 1087, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions button {
   padding: 1.5rem 3.5rem;
   background-color: #FFB500;
@@ -10770,37 +10770,37 @@ figure.align-center figcaption::after {
   border-radius: 0;
   text-transform: uppercase;
 }
-/* line 1098, ../scss/_overrides.scss */
+/* line 1096, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters, .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
   background-color: #F2F2F2;
   padding-left: 7rem;
   padding-right: 7rem;
   margin: 0;
 }
-/* line 1104, ../scss/_overrides.scss */
+/* line 1102, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters {
   padding-top: 7rem;
 }
-/* line 1107, ../scss/_overrides.scss */
+/* line 1105, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
-/* line 1111, ../scss/_overrides.scss */
+/* line 1109, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center {
   text-align: left;
 }
-/* line 1113, ../scss/_overrides.scss */
+/* line 1111, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination {
   border-radius: 0;
   border: 0;
 }
-/* line 1118, ../scss/_overrides.scss */
+/* line 1116, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li.active a {
   color: #FFB500;
   background-color: 0;
 }
-/* line 1123, ../scss/_overrides.scss */
+/* line 1121, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li a {
   color: #333333;
   border: 0;
@@ -10810,31 +10810,31 @@ figure.align-center figcaption::after {
   padding-right: 0.75rem;
 }
 
-/* line 1140, ../scss/_overrides.scss */
+/* line 1138, ../scss/_overrides.scss */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1148, ../scss/_overrides.scss */
+  /* line 1146, ../scss/_overrides.scss */
   .view-trainings .table-responsive thead > tr > th {
     min-width: 10rem;
     border-bottom: 1px solid #E5E5E5;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 1158, ../scss/_overrides.scss */
+  /* line 1156, ../scss/_overrides.scss */
   .view-trainings .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
 
-/* line 1168, ../scss/_overrides.scss */
+/* line 1166, ../scss/_overrides.scss */
 form .form-control {
   color: #333333;
 }
 
-/* line 1172, ../scss/_overrides.scss */
+/* line 1170, ../scss/_overrides.scss */
 select option[selected="selected"] {
   font-style: italic;
   font-weight: bold;
@@ -10843,22 +10843,22 @@ select option[selected="selected"] {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1180, ../scss/_overrides.scss */
+  /* line 1178, ../scss/_overrides.scss */
   .ui-accordion .ui-accordion-content {
     padding: 2rem 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1189, ../scss/_overrides.scss */
+  /* line 1187, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks {
     display: block;
   }
-  /* line 1192, ../scss/_overrides.scss */
+  /* line 1190, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .image-section {
     width: 100%;
   }
-  /* line 1196, ../scss/_overrides.scss */
+  /* line 1194, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .serivces-block-content h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;

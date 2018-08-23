@@ -987,11 +987,9 @@ figure.align-center {
     margin-top: 2rem;
     .views-field-body {
         p {
-            span {
-                font-family: $soleil-semibold-italic;
-                font-size: 2.2rem;
-                color: $edc-blue;
-            }
+          font-family: $soleil-semibold-italic;
+          font-size: 2.2rem;
+          color: $edc-blue;
         }
     }
     .views-field-field-source {
