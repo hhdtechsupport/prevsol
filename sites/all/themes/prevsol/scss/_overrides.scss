@@ -1353,3 +1353,12 @@ select option[selected="selected"] {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.container {
+  @media #{$tablet} {
+    &.lower-section {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

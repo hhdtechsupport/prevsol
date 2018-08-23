@@ -11002,3 +11002,11 @@ select option[selected="selected"] {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+  /* line 1359, ../scss/_overrides.scss */
+  .container.lower-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
