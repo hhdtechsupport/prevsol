@@ -922,8 +922,16 @@ figure.align-center {
                         font-family: $soleil
                     }
                     ul {
+                      list-style: none;
                       li {
                         margin: 2rem 0 2rem 4rem;
+                        padding-left: 0;
+                        text-indent: -3rem;
+                        &::before {
+                          content: "•";
+                          color: $edc-blue;
+                          margin-right: 1.5rem;
+                        }
                       }
                     }
                     @media #{$tablet} {
