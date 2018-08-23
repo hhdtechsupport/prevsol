@@ -994,9 +994,11 @@ figure.align-center {
     }
     .views-field-field-source {
         .field-content {
+            margin-top: 2rem;
             font-family: $soleil;
             font-size: 1.8rem;
             color: $dark-gray;
+            display: block;
         }
     }
 }
