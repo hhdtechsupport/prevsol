@@ -79,6 +79,9 @@ function sharethis_entity_extra_field_info() {
 
 /**
  * Implements hook_ENTITY_TYPE_view().
+ *
+ * Inserts ShareThis widget code onto each node view.
+ * TODO: Want to add the option somewhere to select nodes.
  */
 function sharethis_node_view(array &$build, EntityInterface $node, EntityViewDisplayInterface $display, $view_mode) {
   $sharethis_manager = \Drupal::service('sharethis.manager');

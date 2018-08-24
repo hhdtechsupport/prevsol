@@ -114,7 +114,12 @@ class SharethisManager implements SharethisManagerInterface {
       $data_options = $this->getOptions();
       $current_path = $this->routeMatch->getRouteName() ? Url::fromRouteMatch($this->routeMatch)->getInternalPath() : '';
       $path = isset($current_path) ? $current_path : '<front>';
-      $path_obj = Url::fromUri('base://' .$path, ['absolute' => TRUE]);
+      global $base_url;
+      $path_obj = Url::fromUri($base_url . '/' . $path,
+        array(
+          'absolute' => TRUE,
+        )
+      );
       $m_path = $path_obj->toString();
       $mtitle = $this->titleResolver->getTitle($this->requestStack->getCurrentRequest(), $this->routeMatch->getRouteObject());
       $m_title = is_object($mtitle) ? $mtitle->getUntranslatedString() : $config->get('name');
@@ -146,7 +151,7 @@ class SharethisManager implements SharethisManagerInterface {
       if ($data_options['late_load']) {
         $st_js_options['__st_loadLate'] = TRUE;
       }
-      $st_js = '';
+      $st_js = "";
       foreach ($st_js_options as $name => $value) {
         $st_js .= 'var ' . $name . ' = ' . Json::decode($value) . ';';
 
@@ -165,22 +170,22 @@ class SharethisManager implements SharethisManagerInterface {
     $params_stlight = array(
       'publisher' => $data_options['publisherID'],
     );
-    $params_stlight['version'] = ($data_options['widget'] == 'st_multi') ? '5x' : '4x';
+    $params_stlight['version'] = ($data_options['widget'] == 'st_multi') ? "5x" : "4x";
     if ($data_options['callesi'] == 0) {
-      $params_stlight['doNotCopy'] = !$this->toBoolean($data_options['cns']['donotcopy']);
-      $params_stlight['hashAddressBar'] = $this->toBoolean($data_options['cns']['hashaddress']);
-      if (!($params_stlight['hashAddressBar']) && $params_stlight['doNotCopy']) {
-        $params_stlight['doNotHash'] = TRUE;
+      $params_stlight["doNotCopy"] = !$this->toBoolean($data_options['cns']['donotcopy']);
+      $params_stlight["hashAddressBar"] = $this->toBoolean($data_options['cns']['hashaddress']);
+      if (!($params_stlight["hashAddressBar"]) && $params_stlight["doNotCopy"]) {
+        $params_stlight["doNotHash"] = TRUE;
       }
       else {
-        $params_stlight['doNotHash'] = FALSE;
+        $params_stlight["doNotHash"] = FALSE;
       }
     }
     if (isset($data_options['onhover']) && $data_options['onhover'] == FALSE) {
       $params_stlight['onhover'] = FALSE;
     }
     if ($data_options['neworzero']) {
-      $params_stlight['newOrZero'] = 'zero';
+      $params_stlight['newOrZero'] = "zero";
     }
     if (!$data_options['shorten']) {
       $params_stlight['shorten'] = 'false';
@@ -212,12 +217,12 @@ class SharethisManager implements SharethisManagerInterface {
     // Share buttons are simply spans of the form class='st_SERVICE_BUTTONTYPE'
     // where -- "st" stands for ShareThis.
     $type = Unicode::substr($data_options['buttons'], 4);
-    $type = $type == '_' ? '' : Html::escape($type);
-    $service_array = explode(',', $data_options['services']);
-    $st_spans = '';
+    $type = $type == "_" ? "" : Html::escape($type);
+    $service_array = explode(",", $data_options['services']);
+    $st_spans = "";
     foreach ($service_array as $service_full) {
       // Strip the quotes from element in array (They are there for javascript).
-      $service = explode(':', $service_full);
+      $service = explode(":", $service_full);
 
       // Service names are expected to be parsed by Name:machine_name. If only
       // one element in the array is given, it's an invalid service.

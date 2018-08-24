@@ -40,7 +40,7 @@ class SharethisBlockTest extends NodeTestBase {
     $edit['location'] = 'block';
     $this->drupalPostForm('admin/config/services/sharethis', $edit, t('Save configuration'));
     $this->assertText(t('The configuration options have been saved.'), t('Saved configuration'));
-    // Test availability of sharethis block in the admin 'Place blocks' list.
+    // Test availability of sharethis block in the admin "Place blocks" list.
     \Drupal::service('theme_handler')->install(['bartik', 'seven', 'stark']);
     $theme_settings = $this->config('system.theme');
     foreach (['bartik', 'seven', 'stark'] as $theme) {

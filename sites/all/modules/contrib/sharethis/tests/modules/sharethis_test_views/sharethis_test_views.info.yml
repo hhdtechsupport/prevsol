@@ -7,8 +7,8 @@ dependencies:
   - sharethis
   - views
 
-# Information added by Drupal.org packaging script on 2017-11-11
-version: '8.x-2.0-beta3+7-dev'
+# Information added by Drupal.org packaging script on 2016-07-12
+version: '8.x-2.0-beta3'
 core: '8.x'
 project: 'sharethis'
-datestamp: 1510411087
+datestamp: 1468313057

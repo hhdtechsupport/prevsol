@@ -146,7 +146,7 @@ class SharethisWidgetBlock extends BlockBase implements ContainerFactoryPluginIn
         $path = ($this->configuration['sharethis_path'] == 'global') ? '<front>' : $current_path;
 
         global $base_url;
-        $path_obj = Url::fromUri($base_url . $path,
+        $path_obj = Url::fromUri($base_url . '/' . $path,
           array(
             'absolute' => TRUE,
           )

@@ -11,7 +11,6 @@ use Drupal\Core\Entity\EntityTypeBundleInfoInterface;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Core\Url;
 use Drupal\sharethis\SharethisManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -128,7 +127,7 @@ class SharethisConfigurationForm extends ConfigFormBase {
     $button_choice = $current_options_array['buttons'];
     // Create the variables related to services chosen.
     $service_string = $current_options_array['services'];
-    $service_string_markup = [];
+    $service_string_markup = "";
     foreach (explode(",", $service_string) as $string) {
       $key = explode(":", Unicode::substr($string, 0, -1));
       $key = $key[1];
@@ -141,31 +140,31 @@ class SharethisConfigurationForm extends ConfigFormBase {
     $form = array();
     $form['options'] = array(
       '#type' => 'fieldset',
-      '#title' => $this->t('Display'),
+      '#title' => t('Display'),
     );
     $form['options']['button_option'] = array(
       '#required' => TRUE,
       '#type' => 'radios',
       '#options' => array(
-        'stbc_large' => $this->t('Large Chicklets'),
-        'stbc_' => $this->t('Small Chicklets'),
-        'stbc_button' => $this->t('Classic Buttons'),
-        'stbc_vcount' => $this->t('Vertical Counters'),
-        'stbc_hcount' => $this->t('Horizontal Counters'),
-        'stbc_custom' => $this->t('Custom Buttons via CSS'),
+        'stbc_large' => t('Large Chicklets'),
+        'stbc_' => t('Small Chicklets'),
+        'stbc_button' => t('Classic Buttons'),
+        'stbc_vcount' => t('Vertical Counters'),
+        'stbc_hcount' => t('Horizontal Counters'),
+        'stbc_custom' => t('Custom Buttons via CSS'),
       ),
       '#default_value' => $button_choice,
-      '#title' => $this->t('Choose a button style:'),
+      '#title' => t("Choose a button style:"),
       '#prefix' => '<div class="st_widgetContain"><div class="st_spriteCover"><img id="stb_sprite" class="st_buttonSelectSprite ' . $button_choice . '" src="' . $base_url . '/' . $my_path . '/img/preview_sprite.png" /></div><div class="st_widgetPic"><img class="st_buttonSelectImage" src="' . $base_url . '/' . $my_path . '/img/preview_bg.png" /></div>',
       '#suffix' => '</div>',
     );
     $form['options']['service_option'] = array(
-      '#description' => $this->t('<b>Add</b> a service by selecting it on the right and clicking the <i>left arrow</i>.  <b>Remove</b> it by clicking the <i>right arrow</i>.<br /><b>Change the order</b> of services under "Selected Services" by using the <i>up</i> and <i>down</i> arrows.'),
+      '#description' => t('<b>Add</b> a service by selecting it on the right and clicking the <i>left arrow</i>.  <b>Remove</b> it by clicking the <i>right arrow</i>.<br /><b>Change the order</b> of services under "Selected Services" by using the <i>up</i> and <i>down</i> arrows.'),
       '#required' => TRUE,
       '#type' => 'textfield',
       '#prefix' => '<div>',
       '#suffix' => '</div><div id="myPicker"></div>',
-      '#title' => $this->t('Choose Your Services.'),
+      '#title' => t("Choose Your Services."),
       '#default_value' => $service_string,
       '#maxlength' => 1024,
     );
@@ -191,18 +190,18 @@ class SharethisConfigurationForm extends ConfigFormBase {
 
     $form['context'] = array(
       '#type' => 'details',
-      '#title' => $this->t('Context'),
+      '#title' => t('Context'),
       '#group' => 'additional_settings',
-      '#description' => $this->t('Configure where the ShareThis widget should appear.'),
+      '#description' => t('Configure where the ShareThis widget should appear.'),
     );
 
     $form['context']['location'] = array(
-      '#title' => $this->t('Location'),
+      '#title' => t('Location'),
       '#type' => 'radios',
       '#options' => array(
-        'content' => $this->t('Node content'),
-        'block' => $this->t('Block'),
-        'links' => $this->t('Links area'),
+        'content' => t('Node content'),
+        'block' => t('Block'),
+        'links' => t('Links area'),
       ),
       '#default_value' => $config->get('location'),
     );
@@ -216,7 +215,7 @@ class SharethisConfigurationForm extends ConfigFormBase {
 
     // Add help text for the 'content' location.
     $form['context']['content']['help'] = array(
-      '#markup' => $this->t('When using the Content location, you must place the ShareThis links in the <a href="@url">Manage Display</a> section of each content type.', array('@url' => Url::fromRoute('entity.node_type.collection')->toString())),
+      '#markup' => t('When using the Content location, you must place the ShareThis links in the <a href="@url">Manage Display</a> section of each content type.'),
       '#weight' => 10,
       '#prefix' => '<em>',
       '#suffix' => '</em>',
@@ -234,8 +233,8 @@ class SharethisConfigurationForm extends ConfigFormBase {
     // Get a list of content types and view modes.
     foreach ($entity_bundles as $bundle => $bundle_info) {
       $form['context']['links'][$bundle . '_options'] = array(
-        '#title' => $this->t('%label View Modes', array('%label' => $bundle_info['label'])),
-        '#description' => $this->t('Select which view modes the ShareThis widget should appear on for %label nodes.', array('%label' => $bundle_info['label'])),
+        '#title' => t('%label View Modes', array('%label' => $bundle_info['label'])),
+        '#description' => t('Select which view modes the ShareThis widget should appear on for %label nodes.', array('%label' => $bundle_info['label'])),
         '#type' => 'checkboxes',
         '#options' => $modes,
         '#default_value' => $config->get('sharethisnodes.' . $bundle),
@@ -246,7 +245,7 @@ class SharethisConfigurationForm extends ConfigFormBase {
     $content_types = array();
     $enabled_content_types = $current_options_array['node_types'];
     foreach ($entity_bundles as $bundle => $bundle_info) {
-      $content_types[$bundle] = $this->t('@label', array('@label' => $bundle_info['label']));
+      $content_types[$bundle] = $this->t($bundle_info['label']);
     }
 
     $form['context']['content']['node_types'] = array(
@@ -279,7 +278,7 @@ class SharethisConfigurationForm extends ConfigFormBase {
       '#description' => $this->t('The advanced settings can usually be ignored if you have no need for them.'),
     );
     $form['advanced']['publisherID'] = array(
-      '#title' => $this->t('Insert a publisher key (optional).'),
+      '#title' => $this->t("Insert a publisher key (optional)."),
       '#description' => $this->t("When you install the module, we create a random publisher key.  You can register the key with ShareThis by contacting customer support.  Otherwise, you can go to <a href='http://www.sharethis.com/account'>ShareThis</a> and create an account.<br />Your official publisher key can be found under 'My Account'.<br />It allows you to get detailed analytics about sharing done on your site."),
       '#type' => 'textfield',
       '#default_value' => $publisher,
@@ -291,7 +290,7 @@ class SharethisConfigurationForm extends ConfigFormBase {
       '#default_value' => $config->get('late_load'),
     );
     $form['advanced']['twitter_suffix'] = array(
-      '#title' => $this->t('Twitter Suffix'),
+      '#title' => $this->t("Twitter Suffix"),
       '#description' => $this->t("Optionally append a Twitter handle, or text, so that you get pinged when someone shares an article. Example: <em>via @YourNameHere</em>"),
       '#type' => 'textfield',
       '#default_value' => $config->get('twitter_suffix'),
