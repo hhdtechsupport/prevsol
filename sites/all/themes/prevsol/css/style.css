@@ -10618,7 +10618,7 @@ figure.align-center figcaption::after {
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active ul li {
   margin: 2rem 0 2rem 4rem;
   padding-left: 0;
-  text-indent: -3rem;
+  text-indent: -2.3rem;
 }
 /* line 938, ../scss/_overrides.scss */
 #block-prevsol-views-block-areas-of-expertise-block-1 .view-areas-of-expertise.ui-accordion .views-row .ui-accordion-content.ui-accordion-content-active ul li::before {
