@@ -424,6 +424,12 @@ h5 {
                 display: flex;
                 .bio-picture {
                   padding-right: 1rem;
+                  max-width: 12rem;
+                  width: 100%;
+                  img {
+                    max-width: 12rem;
+                    width: 100%;
+                  }
                 }
                 .bio-info {
                   display: flex;
@@ -977,11 +983,13 @@ figure.align-center {
                 line-height: 3rem;
                 color: $dark-gray;
                 text-transform: uppercase;
+                margin-bottom: 1rem;
             }
             p {
-                font-family: $soleil;
-                font-size: 1.6rem;
-                line-height: 2.4rem;
+              font-family: $soleil;
+              font-size: 1.6rem;
+              line-height: 2.4rem;
+              padding: 1rem 0;
             }
             a.icon-text-link {
                 color: $yellow;
@@ -1244,8 +1252,13 @@ select option[selected="selected"] {
     & > .services-blocks {
       @media #{$mobile} {
         display: block;
+        width: 100%;
         .image-section {
           width: 100%;
+          img {
+            width: 100%;
+            margin: 0 0 3rem 0;
+          }
         }
         .serivces-block-content {
           h4 {
@@ -1360,5 +1373,11 @@ select option[selected="selected"] {
       padding-left: 0;
       padding-right: 0;
     }
+  }
+}
+
+.page-node-37 {
+  h1.page-header {
+    margin: 0 0 4rem;
   }
 }
