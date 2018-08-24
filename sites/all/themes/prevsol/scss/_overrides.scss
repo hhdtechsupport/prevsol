@@ -1501,3 +1501,12 @@ select option[selected="selected"] {
     margin: 0 0 4rem;
   }
 }
+
+#block-sharethis {
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  top: 220px;
+  width: 40px;
+  z-index: 999;
+}

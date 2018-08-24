@@ -11202,3 +11202,13 @@ select option[selected="selected"] {
 .page-node-37 h1.page-header {
   margin: 0 0 4rem;
 }
+
+/* line 1505, ../scss/_overrides.scss */
+#block-sharethis {
+  display: inline-block;
+  position: fixed;
+  left: 0;
+  top: 220px;
+  width: 40px;
+  z-index: 999;
+}
