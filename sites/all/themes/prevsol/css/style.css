@@ -11212,7 +11212,7 @@ select option[selected="selected"] {
   width: 40px;
   z-index: 999;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   /* line 1505, ../scss/_overrides.scss */
   #block-sharethis {
     display: none;
