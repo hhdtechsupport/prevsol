@@ -106,6 +106,13 @@ h5 {
   }
 }
 
+a {
+  color: $edc-blue;
+}
+
+.file > span {
+  color: $edc-blue;
+}
 
 // Wrappers
 .main-wrapper {
@@ -1188,6 +1195,103 @@ figure.align-center {
     }
   }
 }
+
+// Resource content type styles
+
+.page-node-type-resource {
+  .main-container {
+    h1.page-header {
+      border: 0;
+      padding: 0;
+      margin-bottom: 4rem;
+      span {
+        color: $dark-gray;
+        text-transform: none;
+        font-family: $soleil-bold;
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+      }
+    }
+    article {
+      .field {
+        margin-bottom: 4rem;
+        .field--label {
+          display: block;
+          width: 100%;
+          font-family: $soleil-bold;
+          font-size: 2.4rem;
+          line-height: 3rem;
+          color: $dark-gray;
+          text-transform: uppercase;
+          margin-bottom: 1rem;
+        }
+        .field--item {
+          display: block;
+          width: 100%;
+          font-size: 2.4rem;
+          font-family: $soleil;
+          p {
+            font-size: 2.4rem;
+            font-family: $soleil
+          }
+          a {
+            text-decoration: underline;
+          }
+          ul {
+            list-style: none;
+            li {
+              margin: 2rem 0 2rem 4rem;
+              padding-left: 0;
+              text-indent: -2.3rem;
+              &::before {
+                content: "•";
+                color: $edc-blue;
+                margin-right: 1.5rem;
+              }
+            }
+          }
+        }
+        &.field--name-field-attachment {
+          span.file {
+            & > span {
+              border: 0;
+              text-align: left;
+              width: auto;
+              padding: 0;
+              display: inline-block;
+              &.file-icon {
+                text-align: left;
+                width: auto;
+                padding-right: 2rem;
+              }
+              &.file-link {
+                text-align: left;
+                width: auto;
+                a {
+                  font-size: 2.4rem;
+                  font-family: $soleil;
+                  color: $edc-blue;
+                  text-decoration: underline;
+                }
+              }
+              &.file-size {
+                text-align: left;
+                width: auto;
+                font-size: 2.4rem;
+                font-family: $soleil;
+                color: $edc-blue;
+                text-decoration: underline;
+                padding-left: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Generic styles for various elements
 
 .table-striped > tbody > tr:nth-of-type(odd) { 
   background-color: transparent;
