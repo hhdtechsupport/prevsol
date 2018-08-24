@@ -10649,7 +10649,7 @@ figure.align-center figcaption::after {
 }
 /* line 970, ../scss/_overrides.scss */
 #block-moreservices .field--name-body > .training, #block-moreservices .field--name-body > .consultation, #block-moreservices .field--name-body > .online {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   display: flex;
 }
 /* line 975, ../scss/_overrides.scss */
@@ -10664,7 +10664,7 @@ figure.align-center figcaption::after {
   font-size: 2.4rem;
   line-height: 3rem;
   color: #333333;
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 1rem;
 }
 /* line 988, ../scss/_overrides.scss */
