@@ -11056,8 +11056,8 @@ figure.align-center figcaption::after {
 }
 /* line 1335, ../scss/_overrides.scss */
 .view-trainings .table-responsive tbody > tr > td.views-field-title a {
-  font-size: 2.4rem;
-  line-height: 3rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
@@ -11116,8 +11116,8 @@ select option[selected="selected"] {
 }
 /* line 1403, ../scss/_overrides.scss */
 .page-node-27 .table-responsive tbody > tr > td.views-field-title a {
-  font-size: 2.4rem;
-  line-height: 3rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
@@ -11165,7 +11165,7 @@ select option[selected="selected"] {
 .table-responsive .table > tbody tr td.views-field-title {
   font-family: "soleilbold";
   font-size: 1.8rem;
-  line-height: 3rem;
+  line-height: 2.4rem;
   color: #333333;
 }
 

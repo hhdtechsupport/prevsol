@@ -1333,8 +1333,8 @@ figure.align-center {
           }
           &.views-field-title {
             a {
-              font-size: 2.4rem;
-              line-height: 3rem;
+              font-size: 1.8rem;
+              line-height: 2.4rem;
               font-family: $soleil-bold;
               color: $edc-blue;
               &:hover {
@@ -1401,8 +1401,8 @@ select option[selected="selected"] {
           }
           &.views-field-title {
             a {
-              font-size: 2.4rem;
-              line-height: 3rem;
+              font-size: 1.8rem;
+              line-height: 2.4rem;
               font-family: $soleil-bold;
               color: $edc-blue;
               &:hover {
@@ -1455,7 +1455,7 @@ select option[selected="selected"] {
           &.views-field-title {
             font-family: $soleil-bold;
             font-size: 1.8rem;
-            line-height: 3rem;
+            line-height: 2.4rem;
             color: $dark-gray;
           }
         }
