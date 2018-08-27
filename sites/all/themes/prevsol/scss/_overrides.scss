@@ -1199,7 +1199,6 @@ figure.align-center {
 // Resource content type styles
 
 .page-node-type-resource,
-.page-node-type-training,
 .page-node-type-news,
 .page-node-type-training,
 .page-node-type-online-course {
@@ -1238,10 +1237,10 @@ figure.align-center {
           display: block;
           width: 100%;
           font-size: 2.4rem;
-          font-family: $soleil;
+          font-family: $soleil-light;
           p {
             font-size: 2.4rem;
-            font-family: $soleil
+            font-family: $soleil-light;
           }
           a {
             text-decoration: underline;
@@ -1263,7 +1262,7 @@ figure.align-center {
         &.field--name-field-link {
           a {
             font-size: 2.4rem;
-            font-family: $soleil;
+            font-family: $soleil-light;
             color: $edc-blue;
             text-decoration: underline;
           }
@@ -1286,7 +1285,7 @@ figure.align-center {
                 width: auto;
                 a {
                   font-size: 2.4rem;
-                  font-family: $soleil;
+                  font-family: $soleil-light;
                   color: $edc-blue;
                   text-decoration: underline;
                 }
@@ -1295,7 +1294,7 @@ figure.align-center {
                 text-align: left;
                 width: auto;
                 font-size: 2.4rem;
-                font-family: $soleil;
+                font-family: $soleil-light;
                 color: $edc-blue;
                 text-decoration: underline;
                 padding-left: 2rem;
