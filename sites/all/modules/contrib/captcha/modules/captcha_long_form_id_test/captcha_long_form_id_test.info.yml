@@ -1,12 +1,9 @@
-name: CAPTCHA
+name: captcha long form id test module
 type: module
-description: Provides the CAPTCHA API for adding challenges to arbitrary forms.
-package: Spam control
+description: 'Test module for testing captchas added to forms with ids longer than 64 characters'
+package: Testing
 # core: 8.x
-configure: captcha_settings
-
-dependencies:
-  - drupal:node
+hidden: true
 
 # Information added by Drupal.org packaging script on 2018-08-31
 version: '8.x-1.0-beta1+31-dev'
