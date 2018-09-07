@@ -410,6 +410,9 @@ a {
 .lower-section-wrapper {
     background-color: $light-gray;
     margin-bottom: 8rem;
+    @media #{$mobile} {
+      margin-top: 5rem;
+    }
     .lower-section {
         margin-top: 6rem;
         margin-bottom: 6rem;
@@ -467,6 +470,7 @@ a {
                     font-weight: bold;
                     font-size: 1.8rem;
                     color: $yellow;
+                    user-select: none;
                     cursor: pointer;
                     &::before {
                       font-family: "Font Awesome 5 Free";
@@ -634,6 +638,9 @@ p:last-child,
 .featured-bottom-three-sections-wrapper {
     background-color: $light-gray;
     margin-bottom: 8rem;
+    @media #{$mobile} {
+      margin-top: 5rem;
+    }
     .featured-bottom-three-sections {
         padding: 6rem 0;
         @media #{$tablet} {
@@ -721,14 +728,17 @@ p:last-child,
 }
 
 body.path-frontpage {
-    .main-container {
-        h1.page-header {
-            span {
-                font-size: 3.6rem;
-                line-height: 4.2rem;
-            }
-        }
+  .main-container {
+    h1.page-header {
+      @media #{$mobile} {
+        margin-top: 4rem;
+      }
+      span {
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+      }
     }
+  }
 }
 
 .main-container {
@@ -884,6 +894,7 @@ figure.align-center {
                       font-weight: bold;
                       font-size: 3.6rem;
                       color: $dark-gray;
+                      user-select: none;
                       &::before {
                         font-family: "Font Awesome 5 Free";
                         font-weight: 900;
@@ -907,6 +918,7 @@ figure.align-center {
                       font-family: $soleil-bold;
                       font-weight: bold;
                       font-size: 3.6rem;
+                      user-select: none;
                       &::before {
                         font-family: "Font Awesome 5 Free";
                         font-weight: 900;
@@ -1159,6 +1171,10 @@ figure.align-center {
               padding-left: 7rem;
               padding-right: 7rem;
               margin: 0;
+              @media #{$mobile} {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+              }
             }
             .view-filters {
               padding-top: 7rem;
@@ -1511,5 +1527,29 @@ select option[selected="selected"] {
   z-index: 999;
   @media #{$mobile} {
     display: none;
+  }
+}
+
+// Responsive adjustments to container
+@media (min-width: 1200px) and (max-width: 1250px) {
+  .container,
+  .navbar.container {
+    max-width: 1120px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1040px) {
+  .container,
+  .navbar.container {
+    max-width: 920px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 820px) {
+
+  .container,
+  .navbar.container {
+    border: 2px solid red !important;
+    max-width: 720px;
   }
 }
