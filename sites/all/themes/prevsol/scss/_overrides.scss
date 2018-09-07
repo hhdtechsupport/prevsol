@@ -1530,6 +1530,18 @@ select option[selected="selected"] {
   }
 }
 
+#block-views-block-news-block-1 {
+  .table-responsive {
+    & thead {
+      &>tr {
+        &>th {
+          min-width: 15rem;
+        }
+      }
+    }
+  }
+}
+
 // Responsive adjustments to container
 @media (min-width: 1200px) and (max-width: 1250px) {
   .container,

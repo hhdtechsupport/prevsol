@@ -11247,22 +11247,27 @@ select option[selected="selected"] {
   }
 }
 
+/* line 1537, ../scss/_overrides.scss */
+#block-views-block-news-block-1 .table-responsive thead > tr > th {
+  min-width: 15rem;
+}
+
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 1535, ../scss/_overrides.scss */
+  /* line 1547, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 1542, ../scss/_overrides.scss */
+  /* line 1554, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 1550, ../scss/_overrides.scss */
+  /* line 1562, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     border: 2px solid red !important;
