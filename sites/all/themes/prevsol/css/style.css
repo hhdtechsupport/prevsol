@@ -10936,7 +10936,7 @@ figure.align-center figcaption::after {
 .page-node-type-online-course .main-container article .field p {
   font-size: 2.4rem;
   line-height: 3rem;
-  font-family: "soleilregular";
+  font-family: "soleillight";
 }
 /* line 1242, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field .field--label,
