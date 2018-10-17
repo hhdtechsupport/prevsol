@@ -1177,6 +1177,11 @@ figure.align-center {
                   border-radius: 0;
                   text-transform: uppercase;
                 }
+                button#edit-reset {
+                  background-color: transparent;
+                  border: 2px solid #939393;
+                  color: #939393;
+                }
               }
             }
             .view-filters, .view-content {
