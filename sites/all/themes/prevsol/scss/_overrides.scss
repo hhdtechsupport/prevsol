@@ -1066,12 +1066,32 @@ figure.align-center {
               min-width: 40rem;
             }
           }
+        }
+      }
+      & tbody {
+        & > tr {
           & > td.views-field-body {
             .read-more {
-              float: left;
+              float: right;
+              text-align: left;
+              color: transparent;
+              a {
+                color: $edc-blue;
+              }
             }
             .purchase {
               float: right;
+              text-align: right;
+              color: transparent;
+              a {
+                color: $edc-blue;
+                background-color: $yellow;
+                border-radius: 5px;
+                padding: 3px 8px;
+                span.ext {
+                  display: none;
+                }
+              }
             }
           }
         }
