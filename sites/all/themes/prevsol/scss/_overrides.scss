@@ -1090,16 +1090,59 @@ figure.align-center {
               text-align: right;
               color: transparent;
               a {
-                color: $edc-blue;
+                color: $white;
                 background-color: $yellow;
                 border-radius: 5px;
-                padding: 3px 8px;
+                padding: 0.5rem 1.5rem;
+                text-transform: uppercase;
                 span.ext {
                   display: none;
+                }
+                &:hover {
+                  text-decoration: none;
                 }
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.field--name-field-link-to-course {
+  a {
+    color: $white;
+    background-color: $yellow;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    span.ext {
+      display: none;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.page-node-type-online-course {
+  .main-container {
+    article {
+      div.field--name-field-length, div.field--name-field-cost {
+        clear: both;
+        display: inline-block;
+        width: 100%;
+        div.field--label {
+          display: inline-block;
+          float: left;
+          width: auto;
+        }
+        div.field--item {
+          display: inline-block;
+          float: left;
+          width: auto;
         }
       }
     }
