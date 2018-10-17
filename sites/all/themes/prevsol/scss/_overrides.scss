@@ -1071,11 +1071,17 @@ figure.align-center {
       & tbody {
         & > tr {
           & > td.views-field-body {
+            padding-bottom: 1rem;
+            .course-summary {
+              padding-bottom: 1.5rem;
+              display: block;
+            }
             .read-more {
-              float: right;
+              float: left;
               text-align: left;
               color: transparent;
               a {
+                margin-left: -10px;
                 color: $edc-blue;
               }
             }
