@@ -1054,6 +1054,32 @@ figure.align-center {
     }
 }
 
+// Online Course page
+
+.page-node-28 {
+  .view-trainings {
+    .table-responsive {
+      & thead {
+        & > tr {
+          & > th.views-field-title {
+            @media #{$tablet} {
+              min-width: 40rem;
+            }
+          }
+          & > td.views-field-body {
+            .read-more {
+              float: left;
+            }
+            .purchase {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // Resources page specific styles
 
 .page-node-12 {
@@ -1353,7 +1379,7 @@ figure.align-center {
       & > tr {
         & > th {
           @media #{$tablet} {
-            min-width: 15rem;
+            min-width: 11rem;
             border-bottom: 1px solid $gray;
           }
         }

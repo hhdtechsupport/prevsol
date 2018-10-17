@@ -10748,35 +10748,50 @@ figure.align-center figcaption::after {
   display: block;
 }
 
-/* line 1062, ../scss/_overrides.scss */
+@media screen and (min-width: 768px) {
+  /* line 1064, ../scss/_overrides.scss */
+  .page-node-28 .view-trainings .table-responsive thead > tr > th.views-field-title {
+    min-width: 40rem;
+  }
+}
+/* line 1070, ../scss/_overrides.scss */
+.page-node-28 .view-trainings .table-responsive thead > tr > td.views-field-body .read-more {
+  float: left;
+}
+/* line 1073, ../scss/_overrides.scss */
+.page-node-28 .view-trainings .table-responsive thead > tr > td.views-field-body .purchase {
+  float: right;
+}
+
+/* line 1088, ../scss/_overrides.scss */
 .page-node-12 .views-exposed-form .form-inline .form-item.form-item-keywords {
   width: 45%;
   float: left;
 }
-/* line 1066, ../scss/_overrides.scss */
+/* line 1092, ../scss/_overrides.scss */
 .page-node-12 .views-exposed-form .form-inline .form-item.form-item-prevention-topics {
   width: 45%;
   float: right;
 }
-/* line 1074, ../scss/_overrides.scss */
+/* line 1100, ../scss/_overrides.scss */
 .page-node-12 .field--name-body p span {
   font-family: "soleillight";
   font-size: 2.8rem;
   line-height: 4.5rem;
   color: #333333;
 }
-/* line 1081, ../scss/_overrides.scss */
+/* line 1107, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 1085, ../scss/_overrides.scss */
+/* line 1111, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li {
   list-style-type: none;
   padding: 0.5rem 0;
 }
-/* line 1088, ../scss/_overrides.scss */
+/* line 1114, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -10787,7 +10802,7 @@ figure.align-center figcaption::after {
   margin: 0 3rem 0 0;
   text-decoration: none;
 }
-/* line 1098, ../scss/_overrides.scss */
+/* line 1124, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li span {
   font-family: "soleilbold";
   font-size: 2.8rem;
@@ -10796,64 +10811,64 @@ figure.align-center figcaption::after {
   color: #333333;
 }
 @media screen and (min-width: 768px) {
-  /* line 1112, ../scss/_overrides.scss */
+  /* line 1138, ../scss/_overrides.scss */
   .page-node-12 .view-resources .table-responsive thead > tr > th {
     min-width: 15rem;
   }
-  /* line 1115, ../scss/_overrides.scss */
+  /* line 1141, ../scss/_overrides.scss */
   .page-node-12 .view-resources .table-responsive thead > tr > th#view-title-table-column {
     min-width: 35rem;
   }
 }
-/* line 1126, ../scss/_overrides.scss */
+/* line 1152, ../scss/_overrides.scss */
 .page-node-12 .view-resources .table-responsive tbody > tr td.views-field-title a {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 1131, ../scss/_overrides.scss */
+/* line 1157, ../scss/_overrides.scss */
 .page-node-12 .view-resources .table-responsive tbody > tr td.views-field-title a:hover {
   text-decoration: underline;
 }
-/* line 1141, ../scss/_overrides.scss */
+/* line 1167, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper {
   background-color: #FFFFFF;
   padding: 0;
 }
-/* line 1144, ../scss/_overrides.scss */
+/* line 1170, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container {
   margin: 0 auto;
   padding: 0;
 }
-/* line 1152, ../scss/_overrides.scss */
+/* line 1178, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item {
   margin-bottom: 2rem;
 }
-/* line 1154, ../scss/_overrides.scss */
+/* line 1180, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item label {
   min-width: 12rem;
   width: 100%;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-/* line 1160, ../scss/_overrides.scss */
+/* line 1186, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item select {
   min-width: 40rem;
   padding: 1rem;
 }
-/* line 1164, ../scss/_overrides.scss */
+/* line 1190, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-item input {
   min-width: 40rem;
   padding: 1rem;
 }
-/* line 1169, ../scss/_overrides.scss */
+/* line 1195, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions {
   border-top: 1px solid #E5E5E5;
   padding-top: 2rem;
   width: 100%;
 }
-/* line 1173, ../scss/_overrides.scss */
+/* line 1199, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions button {
   padding: 1.5rem 3.5rem;
   background-color: #FFB500;
@@ -10861,13 +10876,13 @@ figure.align-center figcaption::after {
   border-radius: 0;
   text-transform: uppercase;
 }
-/* line 1180, ../scss/_overrides.scss */
+/* line 1206, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions button#edit-reset {
   background-color: transparent;
   border: 2px solid #939393;
   color: #939393;
 }
-/* line 1187, ../scss/_overrides.scss */
+/* line 1213, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters, .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
   background-color: #F2F2F2;
   padding-left: 7rem;
@@ -10875,36 +10890,36 @@ figure.align-center figcaption::after {
   margin: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 1187, ../scss/_overrides.scss */
+  /* line 1213, ../scss/_overrides.scss */
   .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters, .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
-/* line 1197, ../scss/_overrides.scss */
+/* line 1223, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters {
   padding-top: 7rem;
 }
-/* line 1200, ../scss/_overrides.scss */
+/* line 1226, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
-/* line 1204, ../scss/_overrides.scss */
+/* line 1230, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center {
   text-align: left;
 }
-/* line 1206, ../scss/_overrides.scss */
+/* line 1232, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination {
   border-radius: 0;
   border: 0;
 }
-/* line 1211, ../scss/_overrides.scss */
+/* line 1237, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li.active a {
   color: #FFB500;
   background-color: 0;
 }
-/* line 1216, ../scss/_overrides.scss */
+/* line 1242, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li a {
   color: #333333;
   border: 0;
@@ -10914,7 +10929,7 @@ figure.align-center figcaption::after {
   padding-right: 0.75rem;
 }
 
-/* line 1240, ../scss/_overrides.scss */
+/* line 1266, ../scss/_overrides.scss */
 .page-node-type-resource .main-container h1.page-header,
 .page-node-type-news .main-container h1.page-header,
 .page-node-type-training .main-container h1.page-header,
@@ -10923,7 +10938,7 @@ figure.align-center figcaption::after {
   padding: 0;
   margin-bottom: 4rem;
 }
-/* line 1244, ../scss/_overrides.scss */
+/* line 1270, ../scss/_overrides.scss */
 .page-node-type-resource .main-container h1.page-header span,
 .page-node-type-news .main-container h1.page-header span,
 .page-node-type-training .main-container h1.page-header span,
@@ -10934,14 +10949,14 @@ figure.align-center figcaption::after {
   font-size: 3.6rem;
   line-height: 4.2rem;
 }
-/* line 1253, ../scss/_overrides.scss */
+/* line 1279, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field,
 .page-node-type-news .main-container article .field,
 .page-node-type-training .main-container article .field,
 .page-node-type-online-course .main-container article .field {
   margin-bottom: 4rem;
 }
-/* line 1255, ../scss/_overrides.scss */
+/* line 1281, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field p,
 .page-node-type-news .main-container article .field p,
 .page-node-type-training .main-container article .field p,
@@ -10950,7 +10965,7 @@ figure.align-center figcaption::after {
   line-height: 3rem;
   font-family: "soleillight";
 }
-/* line 1260, ../scss/_overrides.scss */
+/* line 1286, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field .field--label,
 .page-node-type-news .main-container article .field .field--label,
 .page-node-type-training .main-container article .field .field--label,
@@ -10964,7 +10979,7 @@ figure.align-center figcaption::after {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-/* line 1270, ../scss/_overrides.scss */
+/* line 1296, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field .field--item,
 .page-node-type-news .main-container article .field .field--item,
 .page-node-type-training .main-container article .field .field--item,
@@ -10974,7 +10989,7 @@ figure.align-center figcaption::after {
   font-size: 2.4rem;
   font-family: "soleillight";
 }
-/* line 1275, ../scss/_overrides.scss */
+/* line 1301, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field .field--item p,
 .page-node-type-news .main-container article .field .field--item p,
 .page-node-type-training .main-container article .field .field--item p,
@@ -10982,21 +10997,21 @@ figure.align-center figcaption::after {
   font-size: 2.4rem;
   font-family: "soleillight";
 }
-/* line 1279, ../scss/_overrides.scss */
+/* line 1305, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field .field--item a,
 .page-node-type-news .main-container article .field .field--item a,
 .page-node-type-training .main-container article .field .field--item a,
 .page-node-type-online-course .main-container article .field .field--item a {
   text-decoration: underline;
 }
-/* line 1282, ../scss/_overrides.scss */
+/* line 1308, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field .field--item ul,
 .page-node-type-news .main-container article .field .field--item ul,
 .page-node-type-training .main-container article .field .field--item ul,
 .page-node-type-online-course .main-container article .field .field--item ul {
   list-style: none;
 }
-/* line 1284, ../scss/_overrides.scss */
+/* line 1310, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field .field--item ul li,
 .page-node-type-news .main-container article .field .field--item ul li,
 .page-node-type-training .main-container article .field .field--item ul li,
@@ -11005,7 +11020,7 @@ figure.align-center figcaption::after {
   padding-left: 0;
   text-indent: -2.3rem;
 }
-/* line 1288, ../scss/_overrides.scss */
+/* line 1314, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field .field--item ul li::before,
 .page-node-type-news .main-container article .field .field--item ul li::before,
 .page-node-type-training .main-container article .field .field--item ul li::before,
@@ -11014,7 +11029,7 @@ figure.align-center figcaption::after {
   color: #27628E;
   margin-right: 1.5rem;
 }
-/* line 1297, ../scss/_overrides.scss */
+/* line 1323, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field.field--name-field-link a,
 .page-node-type-news .main-container article .field.field--name-field-link a,
 .page-node-type-training .main-container article .field.field--name-field-link a,
@@ -11024,7 +11039,7 @@ figure.align-center figcaption::after {
   color: #27628E;
   text-decoration: underline;
 }
-/* line 1306, ../scss/_overrides.scss */
+/* line 1332, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field.field--name-field-attachment span.file > span,
 .page-node-type-news .main-container article .field.field--name-field-attachment span.file > span,
 .page-node-type-training .main-container article .field.field--name-field-attachment span.file > span,
@@ -11035,7 +11050,7 @@ figure.align-center figcaption::after {
   padding: 0;
   display: inline-block;
 }
-/* line 1312, ../scss/_overrides.scss */
+/* line 1338, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field.field--name-field-attachment span.file > span.file-icon,
 .page-node-type-news .main-container article .field.field--name-field-attachment span.file > span.file-icon,
 .page-node-type-training .main-container article .field.field--name-field-attachment span.file > span.file-icon,
@@ -11044,7 +11059,7 @@ figure.align-center figcaption::after {
   width: auto;
   padding-right: 2rem;
 }
-/* line 1317, ../scss/_overrides.scss */
+/* line 1343, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field.field--name-field-attachment span.file > span.file-link,
 .page-node-type-news .main-container article .field.field--name-field-attachment span.file > span.file-link,
 .page-node-type-training .main-container article .field.field--name-field-attachment span.file > span.file-link,
@@ -11052,7 +11067,7 @@ figure.align-center figcaption::after {
   text-align: left;
   width: auto;
 }
-/* line 1320, ../scss/_overrides.scss */
+/* line 1346, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field.field--name-field-attachment span.file > span.file-link a,
 .page-node-type-news .main-container article .field.field--name-field-attachment span.file > span.file-link a,
 .page-node-type-training .main-container article .field.field--name-field-attachment span.file > span.file-link a,
@@ -11062,7 +11077,7 @@ figure.align-center figcaption::after {
   color: #27628E;
   text-decoration: underline;
 }
-/* line 1327, ../scss/_overrides.scss */
+/* line 1353, ../scss/_overrides.scss */
 .page-node-type-resource .main-container article .field.field--name-field-attachment span.file > span.file-size,
 .page-node-type-news .main-container article .field.field--name-field-attachment span.file > span.file-size,
 .page-node-type-training .main-container article .field.field--name-field-attachment span.file > span.file-size,
@@ -11076,42 +11091,42 @@ figure.align-center figcaption::after {
   padding-left: 2rem;
 }
 
-/* line 1346, ../scss/_overrides.scss */
+/* line 1372, ../scss/_overrides.scss */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1354, ../scss/_overrides.scss */
+  /* line 1380, ../scss/_overrides.scss */
   .view-trainings .table-responsive thead > tr > th {
-    min-width: 15rem;
+    min-width: 11rem;
     border-bottom: 1px solid #E5E5E5;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 1364, ../scss/_overrides.scss */
+  /* line 1390, ../scss/_overrides.scss */
   .view-trainings .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 1369, ../scss/_overrides.scss */
+/* line 1395, ../scss/_overrides.scss */
 .view-trainings .table-responsive tbody > tr > td.views-field-title a {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 1374, ../scss/_overrides.scss */
+/* line 1400, ../scss/_overrides.scss */
 .view-trainings .table-responsive tbody > tr > td.views-field-title a:hover {
   text-decoration: underline;
 }
 
-/* line 1385, ../scss/_overrides.scss */
+/* line 1411, ../scss/_overrides.scss */
 form .form-control {
   color: #333333;
 }
 
-/* line 1389, ../scss/_overrides.scss */
+/* line 1415, ../scss/_overrides.scss */
 select option[selected="selected"] {
   font-style: italic;
   font-weight: bold;
@@ -11120,28 +11135,28 @@ select option[selected="selected"] {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1397, ../scss/_overrides.scss */
+  /* line 1423, ../scss/_overrides.scss */
   .ui-accordion .ui-accordion-content {
     padding: 2rem 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1406, ../scss/_overrides.scss */
+  /* line 1432, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks {
     display: block;
     width: 100%;
   }
-  /* line 1410, ../scss/_overrides.scss */
+  /* line 1436, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .image-section {
     width: 100%;
   }
-  /* line 1412, ../scss/_overrides.scss */
+  /* line 1438, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .image-section img {
     width: 100%;
     margin: 0 0 3rem 0;
   }
-  /* line 1418, ../scss/_overrides.scss */
+  /* line 1444, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .serivces-block-content h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -11149,39 +11164,39 @@ select option[selected="selected"] {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1432, ../scss/_overrides.scss */
+  /* line 1458, ../scss/_overrides.scss */
   .page-node-27 .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 1437, ../scss/_overrides.scss */
+/* line 1463, ../scss/_overrides.scss */
 .page-node-27 .table-responsive tbody > tr > td.views-field-title a {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 1442, ../scss/_overrides.scss */
+/* line 1468, ../scss/_overrides.scss */
 .page-node-27 .table-responsive tbody > tr > td.views-field-title a:hover {
   text-decoration: underline;
 }
 
-/* line 1455, ../scss/_overrides.scss */
+/* line 1481, ../scss/_overrides.scss */
 .table-responsive .table.table-hover > tbody > tr:hover {
   background: transparent;
 }
-/* line 1460, ../scss/_overrides.scss */
+/* line 1486, ../scss/_overrides.scss */
 .table-responsive .table.table-striped .table-row:hover {
   background: transparent;
 }
-/* line 1466, ../scss/_overrides.scss */
+/* line 1492, ../scss/_overrides.scss */
 .table-responsive .table > thead th {
   font-size: 1.8rem;
   line-height: 3rem;
   font-family: "soleilbold";
   color: #333333;
 }
-/* line 1475, ../scss/_overrides.scss */
+/* line 1501, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td {
   font-family: "soleilregular";
   font-size: 1.6rem;
@@ -11189,19 +11204,19 @@ select option[selected="selected"] {
   color: #333333;
 }
 @media screen and (min-width: 768px) {
-  /* line 1475, ../scss/_overrides.scss */
+  /* line 1501, ../scss/_overrides.scss */
   .table-responsive .table > tbody tr td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 1483, ../scss/_overrides.scss */
+/* line 1509, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td p {
   font-family: "soleilregular";
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #333333;
 }
-/* line 1489, ../scss/_overrides.scss */
+/* line 1515, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td.views-field-title {
   font-family: "soleilbold";
   font-size: 1.8rem;
@@ -11209,7 +11224,7 @@ select option[selected="selected"] {
   color: #333333;
 }
 
-/* line 1503, ../scss/_overrides.scss */
+/* line 1529, ../scss/_overrides.scss */
 .path-contact .main-container h1.page-header {
   padding-top: 0;
   padding-bottom: 0;
@@ -11224,26 +11239,26 @@ select option[selected="selected"] {
   margin-bottom: 5rem;
 }
 
-/* line 1519, ../scss/_overrides.scss */
+/* line 1545, ../scss/_overrides.scss */
 .separator-pipe {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1526, ../scss/_overrides.scss */
+  /* line 1552, ../scss/_overrides.scss */
   .container.lower-section {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 1534, ../scss/_overrides.scss */
+/* line 1560, ../scss/_overrides.scss */
 .page-node-37 h1.page-header {
   margin: 0 0 4rem;
 }
 
-/* line 1539, ../scss/_overrides.scss */
+/* line 1565, ../scss/_overrides.scss */
 #block-sharethis {
   display: inline-block;
   position: fixed;
@@ -11253,33 +11268,33 @@ select option[selected="selected"] {
   z-index: 999;
 }
 @media screen and (max-width: 767px) {
-  /* line 1539, ../scss/_overrides.scss */
+  /* line 1565, ../scss/_overrides.scss */
   #block-sharethis {
     display: none;
   }
 }
 
-/* line 1555, ../scss/_overrides.scss */
+/* line 1581, ../scss/_overrides.scss */
 #block-views-block-news-block-1 .table-responsive thead > tr > th {
   min-width: 15rem;
 }
 
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 1565, ../scss/_overrides.scss */
+  /* line 1591, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 1572, ../scss/_overrides.scss */
+  /* line 1598, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 1580, ../scss/_overrides.scss */
+  /* line 1606, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     border: 2px solid red !important;
