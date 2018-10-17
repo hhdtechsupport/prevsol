@@ -1057,6 +1057,18 @@ figure.align-center {
 // Resources page specific styles
 
 .page-node-12 {
+  .views-exposed-form {
+    .form-inline {
+      .form-item.form-item-keywords {
+        width: 45%;
+        float: left;
+      }
+      .form-item.form-item-prevention-topics {
+        width: 45%;
+        float: right;
+      }
+    }
+  }
   .field--name-body {
     p {
       span {
@@ -1135,8 +1147,8 @@ figure.align-center {
       .region-lower-section {
           .view-resources {
             .views-exposed-form .form-inline {
-              display: flex;
-              flex-direction: column;
+              //display: flex;
+              //flex-direction: column;
               .form-item {
                 margin-bottom: 2rem;
                 label {
@@ -1157,6 +1169,7 @@ figure.align-center {
               .form-group.form-actions {
                 border-top: 1px solid $gray;
                 padding-top: 2rem;
+                width: 100%;
                 button {
                   padding: 1.5rem 3.5rem;
                   background-color: $yellow;
@@ -1325,7 +1338,7 @@ figure.align-center {
 
 // Generic styles for various elements
 
-.table-striped > tbody > tr:nth-of-type(odd) { 
+.table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }
 
