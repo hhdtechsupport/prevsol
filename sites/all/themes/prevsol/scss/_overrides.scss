@@ -1070,10 +1070,32 @@ figure.align-center {
       }
       & tbody {
         & > tr {
+          & > td.views-field-field-cost {
+            .purchase {
+              display: block;
+              width: 100%;
+              margin-top: 0.5rem;
+              a {
+                color: $white;
+                background-color: $yellow;
+                font-size: 1.2rem;
+                border-radius: 5px;
+                padding: 0.5rem 1.5rem;
+                text-transform: uppercase;
+                word-wrap: normal;
+                span.ext {
+                  display: none;
+                }
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
           & > td.views-field-body {
             padding-bottom: 1rem;
             .course-summary {
-              padding-bottom: 1.5rem;
+              padding-bottom: 0.5rem;
               display: block;
             }
             .read-more {
@@ -1081,26 +1103,7 @@ figure.align-center {
               text-align: left;
               color: transparent;
               a {
-                margin-left: -10px;
                 color: $edc-blue;
-              }
-            }
-            .purchase {
-              float: right;
-              text-align: right;
-              color: transparent;
-              a {
-                color: $white;
-                background-color: $yellow;
-                border-radius: 5px;
-                padding: 0.5rem 1.5rem;
-                text-transform: uppercase;
-                span.ext {
-                  display: none;
-                }
-                &:hover {
-                  text-decoration: none;
-                }
               }
             }
           }
