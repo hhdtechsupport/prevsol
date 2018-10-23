@@ -8,6 +8,7 @@ files/
 sites/*/files
 sites/*/private
 sites/*/translations
+sites/default/dbs/
 
 # Ignore default text files
 robots.txt
