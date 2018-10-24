@@ -1649,6 +1649,13 @@ select option[selected="selected"] {
   }
   .main-container {
     article {
+      div.field--name-field-audience, div.field--name-field-certification {
+        .field--label {
+          display: inline-block;
+          width: auto;
+          margin-bottom: 0;
+        }
+      }
       div.field--name-field-length, div.field--name-field-cost {
         clear: both;
         display: inline-block;
@@ -1677,6 +1684,17 @@ select option[selected="selected"] {
   }
   div.main-container h1.page-header span {
     display: none;
+  }
+  .main-container {
+    article {
+      div.field--name-field-audience, div.field--name-field-certification {
+        .field--label {
+          display: inline-block;
+          width: auto;
+          margin-bottom: 0;
+        }
+      }
+    }
   }
 }
 
