@@ -520,6 +520,9 @@ a {
 }
 
 #block-followusfooter {
+  & > .field--name-body > p {
+    display: flex;
+  }
   h2.block-title {
     color: $white;
     font-size: 1.8rem;
