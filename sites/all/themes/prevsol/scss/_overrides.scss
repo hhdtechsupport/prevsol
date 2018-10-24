@@ -1491,7 +1491,7 @@ select option[selected="selected"] {
             margin: 0 0 3rem 0;
           }
         }
-        .serivces-block-content {
+        .services-block-content {
           h4 {
             margin-top: 2rem;
             margin-bottom: 1rem;
@@ -1668,6 +1668,18 @@ select option[selected="selected"] {
   }
 }
 
+.page-node-type-training {
+  .main-wrapper {
+    .page-heading-section.col-sm-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  div.main-container h1.page-header span {
+    display: none;
+  }
+}
+
 .gray-background-section {
   padding: 3rem 0;
   box-sizing: border-box;
@@ -1697,7 +1709,7 @@ select option[selected="selected"] {
 @media (min-width: 1250px) {
   .gray-background-section {
     background-color: #F1F1F1;
-    width: 99.4vw;
+    width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
