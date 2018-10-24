@@ -1701,6 +1701,15 @@ select option[selected="selected"] {
           padding-right: 0.5em;
         }
       }
+      .field--name-field-contact-us {
+        p {
+          text-align: center;
+          font-weight: bold;
+          a {
+            font-weight: bold;
+          }
+        }
+      }
     }
   }
 }
@@ -1710,7 +1719,6 @@ select option[selected="selected"] {
     .container {
       padding-left: 0;
       padding-right: 0;
-      border: 1px solid red;
     }
   }
 }
