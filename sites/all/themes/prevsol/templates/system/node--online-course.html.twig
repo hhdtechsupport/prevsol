@@ -77,17 +77,19 @@
 %}
 <article class="gray-background-section">
   <div class="gray-background-section-content">
-    {{ title_prefix }}
-      <h2{{ title_attributes }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-    {{ title_suffix }}
-    {{ content['body'] }}
-    {{ content['field_audience'] }}
-    {{ content['field_certification'] }}
-    {{ content['field_length'] }}
-    {{ content['field_cost'] }}
-    {{ content['field_link_to_course'] }}
+    <div class="container">
+      {{ title_prefix }}
+        <h2{{ title_attributes }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h2>
+      {{ title_suffix }}
+      {{ content['body'] }}
+      {{ content['field_audience'] }}
+      {{ content['field_certification'] }}
+      {{ content['field_length'] }}
+      {{ content['field_cost'] }}
+      {{ content['field_link_to_course'] }}
+    </div>
   </div>
 
 </article>
@@ -105,7 +107,7 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('content') }}>
+  <div{{ content_attributes.addClass('content', 'container') }}>
     {{ content|without('body', 'field_audience', 'field_certification', 'field_length', 'field_cost', 'field_link_to_course') }}
   </div>
 

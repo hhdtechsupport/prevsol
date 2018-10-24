@@ -52,8 +52,9 @@ ul {
 }
 
 body {
-    margin: 0;
-    font-family: $font-family-base;
+  margin: 0;
+  font-family: $font-family-base;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -1687,13 +1688,29 @@ select option[selected="selected"] {
   }
   .main-container {
     article {
-      div.field--name-field-audience, div.field--name-field-certification {
+      div.field--name-field-training-audience, div.field--name-field-certification, div.field--name-field-training-length {
         .field--label {
           display: inline-block;
           width: auto;
           margin-bottom: 0;
         }
       }
+      div.field--name-field-training-length {
+        .field--label {
+          float: left;
+          padding-right: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+.page-node-type-online-course, .page-node-type-training {
+  article {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+      border: 1px solid red;
     }
   }
 }
@@ -1702,9 +1719,8 @@ select option[selected="selected"] {
   padding: 3rem 0;
   box-sizing: border-box;
   margin-bottom: 5rem;
-  .gray-background-section-content {
+  .gray-background-section-content .container{
     box-sizing: border-box;
-    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     & > h2 {
@@ -1724,7 +1740,7 @@ select option[selected="selected"] {
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 767px) {
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -1756,5 +1772,15 @@ select option[selected="selected"] {
   .container,
   .navbar.container {
     max-width: 720px;
+  }
+}
+@media (max-width: 820px) {
+  .page-node-type-online-course, .page-node-type-training {
+    article {
+      .container {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
   }
 }
