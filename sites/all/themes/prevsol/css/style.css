@@ -11425,8 +11425,8 @@ select option[selected="selected"] {
   margin-bottom: 3rem;
   border-left: none;
 }
-/* line 1739, ../scss/_overrides.scss */
-.gray-background-section .gray-background-section-content .container > h2 a span {
+/* line 1738, ../scss/_overrides.scss */
+.gray-background-section .gray-background-section-content .container > h2 span {
   color: #333333;
   text-transform: none;
   font-family: "soleilbold";
@@ -11435,7 +11435,7 @@ select option[selected="selected"] {
 }
 
 @media (min-width: 767px) {
-  /* line 1752, ../scss/_overrides.scss */
+  /* line 1750, ../scss/_overrides.scss */
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -11447,28 +11447,28 @@ select option[selected="selected"] {
   }
 }
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 1765, ../scss/_overrides.scss */
+  /* line 1763, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 1772, ../scss/_overrides.scss */
+  /* line 1770, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 1780, ../scss/_overrides.scss */
+  /* line 1778, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 720px;
   }
 }
 @media (max-width: 820px) {
-  /* line 1788, ../scss/_overrides.scss */
+  /* line 1786, ../scss/_overrides.scss */
   .page-node-type-online-course article .container, .page-node-type-training article .container {
     padding-left: 0;
     padding-right: 0;

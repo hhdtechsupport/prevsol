@@ -1735,14 +1735,12 @@ select option[selected="selected"] {
       padding-left: 0;
       margin-bottom: 3rem;
       border-left: none;
-      a {
-        span {
-          color: #333333;
-          text-transform: none;
-          font-family: "soleilbold";
-          font-size: 3.6rem;
-          line-height: 4.2rem;
-        }
+      span {
+        color: #333333;
+        text-transform: none;
+        font-family: "soleilbold";
+        font-size: 3.6rem;
+        line-height: 4.2rem;
       }
     }
   }
