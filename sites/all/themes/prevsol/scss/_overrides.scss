@@ -1650,7 +1650,14 @@ select option[selected="selected"] {
   }
   .main-container {
     article {
-      div.field--name-field-audience, div.field--name-field-certification {
+      div.field--name-field-next-event {
+        .field--label {
+          color: $yellow;
+        }
+      }
+    }
+    article {
+      div.field--name-field-audience, div.field--name-field-certification, div.field--name-field-next-event {
         .field--label {
           display: inline-block;
           width: auto;

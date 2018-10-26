@@ -87,6 +87,7 @@
       {{ content['field_length'] }}
       {{ content['field_cost'] }}
       {{ content['field_link_to_course'] }}
+      {{ content['field_next_event'] }}
     </div>
   </div>
 
@@ -106,7 +107,7 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('content', 'container') }}>
-    {{ content|without('body', 'field_audience', 'field_certification', 'field_length', 'field_cost', 'field_link_to_course') }}
+    {{ content|without('body', 'field_audience', 'field_certification', 'field_length', 'field_cost', 'field_link_to_course', 'field_next_event') }}
   </div>
 
 </article>
