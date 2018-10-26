@@ -1137,13 +1137,15 @@ figure.align-center {
 .page-node-12 {
   .views-exposed-form {
     .form-inline {
-      .form-item.form-item-keywords {
-        width: 45%;
-        float: left;
-      }
-      .form-item.form-item-prevention-topics {
-        width: 45%;
-        float: right;
+      @media #{$normal} {
+        .form-item.form-item-keywords {
+          width: 45%;
+          float: left;
+        }
+        .form-item.form-item-prevention-topics {
+          width: 45%;
+          float: right;
+        }
       }
     }
   }
@@ -1236,12 +1238,33 @@ figure.align-center {
                   margin-bottom: 1rem;
                 }
                 select {
-                  min-width: 40rem;
+                  min-width: auto;
                   padding: 1rem;
+                  @media #{$tablet} {
+                    min-width: 45rem;
+                  }
+                  @media #{$normal} {
+                    min-width: 30rem;
+                  }
+                  @media #{$wide} {
+                    min-width: 41rem;
+                  }
+                  &#edit-prevention-topics {
+                    min-height: 34rem;
+                  }
                 }
                 input {
-                  min-width: 40rem;
+                  min-width: auto;
                   padding: 1rem;
+                  @media #{$tablet} {
+                    min-width: 45rem;
+                  }
+                  @media #{$normal} {
+                    min-width: 30rem;
+                  }
+                  @media #{$wide} {
+                    min-width: 41rem;
+                  }
                 }
               }
               .form-group.form-actions {
@@ -1750,6 +1773,18 @@ select option[selected="selected"] {
         line-height: 4.2rem;
       }
     }
+  }
+}
+
+select {
+  option[selected="selected"] {
+    background-color: #D4D4D4;
+    color: #333 !important;
+    font-weight: normal;
+    font-style: normal;
+  }
+  option:focus, option:active {
+    background-color: $edc-blue;
   }
 }
 
