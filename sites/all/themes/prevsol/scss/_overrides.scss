@@ -115,6 +115,10 @@ a {
   color: $edc-blue;
 }
 
+p {
+  margin: 0 0 2rem;
+}
+
 // Wrappers
 .main-wrapper {
     margin: 0 auto;
@@ -410,13 +414,13 @@ a {
 // Lower Section.
 .lower-section-wrapper {
     background-color: $light-gray;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     @media #{$mobile} {
       margin-top: 5rem;
     }
     .lower-section {
-        margin-top: 6rem;
-        margin-bottom: 6rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
         #block-prevsol-views-block-staff-block-1 {
           & > h2 {
             margin-bottom: 6rem;
@@ -754,8 +758,8 @@ body.path-frontpage {
   }
 
   @media #{$tablet} {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .section-content {
     margin: 0;
@@ -783,6 +787,7 @@ body.path-frontpage {
         font-size: 2.4rem;
         line-height: 3.6rem;
         color: $dark-gray;
+        margin-bottom: 2rem;
       }
     }
     .field--name-field-image {
@@ -1780,7 +1785,7 @@ select option[selected="selected"] {
 }
 
 .gray-background-section {
-  padding: 3rem 0;
+  padding: 2rem 0;
   box-sizing: border-box;
   margin-bottom: 5rem;
   .gray-background-section-content .container{
@@ -1811,6 +1816,49 @@ select {
   }
   option:focus, option:active {
     background-color: $edc-blue;
+  }
+}
+
+.view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio {
+  clear: both;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio label {
+  margin-bottom: 0;
+  min-width: 1rem;
+  text-transform: none;
+}
+
+.view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio input {
+  min-width: 1rem;
+  margin-right: 1rem;
+}
+
+.page-node-type-book {
+  article.book {
+    nav {
+      & > h2 {
+        display: none;
+      }
+    }
+  }
+  section#block-booknavigation {
+    background-color: #F2F2F2;
+    border-top: 3px solid $yellow;
+    border-bottom: 3px solid $yellow;
+  }
+  .row-second {
+    section.col-sm-8.has-second-sidebar {
+      .region-content {
+        .field--name-body {
+          table {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 
