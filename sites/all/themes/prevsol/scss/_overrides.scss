@@ -829,6 +829,8 @@ ul.sf-menu .sf-sub-indicator {
   display: none;
 }
 
+
+
 figure.align-center {
   position: relative;
   margin-bottom: 2rem;
@@ -1135,6 +1137,30 @@ figure.align-center {
 // Resources page specific styles
 
 .page-node-12 {
+  .page-second-sidebar-section {
+    .field--name-body {
+      p {
+        position: relative;
+        display: inline-block;
+        &:hover::after {
+          background-color: $darker-blue;
+          opacity: 0.7;
+          content: "";
+          display: flex;
+          z-index: 999;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+        }
+        img {
+            width: 100%;
+        }
+      }
+    }
+  }
   .views-exposed-form {
     .form-inline {
       @media #{$normal} {
