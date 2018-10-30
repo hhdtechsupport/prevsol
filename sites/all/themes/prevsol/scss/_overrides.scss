@@ -1864,6 +1864,7 @@ select option[selected="selected"] {
     display: none;
   }
   .main-container {
+    padding-top: 0;
     article {
       div.field--name-field-training-audience, div.field--name-field-certification, div.field--name-field-training-length {
         .field--label {

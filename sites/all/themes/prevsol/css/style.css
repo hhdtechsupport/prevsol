@@ -11513,52 +11513,56 @@ select option[selected="selected"] {
 .page-node-type-training div.main-container h1.page-header span {
   display: none;
 }
-/* line 1869, ../scss/_overrides.scss */
+/* line 1866, ../scss/_overrides.scss */
+.page-node-type-training .main-container {
+  padding-top: 0;
+}
+/* line 1870, ../scss/_overrides.scss */
 .page-node-type-training .main-container article div.field--name-field-training-audience .field--label, .page-node-type-training .main-container article div.field--name-field-certification .field--label, .page-node-type-training .main-container article div.field--name-field-training-length .field--label {
   display: inline-block;
   width: auto;
   margin-bottom: 0;
 }
-/* line 1876, ../scss/_overrides.scss */
+/* line 1877, ../scss/_overrides.scss */
 .page-node-type-training .main-container article div.field--name-field-training-length .field--label {
   float: left;
   padding-right: 0.5em;
 }
-/* line 1882, ../scss/_overrides.scss */
+/* line 1883, ../scss/_overrides.scss */
 .page-node-type-training .main-container article .field--name-field-contact-us p {
   text-align: center;
   font-weight: bold;
 }
-/* line 1885, ../scss/_overrides.scss */
+/* line 1886, ../scss/_overrides.scss */
 .page-node-type-training .main-container article .field--name-field-contact-us p a {
   font-weight: bold;
 }
 
-/* line 1896, ../scss/_overrides.scss */
+/* line 1897, ../scss/_overrides.scss */
 .page-node-type-online-course article .container, .page-node-type-training article .container {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 1903, ../scss/_overrides.scss */
+/* line 1904, ../scss/_overrides.scss */
 .gray-background-section {
   padding: 2rem 0;
   box-sizing: border-box;
   margin-bottom: 5rem;
 }
-/* line 1907, ../scss/_overrides.scss */
+/* line 1908, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 1911, ../scss/_overrides.scss */
+/* line 1912, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container > h2 {
   padding-left: 0;
   margin-bottom: 3rem;
   border-left: none;
 }
-/* line 1915, ../scss/_overrides.scss */
+/* line 1916, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container > h2 span {
   color: #333333;
   text-transform: none;
@@ -11567,55 +11571,55 @@ select option[selected="selected"] {
   line-height: 4.2rem;
 }
 
-/* line 1927, ../scss/_overrides.scss */
+/* line 1928, ../scss/_overrides.scss */
 select option[selected="selected"] {
   background-color: #D4D4D4;
   color: #333 !important;
   font-weight: normal;
   font-style: normal;
 }
-/* line 1933, ../scss/_overrides.scss */
+/* line 1934, ../scss/_overrides.scss */
 select option:focus, select option:active {
   background-color: #27628E;
 }
 
-/* line 1938, ../scss/_overrides.scss */
+/* line 1939, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio {
   clear: both;
   display: block;
   margin-bottom: 3px;
 }
 
-/* line 1944, ../scss/_overrides.scss */
+/* line 1945, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio label {
   margin-bottom: 0;
   min-width: 1rem;
   text-transform: none;
 }
 
-/* line 1950, ../scss/_overrides.scss */
+/* line 1951, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio input {
   min-width: 1rem;
   margin-right: 1rem;
 }
 
-/* line 1958, ../scss/_overrides.scss */
+/* line 1959, ../scss/_overrides.scss */
 .page-node-type-book article.book nav > h2 {
   display: none;
 }
-/* line 1963, ../scss/_overrides.scss */
+/* line 1964, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation {
   background-color: #F2F2F2;
   border-top: 3px solid #FFB500;
   border-bottom: 3px solid #FFB500;
 }
-/* line 1972, ../scss/_overrides.scss */
+/* line 1973, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table {
   width: 100%;
 }
 
 @media (min-width: 767px) {
-  /* line 1982, ../scss/_overrides.scss */
+  /* line 1983, ../scss/_overrides.scss */
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -11627,34 +11631,34 @@ select option:focus, select option:active {
   }
 }
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 1995, ../scss/_overrides.scss */
+  /* line 1996, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 2002, ../scss/_overrides.scss */
+  /* line 2003, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 2010, ../scss/_overrides.scss */
+  /* line 2011, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 720px;
   }
 }
 @media (max-width: 820px) {
-  /* line 2018, ../scss/_overrides.scss */
+  /* line 2019, ../scss/_overrides.scss */
   .page-node-type-online-course article .container, .page-node-type-training article .container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 2026, ../scss/_overrides.scss */
+  /* line 2027, ../scss/_overrides.scss */
   .page-node-12 .views-exposed-form.bef-exposed-form .form--inline {
     flex-direction: column;
   }
