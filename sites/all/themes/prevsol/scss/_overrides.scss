@@ -726,7 +726,7 @@ p:last-child,
                 a {
                     color: $dark-gray;
                     display: inline-block;
-                    line-height: 2.2rem;
+                    line-height: 2.4rem;
                     margin-bottom: 1rem;
                 }
             }
@@ -1208,6 +1208,16 @@ figure.align-center {
             margin-right: 2rem;
             outline: none;
             user-select: none;
+            &::after {
+              font-family: "Font Awesome 5 Free";
+              font-size: 1.8rem;
+              content: "\f0ab";
+              color: $yellow;
+              font-style: normal;
+              margin: -0.2rem 0 0 3rem;
+              text-decoration: none;
+              float: right;
+            }
           }
           .form-checkboxes {
             display: flex;
@@ -1346,7 +1356,7 @@ figure.align-center {
                     min-height: 34rem;
                   }
                 }
-                input {
+                input:not(.form-checkbox) {
                   min-width: auto;
                   padding: 1rem;
                   @media #{$tablet} {
@@ -1493,6 +1503,13 @@ article {
             content: "•";
             color: $edc-blue;
             margin-right: 1.5rem;
+          }
+          li {
+            &::before {
+              content: "-";
+              color: $edc-blue;
+              margin-right: 1.5rem;
+            }
           }
         }
       }
@@ -1885,7 +1902,7 @@ select option[selected="selected"] {
       }
       .field--name-field-contact-us {
         p {
-          text-align: center;
+          text-align: left;
           font-weight: bold;
           a {
             font-weight: bold;
@@ -1981,6 +1998,9 @@ select {
       }
     }
   }
+}
+details summary::-webkit-details-marker {
+  display:none;
 }
 
 @media (min-width: 767px) {
