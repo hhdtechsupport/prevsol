@@ -252,6 +252,11 @@ p {
             margin: 0 0 0 1rem;
             text-decoration: none;
           }
+          &:hover {
+            &::after {
+              color: $yellow;
+            }
+          }
         }
         & > li {
             &.active {
@@ -1392,91 +1397,139 @@ figure.align-center {
         line-height: 4.2rem;
       }
     }
-    article {
-      .field {
-        margin-bottom: 4rem;
-        p {
-          font-size: 2.4rem;
-          line-height: 3rem;
-          font-family: $soleil-light;
-        }
-        .field--label {
-          display: block;
-          width: 100%;
-          font-family: $soleil-bold;
-          font-size: 2.4rem;
-          line-height: 3rem;
-          color: $dark-gray;
-          text-transform: uppercase;
-          margin-bottom: 1rem;
-        }
-        .field--item {
-          display: block;
-          width: 100%;
-          font-size: 2.4rem;
-          font-family: $soleil-light;
-          p {
-            font-size: 2.4rem;
-            font-family: $soleil-light;
+  }
+}
+
+.page-node-type-resource {
+
+}
+
+article {
+  .field {
+    margin-bottom: 4rem;
+    p {
+      font-size: 2.4rem;
+      line-height: 3rem;
+      font-family: $soleil-light;
+    }
+    .field--label {
+      display: block;
+      width: 100%;
+      font-family: $soleil-bold;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      color: $dark-gray;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .field--item {
+      display: block;
+      width: 100%;
+      font-size: 2.4rem;
+      font-family: $soleil-light;
+      p {
+        font-size: 2.4rem;
+        font-family: $soleil-light;
+      }
+      a {
+        text-decoration: underline;
+      }
+      ul {
+        list-style: none;
+        li {
+          margin: 2rem 0 2rem 4rem;
+          padding-left: 0;
+          text-indent: -2.3rem;
+          &::before {
+            content: "•";
+            color: $edc-blue;
+            margin-right: 1.5rem;
           }
-          a {
-            text-decoration: underline;
-          }
-          ul {
-            list-style: none;
-            li {
-              margin: 2rem 0 2rem 4rem;
-              padding-left: 0;
-              text-indent: -2.3rem;
-              &::before {
-                content: "•";
-                color: $edc-blue;
-                margin-right: 1.5rem;
-              }
+        }
+      }
+    }
+    &.field--name-field-link {
+      a {
+        font-size: 2.4rem;
+        font-family: $soleil-light;
+        color: $edc-blue;
+        text-decoration: underline;
+      }
+    }
+    &.field--name-field-attachment {
+      span.file {
+        & > span {
+          border: 0;
+          text-align: left;
+          width: auto;
+          padding: 0;
+          &.file-link {
+            text-align: left;
+            width: auto;
+            a {
+              font-size: 2.4rem;
+              font-family: $soleil-light;
+              color: $edc-blue;
+              text-decoration: underline;
             }
           }
-        }
-        &.field--name-field-link {
-          a {
+          &.file-size {
+            text-align: left;
+            width: auto;
             font-size: 2.4rem;
             font-family: $soleil-light;
             color: $edc-blue;
             text-decoration: underline;
+            padding-left: 2rem;
           }
         }
-        &.field--name-field-attachment {
-          span.file {
-            & > span {
-              border: 0;
-              text-align: left;
-              width: auto;
-              padding: 0;
-              display: inline-block;
-              &.file-icon {
-                text-align: left;
-                width: auto;
-                padding-right: 2rem;
-              }
-              &.file-link {
-                text-align: left;
-                width: auto;
-                a {
-                  font-size: 2.4rem;
-                  font-family: $soleil-light;
-                  color: $edc-blue;
-                  text-decoration: underline;
-                }
-              }
-              &.file-size {
-                text-align: left;
-                width: auto;
-                font-size: 2.4rem;
-                font-family: $soleil-light;
-                color: $edc-blue;
-                text-decoration: underline;
-                padding-left: 2rem;
-              }
-            }
+      }
+    }
+  }
+  .content {
+    .field.field--label-inline {
+      .field--label {
+        display: inline-block;
+        width: auto;
+        font-family: $soleil-bold;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        color: $dark-gray;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .field--item {
+        display: block;
+        width: 100%;
+        font-size: 2.4rem;
+        font-family: $soleil-light;
+      }
+    }
+    .field.field--label-above:not(.field--name-body) {
+      .field--label {
+        &::after {
+          content: ":";
+          color: $dark-gray;
+        }
+      }
+    }
+    .field--name-field-attachment {
+      span.file {
+        display: block;
+        .file-icon {
+          display: none;
+        }
+        span.file-link {
+          display: contents;
+        }
+        span.file-size {
+          display: contents;
+          &::before {
+            content: "(";
+            padding-left: 1.5rem;
+          }
+          &::after {
+            content: ")";
           }
         }
       }
