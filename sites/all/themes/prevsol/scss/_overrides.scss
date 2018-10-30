@@ -725,6 +725,9 @@ p:last-child,
                 font-size: 2rem;
                 a {
                     color: $dark-gray;
+                    display: inline-block;
+                    line-height: 2.2rem;
+                    margin-bottom: 1rem;
                 }
             }
         }
