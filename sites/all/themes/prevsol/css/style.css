@@ -11201,20 +11201,21 @@ article .field.field--name-field-attachment span.file > span {
   text-align: left;
   width: auto;
   padding: 0;
+  font-weight: 400;
 }
-/* line 1515, ../scss/_overrides.scss */
+/* line 1516, ../scss/_overrides.scss */
 article .field.field--name-field-attachment span.file > span.file-link {
   text-align: left;
   width: auto;
 }
-/* line 1518, ../scss/_overrides.scss */
+/* line 1519, ../scss/_overrides.scss */
 article .field.field--name-field-attachment span.file > span.file-link a {
   font-size: 2.4rem;
   font-family: "soleillight";
   color: #27628E;
   text-decoration: underline;
 }
-/* line 1525, ../scss/_overrides.scss */
+/* line 1526, ../scss/_overrides.scss */
 article .field.field--name-field-attachment span.file > span.file-size {
   text-align: left;
   width: auto;
@@ -11224,7 +11225,7 @@ article .field.field--name-field-attachment span.file > span.file-size {
   text-decoration: underline;
   padding-left: 2rem;
 }
-/* line 1540, ../scss/_overrides.scss */
+/* line 1541, ../scss/_overrides.scss */
 article .content .field.field--label-inline .field--label {
   display: inline-block;
   width: auto;
@@ -11235,80 +11236,80 @@ article .content .field.field--label-inline .field--label {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-/* line 1550, ../scss/_overrides.scss */
+/* line 1551, ../scss/_overrides.scss */
 article .content .field.field--label-inline .field--item {
   display: block;
   width: 100%;
   font-size: 2.4rem;
   font-family: "soleillight";
 }
-/* line 1559, ../scss/_overrides.scss */
+/* line 1560, ../scss/_overrides.scss */
 article .content .field.field--label-above:not(.field--name-body) .field--label::after {
   content: ":";
   color: #333333;
 }
-/* line 1566, ../scss/_overrides.scss */
+/* line 1567, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file {
   display: block;
 }
-/* line 1568, ../scss/_overrides.scss */
+/* line 1569, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file .file-icon {
   display: none;
 }
-/* line 1571, ../scss/_overrides.scss */
+/* line 1572, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file span.file-link {
   display: contents;
 }
-/* line 1574, ../scss/_overrides.scss */
+/* line 1575, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file span.file-size {
   display: contents;
 }
-/* line 1576, ../scss/_overrides.scss */
+/* line 1577, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file span.file-size::before {
   content: "(";
   padding-left: 1.5rem;
 }
-/* line 1580, ../scss/_overrides.scss */
+/* line 1581, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file span.file-size::after {
   content: ")";
 }
 
-/* line 1591, ../scss/_overrides.scss */
+/* line 1592, ../scss/_overrides.scss */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1599, ../scss/_overrides.scss */
+  /* line 1600, ../scss/_overrides.scss */
   .view-trainings .table-responsive thead > tr > th {
     min-width: 11rem;
     border-bottom: 1px solid #E5E5E5;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 1609, ../scss/_overrides.scss */
+  /* line 1610, ../scss/_overrides.scss */
   .view-trainings .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 1614, ../scss/_overrides.scss */
+/* line 1615, ../scss/_overrides.scss */
 .view-trainings .table-responsive tbody > tr > td.views-field-title a {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 1619, ../scss/_overrides.scss */
+/* line 1620, ../scss/_overrides.scss */
 .view-trainings .table-responsive tbody > tr > td.views-field-title a:hover {
   text-decoration: underline;
 }
 
-/* line 1630, ../scss/_overrides.scss */
+/* line 1631, ../scss/_overrides.scss */
 form .form-control {
   color: #333333;
 }
 
-/* line 1634, ../scss/_overrides.scss */
+/* line 1635, ../scss/_overrides.scss */
 select option[selected="selected"] {
   font-style: italic;
   font-weight: bold;
@@ -11317,28 +11318,28 @@ select option[selected="selected"] {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1642, ../scss/_overrides.scss */
+  /* line 1643, ../scss/_overrides.scss */
   .ui-accordion .ui-accordion-content {
     padding: 2rem 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 1651, ../scss/_overrides.scss */
+  /* line 1652, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks {
     display: block;
     width: 100%;
   }
-  /* line 1655, ../scss/_overrides.scss */
+  /* line 1656, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .image-section {
     width: 100%;
   }
-  /* line 1657, ../scss/_overrides.scss */
+  /* line 1658, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .image-section img {
     width: 100%;
     margin: 0 0 3rem 0;
   }
-  /* line 1663, ../scss/_overrides.scss */
+  /* line 1664, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .services-block-content h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -11346,39 +11347,39 @@ select option[selected="selected"] {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1677, ../scss/_overrides.scss */
+  /* line 1678, ../scss/_overrides.scss */
   .page-node-27 .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 1682, ../scss/_overrides.scss */
+/* line 1683, ../scss/_overrides.scss */
 .page-node-27 .table-responsive tbody > tr > td.views-field-title a {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 1687, ../scss/_overrides.scss */
+/* line 1688, ../scss/_overrides.scss */
 .page-node-27 .table-responsive tbody > tr > td.views-field-title a:hover {
   text-decoration: underline;
 }
 
-/* line 1700, ../scss/_overrides.scss */
+/* line 1701, ../scss/_overrides.scss */
 .table-responsive .table.table-hover > tbody > tr:hover {
   background: transparent;
 }
-/* line 1705, ../scss/_overrides.scss */
+/* line 1706, ../scss/_overrides.scss */
 .table-responsive .table.table-striped .table-row:hover {
   background: transparent;
 }
-/* line 1711, ../scss/_overrides.scss */
+/* line 1712, ../scss/_overrides.scss */
 .table-responsive .table > thead th {
   font-size: 1.8rem;
   line-height: 3rem;
   font-family: "soleilbold";
   color: #333333;
 }
-/* line 1720, ../scss/_overrides.scss */
+/* line 1721, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td {
   font-family: "soleilregular";
   font-size: 1.6rem;
@@ -11386,19 +11387,19 @@ select option[selected="selected"] {
   color: #333333;
 }
 @media screen and (min-width: 768px) {
-  /* line 1720, ../scss/_overrides.scss */
+  /* line 1721, ../scss/_overrides.scss */
   .table-responsive .table > tbody tr td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 1728, ../scss/_overrides.scss */
+/* line 1729, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td p {
   font-family: "soleilregular";
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #333333;
 }
-/* line 1734, ../scss/_overrides.scss */
+/* line 1735, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td.views-field-title {
   font-family: "soleilbold";
   font-size: 1.8rem;
@@ -11406,7 +11407,7 @@ select option[selected="selected"] {
   color: #333333;
 }
 
-/* line 1748, ../scss/_overrides.scss */
+/* line 1749, ../scss/_overrides.scss */
 .path-contact .main-container h1.page-header {
   padding-top: 0;
   padding-bottom: 0;
@@ -11421,26 +11422,26 @@ select option[selected="selected"] {
   margin-bottom: 5rem;
 }
 
-/* line 1764, ../scss/_overrides.scss */
+/* line 1765, ../scss/_overrides.scss */
 .separator-pipe {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 1771, ../scss/_overrides.scss */
+  /* line 1772, ../scss/_overrides.scss */
   .container.lower-section {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 1779, ../scss/_overrides.scss */
+/* line 1780, ../scss/_overrides.scss */
 .page-node-37 h1.page-header {
   margin: 0 0 4rem;
 }
 
-/* line 1784, ../scss/_overrides.scss */
+/* line 1785, ../scss/_overrides.scss */
 #block-sharethis {
   display: inline-block;
   position: fixed;
@@ -11450,122 +11451,122 @@ select option[selected="selected"] {
   z-index: 999;
 }
 @media screen and (max-width: 767px) {
-  /* line 1784, ../scss/_overrides.scss */
+  /* line 1785, ../scss/_overrides.scss */
   #block-sharethis {
     display: none;
   }
 }
 
-/* line 1800, ../scss/_overrides.scss */
+/* line 1801, ../scss/_overrides.scss */
 .context-about-us-news .table-responsive thead tr th.views-field-field-type-of-news {
   min-width: 12rem;
 }
-/* line 1803, ../scss/_overrides.scss */
+/* line 1804, ../scss/_overrides.scss */
 .context-about-us-news .table-responsive thead tr th.views-field-title {
   min-width: 50rem;
 }
-/* line 1806, ../scss/_overrides.scss */
+/* line 1807, ../scss/_overrides.scss */
 .context-about-us-news .table-responsive thead tr th.views-field-field-date {
   min-width: 10rem;
 }
 
-/* line 1816, ../scss/_overrides.scss */
+/* line 1817, ../scss/_overrides.scss */
 .page-node-type-online-course .main-wrapper .page-heading-section.col-sm-12 {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 1821, ../scss/_overrides.scss */
+/* line 1822, ../scss/_overrides.scss */
 .page-node-type-online-course div.main-container h1.page-header span {
   display: none;
 }
-/* line 1827, ../scss/_overrides.scss */
+/* line 1828, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-next-event .field--label {
   color: #FFB500;
 }
-/* line 1834, ../scss/_overrides.scss */
+/* line 1835, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-audience .field--label, .page-node-type-online-course .main-container article div.field--name-field-certification .field--label, .page-node-type-online-course .main-container article div.field--name-field-next-event .field--label {
   display: inline-block;
   width: auto;
   margin-bottom: 0;
 }
-/* line 1840, ../scss/_overrides.scss */
+/* line 1841, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-length, .page-node-type-online-course .main-container article div.field--name-field-cost {
   clear: both;
   display: inline-block;
   margin-right: 3rem;
 }
-/* line 1844, ../scss/_overrides.scss */
+/* line 1845, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-length div.field--label, .page-node-type-online-course .main-container article div.field--name-field-cost div.field--label {
   display: inline-block;
   float: left;
   width: auto;
 }
-/* line 1849, ../scss/_overrides.scss */
+/* line 1850, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-length div.field--item, .page-node-type-online-course .main-container article div.field--name-field-cost div.field--item {
   display: inline-block;
   float: left;
   width: auto;
 }
 
-/* line 1861, ../scss/_overrides.scss */
+/* line 1862, ../scss/_overrides.scss */
 .page-node-type-training .main-wrapper .page-heading-section.col-sm-12 {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 1866, ../scss/_overrides.scss */
+/* line 1867, ../scss/_overrides.scss */
 .page-node-type-training div.main-container h1.page-header span {
   display: none;
 }
-/* line 1869, ../scss/_overrides.scss */
+/* line 1870, ../scss/_overrides.scss */
 .page-node-type-training .main-container {
   padding-top: 0;
 }
-/* line 1873, ../scss/_overrides.scss */
+/* line 1874, ../scss/_overrides.scss */
 .page-node-type-training .main-container article div.field--name-field-training-audience .field--label, .page-node-type-training .main-container article div.field--name-field-certification .field--label, .page-node-type-training .main-container article div.field--name-field-training-length .field--label {
   display: inline-block;
   width: auto;
   margin-bottom: 0;
 }
-/* line 1880, ../scss/_overrides.scss */
+/* line 1881, ../scss/_overrides.scss */
 .page-node-type-training .main-container article div.field--name-field-training-length .field--label {
   float: left;
   padding-right: 0.5em;
 }
-/* line 1886, ../scss/_overrides.scss */
+/* line 1887, ../scss/_overrides.scss */
 .page-node-type-training .main-container article .field--name-field-contact-us p {
   text-align: center;
   font-weight: bold;
 }
-/* line 1889, ../scss/_overrides.scss */
+/* line 1890, ../scss/_overrides.scss */
 .page-node-type-training .main-container article .field--name-field-contact-us p a {
   font-weight: bold;
 }
 
-/* line 1900, ../scss/_overrides.scss */
+/* line 1901, ../scss/_overrides.scss */
 .page-node-type-online-course article .container, .page-node-type-training article .container {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 1907, ../scss/_overrides.scss */
+/* line 1908, ../scss/_overrides.scss */
 .gray-background-section {
   padding: 2rem 0;
   box-sizing: border-box;
   margin-bottom: 5rem;
 }
-/* line 1911, ../scss/_overrides.scss */
+/* line 1912, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 1915, ../scss/_overrides.scss */
+/* line 1916, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container > h2 {
   padding-left: 0;
   margin-bottom: 3rem;
   border-left: none;
 }
-/* line 1919, ../scss/_overrides.scss */
+/* line 1920, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container > h2 span {
   color: #333333;
   text-transform: none;
@@ -11574,55 +11575,55 @@ select option[selected="selected"] {
   line-height: 4.2rem;
 }
 
-/* line 1931, ../scss/_overrides.scss */
+/* line 1932, ../scss/_overrides.scss */
 select option[selected="selected"] {
   background-color: #D4D4D4;
   color: #333 !important;
   font-weight: normal;
   font-style: normal;
 }
-/* line 1937, ../scss/_overrides.scss */
+/* line 1938, ../scss/_overrides.scss */
 select option:focus, select option:active {
   background-color: #27628E;
 }
 
-/* line 1942, ../scss/_overrides.scss */
+/* line 1943, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio {
   clear: both;
   display: block;
   margin-bottom: 3px;
 }
 
-/* line 1948, ../scss/_overrides.scss */
+/* line 1949, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio label {
   margin-bottom: 0;
   min-width: 1rem;
   text-transform: none;
 }
 
-/* line 1954, ../scss/_overrides.scss */
+/* line 1955, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio input {
   min-width: 1rem;
   margin-right: 1rem;
 }
 
-/* line 1962, ../scss/_overrides.scss */
+/* line 1963, ../scss/_overrides.scss */
 .page-node-type-book article.book nav > h2 {
   display: none;
 }
-/* line 1967, ../scss/_overrides.scss */
+/* line 1968, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation {
   background-color: #F2F2F2;
   border-top: 3px solid #FFB500;
   border-bottom: 3px solid #FFB500;
 }
-/* line 1976, ../scss/_overrides.scss */
+/* line 1977, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table {
   width: 100%;
 }
 
 @media (min-width: 767px) {
-  /* line 1986, ../scss/_overrides.scss */
+  /* line 1987, ../scss/_overrides.scss */
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -11634,34 +11635,34 @@ select option:focus, select option:active {
   }
 }
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 1999, ../scss/_overrides.scss */
+  /* line 2000, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 2006, ../scss/_overrides.scss */
+  /* line 2007, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 2014, ../scss/_overrides.scss */
+  /* line 2015, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 720px;
   }
 }
 @media (max-width: 820px) {
-  /* line 2022, ../scss/_overrides.scss */
+  /* line 2023, ../scss/_overrides.scss */
   .page-node-type-online-course article .container, .page-node-type-training article .container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 2030, ../scss/_overrides.scss */
+  /* line 2031, ../scss/_overrides.scss */
   .page-node-12 .views-exposed-form.bef-exposed-form .form--inline {
     flex-direction: column;
   }
