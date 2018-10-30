@@ -11415,103 +11415,111 @@ select option[selected="selected"] {
 }
 
 /* line 1751, ../scss/_overrides.scss */
-#block-views-block-news-block-1 .table-responsive thead > tr > th {
-  min-width: 15rem;
+.context-about-us-news .table-responsive thead tr th.views-field-field-type-of-news {
+  min-width: 12rem;
+}
+/* line 1754, ../scss/_overrides.scss */
+.context-about-us-news .table-responsive thead tr th.views-field-title {
+  min-width: 50rem;
+}
+/* line 1757, ../scss/_overrides.scss */
+.context-about-us-news .table-responsive thead tr th.views-field-field-date {
+  min-width: 10rem;
 }
 
-/* line 1761, ../scss/_overrides.scss */
+/* line 1767, ../scss/_overrides.scss */
 .page-node-type-online-course .main-wrapper .page-heading-section.col-sm-12 {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 1766, ../scss/_overrides.scss */
+/* line 1772, ../scss/_overrides.scss */
 .page-node-type-online-course div.main-container h1.page-header span {
   display: none;
 }
-/* line 1772, ../scss/_overrides.scss */
+/* line 1778, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-next-event .field--label {
   color: #FFB500;
 }
-/* line 1779, ../scss/_overrides.scss */
+/* line 1785, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-audience .field--label, .page-node-type-online-course .main-container article div.field--name-field-certification .field--label, .page-node-type-online-course .main-container article div.field--name-field-next-event .field--label {
   display: inline-block;
   width: auto;
   margin-bottom: 0;
 }
-/* line 1785, ../scss/_overrides.scss */
+/* line 1791, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-length, .page-node-type-online-course .main-container article div.field--name-field-cost {
   clear: both;
   display: inline-block;
   margin-right: 3rem;
 }
-/* line 1789, ../scss/_overrides.scss */
+/* line 1795, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-length div.field--label, .page-node-type-online-course .main-container article div.field--name-field-cost div.field--label {
   display: inline-block;
   float: left;
   width: auto;
 }
-/* line 1794, ../scss/_overrides.scss */
+/* line 1800, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-length div.field--item, .page-node-type-online-course .main-container article div.field--name-field-cost div.field--item {
   display: inline-block;
   float: left;
   width: auto;
 }
 
-/* line 1806, ../scss/_overrides.scss */
+/* line 1812, ../scss/_overrides.scss */
 .page-node-type-training .main-wrapper .page-heading-section.col-sm-12 {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 1811, ../scss/_overrides.scss */
+/* line 1817, ../scss/_overrides.scss */
 .page-node-type-training div.main-container h1.page-header span {
   display: none;
 }
-/* line 1817, ../scss/_overrides.scss */
+/* line 1823, ../scss/_overrides.scss */
 .page-node-type-training .main-container article div.field--name-field-training-audience .field--label, .page-node-type-training .main-container article div.field--name-field-certification .field--label, .page-node-type-training .main-container article div.field--name-field-training-length .field--label {
   display: inline-block;
   width: auto;
   margin-bottom: 0;
 }
-/* line 1824, ../scss/_overrides.scss */
+/* line 1830, ../scss/_overrides.scss */
 .page-node-type-training .main-container article div.field--name-field-training-length .field--label {
   float: left;
   padding-right: 0.5em;
 }
-/* line 1830, ../scss/_overrides.scss */
+/* line 1836, ../scss/_overrides.scss */
 .page-node-type-training .main-container article .field--name-field-contact-us p {
   text-align: center;
   font-weight: bold;
 }
-/* line 1833, ../scss/_overrides.scss */
+/* line 1839, ../scss/_overrides.scss */
 .page-node-type-training .main-container article .field--name-field-contact-us p a {
   font-weight: bold;
 }
 
-/* line 1844, ../scss/_overrides.scss */
+/* line 1850, ../scss/_overrides.scss */
 .page-node-type-online-course article .container, .page-node-type-training article .container {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 1851, ../scss/_overrides.scss */
+/* line 1857, ../scss/_overrides.scss */
 .gray-background-section {
   padding: 2rem 0;
   box-sizing: border-box;
   margin-bottom: 5rem;
 }
-/* line 1855, ../scss/_overrides.scss */
+/* line 1861, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 1859, ../scss/_overrides.scss */
+/* line 1865, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container > h2 {
   padding-left: 0;
   margin-bottom: 3rem;
   border-left: none;
 }
-/* line 1863, ../scss/_overrides.scss */
+/* line 1869, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container > h2 span {
   color: #333333;
   text-transform: none;
@@ -11520,55 +11528,55 @@ select option[selected="selected"] {
   line-height: 4.2rem;
 }
 
-/* line 1875, ../scss/_overrides.scss */
+/* line 1881, ../scss/_overrides.scss */
 select option[selected="selected"] {
   background-color: #D4D4D4;
   color: #333 !important;
   font-weight: normal;
   font-style: normal;
 }
-/* line 1881, ../scss/_overrides.scss */
+/* line 1887, ../scss/_overrides.scss */
 select option:focus, select option:active {
   background-color: #27628E;
 }
 
-/* line 1886, ../scss/_overrides.scss */
+/* line 1892, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio {
   clear: both;
   display: block;
   margin-bottom: 3px;
 }
 
-/* line 1892, ../scss/_overrides.scss */
+/* line 1898, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio label {
   margin-bottom: 0;
   min-width: 1rem;
   text-transform: none;
 }
 
-/* line 1898, ../scss/_overrides.scss */
+/* line 1904, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio input {
   min-width: 1rem;
   margin-right: 1rem;
 }
 
-/* line 1906, ../scss/_overrides.scss */
+/* line 1912, ../scss/_overrides.scss */
 .page-node-type-book article.book nav > h2 {
   display: none;
 }
-/* line 1911, ../scss/_overrides.scss */
+/* line 1917, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation {
   background-color: #F2F2F2;
   border-top: 3px solid #FFB500;
   border-bottom: 3px solid #FFB500;
 }
-/* line 1920, ../scss/_overrides.scss */
+/* line 1926, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table {
   width: 100%;
 }
 
 @media (min-width: 767px) {
-  /* line 1930, ../scss/_overrides.scss */
+  /* line 1936, ../scss/_overrides.scss */
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -11580,28 +11588,28 @@ select option:focus, select option:active {
   }
 }
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 1943, ../scss/_overrides.scss */
+  /* line 1949, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 1950, ../scss/_overrides.scss */
+  /* line 1956, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 1958, ../scss/_overrides.scss */
+  /* line 1964, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 720px;
   }
 }
 @media (max-width: 820px) {
-  /* line 1966, ../scss/_overrides.scss */
+  /* line 1972, ../scss/_overrides.scss */
   .page-node-type-online-course article .container, .page-node-type-training article .container {
     padding-left: 0;
     padding-right: 0;

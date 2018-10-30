@@ -1744,12 +1744,18 @@ select option[selected="selected"] {
   }
 }
 
-#block-views-block-news-block-1 {
+.context-about-us-news {
   .table-responsive {
-    & thead {
-      &>tr {
-        &>th {
-          min-width: 15rem;
+    thead {
+      tr {
+        th.views-field-field-type-of-news {
+          min-width: 12rem;
+        }
+        th.views-field-title {
+          min-width: 50rem;
+        }
+        th.views-field-field-date {
+          min-width: 10rem;
         }
       }
     }
