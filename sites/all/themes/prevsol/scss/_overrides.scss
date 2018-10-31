@@ -1336,7 +1336,7 @@ figure.align-center {
               //flex-direction: column;
               & > .form-item {
                 margin-bottom: 2rem;
-                label {
+                & > label {
                   min-width: 12rem;
                   width: 100%;
                   text-transform: uppercase;

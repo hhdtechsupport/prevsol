@@ -11013,7 +11013,7 @@ figure.align-center figcaption::after {
   margin-bottom: 2rem;
 }
 /* line 1339, ../scss/_overrides.scss */
-.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item label {
+.page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item > label {
   min-width: 12rem;
   width: 100%;
   text-transform: uppercase;
