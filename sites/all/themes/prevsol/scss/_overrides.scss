@@ -1233,6 +1233,9 @@ figure.align-center {
               padding: 0;
               & > label.option {
                 margin: 0;
+                & > input.form-checkbox {
+                  margin-right: 0.5rem;
+                }
               }
             }
           }
