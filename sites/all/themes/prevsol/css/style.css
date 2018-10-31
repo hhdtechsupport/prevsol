@@ -10927,7 +10927,7 @@ figure.align-center figcaption::after {
 }
 /* line 1236, ../scss/_overrides.scss */
 .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > details.form-item .form-checkboxes .form-item.form-type-checkbox > label.option > input.form-checkbox {
-  margin-right: 0.5rem;
+  margin-right: 0.7rem;
 }
 @media screen and (min-width: 992px) {
   /* line 1247, ../scss/_overrides.scss */
