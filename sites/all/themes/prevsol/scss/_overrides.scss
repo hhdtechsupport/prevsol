@@ -430,16 +430,16 @@ p {
 // Lower Section.
 .lower-section-wrapper {
     background-color: $light-gray;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
     @media #{$mobile} {
-      margin-top: 5rem;
+      margin-top: 4rem;
     }
     .lower-section {
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         #block-prevsol-views-block-staff-block-1 {
           & > h2 {
-            margin-bottom: 6rem;
+            margin-bottom: 4rem;
           }
         }
         .view-staff {
@@ -777,8 +777,8 @@ body.path-frontpage {
   }
 
   @media #{$tablet} {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
   }
   .section-content {
     margin: 0;
@@ -1467,7 +1467,7 @@ figure.align-center {
 
 article {
   .field {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     p {
       font-size: 2.4rem;
       line-height: 3rem;

@@ -10068,22 +10068,22 @@ p {
 /* line 431, ../scss/_overrides.scss */
 .lower-section-wrapper {
   background-color: #F2F2F2;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 @media screen and (max-width: 767px) {
   /* line 431, ../scss/_overrides.scss */
   .lower-section-wrapper {
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
 }
 /* line 437, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 /* line 441, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section #block-prevsol-views-block-staff-block-1 > h2 {
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 /* line 446, ../scss/_overrides.scss */
 .lower-section-wrapper .lower-section .view-staff .views-row {
@@ -10458,8 +10458,8 @@ body.path-frontpage .main-container h1.page-header span {
 @media screen and (min-width: 768px) {
   /* line 771, ../scss/_overrides.scss */
   .main-container {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
   }
 }
 /* line 783, ../scss/_overrides.scss */
@@ -11151,7 +11151,7 @@ figure.align-center figcaption::after {
 
 /* line 1469, ../scss/_overrides.scss */
 article .field {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 /* line 1471, ../scss/_overrides.scss */
 article .field p {
