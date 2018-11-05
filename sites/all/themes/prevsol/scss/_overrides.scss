@@ -1988,14 +1988,118 @@ select {
       }
     }
   }
+  .field--name-body {
+    p {
+      font-size: 1.6rem;
+      font-family: $soleil;
+      line-height: 1.4;
+      color: $dark-gray;
+    }
+    & > ul {
+      list-style: none;
+      margin-left: 3rem;
+      & > li {
+        margin: 1.5rem 0 1.5rem 0;
+        padding-left: 0;
+        text-indent: -1.6rem;
+        font-size: 1.6rem;
+        &::before {
+          content: "•";
+          color: $edc-blue;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
   section#block-booknavigation {
     background-color: #F2F2F2;
     border-top: 3px solid $yellow;
     border-bottom: 3px solid $yellow;
+    padding: 1rem 2.5rem;
+    h2.block-title {
+      color: $dark-gray;
+      text-transform: none;
+      font-family: $soleil-bold;
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+    nav {
+      & > ul {
+        list-style: none;
+        padding-left: 0;
+        & > li {
+          & > a {
+            color: $dark-gray;
+            margin-bottom: 1rem;
+            display: block;
+          }
+          & > ul {
+            list-style: none;
+            & > li {
+              font-family: $soleil;
+              font-weight: normal;
+              font-size: 1.8rem;
+              color: $dark-gray;
+              user-select: none;
+              cursor: pointer;
+              padding-left: 1rem;
+              text-indent: -3.2rem;
+              a {
+                color: $dark-gray;
+              }
+              &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content: "\f138";
+                color: $yellow;
+                font-style: normal;
+                margin: 0px 1rem 0px 0;
+                text-decoration: none;
+              }
+              &.hasList {
+                &::before {
+                  content: "\f13a";
+                  color: $edc-blue;
+                }
+                a {
+                  color: $edc-blue;
+                }
+              }
+              &.hasList > ul {
+                list-style: none;
+                & > li {
+                  margin: 1.5rem 0 1.5rem 0;
+                  padding-left: 0;
+                  text-indent: -2.4rem;
+                  font-weight: normal;
+                  font-size: 1.6rem;
+                  line-height: 1.2;
+                  color: $dark-gray;
+                  &::before {
+                    content: "»";
+                    color: $edc-blue;
+                    margin-right: 1rem;
+                    font-weight: normal;
+                  }
+                  a {
+                    font-weight: normal;
+                    font-family: $soleil;
+                    color: $dark-gray;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .row-second {
     section.col-sm-8.has-second-sidebar {
       .region-content {
+        h1.page-header {
+          margin-bottom: 2.5rem;
+        }
         .field--name-body {
           table {
             width: 100%;
@@ -2061,11 +2165,13 @@ select {
               max-width: 40%;
               display: inherit;
               &::after, &::before {
-                font-family: "Font Awesome 5 Free";
                 font-weight: normal;
                 color: $edc-blue;
                 font-style: normal;
+                font-weight: bold;
                 text-decoration: none;
+                font-family: Verdana;
+                font-size: 1.7rem;
               }
               a {
                 b {
@@ -2075,17 +2181,15 @@ select {
             }
             li:first-of-type {
               &::before {
-                font-family: "Font Awesome 5 Free";
-                content: "\f104";
-                margin: 0.1rem 0 0 1rem;
+                content: "‹";
+                margin: -0.2rem 0 0 1rem;
                 padding-right: 0.3rem;
               }
             }
             li:last-of-type {
               &::after {
-                font-family: "Font Awesome 5 Free";
-                content: "\f105";
-                margin: 0.1rem 1rem 0 0;
+                content: "›";
+                margin: -0.2rem 1rem 0 0;
                 padding-left: 0.3rem;
               }
             }
