@@ -1445,6 +1445,7 @@ figure.align-center {
 
 .page-node-type-resource,
 .page-node-type-news,
+.page-node-type-book,
 .page-node-type-training,
 .page-node-type-online-course,
 .page-node-type-save-the-date {
@@ -1998,6 +1999,96 @@ select {
         .field--name-body {
           table {
             width: 100%;
+            td {
+              vertical-align: top;
+              border: 1px solid #DDD;
+              padding: 10px 15px;
+              a {
+                word-break: break-all;
+              }
+              p {
+                font-size: 1.4rem;
+                font-family: $soleil;
+                line-height: 2rem;
+              }
+              ul, li {
+                font-size: 1.4rem;
+                font-family: $soleil;
+                line-height: 2rem;
+                p {
+                  display: inline;
+                }
+              }
+              & > ul {
+                list-style: none;
+                margin-left: 3rem;
+                & > li {
+                  margin: 1.5rem 0 1.5rem 0;
+                  padding-left: 0;
+                  text-indent: -2.3rem;
+                  &::before {
+                    content: "•";
+                    color: $edc-blue;
+                    margin-right: 1rem;
+                  }
+                  ul {
+                    list-style: none;
+                    li {
+                      margin: 1.5rem 0 1.5rem 0;
+                      padding-left: 0;
+                      text-indent: -2.3rem;
+                      &::before {
+                        content: "»";
+                        color: $edc-blue;
+                        margin-right: 1rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        nav {
+          background-color: #F1F1F1;
+          ul {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            padding: 1rem 0.5rem;
+            li:first-of-type, li:last-of-type {
+              list-style-type: none;
+              max-width: 40%;
+              display: inherit;
+              &::after, &::before {
+                font-family: "Font Awesome 5 Free";
+                font-weight: normal;
+                color: $edc-blue;
+                font-style: normal;
+                text-decoration: none;
+              }
+              a {
+                b {
+                  display: none;
+                }
+              }
+            }
+            li:first-of-type {
+              &::before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f104";
+                margin: 0.1rem 0 0 1rem;
+                padding-right: 0.3rem;
+              }
+            }
+            li:last-of-type {
+              &::after {
+                font-family: "Font Awesome 5 Free";
+                content: "\f105";
+                margin: 0.1rem 1rem 0 0;
+                padding-left: 0.3rem;
+              }
+            }
           }
         }
       }
