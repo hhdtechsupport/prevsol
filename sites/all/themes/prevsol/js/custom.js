@@ -18,6 +18,11 @@
           $('#superfish-main-toggle').trigger('click');
         }
       });
+      $('.page-node-type-book .block-book-navigation ul ul li').each(function() {
+        if ($(this).has('ul').length) {
+          $(this).addClass('hasList');
+        }
+      });
     }
   };
 })(window.jQuery, window.Drupal);
