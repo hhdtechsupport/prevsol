@@ -1987,6 +1987,31 @@ select {
         display: none;
       }
     }
+    .field--name-body {
+      ol {
+        counter-reset: list;
+        margin: 0 0 2rem 3rem;
+        & > li {
+          list-style: none;
+          position: relative;
+          margin-bottom: 1.2rem;
+          a {
+            color: $dark-gray;
+            text-decoration: underline;
+            &:hover {
+              color: $edc-blue;
+            }
+          }
+          &::before {
+            counter-increment: list;
+            content: counter(list, decimal) ") ";
+            position: absolute;
+            left: -1.4em;
+            color: $edc-blue;
+          }
+        }
+      }
+    }
   }
   .field--name-body {
     p {
