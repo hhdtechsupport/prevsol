@@ -2049,6 +2049,9 @@ select {
       line-height: 3.6rem;
     }
     nav {
+      &:not(:last-child) {
+        display: none;
+      }
       & > ul {
         list-style: none;
         padding-left: 0;
