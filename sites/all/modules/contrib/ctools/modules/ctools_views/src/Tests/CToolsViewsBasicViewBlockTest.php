@@ -45,7 +45,7 @@ class CToolsViewsBasicViewBlockTest extends UITestBase {
     parent::setUp();
 
     ViewTestData::createTestViews(get_class($this), array('ctools_views_test_views'));
-    $this->storage = $this->container->get('entity.manager')->getStorage('block');
+    $this->storage = $this->container->get('entity_type.manager')->getStorage('block');
   }
 
   /**

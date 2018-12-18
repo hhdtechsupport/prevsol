@@ -4,7 +4,7 @@ services:
     arguments: ['@controller_resolver', '@form_builder', '@ctools.wizard.factory']
   ctools.wizard.entity.form:
     class: Drupal\ctools\Controller\WizardEntityFormController
-    arguments: ['@controller_resolver', '@form_builder', '@ctools.wizard.factory', '@entity.manager']
+    arguments: ['@controller_resolver', '@form_builder', '@ctools.wizard.factory', '@entity_type.manager']
   ctools.wizard_enhancer:
     class: Drupal\ctools\Routing\Enhancer\WizardEnhancer
     tags:
