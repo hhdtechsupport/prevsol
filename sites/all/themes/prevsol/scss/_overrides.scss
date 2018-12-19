@@ -1952,6 +1952,34 @@ select option[selected="selected"] {
   }
 }
 
+.view-newsletters {
+  .views-row {
+    .views-field-field-attachment {
+      .file {
+        .file-icon {
+          .icon::before {
+            font-size: 2.4rem;
+          }
+        }
+      }
+      .file-link {
+        a {
+          font-size: 2.4rem;
+        }
+      }
+      .file-size {
+        font-size: 1.5rem;
+      }
+    }
+    .views-field-field-additional-information {
+      p {
+        font-size: 2rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
 select {
   option[selected="selected"] {
     background-color: #D4D4D4;
