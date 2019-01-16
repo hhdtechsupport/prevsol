@@ -7,8 +7,8 @@ dependencies:
   - captcha
 configure: admin/config/people/captcha/image_captcha
 
-# Information added by Drupal.org packaging script on 2018-08-31
-version: '8.x-1.0-beta1+31-dev'
+# Information added by Drupal.org packaging script on 2018-12-24
+version: '8.x-1.0-beta1+34-dev'
 core: '8.x'
 project: 'captcha'
-datestamp: 1535698393
+datestamp: 1545646688
