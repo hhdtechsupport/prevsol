@@ -11951,8 +11951,17 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
+/* line 2292, ../scss/_overrides.scss */
+.page-node-type-save-the-date h1.page-header {
+  display: none;
+}
+/* line 2295, ../scss/_overrides.scss */
+.page-node-type-save-the-date .file > span {
+  background-color: transparent;
+}
+
 @media (min-width: 767px) {
-  /* line 2291, ../scss/_overrides.scss */
+  /* line 2301, ../scss/_overrides.scss */
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -11964,34 +11973,34 @@ details summary::-webkit-details-marker {
   }
 }
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 2304, ../scss/_overrides.scss */
+  /* line 2314, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 2311, ../scss/_overrides.scss */
+  /* line 2321, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 2319, ../scss/_overrides.scss */
+  /* line 2329, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 720px;
   }
 }
 @media (max-width: 820px) {
-  /* line 2327, ../scss/_overrides.scss */
+  /* line 2337, ../scss/_overrides.scss */
   .page-node-type-online-course article .container, .page-node-type-training article .container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 2335, ../scss/_overrides.scss */
+  /* line 2345, ../scss/_overrides.scss */
   .page-node-12 .views-exposed-form.bef-exposed-form .form--inline {
     flex-direction: column;
   }

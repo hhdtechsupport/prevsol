@@ -2287,6 +2287,16 @@ details summary::-webkit-details-marker {
   display:none;
 }
 
+// Save The Date content type
+.page-node-type-save-the-date {
+  h1.page-header {
+    display: none;
+  }
+  .file > span {
+    background-color: transparent;
+  }
+}
+
 @media (min-width: 767px) {
   .gray-background-section {
     background-color: #F1F1F1;
