@@ -32,7 +32,7 @@ function prevsol_theme_suggestions_page_alter(array &$suggestions, array $variab
 */
 function prevsol_preprocess_page(&$variables) {
   $block_upcoming_events = \Drupal\block\Entity\Block::load('views_block__upcoming_events_block_2');
-   $variables['page']['block_upcoming_events'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_upcoming_events);
+  $variables['page']['block_upcoming_events'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_upcoming_events);
 
   $block_who_we_are = \Drupal\block\Entity\Block::load('whowearefront');
   $variables['page']['block_who_we_are'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_who_we_are);
