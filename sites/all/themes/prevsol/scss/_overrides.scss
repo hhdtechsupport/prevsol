@@ -772,6 +772,7 @@ p:last-child,
         font-size: 1.8rem;
         a {
           font-size: 1.8rem;
+          color: $dark-gray;
         }
       }
     }
@@ -838,7 +839,7 @@ body.path-frontpage {
   padding: 0 0 0 1.5rem;
   box-sizing: border-box;
   line-height: 1;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   br {
     display: none;
   }
@@ -872,7 +873,7 @@ body.path-frontpage {
       p {
         color: $dark-gray;
         font-size: 2.4rem;
-        line-height: 3.2rem;
+        line-height: 3.6rem;
       }
     }
   }
@@ -881,7 +882,7 @@ body.path-frontpage {
     padding: 0 0 0 4rem;
     #block-quotesfront {
       .quote {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
         .quote-text {
           color: $edc-blue;
           font-size: 2.2rem;
@@ -896,6 +897,7 @@ body.path-frontpage {
           font-size: 1.8rem;
           display: block;
           font-family: $soleil;
+          margin-top: 1.5rem;
         }
       }
     }
