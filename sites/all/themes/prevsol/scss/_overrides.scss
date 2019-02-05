@@ -179,6 +179,22 @@ p {
         width: 100%;
     }
 }
+.homepage-header-image-wrapper-text {
+  background-color: $light-blue;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  p {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    color: $white;
+    font-family: $soleil-light;
+    @media #{$tablet} {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
 
 .page-header {
     margin-top: 0;
@@ -241,7 +257,8 @@ p {
     .navbar-right {
         @media #{$tablet} {
             margin-right: 0;
-            width: 360px;
+            width: 370px;
+            padding-left: 10px;
         }
         & > li a[title="Subscribe to our newsletter"] {
           &::after {
@@ -260,10 +277,30 @@ p {
           }
         }
         & > li {
+            @media #{$tablet} {
+              padding-top: 1rem;
+              padding-bottom: 1rem;
+            }
             &.active {
-                a {
-                    background-color: transparent;
+              a {
+                background-color: transparent;
+                @media #{$tablet} {
+                  background-color: $yellow;
                 }
+                &:hover {
+                  color: $white;
+                }
+                &::before {
+                  display: none;
+                }
+              }
+              & + li {
+                a {
+                  &::before {
+                    display: none;
+                  }
+                }
+              }
             }
             & > a {
                 @media #{$tablet} {
@@ -273,8 +310,8 @@ p {
                   font-weight: normal;
                   font-size: 1.2rem;
                   line-height: 1.2rem;
-                  padding-top: 1rem;
-                  padding-bottom: 1rem;
+                  padding-top: 0.5rem;
+                  padding-bottom: 0.5rem;
                   &::before {
                     content: "|";
                     position: relative;
@@ -770,6 +807,94 @@ body.path-frontpage {
       span {
         font-size: 3.6rem;
         line-height: 4.2rem;
+      }
+    }
+  }
+  .view-upcoming-events {
+    .view-content {
+      .views-field-field-date-and-time {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+      .views-field-title {
+        margin-bottom: 1rem;
+        a {
+          color: $black;
+          font-size: 2.5rem;
+          font-family: $soleil-bold;
+        }
+      }
+      .views-field-body {
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.block-header-with-subtitle {
+  border-bottom: 0;
+  border-left: 6px solid $yellow;
+  padding: 0 0 0 1.5rem;
+  box-sizing: border-box;
+  line-height: 1;
+  margin-bottom: 2rem;
+  br {
+    display: none;
+  }
+  .block-title {
+    margin: 0;
+    padding: 0;
+    font-size: 3.6rem;
+    line-height: 1;
+    color: $edc-blue;
+    font-family: $soleil;
+    margin-bottom: 0;
+    border: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    display: block;
+  }
+  .block-subtitle {
+    font-size: 1.8rem;
+    line-height: 1;
+    color: $subtitle-gray;
+    display: block;
+    margin-top: 0.25rem;
+  }
+}
+
+.bottom-section-wrapper {
+  margin-bottom: 8rem;
+  section.bottom-left {
+    .who-we-are-wrapper {
+      padding-right: 3rem;
+      p {
+        color: $dark-gray;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+      }
+    }
+  }
+  section.bottom-right {
+    border-left: 1px solid $gray-divider;
+    padding: 0 0 0 4rem;
+    #block-quotesfront {
+      .quote {
+        margin-bottom: 3rem;
+        .quote-text {
+          color: $edc-blue;
+          font-size: 2rem;
+          line-height: 1.75;
+          margin-bottom: 0;
+          font-style: italic;
+          display: block;
+        }
+        .quote-footer {
+          color: $dark-gray;
+          font-size: 1.6rem;
+          display: block;
+        }
       }
     }
   }

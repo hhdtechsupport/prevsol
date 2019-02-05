@@ -92,6 +92,9 @@
       </header>
     </div>
     <div class="homepage-header-image-wrapper"><img src="/{{ directory }}/images/homepage-header2.jpg" alt="{{ 'Home'|t }}" /></div>
+    <div class="homepage-header-image-wrapper-text">
+      <p class="container">Preparing the Behavioral Health Workforce for Over 30 Years</p>
+    </div>
   {% endblock %}
 {% endif %}
 
@@ -170,8 +173,12 @@
           {# Content #}
           {% block content %}
             <a id="main-content"></a>
-            {{ page.content }}
+            {# page.content #}
           {% endblock %}
+
+          {# Upcoming Events block #}
+          <div class="frontpage-upcoming-events">{{ page.block_upcoming_events }}</div>
+          {# kint(page) #}
         </section>
 
         {# Sidebar Second #}
@@ -224,6 +231,13 @@
     </div>
   {% endblock %}
 {% endif %}
+
+<div class="bottom-section-wrapper container">
+  <div class="row row-bottom">
+    <section class="bottom-left section-content col-sm-8">{{ page.block_who_we_are }}</section>
+    <section class="bottom-right section-content col-sm-4">{{ page.block_quotes }}</section>
+  </div>
+</div>
 
 <div class="footer-wrapper">
   <div class="footer-four-sections-wrapper container">
