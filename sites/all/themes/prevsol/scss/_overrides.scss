@@ -1706,7 +1706,7 @@ article {
       }
     }
   }
-  .content {
+  .content, .container {
     .field.field--label-inline {
       .field--label {
         display: inline-block;
@@ -1758,6 +1758,37 @@ article {
 }
 
 // Generic styles for various elements
+
+.field--name-field-attachment {
+  span.file {
+    & > span {
+      border: 0;
+      text-align: left;
+      width: auto;
+      padding: 0;
+      font-weight: 400;
+      &.file-link {
+        text-align: left;
+        width: auto;
+        a {
+          font-size: 2.4rem;
+          font-family: $soleil-light;
+          color: $edc-blue;
+          text-decoration: underline;
+        }
+      }
+      &.file-size {
+        text-align: left;
+        width: auto;
+        font-size: 2.4rem;
+        font-family: $soleil-light;
+        color: $edc-blue;
+        text-decoration: underline;
+        padding-left: 2rem;
+      }
+    }
+  }
+}
 
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
