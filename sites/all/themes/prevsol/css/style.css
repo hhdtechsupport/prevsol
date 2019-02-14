@@ -12099,20 +12099,24 @@ select option:focus, select option:active {
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav {
   background-color: #F1F1F1;
 }
-/* line 2412, ../scss/_overrides.scss */
+/* line 2411, ../scss/_overrides.scss */
+.page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul:first-child {
+  display: none;
+}
+/* line 2415, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding: 1rem 0.5rem;
 }
-/* line 2417, ../scss/_overrides.scss */
+/* line 2420, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type {
   list-style-type: none;
   max-width: 40%;
   display: inherit;
 }
-/* line 2421, ../scss/_overrides.scss */
+/* line 2424, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type::after, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type::before, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type::after, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type::before {
   font-weight: normal;
   color: #27628E;
@@ -12122,39 +12126,39 @@ select option:focus, select option:active {
   font-family: Verdana;
   font-size: 1.7rem;
 }
-/* line 2431, ../scss/_overrides.scss */
+/* line 2434, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type a b, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type a b {
   display: none;
 }
-/* line 2437, ../scss/_overrides.scss */
+/* line 2440, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type::before {
   content: "‹";
   margin: -0.2rem 0 0 1rem;
   padding-right: 0.3rem;
 }
-/* line 2444, ../scss/_overrides.scss */
+/* line 2447, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type::after {
   content: "›";
   margin: -0.2rem 1rem 0 0;
   padding-left: 0.3rem;
 }
 
-/* line 2456, ../scss/_overrides.scss */
+/* line 2459, ../scss/_overrides.scss */
 details summary::-webkit-details-marker {
   display: none;
 }
 
-/* line 2462, ../scss/_overrides.scss */
+/* line 2465, ../scss/_overrides.scss */
 .page-node-type-save-the-date h1.page-header {
   display: none;
 }
-/* line 2465, ../scss/_overrides.scss */
+/* line 2468, ../scss/_overrides.scss */
 .page-node-type-save-the-date .file > span {
   background-color: transparent;
 }
 
 @media (min-width: 767px) {
-  /* line 2471, ../scss/_overrides.scss */
+  /* line 2474, ../scss/_overrides.scss */
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -12166,34 +12170,34 @@ details summary::-webkit-details-marker {
   }
 }
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 2484, ../scss/_overrides.scss */
+  /* line 2487, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 2491, ../scss/_overrides.scss */
+  /* line 2494, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 2499, ../scss/_overrides.scss */
+  /* line 2502, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 720px;
   }
 }
 @media (max-width: 820px) {
-  /* line 2507, ../scss/_overrides.scss */
+  /* line 2510, ../scss/_overrides.scss */
   .page-node-type-online-course article .container, .page-node-type-training article .container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 2515, ../scss/_overrides.scss */
+  /* line 2518, ../scss/_overrides.scss */
   .page-node-12 .views-exposed-form.bef-exposed-form .form--inline {
     flex-direction: column;
   }

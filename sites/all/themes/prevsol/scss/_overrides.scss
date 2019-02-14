@@ -2408,6 +2408,9 @@ select {
           }
         }
         nav {
+          ul:first-child {
+            display: none;
+          }
           background-color: #F1F1F1;
           ul {
             display: flex;
