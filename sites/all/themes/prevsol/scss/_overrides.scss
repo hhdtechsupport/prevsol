@@ -2206,9 +2206,11 @@ select {
           list-style: none;
           position: relative;
           margin-bottom: 1.2rem;
+          font-size: 1.6rem;
           a {
             color: $dark-gray;
             text-decoration: underline;
+            font-size: 1.6rem;
             &:hover {
               color: $edc-blue;
             }
