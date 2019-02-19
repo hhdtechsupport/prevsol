@@ -12073,7 +12073,7 @@ select option:focus, select option:active {
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li {
   margin: 1.5rem 0 1.5rem 0;
   padding-left: 0;
-  text-indent: -2.3rem;
+  text-indent: -1.5rem;
 }
 /* line 2389, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li::before {
@@ -12089,7 +12089,7 @@ select option:focus, select option:active {
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li ul li {
   margin: 1.5rem 0 1.5rem 0;
   padding-left: 0;
-  text-indent: -2.3rem;
+  text-indent: -1.7rem;
 }
 /* line 2400, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li ul li::before {
