@@ -1258,6 +1258,7 @@ figure.align-center {
                 padding: 0.5rem 1.5rem;
                 text-transform: uppercase;
                 word-wrap: normal;
+                white-space: nowrap;
                 span.ext {
                   display: none;
                 }
@@ -1284,6 +1285,77 @@ figure.align-center {
           }
         }
       }
+    }
+  }
+}
+
+// Upcoming Events page
+.context-services-upcoming-events {
+  .table-responsive {
+    & thead {
+      & > tr {
+        & > th.views-field-title {
+          @media #{$tablet} {
+            min-width: 40rem;
+          }
+        }
+      }
+    }
+    & tbody {
+      & > tr {
+        & > td.views-field-field-cost {
+          .purchase, .course-link {
+            display: block;
+            width: 100%;
+            margin-top: 0.5rem;
+            a {
+              color: $white;
+              background-color: $yellow;
+              font-size: 1.2rem;
+              border-radius: 5px;
+              padding: 0.5rem 1.5rem;
+              text-transform: uppercase;
+              word-wrap: normal;
+              white-space: nowrap;
+              span.ext {
+                display: none;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+        & > td.views-field-body {
+          padding-bottom: 1rem;
+          .course-summary {
+            padding-bottom: 0.5rem;
+            display: block;
+          }
+          .read-more {
+            float: left;
+            text-align: left;
+            color: transparent;
+            a {
+              color: $edc-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-node-type-upcoming {
+  div.main-container {
+    h1.page-header {
+      span {
+        display: none;
+      }
+    }
+    .field--name-field-location {
+      clear: both;
+      padding-top: 0.5rem;
     }
   }
 }
