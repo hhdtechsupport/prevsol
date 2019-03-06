@@ -2431,7 +2431,7 @@ select {
         }
         .field--name-body {
           table {
-            width: 100%;
+            width: 100% !important;
             td {
               vertical-align: top;
               border: 1px solid #DDD;

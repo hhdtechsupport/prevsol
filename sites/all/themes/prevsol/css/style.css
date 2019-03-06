@@ -12099,7 +12099,7 @@ select option:focus, select option:active {
 }
 /* line 2433, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table {
-  width: 100%;
+  width: 100% !important;
 }
 /* line 2435, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td {
