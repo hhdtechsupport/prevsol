@@ -12012,13 +12012,14 @@ select option:focus, select option:active {
   color: #333333;
   margin-bottom: 1rem;
   display: block;
+  font-size: 2rem;
 }
-/* line 2351, ../scss/_overrides.scss */
+/* line 2352, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul {
   list-style: none;
   border-top: 1px solid #E5E5E5;
 }
-/* line 2354, ../scss/_overrides.scss */
+/* line 2355, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li {
   font-family: "soleilregular";
   font-weight: normal;
@@ -12029,13 +12030,13 @@ select option:focus, select option:active {
   padding-left: 1rem;
   text-indent: -1.5rem;
 }
-/* line 2363, ../scss/_overrides.scss */
+/* line 2364, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li > a {
   color: #333333;
   display: block;
   padding-top: 0.5rem;
 }
-/* line 2367, ../scss/_overrides.scss */
+/* line 2368, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li > a::after {
   margin-top: 0.5rem;
   border-top: 1px solid #E5E5E5;
@@ -12043,7 +12044,7 @@ select option:focus, select option:active {
   content: " ";
   margin-left: -3.1rem;
 }
-/* line 2374, ../scss/_overrides.scss */
+/* line 2375, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li > a::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -12054,22 +12055,22 @@ select option:focus, select option:active {
   text-decoration: none;
   display: inline-block;
 }
-/* line 2386, ../scss/_overrides.scss */
+/* line 2387, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > a {
   color: #27628E;
 }
-/* line 2388, ../scss/_overrides.scss */
+/* line 2389, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > a::before {
   content: "\f13a";
   color: #27628E;
   text-decoration: none;
 }
-/* line 2395, ../scss/_overrides.scss */
+/* line 2396, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > ul {
   list-style: none;
   margin-left: -3.5rem;
 }
-/* line 2398, ../scss/_overrides.scss */
+/* line 2399, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > ul > li {
   margin: 1rem 0 1rem 0;
   padding-left: 0;
@@ -12079,108 +12080,108 @@ select option:focus, select option:active {
   line-height: 1.2;
   color: #333333;
 }
-/* line 2406, ../scss/_overrides.scss */
+/* line 2407, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > ul > li::before {
   content: "»";
   color: #27628E;
   margin-right: 0.5rem;
   font-weight: normal;
 }
-/* line 2412, ../scss/_overrides.scss */
+/* line 2413, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > ul > li a {
   font-weight: normal;
   font-family: "soleilregular";
   color: #333333;
 }
-/* line 2428, ../scss/_overrides.scss */
+/* line 2429, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content h1.page-header {
   margin-bottom: 2.5rem;
 }
-/* line 2432, ../scss/_overrides.scss */
+/* line 2433, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table {
   width: 100%;
 }
-/* line 2434, ../scss/_overrides.scss */
+/* line 2435, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td {
   vertical-align: top;
   border: 1px solid #DDD;
   padding: 10px 15px;
 }
-/* line 2438, ../scss/_overrides.scss */
+/* line 2439, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td a {
   word-break: break-all;
 }
-/* line 2441, ../scss/_overrides.scss */
+/* line 2442, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td p {
   font-size: 1.4rem;
   font-family: "soleilregular";
   line-height: 2rem;
 }
-/* line 2446, ../scss/_overrides.scss */
+/* line 2447, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td ul, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td li {
   font-size: 1.4rem;
   font-family: "soleilregular";
   line-height: 2rem;
 }
-/* line 2450, ../scss/_overrides.scss */
+/* line 2451, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td ul p, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td li p {
   display: inline;
 }
-/* line 2454, ../scss/_overrides.scss */
+/* line 2455, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul {
   list-style: none;
   margin-left: 3rem;
 }
-/* line 2457, ../scss/_overrides.scss */
+/* line 2458, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li {
   margin: 1.5rem 0 1.5rem 0;
   padding-left: 0;
   text-indent: -1.5rem;
 }
-/* line 2461, ../scss/_overrides.scss */
+/* line 2462, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li::before {
   content: "•";
   color: #27628E;
   margin-right: 1rem;
 }
-/* line 2466, ../scss/_overrides.scss */
+/* line 2467, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li ul {
   list-style: none;
 }
-/* line 2468, ../scss/_overrides.scss */
+/* line 2469, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li ul li {
   margin: 1.5rem 0 1.5rem 0;
   padding-left: 0;
   text-indent: -1.7rem;
 }
-/* line 2472, ../scss/_overrides.scss */
+/* line 2473, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li ul li::before {
   content: "»";
   color: #27628E;
   margin-right: 1rem;
 }
-/* line 2484, ../scss/_overrides.scss */
+/* line 2485, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav {
   background-color: #F1F1F1;
 }
-/* line 2485, ../scss/_overrides.scss */
+/* line 2486, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul:first-child {
   display: none;
 }
-/* line 2489, ../scss/_overrides.scss */
+/* line 2490, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding: 1rem 0.5rem;
 }
-/* line 2494, ../scss/_overrides.scss */
+/* line 2495, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type {
   list-style-type: none;
   max-width: 40%;
   display: inherit;
 }
-/* line 2498, ../scss/_overrides.scss */
+/* line 2499, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type::after, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type::before, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type::after, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type::before {
   font-weight: normal;
   color: #27628E;
@@ -12190,39 +12191,39 @@ select option:focus, select option:active {
   font-family: Verdana;
   font-size: 1.7rem;
 }
-/* line 2508, ../scss/_overrides.scss */
+/* line 2509, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type a b, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type a b {
   display: none;
 }
-/* line 2514, ../scss/_overrides.scss */
+/* line 2515, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type::before {
   content: "‹";
   margin: -0.2rem 0 0 1rem;
   padding-right: 0.3rem;
 }
-/* line 2521, ../scss/_overrides.scss */
+/* line 2522, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type::after {
   content: "›";
   margin: -0.2rem 1rem 0 0;
   padding-left: 0.3rem;
 }
 
-/* line 2533, ../scss/_overrides.scss */
+/* line 2534, ../scss/_overrides.scss */
 details summary::-webkit-details-marker {
   display: none;
 }
 
-/* line 2539, ../scss/_overrides.scss */
+/* line 2540, ../scss/_overrides.scss */
 .page-node-type-save-the-date h1.page-header {
   display: none;
 }
-/* line 2542, ../scss/_overrides.scss */
+/* line 2543, ../scss/_overrides.scss */
 .page-node-type-save-the-date .file > span {
   background-color: transparent;
 }
 
 @media (min-width: 767px) {
-  /* line 2548, ../scss/_overrides.scss */
+  /* line 2549, ../scss/_overrides.scss */
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -12234,34 +12235,34 @@ details summary::-webkit-details-marker {
   }
 }
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 2561, ../scss/_overrides.scss */
+  /* line 2562, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 2568, ../scss/_overrides.scss */
+  /* line 2569, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 2576, ../scss/_overrides.scss */
+  /* line 2577, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 720px;
   }
 }
 @media (max-width: 820px) {
-  /* line 2584, ../scss/_overrides.scss */
+  /* line 2585, ../scss/_overrides.scss */
   .page-node-type-online-course article .container, .page-node-type-training article .container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 2592, ../scss/_overrides.scss */
+  /* line 2593, ../scss/_overrides.scss */
   .page-node-12 .views-exposed-form.bef-exposed-form .form--inline {
     flex-direction: column;
   }
