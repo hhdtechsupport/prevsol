@@ -396,9 +396,11 @@ p {
                 color: $white;
                 font-size: 1.8rem;
                 line-height: 1.8rem;
-                font-family: $soleil-bold;
+                font-family: $soleil;
+                font-weight: bold;
                 padding: 1rem 2rem;
                 @media #{$tablet} {
+                    font-family: $soleil;
                     font-weight: bold;
                     padding: 0;
                     border-bottom: 4px solid transparent;
@@ -699,12 +701,12 @@ p:last-child,
 
 .featured-bottom-three-sections-wrapper {
     background-color: $light-gray;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
     @media #{$mobile} {
       margin-top: 5rem;
     }
     .featured-bottom-three-sections {
-        padding: 6rem 0;
+        padding: 4rem 0 6rem;
         @media #{$tablet} {
             display: flex;
             flex-wrap: wrap;
@@ -768,6 +770,15 @@ p:last-child,
           margin-bottom: 1rem;
         }
       }
+      .views-field-field-date {
+        .field-content {
+          font-size: 14px;
+          color: $dark-gray;
+          text-transform: uppercase;
+          font-weight: normal;
+          margin-bottom: 4px;
+        }
+      }
       .field-content {
         font-size: 1.8rem;
         a {
@@ -801,6 +812,7 @@ p:last-child,
 
 body.path-frontpage {
   .main-container {
+    margin-top: 2rem;
     h1.page-header {
       @media #{$mobile} {
         margin-top: 4rem;
@@ -814,20 +826,31 @@ body.path-frontpage {
   .view-upcoming-events {
     .view-content {
       .views-field-field-date-and-time {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
+        font-size: 14px;
+        color: $dark-gray;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-bottom: 4px;
       }
       .views-field-title {
         margin-bottom: 1rem;
         a {
-          color: $black;
-          font-size: 2.5rem;
+          color: $dark-gray;
+          font-size: 2rem;
           font-family: $soleil-bold;
         }
       }
       .views-field-body {
         margin-bottom: 3rem;
         font-size: 1.8rem;
+        .field-content {
+          p {
+            color: $dark-gray;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            font-family: $soleil;
+          }
+        }
       }
     }
   }
@@ -876,7 +899,7 @@ body.path-frontpage {
       padding-right: 3rem;
       p {
         color: $dark-gray;
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         line-height: 3.6rem;
         font-family: $soleil-light;
       }
