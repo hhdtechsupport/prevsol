@@ -891,6 +891,14 @@ body.path-frontpage {
   }
 }
 
+.field--name-body {
+  p {
+    a {
+      word-break: break-all; 
+    }
+  }
+}
+
 .bottom-section-wrapper {
   margin-bottom: 6rem;
   padding-left: 6rem;
