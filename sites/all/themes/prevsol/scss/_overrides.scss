@@ -701,7 +701,7 @@ p:last-child,
 
 .featured-bottom-three-sections-wrapper {
     background-color: $light-gray;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     @media #{$mobile} {
       margin-top: 5rem;
     }
@@ -782,8 +782,9 @@ p:last-child,
       .field-content {
         font-size: 1.8rem;
         a {
-          font-size: 1.8rem;
+          font-size: 2rem;
           color: $dark-gray;
+          font-family: $soleil-bold;
         }
       }
     }
@@ -795,7 +796,7 @@ p:last-child,
         display: flex;
         .section-content.col-sm-8 {
             &.has-second-sidebar {
-                padding-right: 3rem;
+                padding-right: 6rem;
             }
         }
     }
@@ -812,7 +813,8 @@ p:last-child,
 
 body.path-frontpage {
   .main-container {
-    margin-top: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 6rem;
     h1.page-header {
       @media #{$mobile} {
         margin-top: 4rem;
@@ -863,6 +865,7 @@ body.path-frontpage {
   box-sizing: border-box;
   line-height: 1;
   margin-bottom: 4rem;
+  margin-top: 0;
   br {
     display: none;
   }
@@ -889,14 +892,14 @@ body.path-frontpage {
 }
 
 .bottom-section-wrapper {
-  margin-bottom: 8rem;
-  padding-left: 3rem;
+  margin-bottom: 6rem;
+  padding-left: 6rem;
   @media #{$tablet} {
     padding-left: 0;
   }
   section.bottom-left {
     .who-we-are-wrapper {
-      padding-right: 3rem;
+      padding-right: 6rem;
       p {
         color: $dark-gray;
         font-size: 2.4rem;
@@ -907,7 +910,7 @@ body.path-frontpage {
   }
   section.bottom-right {
     border-left: 1px solid $gray-divider;
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 6rem;
     @media #{$mobile} {
       border-left: none;
       margin-top: 4rem;
@@ -921,7 +924,7 @@ body.path-frontpage {
           font-size: 2.2rem;
           line-height: 1.75;
           margin-bottom: 0;
-          font-style: italic;
+          margin-top: -0.8rem;
           display: block;
           font-family: $soleil-semibold-italic;
         }
@@ -1015,7 +1018,7 @@ body.path-frontpage {
 
 .page-second-sidebar-section {
   @media #{$tablet} {
-      padding: 0 0 0 3rem;
+      padding: 0 0 0 6rem;
   }
 }
 
@@ -1023,7 +1026,11 @@ ul.sf-menu .sf-sub-indicator {
   display: none;
 }
 
-
+.views-field-field-date-and-time-1 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-family: $soleil;
+}
 
 figure.align-center {
   position: relative;
