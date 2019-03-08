@@ -1153,7 +1153,7 @@ figure.align-center {
                     font-family: $soleil;
                     p {
                         font-size: 2.4rem;
-                        font-family: $soleil
+                        font-family: $soleil;
                     }
                     ul {
                       list-style: none;
@@ -2226,6 +2226,22 @@ select option[selected="selected"] {
         font-family: "soleilbold";
         font-size: 3.6rem;
         line-height: 4.2rem;
+      }
+    }
+    ul {
+      list-style: none;
+      li {
+        margin: 2rem 0 2rem 4rem;
+        padding-left: 0;
+        text-indent: -2.3rem;
+        font-size: 2.4rem;
+        font-family: $soleil-light;
+        &::before {
+          content: "•";
+          color: $edc-blue;
+          margin-right: 1.5rem;
+          font-size: 2.4rem;
+        }
       }
     }
   }
