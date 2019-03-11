@@ -894,7 +894,7 @@ body.path-frontpage {
 .field--name-body {
   p {
     a {
-      word-break: break-all; 
+      word-break: break-all;
     }
   }
 }
@@ -2352,7 +2352,7 @@ select {
       }
     }
   }
-  .field--name-body {
+  .field--name-body, .field--name-field-footer-text .field--item {
     p {
       font-size: 1.6rem;
       font-family: $soleil;
@@ -2468,6 +2468,9 @@ select {
                     font-weight: normal;
                     font-family: $soleil;
                     color: $dark-gray;
+                    &.hasPageTitle {
+                      font-family: $soleil-bold;
+                    }
                   }
                 }
               }
