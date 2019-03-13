@@ -12284,8 +12284,13 @@ details summary::-webkit-details-marker {
   background-color: transparent;
 }
 
+/* line 2605, ../scss/_overrides.scss */
+.field--name-field-presenters {
+  display: inline-block;
+}
+
 @media (min-width: 767px) {
-  /* line 2606, ../scss/_overrides.scss */
+  /* line 2610, ../scss/_overrides.scss */
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -12297,34 +12302,34 @@ details summary::-webkit-details-marker {
   }
 }
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 2619, ../scss/_overrides.scss */
+  /* line 2623, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 2626, ../scss/_overrides.scss */
+  /* line 2630, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 2634, ../scss/_overrides.scss */
+  /* line 2638, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 720px;
   }
 }
 @media (max-width: 820px) {
-  /* line 2642, ../scss/_overrides.scss */
+  /* line 2646, ../scss/_overrides.scss */
   .page-node-type-online-course article .container, .page-node-type-training article .container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 2650, ../scss/_overrides.scss */
+  /* line 2654, ../scss/_overrides.scss */
   .page-node-12 .views-exposed-form.bef-exposed-form .form--inline {
     flex-direction: column;
   }

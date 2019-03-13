@@ -2602,6 +2602,10 @@ details summary::-webkit-details-marker {
   }
 }
 
+.field--name-field-presenters {
+  display: inline-block;
+}
+
 @media (min-width: 767px) {
   .gray-background-section {
     background-color: #F1F1F1;
