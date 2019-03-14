@@ -40,4 +40,7 @@ function prevsol_preprocess_page(&$variables) {
   $block_quotes = \Drupal\block\Entity\Block::load('quotesfront');
   $variables['page']['block_quotes'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_quotes);
    //kint($variables);
+
+   $block_quotes_views = \Drupal\block\Entity\Block::load('views_block__quotes_block_2');
+   $variables['page']['block_quotes_views'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_quotes_views);
 }
