@@ -1698,6 +1698,33 @@ figure.align-center {
   }
 }
 
+// Styling page
+.page-node-type-page {
+  .pager-nav.text-center {
+    text-align: left;
+    .pagination {
+      border-radius: 0;
+      border: 0;
+      li {
+        &.active {
+          a {
+            color: $yellow;
+            background-color: 0;
+          }
+        }
+        a {
+          color: $dark-gray;
+          border: 0;
+          border-radius: 0;
+          background-color: transparent;
+          padding-left: 0;
+          padding-right: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
 // Resource content type styles
 
 .page-node-type-resource,
