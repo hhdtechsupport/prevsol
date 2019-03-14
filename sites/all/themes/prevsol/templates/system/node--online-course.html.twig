@@ -83,6 +83,7 @@
       {{ title_suffix }}
       {{ content['body'] }}
       {{ content['field_next_event'] }}
+      {{ content['field_when'] }}
       {{ content['field_audience'] }}
       {{ content['field_certification'] }}
       {{ content['field_length'] }}
@@ -107,7 +108,7 @@
   {% endif %}
 
   <div{{ content_attributes.addClass('content', 'container') }}>
-    {{ content|without('body', 'field_audience', 'field_certification', 'field_length', 'field_cost', 'field_link_to_course', 'field_next_event') }}
+    {{ content|without('body', 'field_audience', 'field_certification', 'field_length', 'field_cost', 'field_link_to_course', 'field_next_event', 'field_when') }}
   </div>
 
 </article>

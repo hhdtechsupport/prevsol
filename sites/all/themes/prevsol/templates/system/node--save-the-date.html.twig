@@ -82,6 +82,7 @@
         <h2{{ title_attributes }}>{{ label }}</h2>
       {{ title_suffix }}
       {{ content['field_next_event'] }}
+      {{ content['field_when'] }}
       {{ content['body'] }}
       {{ content['field_attachment'] }}
     </div>
@@ -92,7 +93,7 @@
 <article{{ attributes.addClass(classes) }}>
 
   <div{{ content_attributes.addClass('content','container') }}>
-    {{ content|without('body', 'field_next_event', 'field_attachment') }}
+    {{ content|without('body', 'field_next_event', 'field_attachment', 'field_when') }}
   </div>
 
 </article>
