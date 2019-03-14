@@ -926,6 +926,9 @@ body.path-frontpage {
     }
     .view-quotes {
       margin-top: 0;
+      .views-row {
+        margin-bottom: 4rem;
+      }
       .views-field-body {
         p {
           color: $edc-blue;
