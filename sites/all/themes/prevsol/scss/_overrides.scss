@@ -834,6 +834,11 @@ body.path-frontpage {
         font-weight: normal;
         margin-bottom: 4px;
       }
+      .views-field-field-when {
+        .field-content {
+          text-transform: uppercase;
+        }
+      }
       .views-field-title {
         margin-bottom: 1rem;
         a {
