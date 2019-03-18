@@ -910,6 +910,9 @@ body.path-frontpage {
   @media #{$tablet} {
     padding-left: 0;
   }
+  @media #{$mobile} {
+    padding-left: 3rem;
+  }
   section.bottom-left {
     .who-we-are-wrapper {
       padding-right: 6rem;
