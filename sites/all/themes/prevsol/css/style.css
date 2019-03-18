@@ -11860,11 +11860,11 @@ select option[selected="selected"] {
   display: none;
 }
 /* line 2192, ../scss/_overrides.scss */
-.page-node-type-online-course .main-container article div.field--name-field-next-event .field--label {
+.page-node-type-online-course .main-container article div.field--name-field-next-event .field--label, .page-node-type-online-course .main-container article div.field--name-field-when .field--label {
   color: #FFB500;
 }
 /* line 2199, ../scss/_overrides.scss */
-.page-node-type-online-course .main-container article div.field--name-field-audience .field--label, .page-node-type-online-course .main-container article div.field--name-field-certification .field--label, .page-node-type-online-course .main-container article div.field--name-field-next-event .field--label {
+.page-node-type-online-course .main-container article div.field--name-field-audience .field--label, .page-node-type-online-course .main-container article div.field--name-field-when .field--label, .page-node-type-online-course .main-container article div.field--name-field-certification .field--label, .page-node-type-online-course .main-container article div.field--name-field-next-event .field--label {
   display: inline-block;
   width: auto;
   margin-bottom: 0;
