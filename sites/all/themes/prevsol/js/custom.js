@@ -30,6 +30,23 @@
           $(this).addClass('hasPageTitle');
         }
       });
+      $('.views-field-field-when').each(function() {
+        var contents = $(this).find('.field-content').text();
+        if (contents.indexOf('-') !== -1) {
+          onlyDates = contents.split("|")
+          matched = onlyDates[1].split("-");
+          matched[0] = matched[0].trim();
+          matched[1] = matched[1].trim();
+          firstMatch = matched[0].match(/\d{2}\.\d{2}\.\d{4}/g)[0];
+          secondMatch = matched[1].match(/\d{2}\.\d{2}\.\d{4}/g)[0];
+          if (firstMatch == secondMatch) {
+            foundIndex = contents.lastIndexOf(firstMatch);
+            contents = contents.substring(0, foundIndex) + contents.substring(foundIndex + 12, contents.length);
+            contents = contents.replace("|", "| ").toUpperCase();
+            $(this).find('.field-content').replaceWith(contents);
+          }
+        }
+      })
     }
   };
 })(window.jQuery, window.Drupal);
