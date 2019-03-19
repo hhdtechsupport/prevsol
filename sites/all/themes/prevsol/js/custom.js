@@ -43,6 +43,7 @@
             foundIndex = contents.lastIndexOf(firstMatch);
             contents = contents.substring(0, foundIndex) + contents.substring(foundIndex + 12, contents.length);
             contents = contents.replace("|", "| ").toUpperCase();
+            contents = contents.replace(" EDT", "");
             $(this).find('.field-content').replaceWith(contents);
           }
         }
