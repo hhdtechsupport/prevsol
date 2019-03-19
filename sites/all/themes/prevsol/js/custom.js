@@ -32,6 +32,8 @@
       });
       $('.views-field-field-when').each(function() {
         var contents = $(this).find('.field-content').text();
+        contents = contents.replace("|", "| ").toUpperCase();
+        contents = contents.replace(" EDT", "");
         if (contents.indexOf('-') !== -1) {
           onlyDates = contents.split("|")
           matched = onlyDates[1].split("-");
@@ -42,10 +44,8 @@
           if (firstMatch == secondMatch) {
             foundIndex = contents.lastIndexOf(firstMatch);
             contents = contents.substring(0, foundIndex) + contents.substring(foundIndex + 12, contents.length);
-            contents = contents.replace("|", "| ").toUpperCase();
-            contents = contents.replace(" EDT", "");
-            $(this).find('.field-content').replaceWith(contents);
           }
+          $(this).find('.field-content').replaceWith(contents);
         }
       })
     }
