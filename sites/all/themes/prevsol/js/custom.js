@@ -30,23 +30,102 @@
           $(this).addClass('hasPageTitle');
         }
       });
-      $('.views-field-field-when').each(function() {
-        var contents = $(this).find('.field-content').text();
-        if (contents.indexOf('-') !== -1) {
-          onlyDates = contents.split("|")
-          matched = onlyDates[1].split("-");
-          matched[0] = matched[0].trim();
-          matched[1] = matched[1].trim();
-          firstMatch = matched[0].match(/\d{2}\.\d{2}\.\d{4}/g)[0];
-          secondMatch = matched[1].match(/\d{2}\.\d{2}\.\d{4}/g)[0];
-          if (firstMatch == secondMatch) {
-            foundIndex = contents.lastIndexOf(firstMatch);
-            contents = contents.substring(0, foundIndex) + contents.substring(foundIndex + 12, contents.length);
+      $('div.views-field-field-when', context).each(function() {
+        if ($(this).find('.field-content').length) {
+          var date1 = $(this).find('.field-content').find('.date1').text();
+          var date2 = $(this).find('.field-content').find('.date2').text();
+          var contentType = $(this).find('.field-content').find('.type').text();
+          var formattedDates = "";
+          var contentOutput = "";
+          var dateObj1 = new Date(date1);
+          var dateObj2 = new Date(date2);
+          var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
+          var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
+          var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+          if (date2) {
+            if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
+              if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
+                formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+              } else {
+                formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+              }
+              contentOutput =
+              "<span class='type'>" + contentType + "</span><span class='separator-pipe'>|</span><span class='dates'>" + formattedDates + "</span>";
+            } else {
+              formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+              contentOutput =
+              "<span class='type'>" + contentType + "</span><span class='separator-pipe'>|</span><span class='dates'>" + formattedDates + "</span>";
+            }
+          } else {
+            formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + " " + timeZone;
+            contentOutput =
+            "<span class='type'>" + contentType + "</span><span class='separator-pipe'>|</span><span class='dates'>" + formattedDates + "</span>";
           }
-          contents = contents.toUpperCase().replace(" EDT", "").replace("|", "<span class='separator-pipe'>|</span>");
-          $(this).find('.field-content').html(contents);
+          $(this).find('.field-content').html(contentOutput);
         }
-      })
+      });
+      $('td.views-field-field-when', context).each(function() {
+        var date1 = $(this).find('.date1').text();
+        var date2 = $(this).find('.date2').text();
+        var formattedDates = "";
+        var contentOutput = "";
+        var dateObj1 = new Date(date1);
+        var dateObj2 = new Date(date2);
+        var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
+        var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
+        var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        if (date2) {
+          if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
+            if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
+              formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+            } else {
+              formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+            }
+            contentOutput =
+            "<span class='dates'>" + formattedDates + "</span>";
+          } else {
+            formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+            contentOutput =
+            "<span class='dates'>" + formattedDates + "</span>";
+          }
+        } else {
+          formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + " " + timeZone;
+          contentOutput =
+          "<span class='dates'>" + formattedDates + "</span>";
+        }
+        $(this).html(contentOutput);
+      });
+      $('.field--name-field-when', context).each(function() {
+        var date1 = $(this).find('.field--item').find('time:first').attr("datetime");
+        var date2 = $(this).find('.field--item').find('time:last').attr("datetime");
+        var formattedDates = "";
+        var contentOutput = "";
+        var dateObj1 = new Date(date1);
+        var dateObj2 = new Date(date2);
+        var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
+        var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
+        var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        if (date2) {
+          if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
+            if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
+              formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+            } else {
+              formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+            }
+            contentOutput =
+            "<span class='dates'>" + formattedDates + "</span>";
+          } else {
+            formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+            contentOutput =
+            "<span class='dates'>" + formattedDates + "</span>";
+          }
+        } else {
+          formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + " " + timeZone;
+          contentOutput =
+          "<span class='dates'>" + formattedDates + "</span>";
+        }
+        $(this).find('.field--item').html(contentOutput);
+      });
     }
   };
 })(window.jQuery, window.Drupal);
