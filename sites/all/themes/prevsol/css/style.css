@@ -11076,7 +11076,7 @@ figure.align-center figcaption::after {
 
 /* line 1365, ../scss/_overrides.scss */
 th#view-field-event-type-table-column {
-  min-width: 200px;
+  width: 120px;
 }
 
 @media screen and (min-width: 768px) {
