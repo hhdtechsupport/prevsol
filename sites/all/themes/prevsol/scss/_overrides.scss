@@ -1362,6 +1362,9 @@ figure.align-center {
 }
 
 // Upcoming Events page
+th#view-field-event-type-table-column {
+  min-width: 200px;
+}
 .context-services-upcoming-events {
   .table-responsive {
     & thead {
