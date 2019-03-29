@@ -23,8 +23,15 @@
           $(this).addClass('hasList');
         }
       });
+      if ($('.page-node-type-book .block-book-navigation').not(':has(nav)')) {
+        $('.page-node-type-book .block-book-navigation ul li').each(function () {
+          if ($(this).has('ul').length) {
+            $(this).addClass('hasList');
+          }
+        });
+      }
+
       var bookPageTitle = $('h1.page-header span').text();
-      console.log("bookPageTitle: " + bookPageTitle);
       $('.page-node-type-book .block-book-navigation ul ul li ul li a').each(function() {
         if ($(this).text() === bookPageTitle) {
           $(this).addClass('hasPageTitle');
