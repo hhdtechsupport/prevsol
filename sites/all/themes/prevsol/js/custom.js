@@ -46,6 +46,8 @@
           var contentOutput = "";
           var dateObj1 = new Date(date1);
           var dateObj2 = new Date(date2);
+          dateObj1.setHours(dateObj1.getHours() - 7);
+          dateObj2.setHours(dateObj2.getHours() - 7);
           var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
           var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
           var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
@@ -78,6 +80,8 @@
         var contentOutput = "";
         var dateObj1 = new Date(date1);
         var dateObj2 = new Date(date2);
+        dateObj1.setHours(dateObj1.getHours() - 7);
+        dateObj2.setHours(dateObj2.getHours() - 7);
         var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
         var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
         var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
