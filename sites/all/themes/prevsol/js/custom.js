@@ -50,7 +50,8 @@
           dateObj2.setHours(dateObj2.getHours() - 4);
           var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
           var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
-          var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+          //var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+          var timeZone = "EDT";
           if (date2) {
             if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
               if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
@@ -84,7 +85,8 @@
         dateObj2.setHours(dateObj2.getHours() - 4);
         var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
         var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
-        var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        //var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        var timeZone = "EDT";
         if (date2) {
           if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
             if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
@@ -115,7 +117,8 @@
         var dateObj2 = new Date(date2);
         var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
         var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
-        var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        //var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        var timeZone = "EDT";
         if (date2) {
           if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
             if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
