@@ -23,8 +23,15 @@
           $(this).addClass('hasList');
         }
       });
+      if ($('.page-node-type-book .block-book-navigation').not(':has(nav)')) {
+        $('.page-node-type-book .block-book-navigation ul li').each(function () {
+          if ($(this).has('ul').length) {
+            $(this).addClass('hasList');
+          }
+        });
+      }
+
       var bookPageTitle = $('h1.page-header span').text();
-      console.log("bookPageTitle: " + bookPageTitle);
       $('.page-node-type-book .block-book-navigation ul ul li ul li a').each(function() {
         if ($(this).text() === bookPageTitle) {
           $(this).addClass('hasPageTitle');
@@ -39,9 +46,12 @@
           var contentOutput = "";
           var dateObj1 = new Date(date1);
           var dateObj2 = new Date(date2);
+          dateObj1.setHours(dateObj1.getHours() - 4);
+          dateObj2.setHours(dateObj2.getHours() - 4);
           var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
           var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
-          var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+          //var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+          var timeZone = "EDT";
           if (date2) {
             if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
               if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
@@ -71,9 +81,12 @@
         var contentOutput = "";
         var dateObj1 = new Date(date1);
         var dateObj2 = new Date(date2);
+        dateObj1.setHours(dateObj1.getHours() - 4);
+        dateObj2.setHours(dateObj2.getHours() - 4);
         var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
         var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
-        var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        //var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        var timeZone = "EDT";
         if (date2) {
           if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
             if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
@@ -104,7 +117,8 @@
         var dateObj2 = new Date(date2);
         var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
         var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
-        var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        //var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        var timeZone = "EDT";
         if (date2) {
           if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
             if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {

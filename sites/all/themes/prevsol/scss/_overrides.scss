@@ -2544,6 +2544,79 @@ select {
         }
       }
     }
+    & > ul {
+      list-style: none;
+      border-top: 1px solid $gray;
+      & > li {
+        font-family: $soleil;
+        font-weight: normal;
+        font-size: 1.8rem;
+        color: $dark-gray;
+        user-select: none;
+        cursor: pointer;
+        padding-left: 1rem;
+        text-indent: -1.5rem;
+        & > a {
+          color: $dark-gray;
+          display: block;
+          padding-top: 0.5rem;
+          &::after {
+            margin-top: 0.5rem;
+            border-top: 1px solid $gray;
+            display: block;
+            content: " ";
+            margin-left: -3.1rem;
+          }
+          &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f138";
+            color: $yellow;
+            font-style: normal;
+            margin: 0px 1rem 0px 0;
+            text-decoration: none;
+            display: inline-block;
+          }
+        }
+        &.hasList {
+          & > a {
+            color: $edc-blue;
+            &::before {
+              content: "\f13a";
+              color: $edc-blue;
+              text-decoration: none;
+            }
+          }
+        }
+        &.hasList > ul {
+          list-style: none;
+          margin-left: -3.5rem;
+          & > li {
+            margin: 1rem 0 1rem 0;
+            padding-left: 0;
+            text-indent: -1.8rem;
+            font-weight: normal;
+            font-size: 1.6rem;
+            line-height: 1.2;
+            color: $dark-gray;
+            &::before {
+              content: "»";
+              color: $edc-blue;
+              margin-right: 0.5rem;
+              font-weight: normal;
+            }
+            a {
+              font-weight: normal;
+              font-family: $soleil;
+              color: $dark-gray;
+              &.hasPageTitle {
+                font-family: $soleil-bold;
+              }
+            }
+          }
+        }
+      }
+    }
   }
   .row-second {
     section.col-sm-8.has-second-sidebar {
