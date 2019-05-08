@@ -1374,6 +1374,11 @@ th#view-field-event-type-table-column {
             min-width: 40rem;
           }
         }
+        & > th.views-field-field-when {
+          @media #{$tablet} {
+            min-width: 17rem;
+          }
+        }
       }
     }
     & tbody {

@@ -90,19 +90,19 @@
         if (date2) {
           if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
             if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
-              formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+              formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span><br />" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
             } else {
-              formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+              formattedDates = moment(dateObj1).format("MMMM D") + "-" + moment(dateObj2).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span><br />" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
             }
             contentOutput =
             "<span class='dates'>" + formattedDates + "</span>";
           } else {
-            formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
+            formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span><br />" + moment(dateObj1).format("h:mma") + "-" + moment(dateObj2).format("h:mma") + " " + timeZone;
             contentOutput =
             "<span class='dates'>" + formattedDates + "</span>";
           }
         } else {
-          formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span>" + moment(dateObj1).format("h:mma") + " " + timeZone;
+          formattedDates = moment(dateObj1).format("MMMM D") + ", " + moment(dateObj1).format("GGGG") + "<span class='separator-pipe'>|</span><br />" + moment(dateObj1).format("h:mma") + " " + timeZone;
           contentOutput =
           "<span class='dates'>" + formattedDates + "</span>";
         }
