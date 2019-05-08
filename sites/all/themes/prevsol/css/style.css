@@ -12063,13 +12063,13 @@ select option:focus, select option:active {
 }
 /* line 2400, ../scss/_overrides.scss */
 .page-node-type-book article.book .field--name-body ol > li a {
-  color: #333333;
-  text-decoration: underline;
+  color: #27628E;
   font-size: 1.6rem;
 }
-/* line 2404, ../scss/_overrides.scss */
+/* line 2403, ../scss/_overrides.scss */
 .page-node-type-book article.book .field--name-body ol > li a:hover {
   color: #27628E;
+  text-decoration: underline;
 }
 /* line 2408, ../scss/_overrides.scss */
 .page-node-type-book article.book .field--name-body ol > li::before {

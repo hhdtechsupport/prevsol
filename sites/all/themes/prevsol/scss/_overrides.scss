@@ -2398,11 +2398,11 @@ select {
           margin-bottom: 1.2rem;
           font-size: 1.6rem;
           a {
-            color: $dark-gray;
-            text-decoration: underline;
+            color: $edc-blue;
             font-size: 1.6rem;
             &:hover {
               color: $edc-blue;
+              text-decoration: underline;
             }
           }
           &::before {
