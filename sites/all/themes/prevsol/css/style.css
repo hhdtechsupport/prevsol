@@ -11088,7 +11088,7 @@ th#view-field-event-type-table-column {
 @media screen and (min-width: 768px) {
   /* line 1377, ../scss/_overrides.scss */
   .context-services-upcoming-events .table-responsive thead > tr > th.views-field-field-when {
-    min-width: 17rem;
+    min-width: 20rem;
   }
 }
 /* line 1387, ../scss/_overrides.scss */
