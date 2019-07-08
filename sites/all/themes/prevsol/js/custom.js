@@ -75,18 +75,21 @@
         }
       });
       $('td.views-field-field-when', context).each(function() {
+        console.log("test UE");
         var date1 = $(this).find('.date1').text();
         var date2 = $(this).find('.date2').text();
         var formattedDates = "";
         var contentOutput = "";
         var dateObj1 = new Date(date1);
         var dateObj2 = new Date(date2);
-        dateObj1.setHours(dateObj1.getHours() - 4);
-        dateObj2.setHours(dateObj2.getHours() - 4);
-        var dateObjOnlyDate1 = new Date(date1).setHours(0,0,0,0);
-        var dateObjOnlyDate2 = new Date(date2).setHours(0,0,0,0);
-        //var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
-        var timeZone = "EDT";
+        console.log(dateObj1);       
+        dateObj1.setUTCHours(dateObj1.getUTCHours() -4);
+        console.log(dateObj1);
+        dateObj2.setUTCHours(dateObj2.getUTCHours() -4);
+        var dateObjOnlyDate1 = new Date(date1).setUTCHours(0,0,0,0);
+        var dateObjOnlyDate2 = new Date(date2).setUTCHours(0,0,0,0);
+        var timeZone = new Date(date1).toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        //var timeZone = "EDT...1";
         if (date2) {
           if (dateObjOnlyDate1 !== dateObjOnlyDate2) {
             if (moment(dateObj1).format("MMMM") == moment(dateObj2).format("MMMM")) {
