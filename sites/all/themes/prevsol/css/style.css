@@ -11645,20 +11645,20 @@ article .content .field--name-field-attachment span.file span.file-size::after, 
 }
 
 /* line 1944, ../scss/_overrides.scss */
-.page-node-291 .page.full .content > .field--name-field-image, .page-node-27 .page.full .content > .field--name-field-image, .page-node-26 .page.full .content > .field--name-field-image, .page-node-28 .page.full .content > .field--name-field-image, .page-node-353 .page.full .content > .field--name-field-image, .page-node-56 .page.full .content > .field--name-field-image, .page-node-350 .page.full .content > .field--name-field-image {
+.page-node-291 .page.full .content > .field--name-field-image, .page-node-27 .page.full .content > .field--name-field-image, .page-node-26 .page.full .content > .field--name-field-image, .page-node-28 .page.full .content > .field--name-field-image, .page-node-353 .page.full .content > .field--name-field-image, .page-node-56 .page.full .content > .field--name-field-image, .page-node-358 .page.full .content > .field--name-field-image, .page-node-357 .page.full .content > .field--name-field-image {
   width: 100%;
   float: none;
 }
 @media screen and (min-width: 768px) {
   /* line 1944, ../scss/_overrides.scss */
-  .page-node-291 .page.full .content > .field--name-field-image, .page-node-27 .page.full .content > .field--name-field-image, .page-node-26 .page.full .content > .field--name-field-image, .page-node-28 .page.full .content > .field--name-field-image, .page-node-353 .page.full .content > .field--name-field-image, .page-node-56 .page.full .content > .field--name-field-image, .page-node-350 .page.full .content > .field--name-field-image {
+  .page-node-291 .page.full .content > .field--name-field-image, .page-node-27 .page.full .content > .field--name-field-image, .page-node-26 .page.full .content > .field--name-field-image, .page-node-28 .page.full .content > .field--name-field-image, .page-node-353 .page.full .content > .field--name-field-image, .page-node-56 .page.full .content > .field--name-field-image, .page-node-358 .page.full .content > .field--name-field-image, .page-node-357 .page.full .content > .field--name-field-image {
     width: 330px;
     float: right;
     margin-top: -95px;
   }
 }
 /* line 1953, ../scss/_overrides.scss */
-.page-node-291 .page.full .content > .field--type-text-with-summary, .page-node-27 .page.full .content > .field--type-text-with-summary, .page-node-26 .page.full .content > .field--type-text-with-summary, .page-node-28 .page.full .content > .field--type-text-with-summary, .page-node-353 .page.full .content > .field--type-text-with-summary, .page-node-56 .page.full .content > .field--type-text-with-summary, .page-node-350 .page.full .content > .field--type-text-with-summary {
+.page-node-291 .page.full .content > .field--type-text-with-summary, .page-node-27 .page.full .content > .field--type-text-with-summary, .page-node-26 .page.full .content > .field--type-text-with-summary, .page-node-28 .page.full .content > .field--type-text-with-summary, .page-node-353 .page.full .content > .field--type-text-with-summary, .page-node-56 .page.full .content > .field--type-text-with-summary, .page-node-358 .page.full .content > .field--type-text-with-summary, .page-node-357 .page.full .content > .field--type-text-with-summary {
   max-width: 660px;
 }
 
