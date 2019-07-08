@@ -1938,6 +1938,25 @@ article {
 
 // Generic styles for various elements
 
+.page-node-type-page {
+  .page.full {
+    .content {
+      & > .field--name-field-image {
+        width: 100%;
+        float: none;
+        @media #{$tablet} {
+          width: 330px;
+          float: right;
+          margin-top: -95px;
+        }
+      }
+      & > .field--type-text-with-summary {
+        max-width: 660px;
+      }
+    }
+  }
+}
+
 section.block-views-blockstaff-sme-list {
   h2.block-title {
     margin-top: 3rem;
