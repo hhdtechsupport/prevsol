@@ -1938,6 +1938,13 @@ article {
 
 // Generic styles for various elements
 
+section.block-views-blockstaff-sme-list {
+  h2.block-title {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
 .field--name-field-attachment {
   span.file {
     & > span {
