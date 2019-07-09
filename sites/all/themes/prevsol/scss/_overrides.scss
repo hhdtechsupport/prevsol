@@ -1948,6 +1948,20 @@ article {
   }
 }
 
+.block-views-blocknews-block-1 {
+  .table-responsive {
+    thead {
+      th.views-field-title {
+        min-width: 20rem;
+        max-width: 30rem;
+      }
+      th.views-field-body {
+
+      }
+    }
+  }
+}
+
 section.block-views-blockstaff-sme-list {
   h2.block-title {
     margin-top: 3rem;
