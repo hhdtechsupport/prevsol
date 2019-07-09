@@ -11649,8 +11649,8 @@ article .content .field--name-field-attachment span.file span.file-size::after, 
   width: 100%;
 }
 
-/* line 1954, ../scss/_overrides.scss */
-.block-views-blocknews-block-1 .table-responsive thead th.views-field-title {
+/* line 1955, ../scss/_overrides.scss */
+.block-views-blocknews-block-1 .table-responsive thead tr th.views-field-title.views-field {
   min-width: 20rem;
   max-width: 30rem;
 }

@@ -1951,13 +1951,13 @@ article {
 .block-views-blocknews-block-1 {
   .table-responsive {
     thead {
-      th.views-field-title {
-        min-width: 20rem;
-        max-width: 30rem;
-      }
-      th.views-field-body {
-
-      }
+      tr {
+        th.views-field-title.views-field {
+          min-width: 20rem;
+          max-width: 30rem;
+        }
+        th.views-field-body {}
+        }
     }
   }
 }
