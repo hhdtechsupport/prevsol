@@ -12514,3 +12514,8 @@ details summary::-webkit-details-marker {
 .sidebar-image img {
   width: 100%;
 }
+
+/* line 2844, ../scss/_overrides.scss */
+#block-views-block-newsletters-block-1 .views-field-field-attachment .file > span {
+  background: transparent;
+}

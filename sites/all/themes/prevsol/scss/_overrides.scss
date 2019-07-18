@@ -2838,3 +2838,11 @@ details summary::-webkit-details-marker {
     width: 100%;
   }
 }
+
+#block-views-block-newsletters-block-1 {
+ .views-field-field-attachment {
+   .file > span {
+     background: transparent;
+   }
+ }
+}
