@@ -5,8 +5,8 @@ package: Testing
 # core: 8.x
 hidden: true
 
-# Information added by Drupal.org packaging script on 2018-12-24
-version: '8.x-1.0-beta1+34-dev'
+# Information added by Drupal.org packaging script on 2019-05-15
+version: '8.x-1.0-beta1+37-dev'
 core: '8.x'
 project: 'captcha'
-datestamp: 1545646688
+datestamp: 1557921488

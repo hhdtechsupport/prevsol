@@ -13,7 +13,7 @@ use Drupal\password_policy\PasswordPolicyValidation;
  *   id = "character_types",
  *   title = @Translation("Password character types"),
  *   description = @Translation("Verifying that a password has a minimum number of character types."),
- *   error_message = @Translation("Your password must have different character types.")
+ *   errorMessage = @Translation("Your password must have different character types.")
  * )
  */
 class CharacterTypes extends PasswordConstraintBase {

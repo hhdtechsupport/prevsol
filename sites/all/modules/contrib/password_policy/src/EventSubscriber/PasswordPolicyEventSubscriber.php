@@ -8,7 +8,7 @@ use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Cmf\Component\Routing\RouteObjectInterface;
-use \Drupal\user\Entity\User;
+use Drupal\user\Entity\User;
 
 /**
  * Enforces password reset functionality.
@@ -50,7 +50,7 @@ class PasswordPolicyEventSubscriber implements EventSubscriberInterface {
         $url = new Url('entity.user.edit_form', ['user' => $user->id()]);
         $url = $url->setAbsolute(TRUE)->toString();
         $event->setResponse(new RedirectResponse($url));
-        drupal_set_message('Your password has expired, please update it', 'error');
+        drupal_set_message(t('Your password has expired, please update it'), 'error');
       }
     }
   }
@@ -58,7 +58,7 @@ class PasswordPolicyEventSubscriber implements EventSubscriberInterface {
   /**
    * {@inheritdoc}
    */
-  static public function getSubscribedEvents() {
+  public static function getSubscribedEvents() {
     // TODO - Evaluate if there is a better place to add this check.
     $events[KernelEvents::REQUEST][] = ['checkForUserPasswordExpiration'];
     return $events;
