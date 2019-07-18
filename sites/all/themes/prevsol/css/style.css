@@ -10940,7 +10940,7 @@ figure.align-center figcaption::after {
 }
 
 /* line 1225, ../scss/_overrides.scss */
-#block-moreservices .field--name-body > h2 {
+#block-moreservices .field--name-body > h2, #block-aboutusblock .field--name-body > h2 {
   padding-left: 1rem;
   padding-top: 0;
   padding-bottom: 0;
@@ -10954,16 +10954,16 @@ figure.align-center figcaption::after {
   margin-bottom: 3rem;
 }
 /* line 1238, ../scss/_overrides.scss */
-#block-moreservices .field--name-body > .services-blocks {
+#block-moreservices .field--name-body > .services-blocks, #block-aboutusblock .field--name-body > .services-blocks {
   margin-bottom: 6rem;
   display: flex;
 }
 /* line 1241, ../scss/_overrides.scss */
-#block-moreservices .field--name-body > .services-blocks img.align-left {
+#block-moreservices .field--name-body > .services-blocks img.align-left, #block-aboutusblock .field--name-body > .services-blocks img.align-left {
   margin-right: 2rem;
 }
 /* line 1244, ../scss/_overrides.scss */
-#block-moreservices .field--name-body > .services-blocks h4 {
+#block-moreservices .field--name-body > .services-blocks h4, #block-aboutusblock .field--name-body > .services-blocks h4 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: "soleilbold";
@@ -10974,14 +10974,14 @@ figure.align-center figcaption::after {
   margin-bottom: 1rem;
 }
 /* line 1254, ../scss/_overrides.scss */
-#block-moreservices .field--name-body > .services-blocks p {
+#block-moreservices .field--name-body > .services-blocks p, #block-aboutusblock .field--name-body > .services-blocks p {
   font-family: "soleilregular";
   font-size: 1.6rem;
   line-height: 2.4rem;
   padding: 1rem 0;
 }
 /* line 1260, ../scss/_overrides.scss */
-#block-moreservices .field--name-body > .services-blocks a.icon-text-link {
+#block-moreservices .field--name-body > .services-blocks a.icon-text-link, #block-aboutusblock .field--name-body > .services-blocks a.icon-text-link {
   color: #FFB500;
   font-size: 2.4rem;
   line-height: 3rem;
@@ -10990,11 +10990,11 @@ figure.align-center figcaption::after {
   text-decoration: none;
 }
 /* line 1267, ../scss/_overrides.scss */
-#block-moreservices .field--name-body > .services-blocks a.icon-text-link:hover {
+#block-moreservices .field--name-body > .services-blocks a.icon-text-link:hover, #block-aboutusblock .field--name-body > .services-blocks a.icon-text-link:hover {
   text-decoration: none;
 }
 /* line 1270, ../scss/_overrides.scss */
-#block-moreservices .field--name-body > .services-blocks a.icon-text-link::before {
+#block-moreservices .field--name-body > .services-blocks a.icon-text-link::before, #block-aboutusblock .field--name-body > .services-blocks a.icon-text-link::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f0a9";
