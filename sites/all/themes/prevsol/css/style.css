@@ -12506,3 +12506,18 @@ details summary::-webkit-details-marker {
     flex-direction: column;
   }
 }
+/* line 2835, ../scss/_overrides.scss */
+.sidebar-image {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 2841, ../scss/_overrides.scss */
+.sidebar-image img {
+  height: 200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
