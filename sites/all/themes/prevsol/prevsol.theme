@@ -44,3 +44,45 @@ function prevsol_preprocess_page(&$variables) {
    $block_quotes_views = \Drupal\block\Entity\Block::load('views_block__quotes_block_2');
    $variables['page']['block_quotes_views'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_quotes_views);
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for views-view-field.html.twig.
+ */
+function prevsol_preprocess_views_view_field(&$variables) {
+  date_default_timezone_set('EDT');
+
+  $view = $variables['view'];
+  $field = $variables['field'];
+
+  if ($view->id() == 'upcoming_events') {
+    if ($field->field == 'field_when') {
+      // Replace characters in the field output.
+      $array = explode('#', $variables['output']);
+      // $variables['output'] = Drupal\Core\Render\Markup::create();
+      $date1 = new DateTime($array[0]);
+      $date2 = new DateTime($array[1]);
+
+      $month1 = $date1->format('m');
+      $month2 = $date2->format('m');
+      $day1 = $date1->format('j');
+      $day2 = $date2->format('j');
+
+
+      if ($date2) {
+        if ($month1 == $month2) {
+          if ($day1 == $day2) {
+            $output = $date1->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+          } else {
+            $output = $date1->format('F j') . "-" . $date2->format('j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+          }
+        } else {
+          $output = $date1->format('F j') . "-" . $date2->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+        }
+        
+      } else {
+        $output = $date1->format('F j, Y') . " | " . $date1->format('g:ia') . " " . $date1->format('T');
+      }
+      $variables['output'] = Drupal\Core\Render\Markup::create($output);
+    }
+  }
+}

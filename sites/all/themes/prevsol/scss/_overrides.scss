@@ -2058,7 +2058,7 @@ select option[selected="selected"] {
   }
 }
 
-#block-moreservices {
+#block-moreservices, #block-aboutusblock {
   .field--name-body {
     & > .services-blocks {
       @media #{$mobile} {
@@ -2079,6 +2079,23 @@ select option[selected="selected"] {
         }
       }
     }
+  }
+}
+
+.view-id-upcoming_events.view-display-id-block_2 {
+  .views-field-field-event-type {
+    display: inline-block;
+    .field-content {
+      display: inline-block;
+      span.type {
+        display: inline-block;
+        text-transform: uppercase;
+        padding-right: 2px;
+      }
+    }
+  }
+  .views-field-field-when {
+    display: inline-block;
   }
 }
 
@@ -2184,12 +2201,6 @@ select option[selected="selected"] {
       padding-left: 0;
       padding-right: 0;
     }
-  }
-}
-
-.page-node-37 {
-  h1.page-header {
-    margin: 0 0 4rem;
   }
 }
 

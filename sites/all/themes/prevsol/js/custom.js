@@ -37,7 +37,7 @@
           $(this).addClass('hasPageTitle');
         }
       });
-      $('div.views-field-field-when', context).each(function() {
+      $('div.views-field-field-when5', context).each(function() {
         if ($(this).find('.field-content').length) {
           var date1 = $(this).find('.field-content').find('.date1').text();
           var date2 = $(this).find('.field-content').find('.date2').text();
@@ -74,7 +74,7 @@
           $(this).find('.field-content').html(contentOutput);
         }
       });
-      $('td.views-field-field-when', context).each(function() {
+      $('td.views-field-field-when5', context).each(function() {
         console.log("test UE");
         var date1 = $(this).find('.date1').text();
         var date2 = $(this).find('.date2').text();
@@ -111,7 +111,7 @@
         }
         $(this).html(contentOutput);
       });
-      $('.field--name-field-when', context).each(function() {
+      $('.field--name-field-when5', context).each(function() {
         var date1 = $(this).find('.field--item').find('time:first').attr("datetime");
         var date2 = $(this).find('.field--item').find('time:last').attr("datetime");
         var formattedDates = "";
