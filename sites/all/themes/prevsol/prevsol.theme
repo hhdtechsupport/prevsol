@@ -61,6 +61,8 @@ function prevsol_preprocess_views_view_field(&$variables) {
       // $variables['output'] = Drupal\Core\Render\Markup::create();
       $date1 = new DateTime($array[0]);
       $date2 = new DateTime($array[1]);
+      $date1 = $date1->sub(new DateInterval('PT4H'));
+      $date2 = $date2->sub(new DateInterval('PT4H'));
 
       $month1 = $date1->format('m');
       $month2 = $date2->format('m');
