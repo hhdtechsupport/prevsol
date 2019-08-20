@@ -39,7 +39,7 @@ function prevsol_preprocess_page(&$variables) {
 
   $block_quotes = \Drupal\block\Entity\Block::load('quotesfront');
   $variables['page']['block_quotes'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_quotes);
-   //kint($variables);
+  //kint($variables);
 
    $block_quotes_views = \Drupal\block\Entity\Block::load('views_block__quotes_block_2');
    $variables['page']['block_quotes_views'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_quotes_views);
@@ -49,7 +49,7 @@ function prevsol_preprocess_page(&$variables) {
  * Implements hook_preprocess_HOOK() for views-view-field.html.twig.
  */
 function prevsol_preprocess_views_view_field(&$variables) {
-  date_default_timezone_set('EDT');
+  //date_default_timezone_set('EDT');
 
   $view = $variables['view'];
   $field = $variables['field'];
@@ -86,5 +86,46 @@ function prevsol_preprocess_views_view_field(&$variables) {
       }
       $variables['output'] = Drupal\Core\Render\Markup::create($output);
     }
+  }
+}
+
+/**
+* Implements hook_preprocess_field().
+*/
+function prevsol_preprocess_field(&$variables) {
+  $field_name = $variables['field_name'];
+  if ($field_name == 'field_when') {
+    //kint($variables['items'][0]['content']);
+    //kint($variables['items'][0]['content']['start_date']['#text']);
+    //kint($variables['items'][0]['content']['end_date']['#text']);
+
+    //$date1 = new DateTime(strtotime($variables['items'][0]['content']['start_date']['#text']));
+    //$date2 = new DateTime(strtotime($variables['items'][0]['content']['end_date']['#text']));
+    $date1 = DateTime::createFromFormat('D, n/j/Y - h:i A T', $variables['items'][0]['content']['start_date']['#text']);
+    $date2 = DateTime::createFromFormat('D, n/j/Y - h:i A T', $variables['items'][0]['content']['end_date']['#text']);
+    //$date1 = $date1->sub(new DateInterval('PT4H'));
+    //$date2 = $date2->sub(new DateInterval('PT4H'));
+
+    $month1 = $date1->format('m');
+    $month2 = $date2->format('m');
+    $day1 = $date1->format('j');
+    $day2 = $date2->format('j');
+
+
+    if ($date2) {
+      if ($month1 == $month2) {
+        if ($day1 == $day2) {
+          $output = $date1->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+        } else {
+          $output = $date1->format('F j') . "-" . $date2->format('j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+        }
+      } else {
+        $output = $date1->format('F j') . "-" . $date2->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+      }
+      
+    } else {
+      $output = $date1->format('F j, Y') . " | " . $date1->format('g:ia') . " " . $date1->format('T');
+    }
+    $variables['items'][0]['content'] = Drupal\Core\Render\Markup::create($output);
   }
 }
