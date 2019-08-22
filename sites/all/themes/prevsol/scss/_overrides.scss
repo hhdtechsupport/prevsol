@@ -2899,9 +2899,18 @@ details summary::-webkit-details-marker {
 }
 
 #block-views-block-newsletters-block-1 {
- .views-field-field-attachment {
-   .file > span {
-     background: transparent;
-   }
- }
+  .views-row {
+    padding-bottom: 15px;
+    .views-field-body {
+      p {
+        font-size: 15px;
+        padding-left: 8px;
+      }
+    }
+  }
+  .views-field-field-attachment {
+    .file > span {
+      background: transparent;
+    }
+  }
 }

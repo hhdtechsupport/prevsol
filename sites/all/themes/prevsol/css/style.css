@@ -12576,7 +12576,16 @@ details summary::-webkit-details-marker {
   width: 100%;
 }
 
-/* line 2903, ../scss/_overrides.scss */
+/* line 2902, ../scss/_overrides.scss */
+#block-views-block-newsletters-block-1 .views-row {
+  padding-bottom: 15px;
+}
+/* line 2905, ../scss/_overrides.scss */
+#block-views-block-newsletters-block-1 .views-row .views-field-body p {
+  font-size: 15px;
+  padding-left: 8px;
+}
+/* line 2912, ../scss/_overrides.scss */
 #block-views-block-newsletters-block-1 .views-field-field-attachment .file > span {
   background: transparent;
 }
