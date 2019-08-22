@@ -563,6 +563,54 @@ p {
     }
 }
 
+// Service Snapshots
+.context-about-us-service-snapshots {
+  .view-service-snapshots {
+    .views-field-title {
+      border-left-color: rgb(255, 181, 0);
+      border-left-style: solid;
+      border-left-width: 6px;
+      box-sizing: border-box;
+      color: rgb(39, 98, 142);
+      display: block;
+      font-family: $soleil-bold;
+      font-size: 36px;
+      font-weight: 500;
+      height: 42px;
+      line-height: 42px;
+      margin-block-end: 50px;
+      margin-block-start: 10px;
+      margin-bottom: 50px;
+      margin-top: 10px;
+      padding-bottom: 0px;
+      padding-left: 25px;
+      padding-top: 0px;
+      text-size-adjust: 100%;
+      text-transform: uppercase;
+      span.field-content {
+        box-sizing: border-box;
+        color: rgb(39, 98, 142);
+        display: inline;
+        font-family: $soleil-bold;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 42px;
+        text-size-adjust: 100%;
+        text-transform: uppercase;
+      }
+    }
+    .views-field-body {
+      margin-bottom: 30px;
+      p {
+        color: rgb(51, 51, 51);
+        font-family: $soleil-light;
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
 // Footer.
 .footer-wrapper {
     background-color: $edc-blue;
