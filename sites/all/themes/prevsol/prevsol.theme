@@ -61,8 +61,8 @@ function prevsol_preprocess_views_view_field(&$variables) {
       // $variables['output'] = Drupal\Core\Render\Markup::create();
       $date1 = new DateTime($array[0]);
       $date2 = new DateTime($array[1]);
-      $date1 = $date1->sub(new DateInterval('PT4H'));
-      $date2 = $date2->sub(new DateInterval('PT4H'));
+      $date1 = $date1->sub(new DateInterval('PT3H'));
+      $date2 = $date2->sub(new DateInterval('PT3H'));
 
       $month1 = $date1->format('m');
       $month2 = $date2->format('m');
@@ -103,8 +103,8 @@ function prevsol_preprocess_field(&$variables) {
     //$date2 = new DateTime(strtotime($variables['items'][0]['content']['end_date']['#text']));
     $date1 = DateTime::createFromFormat('D, n/j/Y - h:i A T', $variables['items'][0]['content']['start_date']['#text']);
     $date2 = DateTime::createFromFormat('D, n/j/Y - h:i A T', $variables['items'][0]['content']['end_date']['#text']);
-    //$date1 = $date1->sub(new DateInterval('PT4H'));
-    //$date2 = $date2->sub(new DateInterval('PT4H'));
+    //$date1 = $date1->sub(new DateInterval('PT1H'));
+    //$date2 = $date2->sub(new DateInterval('PT1H'));
 
     $month1 = $date1->format('m');
     $month2 = $date2->format('m');
