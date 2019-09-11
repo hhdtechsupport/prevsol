@@ -2914,3 +2914,11 @@ details summary::-webkit-details-marker {
     }
   }
 }
+
+body.context-about-us-newsletters {
+  .view-newsletters {
+    span.file-size {
+      display: none;
+    }
+  }
+}
