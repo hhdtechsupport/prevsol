@@ -12588,3 +12588,8 @@ details summary::-webkit-details-marker {
 body.context-about-us-newsletters .view-newsletters span.file-size {
   display: none;
 }
+
+/* line 2913, ../scss/_overrides.scss */
+.view-staff .member-subjects {
+  font-size: 1.8rem;
+}
