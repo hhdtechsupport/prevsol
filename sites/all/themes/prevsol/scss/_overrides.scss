@@ -587,6 +587,9 @@ p {
       padding-top: 0px;
       text-size-adjust: 100%;
       text-transform: uppercase;
+      @media #{$mobile} {
+        display: inline-table;
+      }
       span.field-content {
         box-sizing: border-box;
         color: rgb(39, 98, 142);
