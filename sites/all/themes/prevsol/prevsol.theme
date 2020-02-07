@@ -61,8 +61,18 @@ function prevsol_preprocess_views_view_field(&$variables) {
       // $variables['output'] = Drupal\Core\Render\Markup::create();
       $date1 = new DateTime($array[0]);
       $date2 = new DateTime($array[1]);
-      $date1 = $date1->sub(new DateInterval('PT4H'));
-      $date2 = $date2->sub(new DateInterval('PT4H'));
+      if ($date1->format('T') == 'EST') {
+        $date1 = $date1->sub(new DateInterval('PT5H'));
+      } else {
+        $date1 = $date1->sub(new DateInterval('PT4H'));
+      }
+      if ($date2->format('T') == 'EST') {
+        $date2 = $date2->sub(new DateInterval('PT5H'));
+      } else {
+        $date2 = $date2->sub(new DateInterval('PT4H'));
+      }
+
+
 
       $month1 = $date1->format('m');
       $month2 = $date2->format('m');
@@ -73,12 +83,12 @@ function prevsol_preprocess_views_view_field(&$variables) {
       if ($date2) {
         if ($month1 == $month2) {
           if ($day1 == $day2) {
-            $output = $date1->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+            $output = $date1->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date2->format('T');
           } else {
-            $output = $date1->format('F j') . "-" . $date2->format('j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+            $output = $date1->format('F j') . "-" . $date2->format('j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date2->format('T');
           }
         } else {
-          $output = $date1->format('F j') . "-" . $date2->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+          $output = $date1->format('F j') . "-" . $date2->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date2->format('T');
         }
         
       } else {
@@ -115,12 +125,12 @@ function prevsol_preprocess_field(&$variables) {
     if ($date2) {
       if ($month1 == $month2) {
         if ($day1 == $day2) {
-          $output = $date1->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+          $output = $date1->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date2->format('T');
         } else {
-          $output = $date1->format('F j') . "-" . $date2->format('j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+          $output = $date1->format('F j') . "-" . $date2->format('j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date2->format('T');
         }
       } else {
-        $output = $date1->format('F j') . "-" . $date2->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date1->format('T');
+        $output = $date1->format('F j') . "-" . $date2->format('F j, Y') . " | " . $date1->format('g:ia') . "-" . $date2->format('g:ia') . " " . $date2->format('T');
       }
       
     } else {
