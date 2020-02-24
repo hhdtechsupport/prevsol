@@ -41,8 +41,22 @@ function prevsol_preprocess_page(&$variables) {
   $variables['page']['block_quotes'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_quotes);
   //kint($variables);
 
-   $block_quotes_views = \Drupal\block\Entity\Block::load('views_block__quotes_block_2');
+  $block_quotes_views = \Drupal\block\Entity\Block::load('views_block__quotes_block_2');
    $variables['page']['block_quotes_views'] = \Drupal::entityManager()->getViewBuilder('block')->view($block_quotes_views);
+  if (
+    !empty($node = \Drupal::routeMatch()->getParameter('node')) &&
+    $node->getType() == 'landing' &&
+    $node->hasField('field_featuredsection')
+    ) {
+    $variables['page']['featuredsection'] = $variables['node']->get('field_featuredsection')->first()->view('full');
+  }
+  if (
+    !empty($node = \Drupal::routeMatch()->getParameter('node')) &&
+    $node->getType() == 'landing' &&
+    $node->hasField('field_top_image')
+    ) {
+    $variables['topimage_url'] = file_create_url(file_load($variables['node']->field_top_image->target_id)->getFileUri());
+  } 
 }
 
 /**

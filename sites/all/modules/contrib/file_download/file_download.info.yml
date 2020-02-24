@@ -1,0 +1,10 @@
+type: module
+name: 'File Download'
+description: 'Enable a file to download.'
+# core: 8.x
+
+# Information added by Drupal.org packaging script on 2018-12-13
+version: '8.x-1.3'
+core: '8.x'
+project: 'file_download'
+datestamp: 1544680987
