@@ -111,20 +111,20 @@
 		}
 		.field--name-field-info-button {
 		  background-color: #FFB500;
-		  font-size: 32px;
+		  font-size: 22px;
 		  text-transform: uppercase;
-		  width: 412px;
+		  width: 280px;
 		  border-radius: 4px;
 		  a {
 		    display: block;
 	      color: #fff;
-	      padding: 6px 33px 10px;
+	      padding: 6px 5px 10px 20px;
 	      &:after {
 	        font-family: "Font Awesome 5 Free";
 	        font-weight: 900;
 			    content: "\f0a9";
 			    color: #fff;
-			    font-size: 36px;
+			    font-size: 26px;
 			    font-style: normal;
 			    margin: 0px 0px 0px 20px;
 			    text-decoration: none;
@@ -252,6 +252,16 @@
 	  }
     article {
       margin-bottom: 11.5em;
+      .field--name-field-info-button {
+        font-size: 32px;
+		    width: 412px;
+        a {
+          padding: 6px 33px 10px;
+          &:after {
+			      font-size: 36px;
+			    }
+        }
+      }
     }
   }
 }
@@ -329,21 +339,94 @@
 	      width: 100%;
 	    }
 	  }
+	  .main-container h1.page-header {
+      font-size: 34px;
+      line-height: 38px;
+    }
 	  .paragraph--type--featured-section {
 	    float: none;
-	    padding: 10px 20px;
 	    .field--name-field-section-big-text {
 	      width: 100%;
-        top: 20px;
+        top: 60px;
+        font-size: 30px;
+        line-height: 32px;
+        padding: 0px 20px;
+	    }
+	    .field--name-field-section-small-text {
+        width: 100%;
+        top: 200px;
+        font-size: 20px;
+        line-height: 22px;
+        padding: 0px 20px;
+	    }
+	    article .field--name-field-info-button {
+	      margin: 0 auto;
+	    }
+	  }
+	}
+	.page-node-type-download {
+	  .field--name-node-title h2 {
+	    font-size: 34px;
+      line-height: 38px;
+	  }
+	  .field--name-field-download-image img {
+	    margin: 0 auto;
+	  }
+	  .field--name-field-download-file {
+	    margin: 0 auto;
+	  }
+	}
+}
+@media screen and (max-width: 617px) {
+  .page-node-type-landing {
+    .paragraph--type--featured-section {
+	    float: none;
+	    .field--name-field-section-big-text {
+	      width: 100%;
+        top: 30px;
         font-size: 24px;
         line-height: 24px;
+	    }
+	    .field--name-field-section-small-text {
+        width: 100%;
+        top: 140px;
+        font-size: 18px;
+        line-height: 18px;
+	    }
+	  }
+  }
+}
+@media screen and (max-width: 501px) {
+  .page-node-type-landing {
+    .paragraph--type--featured-section {
+	    float: none;
+	    .field--name-field-section-big-text {
+	      width: 100%;
+        top: 10px;
+        font-size: 24px;
+        line-height: 24px;
+        padding: 0px 20px;
 	    }
 	    .field--name-field-section-small-text {
         width: 100%;
         top: 110px;
         font-size: 18px;
         line-height: 18px;
+        padding: 0px 20px;
 	    }
 	  }
-	}
+	  article .field--name-body p {
+	    //font-size: 18px;
+	    //line-height: 24px;
+	  }
+  }
+  .page-node-type-download {
+    node {
+      .field--name-body,
+      .field--name-field-learn-info {
+        //font-size: 18px;
+	      //line-height: 24px;
+	    }
+    }
+  }
 }
