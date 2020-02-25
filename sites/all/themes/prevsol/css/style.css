@@ -9341,32 +9341,33 @@ body.navbar-is-fixed-bottom {
   line-height: 24px;
   text-transform: none;
   border-left: none;
+  margin-top: 2.2rem;
   margin-bottom: 0;
 }
-/* line 50, ../scss/component/_node.scss */
+/* line 51, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block form {
-  padding: 15px 25px;
+  padding: 15px 25px 10px;
 }
-/* line 53, ../scss/component/_node.scss */
+/* line 54, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block .form-item label {
   font-weight: normal;
   font-size: 14px;
 }
-/* line 57, ../scss/component/_node.scss */
+/* line 58, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block .form-item-intro {
   margin-bottom: 22px;
 }
-/* line 60, ../scss/component/_node.scss */
+/* line 61, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block input.form-text,
 .page-node-type-landing .highlighted-top .block-webform-block input.form-email {
   border-radius: 0;
   height: 28px;
 }
-/* line 65, ../scss/component/_node.scss */
+/* line 66, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block .form-item-notice {
   font-size: 12px;
 }
-/* line 68, ../scss/component/_node.scss */
+/* line 69, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block .webform-button--submit {
   width: 325px;
   height: 65px;
@@ -9375,15 +9376,15 @@ body.navbar-is-fixed-bottom {
   font-size: 32px;
   text-transform: uppercase;
 }
-/* line 79, ../scss/component/_node.scss */
+/* line 80, ../scss/component/_node.scss */
 .page-node-type-landing .paragraph--type--featured-section {
   float: left;
 }
-/* line 82, ../scss/component/_node.scss */
+/* line 83, ../scss/component/_node.scss */
 .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-image img {
   width: 100%;
 }
-/* line 85, ../scss/component/_node.scss */
+/* line 86, ../scss/component/_node.scss */
 .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
   position: absolute;
   top: 140px;
@@ -9392,8 +9393,9 @@ body.navbar-is-fixed-bottom {
   line-height: 44px;
   font-weight: 500;
   text-transform: uppercase;
+  font-family: "soleilbold";
 }
-/* line 94, ../scss/component/_node.scss */
+/* line 96, ../scss/component/_node.scss */
 .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
   width: 670px;
   position: absolute;
@@ -9402,21 +9404,21 @@ body.navbar-is-fixed-bottom {
   font-size: 20px;
   line-height: 26px;
 }
-/* line 102, ../scss/component/_node.scss */
+/* line 104, ../scss/component/_node.scss */
 .page-node-type-landing article {
   margin-top: 4em;
 }
-/* line 104, ../scss/component/_node.scss */
+/* line 106, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-body {
   font-weight: lighter;
   margin: 14px 0 34px;
 }
-/* line 107, ../scss/component/_node.scss */
+/* line 109, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-body p {
   font-size: 28px;
   line-height: 45px;
 }
-/* line 112, ../scss/component/_node.scss */
+/* line 114, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-field-info-button {
   background-color: #FFB500;
   font-size: 22px;
@@ -9424,13 +9426,17 @@ body.navbar-is-fixed-bottom {
   width: 280px;
   border-radius: 4px;
 }
-/* line 118, ../scss/component/_node.scss */
+/* line 120, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-field-info-button a {
   display: block;
   color: #fff;
   padding: 6px 5px 10px 20px;
 }
-/* line 122, ../scss/component/_node.scss */
+/* line 124, ../scss/component/_node.scss */
+.page-node-type-landing article .field--name-field-info-button a:hover {
+  text-decoration: none;
+}
+/* line 127, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-field-info-button a:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -9442,39 +9448,39 @@ body.navbar-is-fixed-bottom {
   text-decoration: none;
   pointer-events: none;
 }
-/* line 137, ../scss/component/_node.scss */
+/* line 142, ../scss/component/_node.scss */
 .page-node-type-landing #block-onlinecourseslanding .field--name-body {
   font-size: 18px;
   line-height: 32px;
 }
-/* line 142, ../scss/component/_node.scss */
+/* line 147, ../scss/component/_node.scss */
 .page-node-type-landing .page-second-sidebar-section {
   margin-bottom: 10rem;
 }
 
 /* Download page custom styles */
-/* line 149, ../scss/component/_node.scss */
+/* line 154, ../scss/component/_node.scss */
 .page-node-type-download .node--type-download {
   margin-top: 10px;
   margin-bottom: 15.5em;
 }
-/* line 153, ../scss/component/_node.scss */
+/* line 158, ../scss/component/_node.scss */
 .page-node-type-download h1.page-header {
   display: none;
 }
-/* line 156, ../scss/component/_node.scss */
+/* line 161, ../scss/component/_node.scss */
 .page-node-type-download .field--name-node-title h2 {
   font-size: 54px;
   line-height: 58px;
 }
-/* line 160, ../scss/component/_node.scss */
-.page-node-type-download .field--name-body {
+/* line 165, ../scss/component/_node.scss */
+.page-node-type-download .node--type-download .field--name-body {
   font-size: 28px;
   line-height: 45px;
   font-weight: lighter;
   margin: 22px 0 34px;
 }
-/* line 166, ../scss/component/_node.scss */
+/* line 171, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-download-file {
   background-color: #FFB500;
   font-size: 32px;
@@ -9482,7 +9488,7 @@ body.navbar-is-fixed-bottom {
   width: 315px;
   border-radius: 4px;
 }
-/* line 172, ../scss/component/_node.scss */
+/* line 177, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-download-file a {
   display: block;
   color: #fff;
@@ -9490,7 +9496,11 @@ body.navbar-is-fixed-bottom {
   font-size: 32px;
   font-weight: normal;
 }
-/* line 178, ../scss/component/_node.scss */
+/* line 183, ../scss/component/_node.scss */
+.page-node-type-download .field--name-field-download-file a:hover {
+  text-decoration: none;
+}
+/* line 186, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-download-file a:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -9501,19 +9511,23 @@ body.navbar-is-fixed-bottom {
   text-decoration: none;
   pointer-events: none;
 }
-/* line 190, ../scss/component/_node.scss */
+/* line 198, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-learn-info {
   font-size: 28px;
   font-weight: lighter;
   margin: 58px 0 5px;
 }
-/* line 196, ../scss/component/_node.scss */
+/* line 204, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-learn-link a {
   color: #FFB500;
   font-size: 24px;
   text-transform: uppercase;
 }
-/* line 200, ../scss/component/_node.scss */
+/* line 208, ../scss/component/_node.scss */
+.page-node-type-download .field--name-field-learn-link a:hover {
+  text-decoration: none;
+}
+/* line 211, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-learn-link a:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -9524,40 +9538,40 @@ body.navbar-is-fixed-bottom {
   pointer-events: none;
   margin-right: 15px;
 }
-/* line 212, ../scss/component/_node.scss */
+/* line 223, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-download-image {
   float: right;
   margin-top: 18px;
 }
-/* line 216, ../scss/component/_node.scss */
+/* line 227, ../scss/component/_node.scss */
 .page-node-type-download .ds-2col-fluid > .group-right {
   width: 40%;
 }
-/* line 219, ../scss/component/_node.scss */
+/* line 230, ../scss/component/_node.scss */
 .page-node-type-download .ds-2col-fluid > .group-left {
   width: 60%;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 225, ../scss/component/_node.scss */
+  /* line 236, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top-wrapper-inner {
     position: absolute;
     top: 0;
   }
-  /* line 229, ../scss/component/_node.scss */
+  /* line 240, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top {
     width: 750px;
   }
-  /* line 231, ../scss/component/_node.scss */
+  /* line 242, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top .region-highlighted-top {
     float: right;
   }
-  /* line 235, ../scss/component/_node.scss */
+  /* line 246, ../scss/component/_node.scss */
   .page-node-type-landing .page-second-sidebar-section {
     padding: 0 0 0 6rem;
     margin-bottom: 0;
   }
-  /* line 239, ../scss/component/_node.scss */
+  /* line 250, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 320px;
     position: absolute;
@@ -9565,7 +9579,7 @@ body.navbar-is-fixed-bottom {
     font-size: 34px;
     line-height: 44px;
   }
-  /* line 246, ../scss/component/_node.scss */
+  /* line 257, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 320px;
     position: absolute;
@@ -9573,39 +9587,39 @@ body.navbar-is-fixed-bottom {
     font-size: 20px;
     line-height: 26px;
   }
-  /* line 253, ../scss/component/_node.scss */
+  /* line 264, ../scss/component/_node.scss */
   .page-node-type-landing article {
     margin-bottom: 11.5em;
   }
-  /* line 255, ../scss/component/_node.scss */
+  /* line 266, ../scss/component/_node.scss */
   .page-node-type-landing article .field--name-field-info-button {
     font-size: 32px;
     width: 412px;
   }
-  /* line 258, ../scss/component/_node.scss */
+  /* line 269, ../scss/component/_node.scss */
   .page-node-type-landing article .field--name-field-info-button a {
     padding: 6px 33px 10px;
   }
-  /* line 260, ../scss/component/_node.scss */
+  /* line 271, ../scss/component/_node.scss */
   .page-node-type-landing article .field--name-field-info-button a:after {
     font-size: 36px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 270, ../scss/component/_node.scss */
+  /* line 281, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0 auto;
   }
-  /* line 276, ../scss/component/_node.scss */
+  /* line 287, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 520px;
     font-size: 44px;
     line-height: 54px;
   }
-  /* line 281, ../scss/component/_node.scss */
+  /* line 292, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 520px;
     font-size: 26px;
@@ -9613,17 +9627,17 @@ body.navbar-is-fixed-bottom {
   }
 }
 @media screen and (min-width: 1040px) and (max-width: 1200px) {
-  /* line 290, ../scss/component/_node.scss */
+  /* line 301, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top {
     width: 970px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 297, ../scss/component/_node.scss */
+  /* line 308, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top {
     width: 1200px;
   }
-  /* line 300, ../scss/component/_node.scss */
+  /* line 311, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 670px;
     position: absolute;
@@ -9631,7 +9645,7 @@ body.navbar-is-fixed-bottom {
     font-size: 54px;
     line-height: 64px;
   }
-  /* line 307, ../scss/component/_node.scss */
+  /* line 318, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 670px;
     position: absolute;
@@ -9641,39 +9655,39 @@ body.navbar-is-fixed-bottom {
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 319, ../scss/component/_node.scss */
+  /* line 330, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top-wrapper img {
     width: 100%;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 326, ../scss/component/_node.scss */
+  /* line 337, ../scss/component/_node.scss */
   .page-node-type-download .ds-2col-fluid > .group-left,
   .page-node-type-download .ds-2col-fluid > .group-right {
     width: 100%;
   }
 
-  /* line 330, ../scss/component/_node.scss */
+  /* line 341, ../scss/component/_node.scss */
   .page-node-type-download .field--name-field-download-image {
     float: none;
     margin-top: 65px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 338, ../scss/component/_node.scss */
+  /* line 349, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top-wrapper img {
     width: 100%;
   }
-  /* line 342, ../scss/component/_node.scss */
+  /* line 353, ../scss/component/_node.scss */
   .page-node-type-landing .main-container h1.page-header {
     font-size: 34px;
     line-height: 38px;
   }
-  /* line 346, ../scss/component/_node.scss */
+  /* line 357, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section {
     float: none;
   }
-  /* line 348, ../scss/component/_node.scss */
+  /* line 359, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 100%;
     top: 60px;
@@ -9681,7 +9695,7 @@ body.navbar-is-fixed-bottom {
     line-height: 32px;
     padding: 0px 20px;
   }
-  /* line 355, ../scss/component/_node.scss */
+  /* line 366, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 100%;
     top: 200px;
@@ -9689,38 +9703,38 @@ body.navbar-is-fixed-bottom {
     line-height: 22px;
     padding: 0px 20px;
   }
-  /* line 362, ../scss/component/_node.scss */
+  /* line 373, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section article .field--name-field-info-button {
     margin: 0 auto;
   }
 
-  /* line 368, ../scss/component/_node.scss */
+  /* line 379, ../scss/component/_node.scss */
   .page-node-type-download .field--name-node-title h2 {
     font-size: 34px;
     line-height: 38px;
   }
-  /* line 372, ../scss/component/_node.scss */
+  /* line 383, ../scss/component/_node.scss */
   .page-node-type-download .field--name-field-download-image img {
     margin: 0 auto;
   }
-  /* line 375, ../scss/component/_node.scss */
+  /* line 386, ../scss/component/_node.scss */
   .page-node-type-download .field--name-field-download-file {
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 617px) {
-  /* line 382, ../scss/component/_node.scss */
+  /* line 393, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section {
     float: none;
   }
-  /* line 384, ../scss/component/_node.scss */
+  /* line 395, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 100%;
     top: 30px;
     font-size: 24px;
     line-height: 24px;
   }
-  /* line 390, ../scss/component/_node.scss */
+  /* line 401, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 100%;
     top: 140px;
@@ -9729,11 +9743,11 @@ body.navbar-is-fixed-bottom {
   }
 }
 @media screen and (max-width: 501px) {
-  /* line 401, ../scss/component/_node.scss */
+  /* line 412, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section {
     float: none;
   }
-  /* line 403, ../scss/component/_node.scss */
+  /* line 414, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 100%;
     top: 10px;
@@ -9741,7 +9755,7 @@ body.navbar-is-fixed-bottom {
     line-height: 24px;
     padding: 0px 20px;
   }
-  /* line 410, ../scss/component/_node.scss */
+  /* line 421, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 100%;
     top: 110px;

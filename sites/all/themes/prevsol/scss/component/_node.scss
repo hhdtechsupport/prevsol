@@ -45,10 +45,11 @@
 		    line-height: 24px;
 		    text-transform: none;
 		    border-left: none;
+		    margin-top: 2.2rem;
 		    margin-bottom: 0;
 			}
 			form {
-			  padding: 15px 25px;
+			  padding: 15px 25px 10px;
 			}
 			.form-item label {
 			  font-weight: normal;
@@ -90,6 +91,7 @@
 	  line-height: 44px;
 	  font-weight: 500;
 	  text-transform: uppercase;
+	  font-family: "soleilbold";
 	}
 	.paragraph--type--featured-section .field--name-field-section-small-text {
 	  width: 670px;
@@ -119,6 +121,9 @@
 		    display: block;
 	      color: #fff;
 	      padding: 6px 5px 10px 20px;
+	      &:hover {
+          text-decoration: none;
+        }
 	      &:after {
 	        font-family: "Font Awesome 5 Free";
 	        font-weight: 900;
@@ -157,7 +162,7 @@
 	  font-size: 54px;
 	  line-height: 58px;
 	}
-	.field--name-body {
+	.node--type-download .field--name-body {
 	  font-size: 28px;
 	  line-height: 45px;
 	  font-weight: lighter;
@@ -175,6 +180,9 @@
       padding: 10px 35px;
       font-size: 32px;
       font-weight: normal;
+      &:hover {
+        text-decoration: none;
+      }
       &:after {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
@@ -197,6 +205,9 @@
       color: #FFB500;
       font-size: 24px;
       text-transform: uppercase;
+      &:hover {
+        text-decoration: none;
+      }
       &:before {
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
