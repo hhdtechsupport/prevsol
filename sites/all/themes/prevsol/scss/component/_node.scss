@@ -17,6 +17,9 @@
 /* Landing page custom styles */
 
 .page-node-type-landing {
+  .dialog-off-canvas-main-canvas {
+    overflow-x: hidden;
+  }
   .breadcrumb-wrapper.container {
 	  margin: 0;
   }
@@ -345,6 +348,11 @@
 }
 @media screen and (max-width: 767px) {
   .page-node-type-landing {
+    .highlighted-top {
+      .block-webform-block {
+        margin-bottom: 70px;
+      }
+    }
 	  .highlighted-top-wrapper {
 	    img {
 	      width: 100%;

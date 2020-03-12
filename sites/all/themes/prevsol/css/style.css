@@ -9309,33 +9309,37 @@ body.navbar-is-fixed-bottom {
 
 /* Landing page custom styles */
 /* line 20, ../scss/component/_node.scss */
+.page-node-type-landing .dialog-off-canvas-main-canvas {
+  overflow-x: hidden;
+}
+/* line 23, ../scss/component/_node.scss */
 .page-node-type-landing .breadcrumb-wrapper.container {
   margin: 0;
 }
-/* line 23, ../scss/component/_node.scss */
+/* line 26, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top-wrapper {
   margin-top: -1px;
   position: relative;
 }
-/* line 27, ../scss/component/_node.scss */
+/* line 30, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top-wrapper-inner {
   width: 100%;
   height: 100%;
 }
-/* line 31, ../scss/component/_node.scss */
+/* line 34, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top {
   Width: 100%;
   height: 100%;
   padding: 0;
   margin: 0 auto;
 }
-/* line 39, ../scss/component/_node.scss */
+/* line 42, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block {
   width: 370px;
   background-color: #fff;
   margin-top: 50px;
 }
-/* line 43, ../scss/component/_node.scss */
+/* line 46, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block .block-title {
   font-size: 24px;
   line-height: 24px;
@@ -9344,30 +9348,30 @@ body.navbar-is-fixed-bottom {
   margin-top: 2.2rem;
   margin-bottom: 0;
 }
-/* line 51, ../scss/component/_node.scss */
+/* line 54, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block form {
   padding: 15px 25px 10px;
 }
-/* line 54, ../scss/component/_node.scss */
+/* line 57, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block .form-item label {
   font-weight: normal;
   font-size: 14px;
 }
-/* line 58, ../scss/component/_node.scss */
+/* line 61, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block .form-item-intro {
   margin-bottom: 22px;
 }
-/* line 61, ../scss/component/_node.scss */
+/* line 64, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block input.form-text,
 .page-node-type-landing .highlighted-top .block-webform-block input.form-email {
   border-radius: 0;
   height: 28px;
 }
-/* line 66, ../scss/component/_node.scss */
+/* line 69, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block .form-item-notice {
   font-size: 12px;
 }
-/* line 69, ../scss/component/_node.scss */
+/* line 72, ../scss/component/_node.scss */
 .page-node-type-landing .highlighted-top .block-webform-block .webform-button--submit {
   width: 325px;
   height: 65px;
@@ -9376,15 +9380,15 @@ body.navbar-is-fixed-bottom {
   font-size: 32px;
   text-transform: uppercase;
 }
-/* line 80, ../scss/component/_node.scss */
+/* line 83, ../scss/component/_node.scss */
 .page-node-type-landing .paragraph--type--featured-section {
   float: left;
 }
-/* line 83, ../scss/component/_node.scss */
+/* line 86, ../scss/component/_node.scss */
 .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-image img {
   width: 100%;
 }
-/* line 86, ../scss/component/_node.scss */
+/* line 89, ../scss/component/_node.scss */
 .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
   position: absolute;
   top: 140px;
@@ -9395,7 +9399,7 @@ body.navbar-is-fixed-bottom {
   text-transform: uppercase;
   font-family: "soleilbold";
 }
-/* line 96, ../scss/component/_node.scss */
+/* line 99, ../scss/component/_node.scss */
 .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
   width: 670px;
   position: absolute;
@@ -9404,21 +9408,21 @@ body.navbar-is-fixed-bottom {
   font-size: 20px;
   line-height: 26px;
 }
-/* line 104, ../scss/component/_node.scss */
+/* line 107, ../scss/component/_node.scss */
 .page-node-type-landing article {
   margin-top: 4em;
 }
-/* line 106, ../scss/component/_node.scss */
+/* line 109, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-body {
   font-weight: lighter;
   margin: 14px 0 34px;
 }
-/* line 109, ../scss/component/_node.scss */
+/* line 112, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-body p {
   font-size: 28px;
   line-height: 45px;
 }
-/* line 114, ../scss/component/_node.scss */
+/* line 117, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-field-info-button {
   background-color: #FFB500;
   font-size: 22px;
@@ -9426,17 +9430,17 @@ body.navbar-is-fixed-bottom {
   width: 280px;
   border-radius: 4px;
 }
-/* line 120, ../scss/component/_node.scss */
+/* line 123, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-field-info-button a {
   display: block;
   color: #fff;
   padding: 6px 5px 10px 20px;
 }
-/* line 124, ../scss/component/_node.scss */
+/* line 127, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-field-info-button a:hover {
   text-decoration: none;
 }
-/* line 127, ../scss/component/_node.scss */
+/* line 130, ../scss/component/_node.scss */
 .page-node-type-landing article .field--name-field-info-button a:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -9448,39 +9452,39 @@ body.navbar-is-fixed-bottom {
   text-decoration: none;
   pointer-events: none;
 }
-/* line 142, ../scss/component/_node.scss */
+/* line 145, ../scss/component/_node.scss */
 .page-node-type-landing #block-onlinecourseslanding .field--name-body {
   font-size: 18px;
   line-height: 32px;
 }
-/* line 147, ../scss/component/_node.scss */
+/* line 150, ../scss/component/_node.scss */
 .page-node-type-landing .page-second-sidebar-section {
   margin-bottom: 10rem;
 }
 
 /* Download page custom styles */
-/* line 154, ../scss/component/_node.scss */
+/* line 157, ../scss/component/_node.scss */
 .page-node-type-download .node--type-download {
   margin-top: 10px;
   margin-bottom: 15.5em;
 }
-/* line 158, ../scss/component/_node.scss */
+/* line 161, ../scss/component/_node.scss */
 .page-node-type-download h1.page-header {
   display: none;
 }
-/* line 161, ../scss/component/_node.scss */
+/* line 164, ../scss/component/_node.scss */
 .page-node-type-download .field--name-node-title h2 {
   font-size: 54px;
   line-height: 58px;
 }
-/* line 165, ../scss/component/_node.scss */
+/* line 168, ../scss/component/_node.scss */
 .page-node-type-download .node--type-download .field--name-body {
   font-size: 28px;
   line-height: 45px;
   font-weight: lighter;
   margin: 22px 0 34px;
 }
-/* line 171, ../scss/component/_node.scss */
+/* line 174, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-download-file {
   background-color: #FFB500;
   font-size: 32px;
@@ -9488,7 +9492,7 @@ body.navbar-is-fixed-bottom {
   width: 315px;
   border-radius: 4px;
 }
-/* line 177, ../scss/component/_node.scss */
+/* line 180, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-download-file a {
   display: block;
   color: #fff;
@@ -9496,11 +9500,11 @@ body.navbar-is-fixed-bottom {
   font-size: 32px;
   font-weight: normal;
 }
-/* line 183, ../scss/component/_node.scss */
+/* line 186, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-download-file a:hover {
   text-decoration: none;
 }
-/* line 186, ../scss/component/_node.scss */
+/* line 189, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-download-file a:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -9511,23 +9515,23 @@ body.navbar-is-fixed-bottom {
   text-decoration: none;
   pointer-events: none;
 }
-/* line 198, ../scss/component/_node.scss */
+/* line 201, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-learn-info {
   font-size: 28px;
   font-weight: lighter;
   margin: 58px 0 5px;
 }
-/* line 204, ../scss/component/_node.scss */
+/* line 207, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-learn-link a {
   color: #FFB500;
   font-size: 24px;
   text-transform: uppercase;
 }
-/* line 208, ../scss/component/_node.scss */
+/* line 211, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-learn-link a:hover {
   text-decoration: none;
 }
-/* line 211, ../scss/component/_node.scss */
+/* line 214, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-learn-link a:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -9538,40 +9542,40 @@ body.navbar-is-fixed-bottom {
   pointer-events: none;
   margin-right: 15px;
 }
-/* line 223, ../scss/component/_node.scss */
+/* line 226, ../scss/component/_node.scss */
 .page-node-type-download .field--name-field-download-image {
   float: right;
   margin-top: 18px;
 }
-/* line 227, ../scss/component/_node.scss */
+/* line 230, ../scss/component/_node.scss */
 .page-node-type-download .ds-2col-fluid > .group-right {
   width: 40%;
 }
-/* line 230, ../scss/component/_node.scss */
+/* line 233, ../scss/component/_node.scss */
 .page-node-type-download .ds-2col-fluid > .group-left {
   width: 60%;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 236, ../scss/component/_node.scss */
+  /* line 239, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top-wrapper-inner {
     position: absolute;
     top: 0;
   }
-  /* line 240, ../scss/component/_node.scss */
+  /* line 243, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top {
     width: 750px;
   }
-  /* line 242, ../scss/component/_node.scss */
+  /* line 245, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top .region-highlighted-top {
     float: right;
   }
-  /* line 246, ../scss/component/_node.scss */
+  /* line 249, ../scss/component/_node.scss */
   .page-node-type-landing .page-second-sidebar-section {
     padding: 0 0 0 6rem;
     margin-bottom: 0;
   }
-  /* line 250, ../scss/component/_node.scss */
+  /* line 253, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 320px;
     position: absolute;
@@ -9579,7 +9583,7 @@ body.navbar-is-fixed-bottom {
     font-size: 34px;
     line-height: 44px;
   }
-  /* line 257, ../scss/component/_node.scss */
+  /* line 260, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 320px;
     position: absolute;
@@ -9587,39 +9591,39 @@ body.navbar-is-fixed-bottom {
     font-size: 20px;
     line-height: 26px;
   }
-  /* line 264, ../scss/component/_node.scss */
+  /* line 267, ../scss/component/_node.scss */
   .page-node-type-landing article {
     margin-bottom: 11.5em;
   }
-  /* line 266, ../scss/component/_node.scss */
+  /* line 269, ../scss/component/_node.scss */
   .page-node-type-landing article .field--name-field-info-button {
     font-size: 32px;
     width: 412px;
   }
-  /* line 269, ../scss/component/_node.scss */
+  /* line 272, ../scss/component/_node.scss */
   .page-node-type-landing article .field--name-field-info-button a {
     padding: 6px 33px 10px;
   }
-  /* line 271, ../scss/component/_node.scss */
+  /* line 274, ../scss/component/_node.scss */
   .page-node-type-landing article .field--name-field-info-button a:after {
     font-size: 36px;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 281, ../scss/component/_node.scss */
+  /* line 284, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 0 auto;
   }
-  /* line 287, ../scss/component/_node.scss */
+  /* line 290, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 520px;
     font-size: 44px;
     line-height: 54px;
   }
-  /* line 292, ../scss/component/_node.scss */
+  /* line 295, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 520px;
     font-size: 26px;
@@ -9627,17 +9631,17 @@ body.navbar-is-fixed-bottom {
   }
 }
 @media screen and (min-width: 1040px) and (max-width: 1200px) {
-  /* line 301, ../scss/component/_node.scss */
+  /* line 304, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top {
     width: 970px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 308, ../scss/component/_node.scss */
+  /* line 311, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top {
     width: 1200px;
   }
-  /* line 311, ../scss/component/_node.scss */
+  /* line 314, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 670px;
     position: absolute;
@@ -9645,7 +9649,7 @@ body.navbar-is-fixed-bottom {
     font-size: 54px;
     line-height: 64px;
   }
-  /* line 318, ../scss/component/_node.scss */
+  /* line 321, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 670px;
     position: absolute;
@@ -9655,39 +9659,43 @@ body.navbar-is-fixed-bottom {
   }
 }
 @media screen and (min-width: 1600px) {
-  /* line 330, ../scss/component/_node.scss */
+  /* line 333, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top-wrapper img {
     width: 100%;
   }
 }
 @media screen and (max-width: 991px) {
-  /* line 337, ../scss/component/_node.scss */
+  /* line 340, ../scss/component/_node.scss */
   .page-node-type-download .ds-2col-fluid > .group-left,
   .page-node-type-download .ds-2col-fluid > .group-right {
     width: 100%;
   }
 
-  /* line 341, ../scss/component/_node.scss */
+  /* line 344, ../scss/component/_node.scss */
   .page-node-type-download .field--name-field-download-image {
     float: none;
     margin-top: 65px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 349, ../scss/component/_node.scss */
+  /* line 352, ../scss/component/_node.scss */
+  .page-node-type-landing .highlighted-top .block-webform-block {
+    margin-bottom: 70px;
+  }
+  /* line 357, ../scss/component/_node.scss */
   .page-node-type-landing .highlighted-top-wrapper img {
     width: 100%;
   }
-  /* line 353, ../scss/component/_node.scss */
+  /* line 361, ../scss/component/_node.scss */
   .page-node-type-landing .main-container h1.page-header {
     font-size: 34px;
     line-height: 38px;
   }
-  /* line 357, ../scss/component/_node.scss */
+  /* line 365, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section {
     float: none;
   }
-  /* line 359, ../scss/component/_node.scss */
+  /* line 367, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 100%;
     top: 60px;
@@ -9695,7 +9703,7 @@ body.navbar-is-fixed-bottom {
     line-height: 32px;
     padding: 0px 20px;
   }
-  /* line 366, ../scss/component/_node.scss */
+  /* line 374, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 100%;
     top: 200px;
@@ -9703,38 +9711,38 @@ body.navbar-is-fixed-bottom {
     line-height: 22px;
     padding: 0px 20px;
   }
-  /* line 373, ../scss/component/_node.scss */
+  /* line 381, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section article .field--name-field-info-button {
     margin: 0 auto;
   }
 
-  /* line 379, ../scss/component/_node.scss */
+  /* line 387, ../scss/component/_node.scss */
   .page-node-type-download .field--name-node-title h2 {
     font-size: 34px;
     line-height: 38px;
   }
-  /* line 383, ../scss/component/_node.scss */
+  /* line 391, ../scss/component/_node.scss */
   .page-node-type-download .field--name-field-download-image img {
     margin: 0 auto;
   }
-  /* line 386, ../scss/component/_node.scss */
+  /* line 394, ../scss/component/_node.scss */
   .page-node-type-download .field--name-field-download-file {
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 617px) {
-  /* line 393, ../scss/component/_node.scss */
+  /* line 401, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section {
     float: none;
   }
-  /* line 395, ../scss/component/_node.scss */
+  /* line 403, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 100%;
     top: 30px;
     font-size: 24px;
     line-height: 24px;
   }
-  /* line 401, ../scss/component/_node.scss */
+  /* line 409, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 100%;
     top: 140px;
@@ -9743,11 +9751,11 @@ body.navbar-is-fixed-bottom {
   }
 }
 @media screen and (max-width: 501px) {
-  /* line 412, ../scss/component/_node.scss */
+  /* line 420, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section {
     float: none;
   }
-  /* line 414, ../scss/component/_node.scss */
+  /* line 422, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-big-text {
     width: 100%;
     top: 10px;
@@ -9755,7 +9763,7 @@ body.navbar-is-fixed-bottom {
     line-height: 24px;
     padding: 0px 20px;
   }
-  /* line 421, ../scss/component/_node.scss */
+  /* line 429, ../scss/component/_node.scss */
   .page-node-type-landing .paragraph--type--featured-section .field--name-field-section-small-text {
     width: 100%;
     top: 110px;
