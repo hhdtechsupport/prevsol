@@ -346,6 +346,47 @@
 	  }
 	}
 }
+@media screen and (min-width: 1680px) {
+  .page-node-type-landing {
+		.highlighted-top {
+	    .block-webform-block {
+	      margin-top: 25px;
+	    }
+		}
+	}
+	.page-node-type-landing.role-administrator {
+		.highlighted-top {
+	    .block-webform-block {
+	      margin-top: 50px;
+	    }
+		}
+	}
+}
+@media screen and (min-width: 1750px) {
+  .page-node-type-landing {
+		.highlighted-top {
+	    .block-webform-block {
+	      margin-top: 35px;
+	    }
+		}
+	}
+	.page-node-type-landing.role-administrator {
+		.highlighted-top {
+	    .block-webform-block {
+	      margin-top: 50px;
+	    }
+		}
+	}
+}
+@media screen and (min-width: 1800px) {
+  .page-node-type-landing {
+		.highlighted-top {
+	    .block-webform-block {
+	      margin-top: 50px;
+	    }
+		}
+	}
+}
 @media screen and (max-width: 991px) {
   .page-node-type-download .ds-2col-fluid > .group-left,
   .page-node-type-download .ds-2col-fluid > .group-right {
