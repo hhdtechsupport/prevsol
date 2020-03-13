@@ -42,7 +42,7 @@
 	  .block-webform-block {
 			width: 370px;
 			background-color: #fff;
-	    margin-top: 50px;
+	    margin-top: 15px;
 			.block-title {
 		    font-size: 24px;
 		    line-height: 24px;
@@ -68,6 +68,9 @@
 			}
 			.form-item-notice {
 			  font-size: 12px;
+			}
+			.g-recaptcha {
+			  margin-bottom: 15px;
 			}
 			.webform-button--submit {
 			  width: 325px;
@@ -149,6 +152,13 @@
 	}
   .page-second-sidebar-section {
 	  margin-bottom: 10rem;
+	}
+}
+.page-node-type-landing.role-administrator {
+	.highlighted-top {
+    .block-webform-block {
+      margin-top: 50px;
+    }
 	}
 }
 /* Download page custom styles */
