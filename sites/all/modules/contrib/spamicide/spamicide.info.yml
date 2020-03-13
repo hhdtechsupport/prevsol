@@ -1,0 +1,12 @@
+name: Spamicide
+type: module
+description: 'Provides a spamicide protection for forms.'
+package: Spam blocker
+# core: 8.x
+configure: spamicide.spamicide_settings
+
+# Information added by Drupal.org packaging script on 2019-01-09
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'spamicide'
+datestamp: 1547043200
