@@ -8,18 +8,25 @@
         "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
         "chat": "https://www.drupal.org/node/314178"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
-    ],
+    },
     "require": {
         "composer/installers": "^1.2",
+        "drupal/better_exposed_filters": "^5.0@beta",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
-        "drupal/core-vendor-hardening": "^8.8"
+        "drupal/core-vendor-hardening": "^8.8",
+        "npm-asset/jquery-ui-touch-punch": "^0.2.3",
+        "oomphinc/composer-installers-extender": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -35,12 +42,15 @@
                 "web-root": "./"
             }
         },
+        "installer-types": ["npm-asset","bower-asset"],
         "installer-paths": {
             "core": [
                 "type:drupal-core"
             ],
             "libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "vendor:npm-asset",
+	        "vendor:bower-asset"
             ],
             "modules/contrib/{$name}": [
                 "type:drupal-module"
