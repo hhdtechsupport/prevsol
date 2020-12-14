@@ -3,13 +3,15 @@
 namespace Drupal\conditional_fields\Form;
 
 use Drupal\Core\Datetime\DrupalDateTime;
+use Drupal\Core\Entity\Entity\EntityFormDisplay;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormState;
 use Drupal\Core\Form\FormStateInterface;
-use Drupal\Component\Utility\Unicode;
 use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+use Drupal\conditional_fields\ConditionalFieldsInterface;
 use Drupal\Core\Render\Element;
 use Drupal\conditional_fields\Conditions;
+use Drupal\datetime\Plugin\Field\FieldType\DateTimeItemInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormBuilderInterface;
@@ -142,13 +144,13 @@ class ConditionalFieldEditForm extends FormBase {
       '#title' => $this->t('Values input mode'),
       '#description' => $this->t('The input mode of the values that trigger the dependency.'),
       '#options' => [
-        CONDITIONAL_FIELDS_DEPENDENCY_VALUES_WIDGET => $this->t('Insert value from widget...'),
-        CONDITIONAL_FIELDS_DEPENDENCY_VALUES_REGEX => $this->t('Regular expression...'),
+        ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_WIDGET => $this->t('Insert value from widget...'),
+        ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_REGEX => $this->t('Regular expression...'),
         'Set of values' => [
-          CONDITIONAL_FIELDS_DEPENDENCY_VALUES_AND => $this->t('All these values (AND)...'),
-          CONDITIONAL_FIELDS_DEPENDENCY_VALUES_OR => $this->t('Any of these values (OR)...'),
-          CONDITIONAL_FIELDS_DEPENDENCY_VALUES_XOR => $this->t('Only one of these values (XOR)...'),
-          CONDITIONAL_FIELDS_DEPENDENCY_VALUES_NOT => $this->t('None of these values (NOT)...'),
+          ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_AND => $this->t('All these values (AND)...'),
+          ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_OR => $this->t('Any of these values (OR)...'),
+          ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_XOR => $this->t('Only one of these values (XOR)...'),
+          ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_NOT => $this->t('None of these values (NOT)...'),
           // TODO: PHP evaluation.
         ],
       ],
@@ -170,13 +172,13 @@ class ConditionalFieldEditForm extends FormBase {
       '#states' => [
         'visible' => [
           ':input[name="values_set"]' => [
-            'value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_WIDGET,
+            'value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_WIDGET,
           ],
           ':input[name="condition"]' => ['value' => 'value'],
         ],
         'required' => [
           ':input[name="values_set"]' => [
-            'value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_WIDGET,
+            'value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_WIDGET,
           ],
           ':input[name="condition"]' => ['value' => 'value'],
         ],
@@ -192,19 +194,19 @@ class ConditionalFieldEditForm extends FormBase {
       '#states' => [
         'visible' => [
           ':input[name="values_set"]' => [
-            ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_AND],
-            ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_OR],
-            ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_XOR],
-            ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_NOT],
+            ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_AND],
+            ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_OR],
+            ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_XOR],
+            ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_NOT],
           ],
           ':input[name="condition"]' => ['value' => 'value'],
         ],
         'required' => [
           ':input[name="values_set"]' => [
-            ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_AND],
-            ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_OR],
-            ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_XOR],
-            ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_NOT],
+            ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_AND],
+            ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_OR],
+            ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_XOR],
+            ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_NOT],
           ],
           ':input[name="condition"]' => ['value' => 'value'],
         ],
@@ -230,11 +232,11 @@ class ConditionalFieldEditForm extends FormBase {
       '#default_value' => isset($settings['regex']) ? $settings['regex'] : '',
       '#states' => [
         'visible' => [
-          ':input[name="values_set"]' => ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_REGEX],
+          ':input[name="values_set"]' => ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_REGEX],
           ':input[name="condition"]' => ['value' => 'value'],
         ],
         'required' => [
-          ':input[name="values_set"]' => ['value' => (string) CONDITIONAL_FIELDS_DEPENDENCY_VALUES_REGEX],
+          ':input[name="values_set"]' => ['value' => (string) ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_REGEX],
           ':input[name="condition"]' => ['value' => 'value'],
         ],
       ],
@@ -266,19 +268,19 @@ class ConditionalFieldEditForm extends FormBase {
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
     $allowed_values_set = [
-      CONDITIONAL_FIELDS_DEPENDENCY_VALUES_AND,
-      CONDITIONAL_FIELDS_DEPENDENCY_VALUES_OR,
-      CONDITIONAL_FIELDS_DEPENDENCY_VALUES_XOR,
-      CONDITIONAL_FIELDS_DEPENDENCY_VALUES_NOT,
+      ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_AND,
+      ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_OR,
+      ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_XOR,
+      ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_NOT,
     ];
     if ($form_state->getValue('condition') == 'value') {
       if (in_array($form_state->getValue('values_set'), $allowed_values_set) &&
-        Unicode::strlen(trim($form_state->getValue('values')) === 0)
+        mb_strlen(trim($form_state->getValue('values')) === 0)
       ) {
-        $form_state->setErrorByName('values', $this->t('@name field is required.', ['@name' => $this->t('Set of values')]));
+        $form_state->setErrorByName('values', $this->t('Field %name is required.', ['%name' => $this->t('Set of values')]));
       }
-      elseif ($form_state->getValue('values_set') == CONDITIONAL_FIELDS_DEPENDENCY_VALUES_REGEX && Unicode::strlen(trim($form_state->getValue('regex'))) == 0) {
-        $form_state->setErrorByName('regex', $this->t('@name field is required.', ['@name' => $this->t('Regular expression')]));
+      elseif ($form_state->getValue('values_set') == ConditionalFieldsInterface::CONDITIONAL_FIELDS_DEPENDENCY_VALUES_REGEX && mb_strlen(trim($form_state->getValue('regex'))) == 0) {
+        $form_state->setErrorByName('regex', $this->t('Field %name is required.', ['%name' => $this->t('Regular expression')]));
       }
     }
     parent::validateForm($form, $form_state);
@@ -329,14 +331,14 @@ class ConditionalFieldEditForm extends FormBase {
       }
 
       // Set field value.
-      if ($settings['values_set'] == CONDITIONAL_FIELDS_DEPENDENCY_VALUES_WIDGET) {
+      if ( isset( $settings[ $dependee ] ) && ! empty( $settings[ $dependee ] ) ) {
         // Get and save value as string with timezone.
         $value = &$settings[$dependee];
         if (!empty($value[0]['value']) && is_object($value[0]['value']) && $value[0]['value'] instanceof DrupalDateTime) {
           foreach ($value as $delta => $date) {
             if (!empty($date['value'])) {
               // Need to find a solution to handle both datetime and date types.
-              $value[$delta]['value'] = $date['value']->format(DATETIME_DATE_STORAGE_FORMAT);
+              $value[$delta]['value'] = $date['value']->format(DateTimeItemInterface::DATETIME_STORAGE_FORMAT);
             }
           }
         }

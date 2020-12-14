@@ -1,13 +1,13 @@
-name: Add another
-description: Presents users with an option to create another node of the same type after a node is added.
+name: 'Add Another'
+description: 'Presents users with an option to create another node of the same type after a node is added.'
 type: module
-# core: 8.x
+core_version_requirement: ^8 || ^9
 package: User interface
-# version: 8.x-1.x
 configure: addanother.admin_config
+dependencies:
+  - drupal:node
 
-# Information added by Drupal.org packaging script on 2016-11-21
-version: '8.x-1.0-rc1'
-core: '8.x'
+# Information added by Drupal.org packaging script on 2020-10-17
+version: '8.x-1.1'
 project: 'addanother'
-datestamp: 1479709141
+datestamp: 1602949532

@@ -2,6 +2,8 @@
 
 namespace Drupal\auto_entitylabel;
 
+use Drupal\Core\Extension\ModuleHandlerInterface;
+use Drupal\Core\Render\BubbleableMetadata;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;
@@ -47,24 +49,28 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
    *
    * @var string
    */
-  // @codingStandardsIgnoreLine
-  protected $entity_type;
+  protected $entityType;
 
   /**
    * The bundle of the entity.
    *
    * @var string
    */
-  // @codingStandardsIgnoreLine
-  protected $entity_bundle;
+  protected $entityBundle;
+
+  /**
+   * The bundle entity type.
+   *
+   * @var string
+   */
+  protected $bundleEntityType;
 
   /**
    * Indicates if the automatic label has been applied.
    *
    * @var bool
    */
-  // @codingStandardsIgnoreLine
-  protected $auto_label_applied = FALSE;
+  protected $autoLabelApplied = FALSE;
 
   /**
    * Config factory.
@@ -88,6 +94,13 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
   protected $token;
 
   /**
+   * Module handler service.
+   *
+   * @var \Drupal\Core\Extension\ModuleHandlerInterface
+   */
+  protected $moduleHandler;
+
+  /**
    * Automatic label configuration.
    *
    * @var \Drupal\Core\Config\ImmutableConfig
@@ -105,16 +118,27 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
    *   Entity type manager.
    * @param \Drupal\Core\Utility\Token $token
    *   Token manager.
+   * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
+   *   Module handler.
    */
-  public function __construct(ContentEntityInterface $entity, ConfigFactoryInterface $config_factory, EntityTypeManagerInterface $entity_type_manager, Token $token) {
+  public function __construct(
+    ContentEntityInterface $entity,
+    ConfigFactoryInterface $config_factory,
+    EntityTypeManagerInterface $entity_type_manager,
+    Token $token,
+    ModuleHandlerInterface $module_handler
+  ) {
     $this->entity = $entity;
-    $this->entity_type = $entity->getEntityType()->id();
-    $this->entity_bundle = $entity->bundle();
-    $this->bundle_entity_type = $entity_type_manager->getDefinition($this->entity_type)->getBundleEntityType();
+    $this->entityType = $entity->getEntityType()->id();
+    $this->entityBundle = $entity->bundle();
+    $this->bundleEntityType = $entity_type_manager
+      ->getDefinition($this->entityType)
+      ->getBundleEntityType();
 
     $this->configFactory = $config_factory;
     $this->entityTypeManager = $entity_type_manager;
     $this->token = $token;
+    $this->moduleHandler = $module_handler;
   }
 
   /**
@@ -125,7 +149,8 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
    */
   public function hasLabel() {
     /** @var \Drupal\Core\Entity\EntityTypeInterface $definition */
-    $definition = $this->entityTypeManager->getDefinition($this->entity->getEntityTypeId());
+    $definition = $this->entityTypeManager
+      ->getDefinition($this->entity->getEntityTypeId());
     return $definition->hasKey('label');
   }
 
@@ -151,7 +176,8 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
     $label_name = $this->getLabelName();
     $this->entity->$label_name->setValue($label);
 
-    $this->auto_label_applied = TRUE;
+    $this->autoLabelApplied = TRUE;
+
     return $label;
   }
 
@@ -173,9 +199,10 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
    * {@inheritdoc}
    */
   public function autoLabelNeeded() {
-    $not_applied = empty($this->auto_label_applied);
+    $not_applied = empty($this->autoLabelApplied);
     $required = $this->hasAutoLabel();
     $optional = $this->hasOptionalAutoLabel() && empty($this->entity->label());
+
     return $not_applied && ($required || $optional);
   }
 
@@ -192,6 +219,7 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
   public function getPattern() {
     $pattern = $this->getConfig('pattern') ?: '';
     $pattern = trim($pattern);
+
     return $pattern;
   }
 
@@ -205,7 +233,8 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
     $label_field = '';
 
     if ($this->hasLabel()) {
-      $definition = $this->entityTypeManager->getDefinition($this->entity->getEntityTypeId());
+      $definition = $this->entityTypeManager
+        ->getDefinition($this->entity->getEntityTypeId());
       $label_field = $definition->getKey('label');
     }
 
@@ -222,8 +251,8 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
     $entity_type = $this->entity->getEntityTypeId();
     $bundle = $this->entity->bundle();
 
-    // Use the the human readable name of the bundle type. If this entity has no
-    // bundle, we use the name of the content entity type.
+    // Use the the human readable name of the bundle type.
+    // If this entity has no bundle, use the name of the content entity type.
     if ($bundle != $entity_type) {
       $bundle_entity_type = $this->entityTypeManager
         ->getDefinition($entity_type)
@@ -255,26 +284,33 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
    */
   protected function generateLabel($pattern, $entity) {
     $entity_type = $entity->getEntityType()->id();
+    // To avoid that the token replacement leaking render metadata (which might
+    // be a problem when generating labels using JSON:api or similar) we pass in
+    // metadata to the token replacement.
+    // @see https://www.drupal.org/project/auto_entitylabel/issues/3051165
+    $metadata = new BubbleableMetadata();
     $output = $this->token->replace($pattern,
       [$entity_type => $entity],
-      ['clear' => TRUE]
+      ['clear' => TRUE],
+      $metadata
     );
-
-    // Evaluate PHP.
-    if ($this->getConfig('php')) {
-      $output = $this->evalLabel($output, $this->entity);
-    }
 
     // Decode HTML entities, returning them to their original UTF-8 characters.
     $output = Html::decodeEntities($output);
 
     // Strip tags and Remove special characters.
-    $pattern = !empty($this->getConfig('escape')) ? '/[^a-zA-Z0-9\s]|[\t\n\r\0\x0B]/' : '/[\t\n\r\0\x0B]/';
+    $pattern = !empty($this->getConfig('escape'))
+      ? '/[^a-zA-Z0-9\s]|[\t\n\r\0\x0B]/'
+      : '/[\t\n\r\0\x0B]/';
     $output = preg_replace($pattern, ' ', strip_tags($output));
 
     // Invoke hook_auto_entitylabel_label_alter().
     $entity_clone = clone $entity;
-    \Drupal::moduleHandler()->alter('auto_entitylabel_label', $output, $entity_clone);
+    $this->moduleHandler->alter('auto_entitylabel_label', $output, $entity_clone);
+
+    // Trim stray whitespace from beginning and end. Also converts 2 or more
+    // whitespace characters within label to a single space.
+    $output = preg_replace('/\s{2,}/', ' ', trim($output));
 
     return $output;
   }
@@ -285,13 +321,14 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
    * @param string $value
    *   The configuration value to get.
    *
-   * @return \Drupal\Core\Config\ImmutableConfig
-   *   Return Config.
+   * @return mixed
+   *   The data that was requested.
    */
   protected function getConfig($value) {
     if (!isset($this->config)) {
-      $this->config = $this->configFactory->get('auto_entitylabel.settings.' . $this->entity_type . '.' . $this->entity_bundle);
+      $this->config = $this->configFactory->get('auto_entitylabel.settings.' . $this->entityType . '.' . $this->entityBundle);
     }
+
     return $this->config->get($value);
   }
 
@@ -318,27 +355,6 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
   }
 
   /**
-   * Evaluates php code and passes the entity to it.
-   *
-   * @param string $code
-   *   PHP code to evaluate.
-   * @param object $entity
-   *   Content entity to pa ss through to the PHP script.
-   *
-   * @return string
-   *   String to use as label.
-   */
-  protected function evalLabel($code, $entity) {
-    ob_start();
-    // @codingStandardsIgnoreLine
-    print eval('?>' . $code);
-    $output = ob_get_contents();
-    ob_end_clean();
-
-    return $output;
-  }
-
-  /**
    * Constructs the list of options for the given bundle.
    *
    * @codingStandardsIgnoreStart
@@ -359,6 +375,7 @@ class AutoEntityLabelManager implements AutoEntityLabelManagerInterface {
         'auto_entitylabel_enabled' => t('Automatically generate the label'),
       ];
     }
+
     return $options;
   }
 

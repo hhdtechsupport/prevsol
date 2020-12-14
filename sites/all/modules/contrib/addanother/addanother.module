@@ -9,6 +9,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Render\Markup;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
+use Drupal\node\NodeInterface;
 
 /**
  * Implements hook_help().
@@ -33,40 +34,40 @@ function addanother_form_node_type_form_alter(&$form, FormStateInterface &$form_
     $tab = $config->get('tab.' . $type);
     $tab_edit = $config->get('tab_edit.' . $type);
 
-    $form['addanother_display'] = array(
+    $form['addanother_display'] = [
       '#type' => 'details',
       '#title' => t('Add another settings'),
       '#collapsible' => TRUE,
       '#group' => 'additional_settings',
-    );
+    ];
 
-    $form['addanother_display']['button'] = array(
+    $form['addanother_display']['button'] = [
       '#type' => 'checkbox',
       '#title' => t('Display Add another button on node add form.'),
       '#default_value' => isset($button) ? $button : $config->get('default_button'),
       '#description' => t('Enable this checkbox if you want to provide a "Save and add another" button on the node add form for your users.'),
-    );
+    ];
 
-    $form['addanother_display']['message'] = array(
+    $form['addanother_display']['message'] = [
       '#type' => 'checkbox',
       '#title' => t('Display the Add another message after node creation.'),
       '#default_value' => isset($message) ? $message : $config->get('default_message'),
       '#description' => t('Enable this checkbox if you want to show a "Add another..." message after creating a new node.'),
-    );
+    ];
 
-    $form['addanother_display']['tab'] = array(
+    $form['addanother_display']['tab'] = [
       '#type' => 'checkbox',
       '#title' => t('Display the Add another tab.'),
       '#default_value' => isset($tab) ? $tab : $config->get('default_tab'),
       '#description' => t('Enable this checkbox if you want to show a "Add another" tab on nodes of this type.'),
-    );
+    ];
 
-    $form['addanother_display']['tab_edit'] = array(
+    $form['addanother_display']['tab_edit'] = [
       '#type' => 'checkbox',
       '#title' => t('Also display Add another tab on edit page.'),
       '#default_value' => isset($tab_edit) ? $tab_edit : $config->get('default_tab_edit'),
       '#description' => t('Enable this checkbox if you want to also show a "Add another" tab on node edit pages of this type. This option does nothing if the Add another tab is disabled.'),
-    );
+    ];
 
     $form['actions']['submit']['#submit'][] = 'addanother_form_node_type_form_submit';
   }
@@ -91,6 +92,7 @@ function addanother_form_node_type_form_submit(&$form, FormStateInterface $form_
  * Implements hook_form_BASE_FORM_ID_form_alter().
  */
 function addanother_form_node_form_alter(&$form, FormStateInterface &$form_state) {
+  /* @var \Drupal\node\NodeInterface $node  */
   if ($node = $form_state->getFormObject()->getEntity()) {
     if (empty($node->Id())) {
       $type = $node->getType();
@@ -100,15 +102,15 @@ function addanother_form_node_form_alter(&$form, FormStateInterface &$form_state
       if ($account->hasPermission('use add another')) {
         $button = $config->get('button.' . $type);
         if ($button) {
-          $form['actions']['addanother'] = array(
-            '#attributes' => array(
-              'class' => array('button'),
-            ),
+          $form['actions']['addanother'] = [
+            '#attributes' => [
+              'class' => ['button'],
+            ],
             '#type' => 'submit',
             '#value' => t('Save and add another'),
             '#weight' => 50,
             '#submit' => $form['actions']['submit']['#submit'],
-          );
+          ];
           $form['actions']['addanother']['#submit'][] = 'addanother_node_form_submit';
         }
       }
@@ -126,16 +128,12 @@ function addanother_form_node_form_alter(&$form, FormStateInterface &$form_state
  * Submit handler for the 'Save and add another' button.
  */
 function addanother_node_form_submit($form, FormStateInterface &$form_state) {
+  /* @var \Drupal\node\NodeInterface $node  */
   if ($node = $form_state->getFormObject()->getEntity()) {
     $type = $node->getType();
-    $form_state->setRedirect('node.add', array('node_type' => $type));
+    $form_state->setRedirect('node.add', ['node_type' => $type]);
     _addanother_quelch_message($node);
-    $t_args = array(
-      '@type' => node_get_type_label($node),
-      '%title' => $node->label(),
-      ':node_link' => $node->url(),
-    );
-    drupal_set_message(t('@type <a href=":node_link">%title</a> has been created. You may now create another.', $t_args));
+    \Drupal::messenger()->addMessage(t('You may now create another.'));
   }
 }
 
@@ -143,40 +141,59 @@ function addanother_node_form_submit($form, FormStateInterface &$form_state) {
  * Submit handler if the normal submit button was pressed.
  */
 function addanother_node_form_message_submit($form, FormStateInterface &$form_state) {
+  /* @var \Drupal\node\NodeInterface $node  */
   if ($node = $form_state->getFormObject()->getEntity()) {
     _addanother_quelch_message($node);
     $type_url = Url::fromRoute('node.add', [
-      'node_type' => str_replace('_', '-', $node->getType()),
+      'node_type' => $node->getType(),
     ]);
-    $t_args = array(
+    $t_args = [
       '@type' => node_get_type_label($node),
-      '%title' => $node->label(),
-      ':node_link' => $node->url(),
       ':type_url' => $type_url->toString(),
-    );
-    drupal_set_message(t('@type <a href=":node_link">%title</a> has been created. You may <a href=":type_url">add another @type</a>.', $t_args));
+    ];
+    \Drupal::messenger()->addMessage(t('You may <a href=":type_url">add another @type</a>.', $t_args));
   }
 }
 
 /**
  * Remove the default Drupal node creation message.
+ *
+ * @param \Drupal\node\NodeInterface $node
+ *   Node entity.
+ *
+ * @return bool
+ *   Return FALSE if there is no message to remove.
  */
-function _addanother_quelch_message($node) {
+function _addanother_quelch_message(NodeInterface $node) {
   if (!isset($_SESSION['messages']['status'])) {
     return FALSE;
   }
 
-  $t_args = array(
-    '@type' => node_get_type_label($node),
-    '%title' => $node->getTitle(),
-  );
-  $message = t('@type %title has been created.', $t_args);
-  $remove[] = Markup::create((string) $message);
+  // Get messages to remove.
+  $remove = [];
+  $type = node_get_type_label($node);
+  $label = $node->label();
+  // There are two possible types of message,
+  // since new type with link was introduced
+  // in Drupal core 8.2.x version.
+  $titles = [
+    $label,
+    $node->toLink($label)->toString(),
+  ];
+
+  foreach ($titles as $title) {
+    $t_args = [
+      '@type' => $type,
+      '%title' => $title,
+    ];
+    $message = t('@type %title has been created.', $t_args);
+    $remove[] = Markup::create((string) $message);
+  }
 
   if ($messages = array_diff($_SESSION['messages']['status'], $remove)) {
     $_SESSION['messages']['status'] = $messages;
   }
   else {
-    drupal_get_messages('status', TRUE);
+    \Drupal::messenger()->all('status', TRUE);
   }
 }

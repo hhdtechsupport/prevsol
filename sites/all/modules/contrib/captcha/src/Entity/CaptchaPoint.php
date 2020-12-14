@@ -16,7 +16,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBase;
  *   id = "captcha_point",
  *   label = @Translation("Captcha Point"),
  *   handlers = {
- *     "list_builder" = "Drupal\captcha\Controller\CaptchaPointListBuilder",
+ *     "list_builder" = "Drupal\captcha\Entity\Controller\CaptchaPointListBuilder",
  *     "form" = {
  *       "add" = "Drupal\captcha\Form\CaptchaPointForm",
  *       "edit" = "Drupal\captcha\Form\CaptchaPointForm",
@@ -50,10 +50,26 @@ use Drupal\Core\Config\Entity\ConfigEntityBase;
  * )
  */
 class CaptchaPoint extends ConfigEntityBase implements CaptchaPointInterface {
+
+  /**
+   * The captcha type.
+   *
+   * @var string
+   */
   public $captchaType;
 
+  /**
+   * The captcha label.
+   *
+   * @var string
+   */
   protected $label;
 
+  /**
+   * The formid associated with the captcha.
+   *
+   * @var string
+   */
   public $formId;
 
   /**

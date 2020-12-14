@@ -16,7 +16,7 @@ class AddAnotherController extends ControllerBase {
    */
   public function addAnotherGoTo(NodeInterface $node) {
     return $this->redirect('node.add', [
-      'node_type' => str_replace('_', '-', $node->getType()),
+      'node_type' => $node->getType(),
     ]);
   }
 
