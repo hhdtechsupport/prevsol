@@ -1590,6 +1590,69 @@ th#view-field-event-type-table-column {
             }
           }
         }
+        & > #edit-field-resource-type-target-id-1-collapsible,
+        & > #edit-prevention-topics-collapsible {
+          float: none;
+          outline: none;
+          user-select: none;
+          background-color: transparent;
+          border: none;
+          margin: 0;
+          margin-bottom: 2rem;
+          border-radius: 0;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          .panel-heading {
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 5px solid #CFCFD2;
+            padding-bottom: 3px;
+            margin-right: 2rem;
+            outline: none;
+            user-select: none;
+            padding: 0;
+            padding-bottom: 3px;
+            background-color: transparent;
+            &:after {
+              font-family: "Font Awesome 5 Free";
+              font-size: 1.8rem;
+              content: "\f0ab";
+              color: #FFB500;
+              font-style: normal;
+              margin: -0.3rem 0 0 3rem;
+              text-decoration: none;
+              float: right;
+            }
+            .panel-title {
+              display: inline-block;
+              font-size: 14px;
+            }
+          }
+          .panel-body {
+            padding: 0;
+            .form-checkboxes > .form-checkboxes {
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              z-index: 99;
+              background-color: rgb(242, 242, 242);
+              border: 1px solid rgb(221, 221, 221);
+              padding: 0.5rem;
+              box-shadow: rgba(51, 51, 51, 0.2) 3px 2px 2px;
+            }
+            .form-item {
+              margin: 0;
+              padding: 0;
+              float: none;
+              label {
+                margin:0;
+                input {
+                  margin-right: 0.7rem;
+                }
+              }
+            }
+          }
+        }
       }
     }
     .form-inline {

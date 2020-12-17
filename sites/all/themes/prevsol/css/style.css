@@ -11804,37 +11804,108 @@ th#view-field-event-type-table-column {
 .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > details.form-item .form-checkboxes .form-item.form-type-checkbox > label.option > input.form-checkbox {
   margin-right: 0.7rem;
 }
+/* line 1593, ../scss/_overrides.scss */
+.page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-field-resource-type-target-id-1-collapsible, .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-prevention-topics-collapsible {
+  float: none;
+  outline: none;
+  user-select: none;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  margin-bottom: 2rem;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1605, ../scss/_overrides.scss */
+.page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-field-resource-type-target-id-1-collapsible .panel-heading, .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-prevention-topics-collapsible .panel-heading {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 5px solid #CFCFD2;
+  padding-bottom: 3px;
+  margin-right: 2rem;
+  outline: none;
+  user-select: none;
+  padding: 0;
+  padding-bottom: 3px;
+  background-color: transparent;
+}
+/* line 1616, ../scss/_overrides.scss */
+.page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-field-resource-type-target-id-1-collapsible .panel-heading:after, .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-prevention-topics-collapsible .panel-heading:after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.8rem;
+  content: "\f0ab";
+  color: #FFB500;
+  font-style: normal;
+  margin: -0.3rem 0 0 3rem;
+  text-decoration: none;
+  float: right;
+}
+/* line 1626, ../scss/_overrides.scss */
+.page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-field-resource-type-target-id-1-collapsible .panel-heading .panel-title, .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-prevention-topics-collapsible .panel-heading .panel-title {
+  display: inline-block;
+  font-size: 14px;
+}
+/* line 1631, ../scss/_overrides.scss */
+.page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-field-resource-type-target-id-1-collapsible .panel-body, .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-prevention-topics-collapsible .panel-body {
+  padding: 0;
+}
+/* line 1633, ../scss/_overrides.scss */
+.page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-field-resource-type-target-id-1-collapsible .panel-body .form-checkboxes > .form-checkboxes, .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-prevention-topics-collapsible .panel-body .form-checkboxes > .form-checkboxes {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 99;
+  background-color: #f2f2f2;
+  border: 1px solid #dddddd;
+  padding: 0.5rem;
+  box-shadow: rgba(51, 51, 51, 0.2) 3px 2px 2px;
+}
+/* line 1643, ../scss/_overrides.scss */
+.page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-field-resource-type-target-id-1-collapsible .panel-body .form-item, .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-prevention-topics-collapsible .panel-body .form-item {
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+/* line 1647, ../scss/_overrides.scss */
+.page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-field-resource-type-target-id-1-collapsible .panel-body .form-item label, .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-prevention-topics-collapsible .panel-body .form-item label {
+  margin: 0;
+}
+/* line 1649, ../scss/_overrides.scss */
+.page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-field-resource-type-target-id-1-collapsible .panel-body .form-item label input, .page-node-12 .views-exposed-form.bef-exposed-form .form--inline > #edit-prevention-topics-collapsible .panel-body .form-item label input {
+  margin-right: 0.7rem;
+}
 @media screen and (min-width: 992px) {
-  /* line 1597, ../scss/_overrides.scss */
+  /* line 1660, ../scss/_overrides.scss */
   .page-node-12 .views-exposed-form .form-inline .form-item.form-item-keywords {
     width: 45%;
     float: left;
   }
-  /* line 1601, ../scss/_overrides.scss */
+  /* line 1664, ../scss/_overrides.scss */
   .page-node-12 .views-exposed-form .form-inline .form-item.form-item-prevention-topics {
     width: 45%;
     float: left;
   }
 }
-/* line 1610, ../scss/_overrides.scss */
+/* line 1673, ../scss/_overrides.scss */
 .page-node-12 .field--name-body p span {
   font-family: "soleillight";
   font-size: 2.8rem;
   line-height: 4.5rem;
   color: #333333;
 }
-/* line 1617, ../scss/_overrides.scss */
+/* line 1680, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-/* line 1621, ../scss/_overrides.scss */
+/* line 1684, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li {
   list-style-type: none;
   padding: 0.5rem 0;
 }
-/* line 1624, ../scss/_overrides.scss */
+/* line 1687, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -11845,7 +11916,7 @@ th#view-field-event-type-table-column {
   margin: 0 3rem 0 0;
   text-decoration: none;
 }
-/* line 1634, ../scss/_overrides.scss */
+/* line 1697, ../scss/_overrides.scss */
 .page-node-12 .field--name-body ul li span {
   font-family: "soleilbold";
   font-size: 2.8rem;
@@ -11854,92 +11925,92 @@ th#view-field-event-type-table-column {
   color: #333333;
 }
 @media screen and (min-width: 768px) {
-  /* line 1648, ../scss/_overrides.scss */
+  /* line 1711, ../scss/_overrides.scss */
   .page-node-12 .view-resources .table-responsive thead > tr > th {
     min-width: 15rem;
   }
-  /* line 1651, ../scss/_overrides.scss */
+  /* line 1714, ../scss/_overrides.scss */
   .page-node-12 .view-resources .table-responsive thead > tr > th#view-title-table-column {
     min-width: 35rem;
   }
 }
-/* line 1662, ../scss/_overrides.scss */
+/* line 1725, ../scss/_overrides.scss */
 .page-node-12 .view-resources .table-responsive tbody > tr td.views-field-title a {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 1667, ../scss/_overrides.scss */
+/* line 1730, ../scss/_overrides.scss */
 .page-node-12 .view-resources .table-responsive tbody > tr td.views-field-title a:hover {
   text-decoration: underline;
 }
-/* line 1677, ../scss/_overrides.scss */
+/* line 1740, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper {
   padding: 0;
 }
-/* line 1679, ../scss/_overrides.scss */
+/* line 1742, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container {
   margin: 0 auto;
   padding: 0;
 }
-/* line 1687, ../scss/_overrides.scss */
+/* line 1750, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item {
   margin-bottom: 2rem;
 }
-/* line 1689, ../scss/_overrides.scss */
+/* line 1752, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item > label {
   min-width: 12rem;
   width: 100%;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-/* line 1695, ../scss/_overrides.scss */
+/* line 1758, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item select {
   min-width: auto;
   padding: 1rem;
 }
 @media screen and (min-width: 768px) {
-  /* line 1695, ../scss/_overrides.scss */
+  /* line 1758, ../scss/_overrides.scss */
   .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item select {
     min-width: 45rem;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 1695, ../scss/_overrides.scss */
+  /* line 1758, ../scss/_overrides.scss */
   .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item select {
     min-width: 30rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 1695, ../scss/_overrides.scss */
+  /* line 1758, ../scss/_overrides.scss */
   .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item select {
     min-width: 41rem;
   }
 }
-/* line 1707, ../scss/_overrides.scss */
+/* line 1770, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item select#edit-prevention-topics {
   min-height: 34rem;
 }
-/* line 1711, ../scss/_overrides.scss */
+/* line 1774, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item input:not(.form-checkbox) {
   min-width: auto;
   padding: 1rem;
 }
 @media screen and (min-width: 768px) {
-  /* line 1711, ../scss/_overrides.scss */
+  /* line 1774, ../scss/_overrides.scss */
   .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline > .form-item input:not(.form-checkbox) {
     min-width: 20rem;
   }
 }
-/* line 1725, ../scss/_overrides.scss */
+/* line 1788, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions {
   padding-top: 2rem;
   width: 100%;
   text-align: right;
   min-width: 300px;
 }
-/* line 1730, ../scss/_overrides.scss */
+/* line 1793, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions button {
   padding: 1.5rem 3.5rem;
   background-color: #FFB500;
@@ -11947,13 +12018,13 @@ th#view-field-event-type-table-column {
   border-radius: 0;
   text-transform: uppercase;
 }
-/* line 1737, ../scss/_overrides.scss */
+/* line 1800, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .views-exposed-form .form-inline .form-group.form-actions button#edit-reset {
   background-color: transparent;
   border: 2px solid #939393;
   color: #939393;
 }
-/* line 1744, ../scss/_overrides.scss */
+/* line 1807, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters, .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
   background-color: #F2F2F2;
   padding-left: 0;
@@ -11961,41 +12032,41 @@ th#view-field-event-type-table-column {
   margin: 0;
 }
 @media screen and (max-width: 767px) {
-  /* line 1744, ../scss/_overrides.scss */
+  /* line 1807, ../scss/_overrides.scss */
   .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters, .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 }
-/* line 1754, ../scss/_overrides.scss */
+/* line 1817, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters {
   padding-top: 1.5rem;
   padding-bottom: 1rem;
 }
-/* line 1758, ../scss/_overrides.scss */
+/* line 1821, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-filters + .view-empty {
   margin-bottom: 3rem;
 }
-/* line 1761, ../scss/_overrides.scss */
+/* line 1824, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .view-content {
   padding-top: 1rem;
   padding-bottom: 0;
 }
-/* line 1765, ../scss/_overrides.scss */
+/* line 1828, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center {
   text-align: left;
 }
-/* line 1767, ../scss/_overrides.scss */
+/* line 1830, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination {
   border-radius: 0;
   border: 0;
 }
-/* line 1772, ../scss/_overrides.scss */
+/* line 1835, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li.active a {
   color: #FFB500;
   background-color: 0;
 }
-/* line 1777, ../scss/_overrides.scss */
+/* line 1840, ../scss/_overrides.scss */
 .page-node-12 .lower-section-wrapper .lower-section.container .region-lower-section .view-resources .pager-nav.text-center .pagination li a {
   color: #333333;
   border: 0;
@@ -12005,21 +12076,21 @@ th#view-field-event-type-table-column {
   padding-right: 0.75rem;
 }
 
-/* line 1796, ../scss/_overrides.scss */
+/* line 1859, ../scss/_overrides.scss */
 .page-node-type-page .pager-nav.text-center {
   text-align: left;
 }
-/* line 1798, ../scss/_overrides.scss */
+/* line 1861, ../scss/_overrides.scss */
 .page-node-type-page .pager-nav.text-center .pagination {
   border-radius: 0;
   border: 0;
 }
-/* line 1803, ../scss/_overrides.scss */
+/* line 1866, ../scss/_overrides.scss */
 .page-node-type-page .pager-nav.text-center .pagination li.active a {
   color: #FFB500;
   background-color: 0;
 }
-/* line 1808, ../scss/_overrides.scss */
+/* line 1871, ../scss/_overrides.scss */
 .page-node-type-page .pager-nav.text-center .pagination li a {
   color: #333333;
   border: 0;
@@ -12029,7 +12100,7 @@ th#view-field-event-type-table-column {
   padding-right: 0.75rem;
 }
 
-/* line 1830, ../scss/_overrides.scss */
+/* line 1893, ../scss/_overrides.scss */
 .page-node-type-resource .main-container h1.page-header,
 .page-node-type-news .main-container h1.page-header,
 .page-node-type-book .main-container h1.page-header,
@@ -12040,7 +12111,7 @@ th#view-field-event-type-table-column {
   padding: 0;
   margin-bottom: 4rem;
 }
-/* line 1834, ../scss/_overrides.scss */
+/* line 1897, ../scss/_overrides.scss */
 .page-node-type-resource .main-container h1.page-header span,
 .page-node-type-news .main-container h1.page-header span,
 .page-node-type-book .main-container h1.page-header span,
@@ -12054,17 +12125,17 @@ th#view-field-event-type-table-column {
   line-height: 4.2rem;
 }
 
-/* line 1850, ../scss/_overrides.scss */
+/* line 1913, ../scss/_overrides.scss */
 article .field {
   margin-bottom: 2rem;
 }
-/* line 1852, ../scss/_overrides.scss */
+/* line 1915, ../scss/_overrides.scss */
 article .field p {
   font-size: 2.4rem;
   line-height: 3rem;
   font-family: "soleillight";
 }
-/* line 1857, ../scss/_overrides.scss */
+/* line 1920, ../scss/_overrides.scss */
 article .field .field--label {
   display: block;
   width: 100%;
@@ -12075,52 +12146,52 @@ article .field .field--label {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-/* line 1867, ../scss/_overrides.scss */
+/* line 1930, ../scss/_overrides.scss */
 article .field .field--item {
   display: block;
   width: 100%;
   font-size: 2.4rem;
   font-family: "soleillight";
 }
-/* line 1872, ../scss/_overrides.scss */
+/* line 1935, ../scss/_overrides.scss */
 article .field .field--item p {
   font-size: 2.4rem;
   font-family: "soleillight";
 }
-/* line 1876, ../scss/_overrides.scss */
+/* line 1939, ../scss/_overrides.scss */
 article .field .field--item a {
   text-decoration: underline;
 }
-/* line 1879, ../scss/_overrides.scss */
+/* line 1942, ../scss/_overrides.scss */
 article .field .field--item ul {
   list-style: none;
 }
-/* line 1881, ../scss/_overrides.scss */
+/* line 1944, ../scss/_overrides.scss */
 article .field .field--item ul li {
   margin: 2rem 0 2rem 4rem;
   padding-left: 0;
   text-indent: -2.3rem;
 }
-/* line 1885, ../scss/_overrides.scss */
+/* line 1948, ../scss/_overrides.scss */
 article .field .field--item ul li::before {
   content: "•";
   color: #27628E;
   margin-right: 1.5rem;
 }
-/* line 1891, ../scss/_overrides.scss */
+/* line 1954, ../scss/_overrides.scss */
 article .field .field--item ul li li::before {
   content: "-";
   color: #27628E;
   margin-right: 1.5rem;
 }
-/* line 1901, ../scss/_overrides.scss */
+/* line 1964, ../scss/_overrides.scss */
 article .field.field--name-field-link a {
   font-size: 2.4rem;
   font-family: "soleillight";
   color: #27628E;
   text-decoration: underline;
 }
-/* line 1910, ../scss/_overrides.scss */
+/* line 1973, ../scss/_overrides.scss */
 article .field.field--name-field-attachment span.file > span {
   border: 0;
   text-align: left;
@@ -12128,19 +12199,19 @@ article .field.field--name-field-attachment span.file > span {
   padding: 0;
   font-weight: 400;
 }
-/* line 1916, ../scss/_overrides.scss */
+/* line 1979, ../scss/_overrides.scss */
 article .field.field--name-field-attachment span.file > span.file-link {
   text-align: left;
   width: auto;
 }
-/* line 1919, ../scss/_overrides.scss */
+/* line 1982, ../scss/_overrides.scss */
 article .field.field--name-field-attachment span.file > span.file-link a {
   font-size: 2.4rem;
   font-family: "soleillight";
   color: #27628E;
   text-decoration: underline;
 }
-/* line 1926, ../scss/_overrides.scss */
+/* line 1989, ../scss/_overrides.scss */
 article .field.field--name-field-attachment span.file > span.file-size {
   text-align: left;
   width: auto;
@@ -12150,7 +12221,7 @@ article .field.field--name-field-attachment span.file > span.file-size {
   text-decoration: underline;
   padding-left: 2rem;
 }
-/* line 1941, ../scss/_overrides.scss */
+/* line 2004, ../scss/_overrides.scss */
 article .content .field.field--label-inline .field--label, article .container .field.field--label-inline .field--label {
   display: inline-block;
   width: auto;
@@ -12161,56 +12232,56 @@ article .content .field.field--label-inline .field--label, article .container .f
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-/* line 1951, ../scss/_overrides.scss */
+/* line 2014, ../scss/_overrides.scss */
 article .content .field.field--label-inline .field--item, article .container .field.field--label-inline .field--item {
   display: block;
   width: 100%;
   font-size: 2.4rem;
   font-family: "soleillight";
 }
-/* line 1960, ../scss/_overrides.scss */
+/* line 2023, ../scss/_overrides.scss */
 article .content .field.field--label-above:not(.field--name-body) .field--label::after, article .container .field.field--label-above:not(.field--name-body) .field--label::after {
   content: ":";
   color: #333333;
 }
-/* line 1967, ../scss/_overrides.scss */
+/* line 2030, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file, article .container .field--name-field-attachment span.file {
   display: block;
 }
-/* line 1969, ../scss/_overrides.scss */
+/* line 2032, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file .file-icon, article .container .field--name-field-attachment span.file .file-icon {
   display: none;
 }
-/* line 1972, ../scss/_overrides.scss */
+/* line 2035, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file span.file-link, article .container .field--name-field-attachment span.file span.file-link {
   display: contents;
 }
-/* line 1975, ../scss/_overrides.scss */
+/* line 2038, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file span.file-size, article .container .field--name-field-attachment span.file span.file-size {
   display: contents;
 }
-/* line 1977, ../scss/_overrides.scss */
+/* line 2040, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file span.file-size::before, article .container .field--name-field-attachment span.file span.file-size::before {
   content: "(";
   padding-left: 1.5rem;
 }
-/* line 1981, ../scss/_overrides.scss */
+/* line 2044, ../scss/_overrides.scss */
 article .content .field--name-field-attachment span.file span.file-size::after, article .container .field--name-field-attachment span.file span.file-size::after {
   content: ")";
 }
 
-/* line 1995, ../scss/_overrides.scss */
+/* line 2058, ../scss/_overrides.scss */
 .region-sidebar-second .field--type-text-with-summary p > img {
   width: 100%;
 }
 
-/* line 2003, ../scss/_overrides.scss */
+/* line 2066, ../scss/_overrides.scss */
 section.block-views-blockstaff-sme-list h2.block-title {
   margin-top: 3rem;
   margin-bottom: 4rem;
 }
 
-/* line 2011, ../scss/_overrides.scss */
+/* line 2074, ../scss/_overrides.scss */
 .field--name-field-attachment span.file > span {
   border: 0;
   text-align: left;
@@ -12218,19 +12289,19 @@ section.block-views-blockstaff-sme-list h2.block-title {
   padding: 0;
   font-weight: 400;
 }
-/* line 2017, ../scss/_overrides.scss */
+/* line 2080, ../scss/_overrides.scss */
 .field--name-field-attachment span.file > span.file-link {
   text-align: left;
   width: auto;
 }
-/* line 2020, ../scss/_overrides.scss */
+/* line 2083, ../scss/_overrides.scss */
 .field--name-field-attachment span.file > span.file-link a {
   font-size: 2.4rem;
   font-family: "soleillight";
   color: #27628E;
   text-decoration: underline;
 }
-/* line 2027, ../scss/_overrides.scss */
+/* line 2090, ../scss/_overrides.scss */
 .field--name-field-attachment span.file > span.file-size {
   text-align: left;
   width: auto;
@@ -12241,42 +12312,42 @@ section.block-views-blockstaff-sme-list h2.block-title {
   padding-left: 2rem;
 }
 
-/* line 2040, ../scss/_overrides.scss */
+/* line 2103, ../scss/_overrides.scss */
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 2048, ../scss/_overrides.scss */
+  /* line 2111, ../scss/_overrides.scss */
   .view-trainings .table-responsive thead > tr > th {
     min-width: 11rem;
     border-bottom: 1px solid #E5E5E5;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 2058, ../scss/_overrides.scss */
+  /* line 2121, ../scss/_overrides.scss */
   .view-trainings .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 2063, ../scss/_overrides.scss */
+/* line 2126, ../scss/_overrides.scss */
 .view-trainings .table-responsive tbody > tr > td.views-field-title a {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 2068, ../scss/_overrides.scss */
+/* line 2131, ../scss/_overrides.scss */
 .view-trainings .table-responsive tbody > tr > td.views-field-title a:hover {
   text-decoration: underline;
 }
 
-/* line 2079, ../scss/_overrides.scss */
+/* line 2142, ../scss/_overrides.scss */
 form .form-control {
   color: #333333;
 }
 
-/* line 2083, ../scss/_overrides.scss */
+/* line 2146, ../scss/_overrides.scss */
 select option[selected="selected"] {
   font-style: italic;
   font-weight: bold;
@@ -12285,87 +12356,87 @@ select option[selected="selected"] {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2091, ../scss/_overrides.scss */
+  /* line 2154, ../scss/_overrides.scss */
   .ui-accordion .ui-accordion-content {
     padding: 2rem 0;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 2100, ../scss/_overrides.scss */
+  /* line 2163, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks, #block-aboutusblock .field--name-body > .services-blocks {
     display: block;
     width: 100%;
   }
-  /* line 2104, ../scss/_overrides.scss */
+  /* line 2167, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .image-section, #block-aboutusblock .field--name-body > .services-blocks .image-section {
     width: 100%;
   }
-  /* line 2106, ../scss/_overrides.scss */
+  /* line 2169, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .image-section img, #block-aboutusblock .field--name-body > .services-blocks .image-section img {
     width: 100%;
     margin: 0 0 3rem 0;
   }
-  /* line 2112, ../scss/_overrides.scss */
+  /* line 2175, ../scss/_overrides.scss */
   #block-moreservices .field--name-body > .services-blocks .services-block-content h4, #block-aboutusblock .field--name-body > .services-blocks .services-block-content h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
 }
 
-/* line 2123, ../scss/_overrides.scss */
+/* line 2186, ../scss/_overrides.scss */
 .view-id-upcoming_events.view-display-id-block_2 .views-field-field-event-type {
   display: inline-block;
 }
-/* line 2125, ../scss/_overrides.scss */
+/* line 2188, ../scss/_overrides.scss */
 .view-id-upcoming_events.view-display-id-block_2 .views-field-field-event-type .field-content {
   display: inline-block;
 }
-/* line 2127, ../scss/_overrides.scss */
+/* line 2190, ../scss/_overrides.scss */
 .view-id-upcoming_events.view-display-id-block_2 .views-field-field-event-type .field-content span.type {
   display: inline-block;
   text-transform: uppercase;
   padding-right: 2px;
 }
-/* line 2134, ../scss/_overrides.scss */
+/* line 2197, ../scss/_overrides.scss */
 .view-id-upcoming_events.view-display-id-block_2 .views-field-field-when {
   display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 2143, ../scss/_overrides.scss */
+  /* line 2206, ../scss/_overrides.scss */
   .page-node-27 .table-responsive tbody > tr > td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 2148, ../scss/_overrides.scss */
+/* line 2211, ../scss/_overrides.scss */
 .page-node-27 .table-responsive tbody > tr > td.views-field-title a {
   font-size: 1.8rem;
   line-height: 2.4rem;
   font-family: "soleilbold";
   color: #27628E;
 }
-/* line 2153, ../scss/_overrides.scss */
+/* line 2216, ../scss/_overrides.scss */
 .page-node-27 .table-responsive tbody > tr > td.views-field-title a:hover {
   text-decoration: underline;
 }
 
-/* line 2166, ../scss/_overrides.scss */
+/* line 2229, ../scss/_overrides.scss */
 .table-responsive .table.table-hover > tbody > tr:hover {
   background: transparent;
 }
-/* line 2171, ../scss/_overrides.scss */
+/* line 2234, ../scss/_overrides.scss */
 .table-responsive .table.table-striped .table-row:hover {
   background: transparent;
 }
-/* line 2177, ../scss/_overrides.scss */
+/* line 2240, ../scss/_overrides.scss */
 .table-responsive .table > thead th {
   font-size: 1.8rem;
   line-height: 3rem;
   font-family: "soleilbold";
   color: #333333;
 }
-/* line 2186, ../scss/_overrides.scss */
+/* line 2249, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td {
   font-family: "soleilregular";
   font-size: 1.6rem;
@@ -12373,19 +12444,19 @@ select option[selected="selected"] {
   color: #333333;
 }
 @media screen and (min-width: 768px) {
-  /* line 2186, ../scss/_overrides.scss */
+  /* line 2249, ../scss/_overrides.scss */
   .table-responsive .table > tbody tr td {
     border-bottom: 1px solid #E5E5E5;
   }
 }
-/* line 2194, ../scss/_overrides.scss */
+/* line 2257, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td p {
   font-family: "soleilregular";
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #333333;
 }
-/* line 2200, ../scss/_overrides.scss */
+/* line 2263, ../scss/_overrides.scss */
 .table-responsive .table > tbody tr td.views-field-title {
   font-family: "soleilbold";
   font-size: 1.8rem;
@@ -12393,7 +12464,7 @@ select option[selected="selected"] {
   color: #333333;
 }
 
-/* line 2214, ../scss/_overrides.scss */
+/* line 2277, ../scss/_overrides.scss */
 .path-contact .main-container h1.page-header {
   padding-top: 0;
   padding-bottom: 0;
@@ -12408,21 +12479,21 @@ select option[selected="selected"] {
   margin-bottom: 5rem;
 }
 
-/* line 2230, ../scss/_overrides.scss */
+/* line 2293, ../scss/_overrides.scss */
 .separator-pipe {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 2237, ../scss/_overrides.scss */
+  /* line 2300, ../scss/_overrides.scss */
   .container.lower-section {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
-/* line 2244, ../scss/_overrides.scss */
+/* line 2307, ../scss/_overrides.scss */
 #block-sharethis {
   display: inline-block;
   position: fixed;
@@ -12432,122 +12503,122 @@ select option[selected="selected"] {
   z-index: 999;
 }
 @media screen and (max-width: 767px) {
-  /* line 2244, ../scss/_overrides.scss */
+  /* line 2307, ../scss/_overrides.scss */
   #block-sharethis {
     display: none;
   }
 }
 
-/* line 2260, ../scss/_overrides.scss */
+/* line 2323, ../scss/_overrides.scss */
 .context-about-us-news .table-responsive thead tr th.views-field-field-type-of-news {
   min-width: 12rem;
 }
-/* line 2263, ../scss/_overrides.scss */
+/* line 2326, ../scss/_overrides.scss */
 .context-about-us-news .table-responsive thead tr th.views-field-title {
   min-width: 50rem;
 }
-/* line 2266, ../scss/_overrides.scss */
+/* line 2329, ../scss/_overrides.scss */
 .context-about-us-news .table-responsive thead tr th.views-field-field-date {
   min-width: 10rem;
 }
 
-/* line 2276, ../scss/_overrides.scss */
+/* line 2339, ../scss/_overrides.scss */
 .page-node-type-online-course .main-wrapper .page-heading-section.col-sm-12 {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 2281, ../scss/_overrides.scss */
+/* line 2344, ../scss/_overrides.scss */
 .page-node-type-online-course div.main-container h1.page-header span {
   display: none;
 }
-/* line 2287, ../scss/_overrides.scss */
+/* line 2350, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-next-event .field--label, .page-node-type-online-course .main-container article div.field--name-field-when .field--label {
   color: #FFB500;
 }
-/* line 2294, ../scss/_overrides.scss */
+/* line 2357, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-audience .field--label, .page-node-type-online-course .main-container article div.field--name-field-when .field--label, .page-node-type-online-course .main-container article div.field--name-field-certification .field--label, .page-node-type-online-course .main-container article div.field--name-field-next-event .field--label {
   display: inline-block;
   width: auto;
   margin-bottom: 0;
 }
-/* line 2300, ../scss/_overrides.scss */
+/* line 2363, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-length, .page-node-type-online-course .main-container article div.field--name-field-cost {
   clear: both;
   display: inline-block;
   margin-right: 3rem;
 }
-/* line 2304, ../scss/_overrides.scss */
+/* line 2367, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-length div.field--label, .page-node-type-online-course .main-container article div.field--name-field-cost div.field--label {
   display: inline-block;
   float: left;
   width: auto;
 }
-/* line 2309, ../scss/_overrides.scss */
+/* line 2372, ../scss/_overrides.scss */
 .page-node-type-online-course .main-container article div.field--name-field-length div.field--item, .page-node-type-online-course .main-container article div.field--name-field-cost div.field--item {
   display: inline-block;
   float: left;
   width: auto;
 }
 
-/* line 2321, ../scss/_overrides.scss */
+/* line 2384, ../scss/_overrides.scss */
 .page-node-type-training .main-wrapper .page-heading-section.col-sm-12 {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 2326, ../scss/_overrides.scss */
+/* line 2389, ../scss/_overrides.scss */
 .page-node-type-training div.main-container h1.page-header span {
   display: none;
 }
-/* line 2329, ../scss/_overrides.scss */
+/* line 2392, ../scss/_overrides.scss */
 .page-node-type-training .main-container {
   padding-top: 0;
 }
-/* line 2333, ../scss/_overrides.scss */
+/* line 2396, ../scss/_overrides.scss */
 .page-node-type-training .main-container article div.field--name-field-training-audience .field--label, .page-node-type-training .main-container article div.field--name-field-certification .field--label, .page-node-type-training .main-container article div.field--name-field-training-length .field--label {
   display: inline-block;
   width: auto;
   margin-bottom: 0;
 }
-/* line 2340, ../scss/_overrides.scss */
+/* line 2403, ../scss/_overrides.scss */
 .page-node-type-training .main-container article div.field--name-field-training-length .field--label {
   float: left;
   padding-right: 0.5em;
 }
-/* line 2346, ../scss/_overrides.scss */
+/* line 2409, ../scss/_overrides.scss */
 .page-node-type-training .main-container article .field--name-field-contact-us p {
   text-align: left;
   font-weight: bold;
 }
-/* line 2349, ../scss/_overrides.scss */
+/* line 2412, ../scss/_overrides.scss */
 .page-node-type-training .main-container article .field--name-field-contact-us p a {
   font-weight: bold;
 }
 
-/* line 2360, ../scss/_overrides.scss */
+/* line 2423, ../scss/_overrides.scss */
 .page-node-type-online-course article .container, .page-node-type-training article .container {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 2367, ../scss/_overrides.scss */
+/* line 2430, ../scss/_overrides.scss */
 .gray-background-section {
   padding: 2rem 0;
   box-sizing: border-box;
   margin-bottom: 5rem;
 }
-/* line 2371, ../scss/_overrides.scss */
+/* line 2434, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 2375, ../scss/_overrides.scss */
+/* line 2438, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container > h2 {
   padding-left: 0;
   margin-bottom: 3rem;
   border-left: none;
 }
-/* line 2379, ../scss/_overrides.scss */
+/* line 2442, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container > h2 span {
   color: #333333;
   text-transform: none;
@@ -12555,11 +12626,11 @@ select option[selected="selected"] {
   font-size: 3.6rem;
   line-height: 4.2rem;
 }
-/* line 2387, ../scss/_overrides.scss */
+/* line 2450, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container ul {
   list-style: none;
 }
-/* line 2389, ../scss/_overrides.scss */
+/* line 2452, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container ul li {
   margin: 2rem 0 2rem 4rem;
   padding-left: 0;
@@ -12567,7 +12638,7 @@ select option[selected="selected"] {
   font-size: 2.4rem;
   font-family: "soleillight";
 }
-/* line 2395, ../scss/_overrides.scss */
+/* line 2458, ../scss/_overrides.scss */
 .gray-background-section .gray-background-section-content .container ul li::before {
   content: "•";
   color: #27628E;
@@ -12575,89 +12646,89 @@ select option[selected="selected"] {
   font-size: 2.4rem;
 }
 
-/* line 2410, ../scss/_overrides.scss */
+/* line 2473, ../scss/_overrides.scss */
 .view-newsletters .views-row .views-field-field-attachment .file > span {
   border: 0;
 }
-/* line 2414, ../scss/_overrides.scss */
+/* line 2477, ../scss/_overrides.scss */
 .view-newsletters .views-row .views-field-field-attachment .file .file-icon .icon::before {
   font-size: 2.4rem;
 }
-/* line 2420, ../scss/_overrides.scss */
+/* line 2483, ../scss/_overrides.scss */
 .view-newsletters .views-row .views-field-field-attachment .file-link a {
   font-size: 2.4rem;
   font-weight: normal;
 }
-/* line 2425, ../scss/_overrides.scss */
+/* line 2488, ../scss/_overrides.scss */
 .view-newsletters .views-row .views-field-field-attachment .file-size {
   font-size: 1.5rem;
   font-weight: normal;
 }
-/* line 2431, ../scss/_overrides.scss */
+/* line 2494, ../scss/_overrides.scss */
 .view-newsletters .views-row .views-field-field-additional-information p {
   font-size: 2rem;
   margin-left: 1rem;
 }
 
-/* line 2440, ../scss/_overrides.scss */
+/* line 2503, ../scss/_overrides.scss */
 select option[selected="selected"] {
   background-color: #D4D4D4;
   color: #333 !important;
   font-weight: normal;
   font-style: normal;
 }
-/* line 2446, ../scss/_overrides.scss */
+/* line 2509, ../scss/_overrides.scss */
 select option:focus, select option:active {
   background-color: #27628E;
 }
 
-/* line 2451, ../scss/_overrides.scss */
+/* line 2514, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio {
   clear: both;
   display: block;
   margin-bottom: 3px;
 }
 
-/* line 2457, ../scss/_overrides.scss */
+/* line 2520, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio label {
   margin-bottom: 0;
   min-width: 1rem;
   text-transform: none;
 }
 
-/* line 2463, ../scss/_overrides.scss */
+/* line 2526, ../scss/_overrides.scss */
 .view-resources .view-filters .bef-exposed-form #edit-resource-type--wrapper .form-type-radio input {
   min-width: 1rem;
   margin-right: 1rem;
 }
 
-/* line 2471, ../scss/_overrides.scss */
+/* line 2534, ../scss/_overrides.scss */
 .page-node-type-book article.book nav > h2 {
   display: none;
 }
-/* line 2476, ../scss/_overrides.scss */
+/* line 2539, ../scss/_overrides.scss */
 .page-node-type-book article.book .field--name-body ol {
   counter-reset: list;
   margin: 0 0 2rem 3rem;
 }
-/* line 2479, ../scss/_overrides.scss */
+/* line 2542, ../scss/_overrides.scss */
 .page-node-type-book article.book .field--name-body ol > li {
   list-style: none;
   position: relative;
   margin-bottom: 1.2rem;
   font-size: 1.6rem;
 }
-/* line 2484, ../scss/_overrides.scss */
+/* line 2547, ../scss/_overrides.scss */
 .page-node-type-book article.book .field--name-body ol > li a {
   color: #27628E;
   font-size: 1.6rem;
 }
-/* line 2487, ../scss/_overrides.scss */
+/* line 2550, ../scss/_overrides.scss */
 .page-node-type-book article.book .field--name-body ol > li a:hover {
   color: #27628E;
   text-decoration: underline;
 }
-/* line 2492, ../scss/_overrides.scss */
+/* line 2555, ../scss/_overrides.scss */
 .page-node-type-book article.book .field--name-body ol > li::before {
   counter-increment: list;
   content: counter(list,decimal) ") ";
@@ -12665,19 +12736,19 @@ select option:focus, select option:active {
   left: -1.4em;
   color: #27628E;
 }
-/* line 2504, ../scss/_overrides.scss */
+/* line 2567, ../scss/_overrides.scss */
 .page-node-type-book .field--name-body p, .page-node-type-book .field--name-field-footer-text .field--item p {
   font-size: 1.6rem;
   font-family: "soleilregular";
   line-height: 1.4;
   color: #333333;
 }
-/* line 2510, ../scss/_overrides.scss */
+/* line 2573, ../scss/_overrides.scss */
 .page-node-type-book .field--name-body > ul, .page-node-type-book .field--name-field-footer-text .field--item > ul {
   list-style: none;
   margin-left: 3rem;
 }
-/* line 2513, ../scss/_overrides.scss */
+/* line 2576, ../scss/_overrides.scss */
 .page-node-type-book .field--name-body > ul > li, .page-node-type-book .field--name-body > ul > li ul li, .page-node-type-book .field--name-field-footer-text .field--item > ul > li, .page-node-type-book .field--name-field-footer-text .field--item > ul > li ul li {
   margin: 1.5rem 0 1.5rem 0;
   padding-left: 0;
@@ -12685,20 +12756,20 @@ select option:focus, select option:active {
   font-size: 1.6rem;
   list-style-type: none;
 }
-/* line 2519, ../scss/_overrides.scss */
+/* line 2582, ../scss/_overrides.scss */
 .page-node-type-book .field--name-body > ul > li::before, .page-node-type-book .field--name-body > ul > li ul li::before, .page-node-type-book .field--name-field-footer-text .field--item > ul > li::before, .page-node-type-book .field--name-field-footer-text .field--item > ul > li ul li::before {
   content: "•";
   color: #27628E;
   margin-right: 1rem;
 }
-/* line 2527, ../scss/_overrides.scss */
+/* line 2590, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation {
   background-color: #F2F2F2;
   border-top: 3px solid #FFB500;
   border-bottom: 3px solid #FFB500;
   padding: 1rem 2.5rem;
 }
-/* line 2532, ../scss/_overrides.scss */
+/* line 2595, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation h2.block-title {
   color: #333333;
   text-transform: uppercase;
@@ -12708,28 +12779,28 @@ select option:focus, select option:active {
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
-/* line 2542, ../scss/_overrides.scss */
+/* line 2605, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav:not(:last-child) {
   display: none;
 }
-/* line 2545, ../scss/_overrides.scss */
+/* line 2608, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul {
   list-style: none;
   padding-left: 0;
 }
-/* line 2549, ../scss/_overrides.scss */
+/* line 2612, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > a {
   color: #333333;
   margin-bottom: 1rem;
   display: block;
   font-size: 2rem;
 }
-/* line 2555, ../scss/_overrides.scss */
+/* line 2618, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul {
   list-style: none;
   border-top: 1px solid #E5E5E5;
 }
-/* line 2558, ../scss/_overrides.scss */
+/* line 2621, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li {
   font-family: "soleilregular";
   font-weight: normal;
@@ -12740,13 +12811,13 @@ select option:focus, select option:active {
   padding-left: 1rem;
   text-indent: -1.5rem;
 }
-/* line 2567, ../scss/_overrides.scss */
+/* line 2630, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li > a {
   color: #333333;
   display: block;
   padding-top: 0.5rem;
 }
-/* line 2571, ../scss/_overrides.scss */
+/* line 2634, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li > a::after {
   margin-top: 0.5rem;
   border-top: 1px solid #E5E5E5;
@@ -12754,7 +12825,7 @@ select option:focus, select option:active {
   content: " ";
   margin-left: -3.1rem;
 }
-/* line 2578, ../scss/_overrides.scss */
+/* line 2641, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li > a::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -12765,22 +12836,22 @@ select option:focus, select option:active {
   text-decoration: none;
   display: inline-block;
 }
-/* line 2590, ../scss/_overrides.scss */
+/* line 2653, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > a {
   color: #27628E;
 }
-/* line 2592, ../scss/_overrides.scss */
+/* line 2655, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > a::before {
   content: "\f13a";
   color: #27628E;
   text-decoration: none;
 }
-/* line 2599, ../scss/_overrides.scss */
+/* line 2662, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > ul {
   list-style: none;
   margin-left: -3.5rem;
 }
-/* line 2602, ../scss/_overrides.scss */
+/* line 2665, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > ul > li {
   margin: 1rem 0 1rem 0;
   padding-left: 0;
@@ -12790,29 +12861,29 @@ select option:focus, select option:active {
   line-height: 1.2;
   color: #333333;
 }
-/* line 2610, ../scss/_overrides.scss */
+/* line 2673, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > ul > li::before {
   content: "»";
   color: #27628E;
   margin-right: 0.5rem;
   font-weight: normal;
 }
-/* line 2616, ../scss/_overrides.scss */
+/* line 2679, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > ul > li a {
   font-weight: normal;
   font-family: "soleilregular";
   color: #333333;
 }
-/* line 2620, ../scss/_overrides.scss */
+/* line 2683, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation nav > ul > li > ul > li.hasList > ul > li a.hasPageTitle {
   font-family: "soleilbold";
 }
-/* line 2631, ../scss/_overrides.scss */
+/* line 2694, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul {
   list-style: none;
   border-top: 1px solid #E5E5E5;
 }
-/* line 2634, ../scss/_overrides.scss */
+/* line 2697, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li {
   font-family: "soleilregular";
   font-weight: normal;
@@ -12823,13 +12894,13 @@ select option:focus, select option:active {
   padding-left: 1rem;
   text-indent: -1.5rem;
 }
-/* line 2643, ../scss/_overrides.scss */
+/* line 2706, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li > a {
   color: #333333;
   display: block;
   padding-top: 0.5rem;
 }
-/* line 2647, ../scss/_overrides.scss */
+/* line 2710, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li > a::after {
   margin-top: 0.5rem;
   border-top: 1px solid #E5E5E5;
@@ -12837,7 +12908,7 @@ select option:focus, select option:active {
   content: " ";
   margin-left: -3.1rem;
 }
-/* line 2654, ../scss/_overrides.scss */
+/* line 2717, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li > a::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -12848,22 +12919,22 @@ select option:focus, select option:active {
   text-decoration: none;
   display: inline-block;
 }
-/* line 2666, ../scss/_overrides.scss */
+/* line 2729, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li.hasList > a {
   color: #27628E;
 }
-/* line 2668, ../scss/_overrides.scss */
+/* line 2731, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li.hasList > a::before {
   content: "\f13a";
   color: #27628E;
   text-decoration: none;
 }
-/* line 2675, ../scss/_overrides.scss */
+/* line 2738, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li.hasList > ul {
   list-style: none;
   margin-left: -3.5rem;
 }
-/* line 2678, ../scss/_overrides.scss */
+/* line 2741, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li.hasList > ul > li {
   margin: 1rem 0 1rem 0;
   padding-left: 0;
@@ -12873,112 +12944,112 @@ select option:focus, select option:active {
   line-height: 1.2;
   color: #333333;
 }
-/* line 2686, ../scss/_overrides.scss */
+/* line 2749, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li.hasList > ul > li::before {
   content: "»";
   color: #27628E;
   margin-right: 0.5rem;
   font-weight: normal;
 }
-/* line 2692, ../scss/_overrides.scss */
+/* line 2755, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li.hasList > ul > li a {
   font-weight: normal;
   font-family: "soleilregular";
   color: #333333;
 }
-/* line 2696, ../scss/_overrides.scss */
+/* line 2759, ../scss/_overrides.scss */
 .page-node-type-book section#block-booknavigation > ul > li.hasList > ul > li a.hasPageTitle {
   font-family: "soleilbold";
 }
-/* line 2708, ../scss/_overrides.scss */
+/* line 2771, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content h1.page-header {
   margin-bottom: 2.5rem;
 }
-/* line 2712, ../scss/_overrides.scss */
+/* line 2775, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table {
   width: 100% !important;
 }
-/* line 2714, ../scss/_overrides.scss */
+/* line 2777, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td {
   vertical-align: top;
   border: 1px solid #DDD;
   padding: 10px 15px;
 }
-/* line 2718, ../scss/_overrides.scss */
+/* line 2781, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td a {
   word-break: break-all;
 }
-/* line 2721, ../scss/_overrides.scss */
+/* line 2784, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td p {
   font-size: 1.4rem;
   font-family: "soleilregular";
   line-height: 2rem;
 }
-/* line 2726, ../scss/_overrides.scss */
+/* line 2789, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td ul, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td li {
   font-size: 1.4rem;
   font-family: "soleilregular";
   line-height: 2rem;
 }
-/* line 2730, ../scss/_overrides.scss */
+/* line 2793, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td ul p, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td li p {
   display: inline;
 }
-/* line 2734, ../scss/_overrides.scss */
+/* line 2797, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul {
   list-style: none;
   margin-left: 3rem;
 }
-/* line 2737, ../scss/_overrides.scss */
+/* line 2800, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li {
   margin: 1.5rem 0 1.5rem 0;
   padding-left: 0;
   text-indent: -1.5rem;
 }
-/* line 2741, ../scss/_overrides.scss */
+/* line 2804, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li::before {
   content: "•";
   color: #27628E;
   margin-right: 1rem;
 }
-/* line 2746, ../scss/_overrides.scss */
+/* line 2809, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li ul {
   list-style: none;
 }
-/* line 2748, ../scss/_overrides.scss */
+/* line 2811, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li ul li {
   margin: 1.5rem 0 1.5rem 0;
   padding-left: 0;
   text-indent: -1.7rem;
 }
-/* line 2752, ../scss/_overrides.scss */
+/* line 2815, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content .field--name-body table td > ul > li ul li::before {
   content: "»";
   color: #27628E;
   margin-right: 1rem;
 }
-/* line 2764, ../scss/_overrides.scss */
+/* line 2827, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav {
   background-color: #F1F1F1;
 }
-/* line 2765, ../scss/_overrides.scss */
+/* line 2828, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul:first-child {
   display: none;
 }
-/* line 2769, ../scss/_overrides.scss */
+/* line 2832, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding: 1rem 0.5rem;
 }
-/* line 2774, ../scss/_overrides.scss */
+/* line 2837, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type {
   list-style-type: none;
   max-width: 40%;
   display: inherit;
 }
-/* line 2778, ../scss/_overrides.scss */
+/* line 2841, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type::after, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type::before, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type::after, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type::before {
   font-weight: normal;
   color: #27628E;
@@ -12988,44 +13059,44 @@ select option:focus, select option:active {
   font-family: Verdana;
   font-size: 1.7rem;
 }
-/* line 2788, ../scss/_overrides.scss */
+/* line 2851, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type a b, .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type a b {
   display: none;
 }
-/* line 2794, ../scss/_overrides.scss */
+/* line 2857, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:first-of-type::before {
   content: "‹";
   margin: -0.2rem 0 0 1rem;
   padding-right: 0.3rem;
 }
-/* line 2801, ../scss/_overrides.scss */
+/* line 2864, ../scss/_overrides.scss */
 .page-node-type-book .row-second section.col-sm-8.has-second-sidebar .region-content nav ul li:last-of-type::after {
   content: "›";
   margin: -0.2rem 1rem 0 0;
   padding-left: 0.3rem;
 }
 
-/* line 2813, ../scss/_overrides.scss */
+/* line 2876, ../scss/_overrides.scss */
 details summary::-webkit-details-marker {
   display: none;
 }
 
-/* line 2819, ../scss/_overrides.scss */
+/* line 2882, ../scss/_overrides.scss */
 .page-node-type-save-the-date h1.page-header {
   display: none;
 }
-/* line 2822, ../scss/_overrides.scss */
+/* line 2885, ../scss/_overrides.scss */
 .page-node-type-save-the-date .file > span {
   background-color: transparent;
 }
 
-/* line 2827, ../scss/_overrides.scss */
+/* line 2890, ../scss/_overrides.scss */
 .field--name-field-presenters {
   display: inline-block;
 }
 
 @media (min-width: 767px) {
-  /* line 2832, ../scss/_overrides.scss */
+  /* line 2895, ../scss/_overrides.scss */
   .gray-background-section {
     background-color: #F1F1F1;
     width: 100vw;
@@ -13037,67 +13108,67 @@ details summary::-webkit-details-marker {
   }
 }
 @media (min-width: 1200px) and (max-width: 1250px) {
-  /* line 2845, ../scss/_overrides.scss */
+  /* line 2908, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 1120px;
   }
 }
 @media (min-width: 992px) and (max-width: 1040px) {
-  /* line 2852, ../scss/_overrides.scss */
+  /* line 2915, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 920px;
   }
 }
 @media (min-width: 767px) and (max-width: 820px) {
-  /* line 2860, ../scss/_overrides.scss */
+  /* line 2923, ../scss/_overrides.scss */
   .container,
   .navbar.container {
     max-width: 720px;
   }
 }
 @media (max-width: 820px) {
-  /* line 2868, ../scss/_overrides.scss */
+  /* line 2931, ../scss/_overrides.scss */
   .page-node-type-online-course article .container, .page-node-type-training article .container {
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 2876, ../scss/_overrides.scss */
+  /* line 2939, ../scss/_overrides.scss */
   .page-node-12 .views-exposed-form.bef-exposed-form .form--inline {
     flex-direction: column;
   }
 }
-/* line 2883, ../scss/_overrides.scss */
+/* line 2946, ../scss/_overrides.scss */
 .sidebar-image {
   display: inline-block;
 }
-/* line 2885, ../scss/_overrides.scss */
+/* line 2948, ../scss/_overrides.scss */
 .sidebar-image img {
   width: 100%;
 }
 
-/* line 2891, ../scss/_overrides.scss */
+/* line 2954, ../scss/_overrides.scss */
 #block-views-block-newsletters-block-1 .views-row {
   padding-bottom: 15px;
 }
-/* line 2894, ../scss/_overrides.scss */
+/* line 2957, ../scss/_overrides.scss */
 #block-views-block-newsletters-block-1 .views-row .views-field-body p {
   font-size: 15px;
   padding-left: 8px;
 }
-/* line 2901, ../scss/_overrides.scss */
+/* line 2964, ../scss/_overrides.scss */
 #block-views-block-newsletters-block-1 .views-field-field-attachment .file > span {
   background: transparent;
 }
 
-/* line 2909, ../scss/_overrides.scss */
+/* line 2972, ../scss/_overrides.scss */
 body.context-about-us-newsletters .view-newsletters span.file-size {
   display: none;
 }
 
-/* line 2916, ../scss/_overrides.scss */
+/* line 2979, ../scss/_overrides.scss */
 .view-staff .member-subjects {
   font-size: 1.8rem;
 }
