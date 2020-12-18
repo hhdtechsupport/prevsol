@@ -1614,18 +1614,32 @@ th#view-field-event-type-table-column {
             padding-bottom: 3px;
             background-color: transparent;
             &:after {
-              font-family: "Font Awesome 5 Free";
-              font-size: 1.8rem;
-              content: "\f0ab";
-              color: #FFB500;
-              font-style: normal;
-              margin: -0.3rem 0 0 3rem;
-              text-decoration: none;
-              float: right;
+              //font-family: "Font Awesome 5 Free";
+              //font-size: 1.8rem;
+              //content: "\f0ab";
+              //color: #FFB500;
+              //font-style: normal;
+              //margin: -0.3rem 0 0 3rem;
+              //text-decoration: none;
+              //float: right;
             }
             .panel-title {
               display: inline-block;
               font-size: 14px;
+              width: 100%;
+              padding-left: 0;
+              padding-right: 0;
+              margin-left: 0;
+              &:after {
+                font-family: "Font Awesome 5 Free";
+                font-size: 1.8rem;
+                content: "\f0ab";
+                color: #FFB500;
+                font-style: normal;
+                margin: -0.3rem 0 0 3rem;
+                text-decoration: none;
+                float: right;
+              }
             }
           }
           .panel-body {
