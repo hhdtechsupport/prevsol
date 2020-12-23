@@ -1643,12 +1643,14 @@ th#view-field-event-type-table-column {
             }
           }
           .panel-body {
+            position: absolute;
+            z-index: 99;
             padding: 0;
             .form-checkboxes > .form-checkboxes {
               display: flex;
               flex-direction: column;
-              position: absolute;
-              z-index: 99;
+              //position: absolute;
+              //z-index: 99;
               background-color: rgb(242, 242, 242);
               border: 1px solid rgb(221, 221, 221);
               padding: 0.5rem;

@@ -143,6 +143,9 @@
         }
         $(this).find('.field--item').html(contentOutput);
       });
+      if ($('.page-node-12').length > 0) {
+        $('#edit-field-resource-type-target-id-1-collapsible--content').removeClass('in');
+      }
     }
   };
 })(window.jQuery, window.Drupal);
